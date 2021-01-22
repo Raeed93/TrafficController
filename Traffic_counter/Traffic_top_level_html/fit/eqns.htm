@@ -1,0 +1,389 @@
+<html><head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<script src="paths.js"></script><script src="eqns.js"></script><script>
+      var design = "Traffic_top_level";
+      var device = "XC2C64A";
+      signals = new Array("CarEW_sync","CarEW_syncCOMB_SPECSIG","CarNS_sync","CarNS_syncCOMB_SPECSIG","LEDs0_SPECSIG","LEDs1_SPECSIG","LEDs2_SPECSIG","LightsEW0_SPECSIG","LightsEW1_SPECSIG","LightsNS0_SPECSIG","LightsNS1_SPECSIG","PedEW_sync","PedNS_sync","State_machinepedEW_temp_SPECSIG","State_machinepedNS_temp_SPECSIG","State_machinestate_FSM_FFd1_SPECSIG","State_machinestate_FSM_FFd2_SPECSIG","State_machinestate_FSM_FFd3_SPECSIG","State_machinestate_FSM_FFd4_SPECSIG","State_machinestate_FSM_FFd5_SPECSIG","State_machinestate_FSM_FFd6_SPECSIG","debugLED","theCountcount0_SPECSIG","theCountcount1_SPECSIG","theCountcount2_SPECSIG","theCountcount3_SPECSIG","theCountcount4_SPECSIG","theCountcount5_SPECSIG","theCountcount6_SPECSIG","theCountcount7_SPECSIG","theCountcount8_SPECSIG");
+      sigNegs = new Array("OFF","OFF","OFF","OFF","OFF","OFF","OFF","ON","ON","ON","ON","OFF","OFF","OFF","OFF","OFF","OFF","OFF","OFF","OFF","OFF","OFF","ON","OFF","OFF","OFF","OFF","OFF","OFF","OFF","OFF");
+      sigTypes = new Array("DFF","","DFF","","","","","","","","","DFF","DFF","DEFF","DEFF","TFF","TFF","TFF","TFF","TFF","TFFS_SPECSIG","","TFF","TFF","TFF","TFF","TFF","TFF","TFF","TFF","TFF");
+
+      
+           iostyle["CarEW"]=new Array("KPR");
+        
+           iostyle["CarNS"]=new Array("KPR");
+        
+           iostyle["PedEW"]=new Array("KPR");
+        
+           iostyle["PedNS"]=new Array("KPR");
+        
+           iostyle["Reset"]=new Array("KPR");
+        
+           iostyle["Clock"]=new Array("KPR");
+        
+        specSig["b_SPECSIG"]=new Array("(b)");
+      
+        specSig["State_machinestate_FSM_FFd6_SPECSIG"]=new Array("State_machine/state_FSM_FFd6");
+      
+        specSig["State_machinestate_FSM_FFd4_SPECSIG"]=new Array("State_machine/state_FSM_FFd4");
+      
+        specSig["State_machinestate_FSM_FFd2_SPECSIG"]=new Array("State_machine/state_FSM_FFd2");
+      
+        specSig["GSRI_SPECSIG"]=new Array("GSR/I");
+      
+        specSig["LightsEW0_SPECSIG"]=new Array("LightsEW<0>");
+      
+        specSig["LightsEW1_SPECSIG"]=new Array("LightsEW<1>");
+      
+        specSig["LightsNS0_SPECSIG"]=new Array("LightsNS<0>");
+      
+        specSig["LightsNS1_SPECSIG"]=new Array("LightsNS<1>");
+      
+        specSig["LEDs0_SPECSIG"]=new Array("LEDs<0>");
+      
+        specSig["LEDs1_SPECSIG"]=new Array("LEDs<1>");
+      
+        specSig["LEDs2_SPECSIG"]=new Array("LEDs<2>");
+      
+        specSig["CarEW_syncCOMB_SPECSIG"]=new Array("CarEW_sync.COMB");
+      
+        specSig["CarNS_syncCOMB_SPECSIG"]=new Array("CarNS_sync.COMB");
+      
+        specSig["theCountcount6_SPECSIG"]=new Array("theCount/count<6>");
+      
+        specSig["theCountcount5_SPECSIG"]=new Array("theCount/count<5>");
+      
+        specSig["theCountcount2_SPECSIG"]=new Array("theCount/count<2>");
+      
+        specSig["theCountcount0_SPECSIG"]=new Array("theCount/count<0>");
+      
+        specSig["theCountcount3_SPECSIG"]=new Array("theCount/count<3>");
+      
+        specSig["State_machinestate_FSM_FFd3_SPECSIG"]=new Array("State_machine/state_FSM_FFd3");
+      
+        specSig["theCountcount7_SPECSIG"]=new Array("theCount/count<7>");
+      
+        specSig["theCountcount4_SPECSIG"]=new Array("theCount/count<4>");
+      
+        specSig["theCountcount1_SPECSIG"]=new Array("theCount/count<1>");
+      
+        specSig["State_machinepedEW_temp_SPECSIG"]=new Array("State_machine/pedEW_temp");
+      
+        specSig["State_machinepedNS_temp_SPECSIG"]=new Array("State_machine/pedNS_temp");
+      
+        specSig["State_machinestate_FSM_FFd1_SPECSIG"]=new Array("State_machine/state_FSM_FFd1");
+      
+        specSig["State_machinestate_FSM_FFd5_SPECSIG"]=new Array("State_machine/state_FSM_FFd5");
+      
+        specSig["theCountcount8_SPECSIG"]=new Array("theCount/count<8>");
+      
+        specSig["TFFS_SPECSIG"]=new Array("TFF/S");
+      
+            pterms["FB1_0"]=new Array("theCountcount0_SPECSIG","theCountcount1_SPECSIG","theCountcount2_SPECSIG","theCountcount3_SPECSIG","theCountcount4_SPECSIG","theCountcount5_SPECSIG","theCountcount6_SPECSIG");
+          
+            pterms["FB1_1"]=new Array("/theCountcount0_SPECSIG","/theCountcount1_SPECSIG","/theCountcount2_SPECSIG","theCountcount3_SPECSIG","/theCountcount4_SPECSIG","/theCountcount5_SPECSIG","theCountcount6_SPECSIG","State_machinestate_FSM_FFd3_SPECSIG","theCountcount7_SPECSIG","/theCountcount8_SPECSIG");
+          
+            pterms["FB1_2"]=new Array("State_machinestate_FSM_FFd4_SPECSIG","/theCountcount0_SPECSIG","/theCountcount1_SPECSIG","/theCountcount2_SPECSIG","theCountcount3_SPECSIG","/theCountcount4_SPECSIG","/theCountcount5_SPECSIG","theCountcount6_SPECSIG","theCountcount7_SPECSIG","/theCountcount8_SPECSIG");
+          
+            pterms["FB1_3"]=new Array("theCountcount0_SPECSIG","theCountcount1_SPECSIG","theCountcount2_SPECSIG");
+          
+            pterms["FB1_4"]=new Array("/theCountcount0_SPECSIG","State_machinestate_FSM_FFd2_SPECSIG","/theCountcount1_SPECSIG","theCountcount2_SPECSIG","theCountcount3_SPECSIG","/theCountcount4_SPECSIG","theCountcount5_SPECSIG","/theCountcount6_SPECSIG","/theCountcount7_SPECSIG","theCountcount8_SPECSIG");
+          
+            pterms["FB1_5"]=new Array("/theCountcount0_SPECSIG","/theCountcount1_SPECSIG","theCountcount2_SPECSIG","theCountcount3_SPECSIG","/theCountcount4_SPECSIG","theCountcount5_SPECSIG","/theCountcount6_SPECSIG","/theCountcount7_SPECSIG","theCountcount8_SPECSIG","State_machinestate_FSM_FFd6_SPECSIG");
+          
+            pterms["FB1_6"]=new Array("/theCountcount0_SPECSIG","/theCountcount1_SPECSIG","theCountcount2_SPECSIG","/theCountcount3_SPECSIG","/theCountcount4_SPECSIG","theCountcount5_SPECSIG","theCountcount6_SPECSIG","/theCountcount7_SPECSIG","/theCountcount8_SPECSIG","State_machinestate_FSM_FFd1_SPECSIG");
+          
+            pterms["FB1_7"]=new Array("/theCountcount0_SPECSIG","/theCountcount1_SPECSIG","theCountcount2_SPECSIG","/theCountcount3_SPECSIG","/theCountcount4_SPECSIG","theCountcount5_SPECSIG","theCountcount6_SPECSIG","/theCountcount7_SPECSIG","/theCountcount8_SPECSIG","State_machinestate_FSM_FFd5_SPECSIG");
+          
+            pterms["FB1_8"]=new Array("theCountcount0_SPECSIG","theCountcount1_SPECSIG");
+          
+            pterms["FB1_9"]=new Array("theCountcount0_SPECSIG","theCountcount1_SPECSIG","theCountcount2_SPECSIG","theCountcount3_SPECSIG","theCountcount4_SPECSIG");
+          
+            pterms["FB1_10"]=new Array("/State_machinestate_FSM_FFd4_SPECSIG","/PedEW_sync");
+          
+            pterms["FB1_11"]=new Array("theCountcount0_SPECSIG","theCountcount1_SPECSIG","theCountcount2_SPECSIG","theCountcount3_SPECSIG","theCountcount4_SPECSIG","theCountcount5_SPECSIG");
+          
+            pterms["FB1_12"]=new Array("/theCountcount0_SPECSIG","/theCountcount1_SPECSIG","theCountcount2_SPECSIG","/theCountcount3_SPECSIG","/theCountcount4_SPECSIG","theCountcount5_SPECSIG","theCountcount6_SPECSIG","/State_machinestate_FSM_FFd3_SPECSIG","/theCountcount7_SPECSIG","/theCountcount8_SPECSIG","State_machinepedNS_temp_SPECSIG","State_machinestate_FSM_FFd5_SPECSIG");
+          
+            pterms["FB1_13"]=new Array("/State_machinestate_FSM_FFd3_SPECSIG","/PedNS_sync");
+          
+            pterms["FB1_14"]=new Array("/theCountcount0_SPECSIG","State_machinestate_FSM_FFd2_SPECSIG","/State_machinepedEW_temp_SPECSIG","/CarEW_sync","/theCountcount1_SPECSIG","theCountcount2_SPECSIG","theCountcount3_SPECSIG","/theCountcount4_SPECSIG","theCountcount5_SPECSIG","/theCountcount6_SPECSIG","/State_machinestate_FSM_FFd3_SPECSIG","/theCountcount7_SPECSIG","theCountcount8_SPECSIG","State_machinepedNS_temp_SPECSIG");
+          
+            pterms["FB1_15"]=new Array("/theCountcount0_SPECSIG","State_machinestate_FSM_FFd2_SPECSIG","State_machinepedEW_temp_SPECSIG","/theCountcount1_SPECSIG","theCountcount2_SPECSIG","theCountcount3_SPECSIG","/theCountcount4_SPECSIG","theCountcount5_SPECSIG","/theCountcount6_SPECSIG","/theCountcount7_SPECSIG","theCountcount8_SPECSIG");
+          
+            pterms["FB1_16"]=new Array("/theCountcount0_SPECSIG","State_machinestate_FSM_FFd2_SPECSIG","/theCountcount1_SPECSIG","theCountcount2_SPECSIG","theCountcount3_SPECSIG","/theCountcount4_SPECSIG","theCountcount5_SPECSIG","/theCountcount6_SPECSIG","/theCountcount7_SPECSIG","theCountcount8_SPECSIG","State_machinepedNS_temp_SPECSIG");
+          
+            pterms["FB1_17"]=new Array("/theCountcount0_SPECSIG","/State_machinestate_FSM_FFd2_SPECSIG","/theCountcount1_SPECSIG","/theCountcount2_SPECSIG","theCountcount3_SPECSIG","/theCountcount4_SPECSIG","/theCountcount5_SPECSIG","theCountcount6_SPECSIG","State_machinestate_FSM_FFd3_SPECSIG","theCountcount7_SPECSIG","/theCountcount8_SPECSIG");
+          
+            pterms["FB1_18"]=new Array("/theCountcount0_SPECSIG","/State_machinestate_FSM_FFd2_SPECSIG","/theCountcount1_SPECSIG","theCountcount2_SPECSIG","/theCountcount3_SPECSIG","/theCountcount4_SPECSIG","theCountcount5_SPECSIG","theCountcount6_SPECSIG","/theCountcount7_SPECSIG","/theCountcount8_SPECSIG","/State_machinepedNS_temp_SPECSIG","State_machinestate_FSM_FFd5_SPECSIG");
+          
+            pterms["FB1_19"]=new Array("/theCountcount0_SPECSIG","State_machinestate_FSM_FFd2_SPECSIG","CarEW_sync","/theCountcount1_SPECSIG","theCountcount2_SPECSIG","theCountcount3_SPECSIG","/theCountcount4_SPECSIG","theCountcount5_SPECSIG","/theCountcount6_SPECSIG","/theCountcount7_SPECSIG","theCountcount8_SPECSIG");
+          
+            pterms["FB1_20"]=new Array("/State_machinestate_FSM_FFd4_SPECSIG","/theCountcount0_SPECSIG","State_machinepedEW_temp_SPECSIG","/theCountcount1_SPECSIG","theCountcount2_SPECSIG","/theCountcount3_SPECSIG","/theCountcount4_SPECSIG","theCountcount5_SPECSIG","theCountcount6_SPECSIG","/theCountcount7_SPECSIG","/theCountcount8_SPECSIG","State_machinestate_FSM_FFd1_SPECSIG");
+          
+            pterms["FB1_21"]=new Array("/State_machinestate_FSM_FFd4_SPECSIG","/theCountcount0_SPECSIG","State_machinepedEW_temp_SPECSIG","/theCountcount1_SPECSIG","theCountcount2_SPECSIG","theCountcount3_SPECSIG","/theCountcount4_SPECSIG","theCountcount5_SPECSIG","/theCountcount6_SPECSIG","/theCountcount7_SPECSIG","theCountcount8_SPECSIG","State_machinestate_FSM_FFd6_SPECSIG","/State_machinepedNS_temp_SPECSIG","/CarNS_sync");
+          
+            pterms["FB1_22"]=new Array("/theCountcount0_SPECSIG","State_machinepedEW_temp_SPECSIG","/theCountcount1_SPECSIG","theCountcount2_SPECSIG","theCountcount3_SPECSIG","/theCountcount4_SPECSIG","theCountcount5_SPECSIG","/theCountcount6_SPECSIG","/theCountcount7_SPECSIG","theCountcount8_SPECSIG","State_machinestate_FSM_FFd6_SPECSIG");
+          
+            pterms["FB1_23"]=new Array("/theCountcount0_SPECSIG","/theCountcount1_SPECSIG","theCountcount2_SPECSIG","theCountcount3_SPECSIG","/theCountcount4_SPECSIG","theCountcount5_SPECSIG","/theCountcount6_SPECSIG","/theCountcount7_SPECSIG","theCountcount8_SPECSIG","State_machinestate_FSM_FFd6_SPECSIG","State_machinepedNS_temp_SPECSIG");
+          
+            pterms["FB1_24"]=new Array("State_machinestate_FSM_FFd4_SPECSIG","/theCountcount0_SPECSIG","/theCountcount1_SPECSIG","/theCountcount2_SPECSIG","theCountcount3_SPECSIG","/theCountcount4_SPECSIG","/theCountcount5_SPECSIG","theCountcount6_SPECSIG","theCountcount7_SPECSIG","/theCountcount8_SPECSIG","/State_machinestate_FSM_FFd6_SPECSIG");
+          
+            pterms["FB1_25"]=new Array("/theCountcount0_SPECSIG","/State_machinepedEW_temp_SPECSIG","/theCountcount1_SPECSIG","theCountcount2_SPECSIG","/theCountcount3_SPECSIG","/theCountcount4_SPECSIG","theCountcount5_SPECSIG","theCountcount6_SPECSIG","/theCountcount7_SPECSIG","/theCountcount8_SPECSIG","/State_machinestate_FSM_FFd6_SPECSIG","State_machinestate_FSM_FFd1_SPECSIG");
+          
+            pterms["FB1_26"]=new Array("/theCountcount0_SPECSIG","/theCountcount1_SPECSIG","theCountcount2_SPECSIG","theCountcount3_SPECSIG","/theCountcount4_SPECSIG","theCountcount5_SPECSIG","/theCountcount6_SPECSIG","/theCountcount7_SPECSIG","theCountcount8_SPECSIG","State_machinestate_FSM_FFd6_SPECSIG","CarNS_sync");
+          
+            pterms["FB1_52"]=new Array("theCountcount0_SPECSIG","theCountcount1_SPECSIG","theCountcount2_SPECSIG","theCountcount3_SPECSIG");
+          
+            pterms["FB1_55"]=new Array("theCountcount0_SPECSIG");
+          
+            pterms["FB2_0"]=new Array("theCountcount0_SPECSIG","theCountcount1_SPECSIG","theCountcount2_SPECSIG","theCountcount3_SPECSIG","theCountcount4_SPECSIG","theCountcount5_SPECSIG","theCountcount6_SPECSIG","theCountcount7_SPECSIG");
+          
+            pterms["FB2_1"]=new Array("/theCountcount0_SPECSIG","State_machinestate_FSM_FFd2_SPECSIG","/theCountcount1_SPECSIG","theCountcount2_SPECSIG","theCountcount3_SPECSIG","/theCountcount4_SPECSIG","theCountcount5_SPECSIG","/theCountcount6_SPECSIG","/theCountcount7_SPECSIG","theCountcount8_SPECSIG");
+          
+            pterms["FB2_2"]=new Array("/theCountcount0_SPECSIG","/theCountcount1_SPECSIG","theCountcount2_SPECSIG","theCountcount3_SPECSIG","/theCountcount4_SPECSIG","theCountcount5_SPECSIG","/theCountcount6_SPECSIG","/theCountcount7_SPECSIG","theCountcount8_SPECSIG","State_machinestate_FSM_FFd6_SPECSIG");
+          
+            pterms["FB2_3"]=new Array("/theCountcount0_SPECSIG","State_machinestate_FSM_FFd2_SPECSIG","State_machinepedEW_temp_SPECSIG","/theCountcount1_SPECSIG","theCountcount2_SPECSIG","theCountcount3_SPECSIG","/theCountcount4_SPECSIG","theCountcount5_SPECSIG","/theCountcount6_SPECSIG","/theCountcount7_SPECSIG","theCountcount8_SPECSIG","/State_machinestate_FSM_FFd1_SPECSIG");
+          
+            pterms["FB2_4"]=new Array("/theCountcount0_SPECSIG","/theCountcount1_SPECSIG","theCountcount2_SPECSIG","/theCountcount3_SPECSIG","/theCountcount4_SPECSIG","theCountcount5_SPECSIG","theCountcount6_SPECSIG","/theCountcount7_SPECSIG","/theCountcount8_SPECSIG","State_machinestate_FSM_FFd1_SPECSIG");
+          
+            pterms["FB2_5"]=new Array("/theCountcount0_SPECSIG","State_machinestate_FSM_FFd2_SPECSIG","CarEW_sync","/theCountcount1_SPECSIG","theCountcount2_SPECSIG","theCountcount3_SPECSIG","/theCountcount4_SPECSIG","theCountcount5_SPECSIG","/theCountcount6_SPECSIG","/theCountcount7_SPECSIG","theCountcount8_SPECSIG","/State_machinestate_FSM_FFd1_SPECSIG");
+          
+            pterms["FB2_6"]=new Array("/theCountcount0_SPECSIG","/theCountcount1_SPECSIG","theCountcount2_SPECSIG","theCountcount3_SPECSIG","/theCountcount4_SPECSIG","theCountcount5_SPECSIG","/theCountcount6_SPECSIG","/theCountcount7_SPECSIG","theCountcount8_SPECSIG","State_machinestate_FSM_FFd6_SPECSIG","State_machinepedNS_temp_SPECSIG","/State_machinestate_FSM_FFd5_SPECSIG");
+          
+            pterms["FB2_7"]=new Array("/theCountcount0_SPECSIG","/theCountcount1_SPECSIG","theCountcount2_SPECSIG","/theCountcount3_SPECSIG","/theCountcount4_SPECSIG","theCountcount5_SPECSIG","theCountcount6_SPECSIG","/theCountcount7_SPECSIG","/theCountcount8_SPECSIG","State_machinestate_FSM_FFd5_SPECSIG");
+          
+            pterms["FB2_8"]=new Array("/theCountcount0_SPECSIG","/theCountcount1_SPECSIG","theCountcount2_SPECSIG","theCountcount3_SPECSIG","/theCountcount4_SPECSIG","theCountcount5_SPECSIG","/theCountcount6_SPECSIG","/theCountcount7_SPECSIG","theCountcount8_SPECSIG","State_machinestate_FSM_FFd6_SPECSIG","CarNS_sync","/State_machinestate_FSM_FFd5_SPECSIG");
+          
+            pterms["FB2_9"]=new Array("PedEW_sync");
+          
+            pterms["FB2_10"]=new Array("/State_machinestate_FSM_FFd4_SPECSIG","/State_machinestate_FSM_FFd5_SPECSIG");
+          
+            pterms["FB2_11"]=new Array("PedNS_sync");
+          
+            pterms["FB2_13"]=new Array("/State_machinestate_FSM_FFd4_SPECSIG","/State_machinestate_FSM_FFd6_SPECSIG");
+          
+            pterms["FB2_22"]=new Array("/State_machinestate_FSM_FFd3_SPECSIG","/State_machinestate_FSM_FFd1_SPECSIG");
+          
+            pterms["FB2_25"]=new Array("/State_machinestate_FSM_FFd2_SPECSIG","/State_machinestate_FSM_FFd3_SPECSIG");
+          
+            pterms["FB2_34"]=new Array("/CarNS_syncCOMB_SPECSIG");
+          
+            pterms["FB2_40"]=new Array("/CarEW_syncCOMB_SPECSIG");
+          
+            pterms["FB2_46"]=new Array("Reset");
+          
+              gblclk["CarEW_sync"]=new Array("Clock");
+            
+              gblrst["CarEW_sync"]=new Array("Reset");
+            prld["CarEW_sync"]="GND";
+          inreg["CarEW_sync"]=new Array("CarEW");
+        
+              gblclk["CarNS_sync"]=new Array("Clock");
+            
+              gblrst["CarNS_sync"]=new Array("Reset");
+            prld["CarNS_sync"]="GND";
+          inreg["CarNS_sync"]=new Array("CarNS");
+        
+              gblclk["PedEW_sync"]=new Array("Clock");
+            
+              gblrst["PedEW_sync"]=new Array("Reset");
+            prld["PedEW_sync"]="GND";
+          inreg["PedEW_sync"]=new Array("PedEW");
+        
+          d2["theCountcount6_SPECSIG"]=new Array("FB1_11","FB1_2","FB1_6","FB1_7","FB1_1");
+          
+              gblclk["theCountcount6_SPECSIG"]=new Array("Clock");
+            
+              gblrst["theCountcount6_SPECSIG"]=new Array("Reset");
+            prld["theCountcount6_SPECSIG"]="GND";
+          d2["theCountcount5_SPECSIG"]=new Array("FB1_9","FB1_4","FB1_5","FB1_6","FB1_7");
+          
+              gblclk["theCountcount5_SPECSIG"]=new Array("Clock");
+            
+              gblrst["theCountcount5_SPECSIG"]=new Array("Reset");
+            prld["theCountcount5_SPECSIG"]="GND";
+          d2["theCountcount2_SPECSIG"]=new Array("FB1_8","FB1_4","FB1_5","FB1_6","FB1_7");
+          
+              gblclk["theCountcount2_SPECSIG"]=new Array("Clock");
+            
+              gblrst["theCountcount2_SPECSIG"]=new Array("Reset");
+            prld["theCountcount2_SPECSIG"]="GND";
+          d2["theCountcount0_SPECSIG"]=new Array("FB1_2","FB1_4","FB1_5","FB1_6","FB1_7","FB1_1");
+          
+              gblclk["theCountcount0_SPECSIG"]=new Array("Clock");
+            
+              gblrst["theCountcount0_SPECSIG"]=new Array("Reset");
+            prld["theCountcount0_SPECSIG"]="GND";
+          d2["theCountcount3_SPECSIG"]=new Array("FB1_3","FB1_2","FB1_4","FB1_5","FB1_1");
+          
+              gblclk["theCountcount3_SPECSIG"]=new Array("Clock");
+            
+              gblrst["theCountcount3_SPECSIG"]=new Array("Reset");
+            prld["theCountcount3_SPECSIG"]="GND";
+              gblclk["PedNS_sync"]=new Array("Clock");
+            
+              gblrst["PedNS_sync"]=new Array("Reset");
+            prld["PedNS_sync"]="GND";
+          inreg["PedNS_sync"]=new Array("PedNS");
+        
+          d2["State_machinestate_FSM_FFd6_SPECSIG"]=new Array("FB1_24","FB1_22","FB1_23","FB1_26","FB1_25");
+          
+              gblclk["State_machinestate_FSM_FFd6_SPECSIG"]=new Array("Clock");
+            
+              gblset["State_machinestate_FSM_FFd6_SPECSIG"]=new Array("Reset");
+            prld["State_machinestate_FSM_FFd6_SPECSIG"]="VCC";
+          d2["State_machinestate_FSM_FFd4_SPECSIG"]=new Array("FB1_2","FB1_20","FB1_21");
+          
+              gblclk["State_machinestate_FSM_FFd4_SPECSIG"]=new Array("Clock");
+            
+              gblrst["State_machinestate_FSM_FFd4_SPECSIG"]=new Array("Reset");
+            prld["State_machinestate_FSM_FFd4_SPECSIG"]="GND";
+          d2["State_machinestate_FSM_FFd2_SPECSIG"]=new Array("FB1_15","FB1_19","FB1_16","FB1_17","FB1_18");
+          
+              gblclk["State_machinestate_FSM_FFd2_SPECSIG"]=new Array("Clock");
+            
+              gblrst["State_machinestate_FSM_FFd2_SPECSIG"]=new Array("Reset");
+            prld["State_machinestate_FSM_FFd2_SPECSIG"]="GND";
+          d2["State_machinestate_FSM_FFd3_SPECSIG"]=new Array("FB1_1","FB1_12","FB1_14");
+          
+              gblclk["State_machinestate_FSM_FFd3_SPECSIG"]=new Array("Clock");
+            
+              gblrst["State_machinestate_FSM_FFd3_SPECSIG"]=new Array("Reset");
+            prld["State_machinestate_FSM_FFd3_SPECSIG"]="GND";
+          d2["theCountcount7_SPECSIG"]=new Array("FB1_0","FB1_2","FB1_1");
+          
+              gblclk["theCountcount7_SPECSIG"]=new Array("Clock");
+            
+              gblrst["theCountcount7_SPECSIG"]=new Array("Reset");
+            prld["theCountcount7_SPECSIG"]="GND";
+          d1["theCountcount4_SPECSIG"]=new Array("FB1_52");
+          
+              gblclk["theCountcount4_SPECSIG"]=new Array("Clock");
+            
+              gblrst["theCountcount4_SPECSIG"]=new Array("Reset");
+            prld["theCountcount4_SPECSIG"]="GND";
+          d1["theCountcount1_SPECSIG"]=new Array("FB1_55");
+          
+              gblclk["theCountcount1_SPECSIG"]=new Array("Clock");
+            
+              gblrst["theCountcount1_SPECSIG"]=new Array("Reset");
+            prld["theCountcount1_SPECSIG"]="GND";
+          d1["CarEW_syncCOMB_SPECSIG"]=new Array("FB1_10");
+          
+          d1["CarNS_syncCOMB_SPECSIG"]=new Array("FB1_13");
+          
+          d1["LightsEW0_SPECSIG"]=new Array("FB2_10");
+          
+          d1["LightsEW1_SPECSIG"]=new Array("FB2_13");
+          
+          d1["LightsNS0_SPECSIG"]=new Array("FB2_22");
+          
+          d1["LightsNS1_SPECSIG"]=new Array("FB2_25");
+          
+          d2["LEDs0_SPECSIG"]=new Array("GND");
+          
+          d2["State_machinepedNS_temp_SPECSIG"]=new Array("FB2_11");
+          
+              gblclk["State_machinepedNS_temp_SPECSIG"]=new Array("Clock");
+            
+              gblrst["State_machinepedNS_temp_SPECSIG"]=new Array("Reset");
+            
+          ce["State_machinepedNS_temp_SPECSIG"]=new Array("FB2_34");
+          prld["State_machinepedNS_temp_SPECSIG"]="GND";
+          d2["LEDs1_SPECSIG"]=new Array("GND");
+          
+          d2["State_machinepedEW_temp_SPECSIG"]=new Array("FB2_9");
+          
+              gblclk["State_machinepedEW_temp_SPECSIG"]=new Array("Clock");
+            
+              gblrst["State_machinepedEW_temp_SPECSIG"]=new Array("Reset");
+            
+          ce["State_machinepedEW_temp_SPECSIG"]=new Array("FB2_40");
+          prld["State_machinepedEW_temp_SPECSIG"]="GND";
+          d2["LEDs2_SPECSIG"]=new Array("GND");
+          
+          d1["debugLED"]=new Array("FB2_46");
+          
+          d2["State_machinestate_FSM_FFd5_SPECSIG"]=new Array("FB2_7","FB2_6","FB2_8");
+          
+              gblclk["State_machinestate_FSM_FFd5_SPECSIG"]=new Array("Clock");
+            
+              gblrst["State_machinestate_FSM_FFd5_SPECSIG"]=new Array("Reset");
+            prld["State_machinestate_FSM_FFd5_SPECSIG"]="GND";
+          d2["State_machinestate_FSM_FFd1_SPECSIG"]=new Array("FB2_4","FB2_3","FB2_5");
+          
+              gblclk["State_machinestate_FSM_FFd1_SPECSIG"]=new Array("Clock");
+            
+              gblrst["State_machinestate_FSM_FFd1_SPECSIG"]=new Array("Reset");
+            prld["State_machinestate_FSM_FFd1_SPECSIG"]="GND";
+          d2["theCountcount8_SPECSIG"]=new Array("FB2_0","FB2_1","FB2_2");
+          
+              gblclk["theCountcount8_SPECSIG"]=new Array("Clock");
+            
+              gblrst["theCountcount8_SPECSIG"]=new Array("Reset");
+            prld["theCountcount8_SPECSIG"]="GND";
+
+      uimSignals = new Array();
+
+      uimSigNegs = new Array();
+
+      uimPterms = new Array();
+      
+
+      
+        function getEqnList() {
+          var str = "<html><head><link type='text/css' href='style.css' rel='stylesheet'></head><body class='pgBgnd'>";
+          str += "<center><h3>Equations</h3></center>";
+          str += "<table width='90%' align='center' border='1' cellpadding='0' cellspacing='0'>";
+          for (s=0; s<uimSignals.length; s++) {
+            str += "<tr><td>";
+            str += retUimEqn(uimSignals[s]);
+            str += "</td></tr>";
+          }
+          for (s=0; s<signals.length; s++) {
+            str += "<tr><td>";
+            str += retEqn(signals[s]);
+            str += "</td></tr>";
+          }
+
+          var legend = retLegend();
+		      if (legend != "") {
+		        str += "<tr><td>" + legend + "</td></tr>";
+		      }
+
+          str += "</table>";
+          str += "<form><span class='pgRef'>";
+
+          if (!parent.leftnav.IsNS()) {
+            str += "<table width='90%' align='center'>";
+            str += "<tr><td align='left'><input type='button' value='back to top' ";
+            str += "onclick='javascript:parent.leftnav.showEqnAll()' ";
+            str += "onmouseover=\"window.status='goto top of page'; return true;\" ";
+            str += "onmouseout=\"window.status=''\">";
+            str += "</td>";
+            str += "<td align='right'>";
+            str += "<input type='button' value='print page' ";
+            str += "onclick='javascript:window.print()' ";
+            str += "onmouseover=\"window.status='print page'; return true;\" ";
+            str += "onmouseout=\"window.status=''\">";
+            str += "</td>";
+            str += "</tr></table>";
+          }
+          else {
+            str += "<table width='90%' align='center'>";
+            str += "<tr><td align='left'><a href='javascript:parent.leftnav.showEqnAll()'>back to top</a>";
+            str += "</td>";
+            str += "<td align='right'>";
+            str += "<a href='javascript:window.print()'>";
+            str += "print page</a>";
+            str += "</td>";
+            str += "</tr></table>";
+          }
+
+          str += "</span></form>";
+          str += "</body></html>";
+          return str;
+        }
+      
+    </script>
+</head></html>

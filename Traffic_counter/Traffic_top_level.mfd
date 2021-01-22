@@ -1,0 +1,517 @@
+MDF Database:  version 1.0
+MDF_INFO | Traffic_top_level | XC2C64A-7-VQ44
+MACROCELL | 1 | 7 | LEDs<0>_MC
+ATTRIBUTES | 1074004738 | 0
+INPUTS | 0
+EQ | 1 | 
+   LEDs<0> = Gnd;	// (0 pt, 0 inp)
+
+MACROCELL | 1 | 9 | LEDs<1>_MC
+ATTRIBUTES | 1074004738 | 0
+INPUTS | 0
+EQ | 1 | 
+   LEDs<1> = Gnd;	// (0 pt, 0 inp)
+
+MACROCELL | 1 | 11 | LEDs<2>_MC
+ATTRIBUTES | 1074004738 | 0
+INPUTS | 0
+EQ | 1 | 
+   LEDs<2> = Gnd;	// (0 pt, 0 inp)
+
+MACROCELL | 1 | 0 | LightsEW<0>_MC
+ATTRIBUTES | 1074004738 | 0
+INPUTS | 2 | State_machine/state_FSM_FFd4  | State_machine/state_FSM_FFd5
+INPUTMC | 2 | 0 | 10 | 1 | 13
+EQ | 2 | 
+   !LightsEW<0> = !State_machine/state_FSM_FFd4 & 
+	!State_machine/state_FSM_FFd5;	// (1 pt, 2 inp)
+
+MACROCELL | 0 | 10 | State_machine/state_FSM_FFd4_MC
+ATTRIBUTES | 2185265920 | 0
+OUTPUTMC | 9 | 0 | 9 | 0 | 13 | 0 | 3 | 0 | 7 | 0 | 6 | 0 | 10 | 1 | 0 | 1 | 1 | 0 | 0
+INPUTS | 15 | State_machine/state_FSM_FFd4  | theCount/count<0>  | theCount/count<1>  | theCount/count<2>  | theCount/count<3>  | theCount/count<4>  | theCount/count<5>  | theCount/count<6>  | theCount/count<7>  | theCount/count<8>  | State_machine/pedEW_temp  | State_machine/state_FSM_FFd1  | State_machine/state_FSM_FFd6  | State_machine/pedNS_temp  | CarNS_sync
+INPUTMC | 15 | 0 | 10 | 0 | 6 | 0 | 15 | 0 | 5 | 0 | 7 | 0 | 14 | 0 | 4 | 0 | 3 | 0 | 13 | 1 | 15 | 1 | 10 | 1 | 14 | 0 | 9 | 1 | 8 | 0 | 1
+EQ | 16 | 
+   State_machine/state_FSM_FFd4.T := State_machine/state_FSM_FFd4 & !theCount/count<0> & 
+	!theCount/count<1> & !theCount/count<2> & theCount/count<3> & 
+	!theCount/count<4> & !theCount/count<5> & theCount/count<6> & 
+	theCount/count<7> & !theCount/count<8>
+	# !State_machine/state_FSM_FFd4 & !theCount/count<0> & 
+	State_machine/pedEW_temp & !theCount/count<1> & theCount/count<2> & 
+	!theCount/count<3> & !theCount/count<4> & theCount/count<5> & 
+	theCount/count<6> & !theCount/count<7> & !theCount/count<8> & 
+	State_machine/state_FSM_FFd1
+	# !State_machine/state_FSM_FFd4 & !theCount/count<0> & 
+	State_machine/pedEW_temp & !theCount/count<1> & theCount/count<2> & 
+	theCount/count<3> & !theCount/count<4> & theCount/count<5> & 
+	!theCount/count<6> & !theCount/count<7> & theCount/count<8> & 
+	State_machine/state_FSM_FFd6 & !State_machine/pedNS_temp & !CarNS_sync;	// (3 pt, 15 inp)
+   State_machine/state_FSM_FFd4.CLK  =  Clock;	// GCK	(0 pt, 0 inp)
+   State_machine/state_FSM_FFd4.AR = Reset;	// GSR	(0 pt, 0 inp)
+GLOBALS | 2 | 2 | Clock | 4 | Reset
+
+MACROCELL | 0 | 6 | theCount/count<0>_MC
+ATTRIBUTES | 2185265920 | 0
+OUTPUTMC | 15 | 0 | 15 | 0 | 14 | 1 | 14 | 0 | 9 | 1 | 15 | 0 | 13 | 1 | 13 | 0 | 12 | 0 | 3 | 0 | 4 | 0 | 7 | 0 | 5 | 0 | 11 | 0 | 6 | 0 | 10
+INPUTS | 15 | State_machine/state_FSM_FFd4  | theCount/count<0>  | theCount/count<1>  | theCount/count<2>  | theCount/count<3>  | theCount/count<4>  | theCount/count<5>  | theCount/count<6>  | theCount/count<7>  | theCount/count<8>  | State_machine/state_FSM_FFd2  | State_machine/state_FSM_FFd6  | State_machine/state_FSM_FFd1  | State_machine/state_FSM_FFd5  | State_machine/state_FSM_FFd3
+INPUTMC | 15 | 0 | 10 | 0 | 6 | 0 | 15 | 0 | 5 | 0 | 7 | 0 | 14 | 0 | 4 | 0 | 3 | 0 | 13 | 1 | 15 | 0 | 11 | 0 | 9 | 1 | 14 | 1 | 13 | 0 | 12
+EQ | 26 | 
+   !theCount/count<0>.T := State_machine/state_FSM_FFd4 & !theCount/count<0> & 
+	!theCount/count<1> & !theCount/count<2> & theCount/count<3> & 
+	!theCount/count<4> & !theCount/count<5> & theCount/count<6> & 
+	theCount/count<7> & !theCount/count<8>
+	# !theCount/count<0> & State_machine/state_FSM_FFd2 & 
+	!theCount/count<1> & theCount/count<2> & theCount/count<3> & 
+	!theCount/count<4> & theCount/count<5> & !theCount/count<6> & 
+	!theCount/count<7> & theCount/count<8>
+	# !theCount/count<0> & !theCount/count<1> & 
+	theCount/count<2> & theCount/count<3> & !theCount/count<4> & 
+	theCount/count<5> & !theCount/count<6> & !theCount/count<7> & 
+	theCount/count<8> & State_machine/state_FSM_FFd6
+	# !theCount/count<0> & !theCount/count<1> & 
+	theCount/count<2> & !theCount/count<3> & !theCount/count<4> & 
+	theCount/count<5> & theCount/count<6> & !theCount/count<7> & 
+	!theCount/count<8> & State_machine/state_FSM_FFd1
+	# !theCount/count<0> & !theCount/count<1> & 
+	theCount/count<2> & !theCount/count<3> & !theCount/count<4> & 
+	theCount/count<5> & theCount/count<6> & !theCount/count<7> & 
+	!theCount/count<8> & State_machine/state_FSM_FFd5
+	# !theCount/count<0> & !theCount/count<1> & 
+	!theCount/count<2> & theCount/count<3> & !theCount/count<4> & 
+	!theCount/count<5> & theCount/count<6> & State_machine/state_FSM_FFd3 & 
+	theCount/count<7> & !theCount/count<8>;	// (6 pt, 15 inp)
+   theCount/count<0>.CLK  =  Clock;	// GCK	(0 pt, 0 inp)
+   theCount/count<0>.AR = Reset;	// GSR	(0 pt, 0 inp)
+GLOBALS | 2 | 2 | Clock | 4 | Reset
+
+MACROCELL | 0 | 11 | State_machine/state_FSM_FFd2_MC
+ATTRIBUTES | 2185265920 | 0
+OUTPUTMC | 9 | 1 | 14 | 1 | 15 | 0 | 12 | 0 | 4 | 0 | 7 | 0 | 5 | 0 | 11 | 0 | 6 | 1 | 5
+INPUTS | 15 | theCount/count<0>  | State_machine/state_FSM_FFd2  | State_machine/pedEW_temp  | theCount/count<1>  | theCount/count<2>  | theCount/count<3>  | theCount/count<4>  | theCount/count<5>  | theCount/count<6>  | theCount/count<7>  | theCount/count<8>  | CarEW_sync  | State_machine/pedNS_temp  | State_machine/state_FSM_FFd3  | State_machine/state_FSM_FFd5
+INPUTMC | 15 | 0 | 6 | 0 | 11 | 1 | 10 | 0 | 15 | 0 | 5 | 0 | 7 | 0 | 14 | 0 | 4 | 0 | 3 | 0 | 13 | 1 | 15 | 0 | 0 | 1 | 8 | 0 | 12 | 1 | 13
+EQ | 23 | 
+   State_machine/state_FSM_FFd2.T := !theCount/count<0> & State_machine/state_FSM_FFd2 & 
+	State_machine/pedEW_temp & !theCount/count<1> & theCount/count<2> & 
+	theCount/count<3> & !theCount/count<4> & theCount/count<5> & 
+	!theCount/count<6> & !theCount/count<7> & theCount/count<8>
+	# !theCount/count<0> & State_machine/state_FSM_FFd2 & 
+	CarEW_sync & !theCount/count<1> & theCount/count<2> & 
+	theCount/count<3> & !theCount/count<4> & theCount/count<5> & 
+	!theCount/count<6> & !theCount/count<7> & theCount/count<8>
+	# !theCount/count<0> & State_machine/state_FSM_FFd2 & 
+	!theCount/count<1> & theCount/count<2> & theCount/count<3> & 
+	!theCount/count<4> & theCount/count<5> & !theCount/count<6> & 
+	!theCount/count<7> & theCount/count<8> & State_machine/pedNS_temp
+	# !theCount/count<0> & !State_machine/state_FSM_FFd2 & 
+	!theCount/count<1> & !theCount/count<2> & theCount/count<3> & 
+	!theCount/count<4> & !theCount/count<5> & theCount/count<6> & 
+	State_machine/state_FSM_FFd3 & theCount/count<7> & !theCount/count<8>
+	# !theCount/count<0> & !State_machine/state_FSM_FFd2 & 
+	!theCount/count<1> & theCount/count<2> & !theCount/count<3> & 
+	!theCount/count<4> & theCount/count<5> & theCount/count<6> & 
+	!theCount/count<7> & !theCount/count<8> & !State_machine/pedNS_temp & 
+	State_machine/state_FSM_FFd5;	// (5 pt, 15 inp)
+   State_machine/state_FSM_FFd2.CLK  =  Clock;	// GCK	(0 pt, 0 inp)
+   State_machine/state_FSM_FFd2.AR = Reset;	// GSR	(0 pt, 0 inp)
+GLOBALS | 2 | 2 | Clock | 4 | Reset
+
+MACROCELL | 1 | 10 | State_machine/pedEW_temp_MC
+ATTRIBUTES | 2189460288 | 0
+OUTPUTMC | 5 | 1 | 14 | 0 | 9 | 0 | 12 | 0 | 11 | 0 | 10
+INPUTS | 2 | PedEW_sync  | CarEW_sync.COMB
+INPUTMC | 2 | 0 | 2 | 0 | 0
+EQ | 4 | 
+   State_machine/pedEW_temp := PedEW_sync;	// (1 pt, 1 inp)
+   State_machine/pedEW_temp.CLK  =  Clock;	// GCK	(0 pt, 0 inp)
+    State_machine/pedEW_temp.CE = !CarEW_sync.COMB;	// (1 pt, 1 inp)
+   State_machine/pedEW_temp.AR = Reset;	// GSR	(0 pt, 0 inp)
+GLOBALS | 2 | 2 | Clock | 4 | Reset
+
+MACROCELL | 0 | 2 | PedEW_sync_MC
+ATTRIBUTES | 2189459456 | 4
+OUTPUTMC | 2 | 1 | 10 | 0 | 0
+INPUTS | 0 
+EQ | 5 | 
+   
+// Direct Input Register
+PedEW_sync := PedEW;	// (0 pt, 0 inp)
+   PedEW_sync.CLK  =  Clock;	// GCK	(0 pt, 0 inp)
+   PedEW_sync.AR = Reset;	// GSR	(0 pt, 0 inp)
+GLOBALS | 2 | 2 | Clock | 4 | Reset
+
+MACROCELL | 0 | 0 | CarEW_sync_MC
+ATTRIBUTES | 578847488 | 5
+OUTPUTMC | 4 | 1 | 14 | 0 | 12 | 0 | 11 | 1 | 10
+INPUTS | 2 | State_machine/state_FSM_FFd4  | PedEW_sync
+INPUTMC | 2 | 0 | 10 | 0 | 2
+EQ | 5 | 
+   CarEW_sync.COMB =  !State_machine/state_FSM_FFd4 & !PedEW_sync;	// (1 pt, 2 inp)
+// Direct Input Register
+CarEW_sync := CarEW;	// (0 pt, 0 inp)
+   CarEW_sync.CLK  =  Clock;	// GCK	(0 pt, 0 inp)
+   CarEW_sync.AR = Reset;	// GSR	(0 pt, 0 inp)
+GLOBALS | 2 | 2 | Clock | 4 | Reset
+
+MACROCELL | 0 | 15 | theCount/count<1>_MC
+ATTRIBUTES | 2185265920 | 0
+OUTPUTMC | 14 | 0 | 14 | 1 | 14 | 0 | 9 | 1 | 15 | 0 | 13 | 1 | 13 | 0 | 12 | 0 | 3 | 0 | 4 | 0 | 7 | 0 | 5 | 0 | 11 | 0 | 6 | 0 | 10
+INPUTS | 1 | theCount/count<0>
+INPUTMC | 1 | 0 | 6
+EQ | 3 | 
+   theCount/count<1>.T := theCount/count<0>;	// (1 pt, 1 inp)
+   theCount/count<1>.CLK  =  Clock;	// GCK	(0 pt, 0 inp)
+   theCount/count<1>.AR = Reset;	// GSR	(0 pt, 0 inp)
+GLOBALS | 2 | 2 | Clock | 4 | Reset
+
+MACROCELL | 0 | 5 | theCount/count<2>_MC
+ATTRIBUTES | 2185265920 | 0
+OUTPUTMC | 14 | 0 | 14 | 1 | 14 | 0 | 9 | 1 | 15 | 0 | 13 | 1 | 13 | 0 | 12 | 0 | 3 | 0 | 4 | 0 | 7 | 0 | 5 | 0 | 11 | 0 | 6 | 0 | 10
+INPUTS | 13 | theCount/count<0>  | theCount/count<1>  | State_machine/state_FSM_FFd2  | theCount/count<2>  | theCount/count<3>  | theCount/count<4>  | theCount/count<5>  | theCount/count<6>  | theCount/count<7>  | theCount/count<8>  | State_machine/state_FSM_FFd6  | State_machine/state_FSM_FFd1  | State_machine/state_FSM_FFd5
+INPUTMC | 13 | 0 | 6 | 0 | 15 | 0 | 11 | 0 | 5 | 0 | 7 | 0 | 14 | 0 | 4 | 0 | 3 | 0 | 13 | 1 | 15 | 0 | 9 | 1 | 14 | 1 | 13
+EQ | 19 | 
+   theCount/count<2>.T := theCount/count<0> & theCount/count<1>
+	# !theCount/count<0> & State_machine/state_FSM_FFd2 & 
+	!theCount/count<1> & theCount/count<2> & theCount/count<3> & 
+	!theCount/count<4> & theCount/count<5> & !theCount/count<6> & 
+	!theCount/count<7> & theCount/count<8>
+	# !theCount/count<0> & !theCount/count<1> & 
+	theCount/count<2> & theCount/count<3> & !theCount/count<4> & 
+	theCount/count<5> & !theCount/count<6> & !theCount/count<7> & 
+	theCount/count<8> & State_machine/state_FSM_FFd6
+	# !theCount/count<0> & !theCount/count<1> & 
+	theCount/count<2> & !theCount/count<3> & !theCount/count<4> & 
+	theCount/count<5> & theCount/count<6> & !theCount/count<7> & 
+	!theCount/count<8> & State_machine/state_FSM_FFd1
+	# !theCount/count<0> & !theCount/count<1> & 
+	theCount/count<2> & !theCount/count<3> & !theCount/count<4> & 
+	theCount/count<5> & theCount/count<6> & !theCount/count<7> & 
+	!theCount/count<8> & State_machine/state_FSM_FFd5;	// (5 pt, 13 inp)
+   theCount/count<2>.CLK  =  Clock;	// GCK	(0 pt, 0 inp)
+   theCount/count<2>.AR = Reset;	// GSR	(0 pt, 0 inp)
+GLOBALS | 2 | 2 | Clock | 4 | Reset
+
+MACROCELL | 0 | 7 | theCount/count<3>_MC
+ATTRIBUTES | 2185265920 | 0
+OUTPUTMC | 14 | 0 | 14 | 1 | 14 | 0 | 9 | 1 | 15 | 0 | 13 | 1 | 13 | 0 | 12 | 0 | 3 | 0 | 4 | 0 | 7 | 0 | 5 | 0 | 11 | 0 | 6 | 0 | 10
+INPUTS | 13 | theCount/count<0>  | theCount/count<1>  | theCount/count<2>  | State_machine/state_FSM_FFd4  | theCount/count<3>  | theCount/count<4>  | theCount/count<5>  | theCount/count<6>  | theCount/count<7>  | theCount/count<8>  | State_machine/state_FSM_FFd2  | State_machine/state_FSM_FFd6  | State_machine/state_FSM_FFd3
+INPUTMC | 13 | 0 | 6 | 0 | 15 | 0 | 5 | 0 | 10 | 0 | 7 | 0 | 14 | 0 | 4 | 0 | 3 | 0 | 13 | 1 | 15 | 0 | 11 | 0 | 9 | 0 | 12
+EQ | 20 | 
+   theCount/count<3>.T := theCount/count<0> & theCount/count<1> & 
+	theCount/count<2>
+	# State_machine/state_FSM_FFd4 & !theCount/count<0> & 
+	!theCount/count<1> & !theCount/count<2> & theCount/count<3> & 
+	!theCount/count<4> & !theCount/count<5> & theCount/count<6> & 
+	theCount/count<7> & !theCount/count<8>
+	# !theCount/count<0> & State_machine/state_FSM_FFd2 & 
+	!theCount/count<1> & theCount/count<2> & theCount/count<3> & 
+	!theCount/count<4> & theCount/count<5> & !theCount/count<6> & 
+	!theCount/count<7> & theCount/count<8>
+	# !theCount/count<0> & !theCount/count<1> & 
+	theCount/count<2> & theCount/count<3> & !theCount/count<4> & 
+	theCount/count<5> & !theCount/count<6> & !theCount/count<7> & 
+	theCount/count<8> & State_machine/state_FSM_FFd6
+	# !theCount/count<0> & !theCount/count<1> & 
+	!theCount/count<2> & theCount/count<3> & !theCount/count<4> & 
+	!theCount/count<5> & theCount/count<6> & State_machine/state_FSM_FFd3 & 
+	theCount/count<7> & !theCount/count<8>;	// (5 pt, 13 inp)
+   theCount/count<3>.CLK  =  Clock;	// GCK	(0 pt, 0 inp)
+   theCount/count<3>.AR = Reset;	// GSR	(0 pt, 0 inp)
+GLOBALS | 2 | 2 | Clock | 4 | Reset
+
+MACROCELL | 0 | 14 | theCount/count<4>_MC
+ATTRIBUTES | 2185265920 | 0
+OUTPUTMC | 13 | 1 | 14 | 0 | 9 | 1 | 15 | 0 | 13 | 1 | 13 | 0 | 12 | 0 | 3 | 0 | 4 | 0 | 7 | 0 | 5 | 0 | 11 | 0 | 6 | 0 | 10
+INPUTS | 4 | theCount/count<0>  | theCount/count<1>  | theCount/count<2>  | theCount/count<3>
+INPUTMC | 4 | 0 | 6 | 0 | 15 | 0 | 5 | 0 | 7
+EQ | 4 | 
+   theCount/count<4>.T := theCount/count<0> & theCount/count<1> & 
+	theCount/count<2> & theCount/count<3>;	// (1 pt, 4 inp)
+   theCount/count<4>.CLK  =  Clock;	// GCK	(0 pt, 0 inp)
+   theCount/count<4>.AR = Reset;	// GSR	(0 pt, 0 inp)
+GLOBALS | 2 | 2 | Clock | 4 | Reset
+
+MACROCELL | 0 | 4 | theCount/count<5>_MC
+ATTRIBUTES | 2185265920 | 0
+OUTPUTMC | 13 | 1 | 14 | 0 | 9 | 1 | 15 | 0 | 13 | 1 | 13 | 0 | 12 | 0 | 3 | 0 | 4 | 0 | 7 | 0 | 5 | 0 | 11 | 0 | 6 | 0 | 10
+INPUTS | 13 | theCount/count<0>  | theCount/count<1>  | theCount/count<2>  | theCount/count<3>  | theCount/count<4>  | State_machine/state_FSM_FFd2  | theCount/count<5>  | theCount/count<6>  | theCount/count<7>  | theCount/count<8>  | State_machine/state_FSM_FFd6  | State_machine/state_FSM_FFd1  | State_machine/state_FSM_FFd5
+INPUTMC | 13 | 0 | 6 | 0 | 15 | 0 | 5 | 0 | 7 | 0 | 14 | 0 | 11 | 0 | 4 | 0 | 3 | 0 | 13 | 1 | 15 | 0 | 9 | 1 | 14 | 1 | 13
+EQ | 20 | 
+   theCount/count<5>.T := theCount/count<0> & theCount/count<1> & 
+	theCount/count<2> & theCount/count<3> & theCount/count<4>
+	# !theCount/count<0> & State_machine/state_FSM_FFd2 & 
+	!theCount/count<1> & theCount/count<2> & theCount/count<3> & 
+	!theCount/count<4> & theCount/count<5> & !theCount/count<6> & 
+	!theCount/count<7> & theCount/count<8>
+	# !theCount/count<0> & !theCount/count<1> & 
+	theCount/count<2> & theCount/count<3> & !theCount/count<4> & 
+	theCount/count<5> & !theCount/count<6> & !theCount/count<7> & 
+	theCount/count<8> & State_machine/state_FSM_FFd6
+	# !theCount/count<0> & !theCount/count<1> & 
+	theCount/count<2> & !theCount/count<3> & !theCount/count<4> & 
+	theCount/count<5> & theCount/count<6> & !theCount/count<7> & 
+	!theCount/count<8> & State_machine/state_FSM_FFd1
+	# !theCount/count<0> & !theCount/count<1> & 
+	theCount/count<2> & !theCount/count<3> & !theCount/count<4> & 
+	theCount/count<5> & theCount/count<6> & !theCount/count<7> & 
+	!theCount/count<8> & State_machine/state_FSM_FFd5;	// (5 pt, 13 inp)
+   theCount/count<5>.CLK  =  Clock;	// GCK	(0 pt, 0 inp)
+   theCount/count<5>.AR = Reset;	// GSR	(0 pt, 0 inp)
+GLOBALS | 2 | 2 | Clock | 4 | Reset
+
+MACROCELL | 0 | 3 | theCount/count<6>_MC
+ATTRIBUTES | 2185265920 | 0
+OUTPUTMC | 13 | 1 | 14 | 0 | 9 | 1 | 15 | 0 | 13 | 1 | 13 | 0 | 12 | 0 | 3 | 0 | 4 | 0 | 7 | 0 | 5 | 0 | 11 | 0 | 6 | 0 | 10
+INPUTS | 13 | theCount/count<0>  | theCount/count<1>  | theCount/count<2>  | theCount/count<3>  | theCount/count<4>  | theCount/count<5>  | State_machine/state_FSM_FFd4  | theCount/count<6>  | theCount/count<7>  | theCount/count<8>  | State_machine/state_FSM_FFd1  | State_machine/state_FSM_FFd5  | State_machine/state_FSM_FFd3
+INPUTMC | 13 | 0 | 6 | 0 | 15 | 0 | 5 | 0 | 7 | 0 | 14 | 0 | 4 | 0 | 10 | 0 | 3 | 0 | 13 | 1 | 15 | 1 | 14 | 1 | 13 | 0 | 12
+EQ | 21 | 
+   theCount/count<6>.T := theCount/count<0> & theCount/count<1> & 
+	theCount/count<2> & theCount/count<3> & theCount/count<4> & 
+	theCount/count<5>
+	# State_machine/state_FSM_FFd4 & !theCount/count<0> & 
+	!theCount/count<1> & !theCount/count<2> & theCount/count<3> & 
+	!theCount/count<4> & !theCount/count<5> & theCount/count<6> & 
+	theCount/count<7> & !theCount/count<8>
+	# !theCount/count<0> & !theCount/count<1> & 
+	theCount/count<2> & !theCount/count<3> & !theCount/count<4> & 
+	theCount/count<5> & theCount/count<6> & !theCount/count<7> & 
+	!theCount/count<8> & State_machine/state_FSM_FFd1
+	# !theCount/count<0> & !theCount/count<1> & 
+	theCount/count<2> & !theCount/count<3> & !theCount/count<4> & 
+	theCount/count<5> & theCount/count<6> & !theCount/count<7> & 
+	!theCount/count<8> & State_machine/state_FSM_FFd5
+	# !theCount/count<0> & !theCount/count<1> & 
+	!theCount/count<2> & theCount/count<3> & !theCount/count<4> & 
+	!theCount/count<5> & theCount/count<6> & State_machine/state_FSM_FFd3 & 
+	theCount/count<7> & !theCount/count<8>;	// (5 pt, 13 inp)
+   theCount/count<6>.CLK  =  Clock;	// GCK	(0 pt, 0 inp)
+   theCount/count<6>.AR = Reset;	// GSR	(0 pt, 0 inp)
+GLOBALS | 2 | 2 | Clock | 4 | Reset
+
+MACROCELL | 0 | 12 | State_machine/state_FSM_FFd3_MC
+ATTRIBUTES | 2185265920 | 0
+OUTPUTMC | 9 | 0 | 13 | 0 | 12 | 0 | 3 | 0 | 7 | 0 | 11 | 0 | 6 | 1 | 4 | 1 | 5 | 0 | 1
+INPUTS | 15 | theCount/count<0>  | theCount/count<1>  | theCount/count<2>  | theCount/count<3>  | theCount/count<4>  | theCount/count<5>  | theCount/count<6>  | State_machine/state_FSM_FFd3  | theCount/count<7>  | theCount/count<8>  | State_machine/pedNS_temp  | State_machine/state_FSM_FFd5  | State_machine/state_FSM_FFd2  | State_machine/pedEW_temp  | CarEW_sync
+INPUTMC | 15 | 0 | 6 | 0 | 15 | 0 | 5 | 0 | 7 | 0 | 14 | 0 | 4 | 0 | 3 | 0 | 12 | 0 | 13 | 1 | 15 | 1 | 8 | 1 | 13 | 0 | 11 | 1 | 10 | 0 | 0
+EQ | 16 | 
+   State_machine/state_FSM_FFd3.T := !theCount/count<0> & !theCount/count<1> & 
+	!theCount/count<2> & theCount/count<3> & !theCount/count<4> & 
+	!theCount/count<5> & theCount/count<6> & State_machine/state_FSM_FFd3 & 
+	theCount/count<7> & !theCount/count<8>
+	# !theCount/count<0> & !theCount/count<1> & 
+	theCount/count<2> & !theCount/count<3> & !theCount/count<4> & 
+	theCount/count<5> & theCount/count<6> & !State_machine/state_FSM_FFd3 & 
+	!theCount/count<7> & !theCount/count<8> & State_machine/pedNS_temp & 
+	State_machine/state_FSM_FFd5
+	# !theCount/count<0> & State_machine/state_FSM_FFd2 & 
+	!State_machine/pedEW_temp & !CarEW_sync & !theCount/count<1> & 
+	theCount/count<2> & theCount/count<3> & !theCount/count<4> & 
+	theCount/count<5> & !theCount/count<6> & !State_machine/state_FSM_FFd3 & 
+	!theCount/count<7> & theCount/count<8> & State_machine/pedNS_temp;	// (3 pt, 15 inp)
+   State_machine/state_FSM_FFd3.CLK  =  Clock;	// GCK	(0 pt, 0 inp)
+   State_machine/state_FSM_FFd3.AR = Reset;	// GSR	(0 pt, 0 inp)
+GLOBALS | 2 | 2 | Clock | 4 | Reset
+
+MACROCELL | 0 | 13 | theCount/count<7>_MC
+ATTRIBUTES | 2185265920 | 0
+OUTPUTMC | 13 | 1 | 14 | 0 | 9 | 1 | 15 | 0 | 13 | 1 | 13 | 0 | 12 | 0 | 3 | 0 | 4 | 0 | 7 | 0 | 5 | 0 | 11 | 0 | 6 | 0 | 10
+INPUTS | 11 | theCount/count<0>  | theCount/count<1>  | theCount/count<2>  | theCount/count<3>  | theCount/count<4>  | theCount/count<5>  | theCount/count<6>  | State_machine/state_FSM_FFd4  | theCount/count<7>  | theCount/count<8>  | State_machine/state_FSM_FFd3
+INPUTMC | 11 | 0 | 6 | 0 | 15 | 0 | 5 | 0 | 7 | 0 | 14 | 0 | 4 | 0 | 3 | 0 | 10 | 0 | 13 | 1 | 15 | 0 | 12
+EQ | 13 | 
+   theCount/count<7>.T := theCount/count<0> & theCount/count<1> & 
+	theCount/count<2> & theCount/count<3> & theCount/count<4> & 
+	theCount/count<5> & theCount/count<6>
+	# State_machine/state_FSM_FFd4 & !theCount/count<0> & 
+	!theCount/count<1> & !theCount/count<2> & theCount/count<3> & 
+	!theCount/count<4> & !theCount/count<5> & theCount/count<6> & 
+	theCount/count<7> & !theCount/count<8>
+	# !theCount/count<0> & !theCount/count<1> & 
+	!theCount/count<2> & theCount/count<3> & !theCount/count<4> & 
+	!theCount/count<5> & theCount/count<6> & State_machine/state_FSM_FFd3 & 
+	theCount/count<7> & !theCount/count<8>;	// (3 pt, 11 inp)
+   theCount/count<7>.CLK  =  Clock;	// GCK	(0 pt, 0 inp)
+   theCount/count<7>.AR = Reset;	// GSR	(0 pt, 0 inp)
+GLOBALS | 2 | 2 | Clock | 4 | Reset
+
+MACROCELL | 1 | 15 | theCount/count<8>_MC
+ATTRIBUTES | 2185265920 | 0
+OUTPUTMC | 13 | 1 | 14 | 0 | 9 | 1 | 15 | 0 | 13 | 1 | 13 | 0 | 12 | 0 | 3 | 0 | 4 | 0 | 7 | 0 | 5 | 0 | 11 | 0 | 6 | 0 | 10
+INPUTS | 11 | theCount/count<0>  | theCount/count<1>  | theCount/count<2>  | theCount/count<3>  | theCount/count<4>  | theCount/count<5>  | theCount/count<6>  | theCount/count<7>  | State_machine/state_FSM_FFd2  | theCount/count<8>  | State_machine/state_FSM_FFd6
+INPUTMC | 11 | 0 | 6 | 0 | 15 | 0 | 5 | 0 | 7 | 0 | 14 | 0 | 4 | 0 | 3 | 0 | 13 | 0 | 11 | 1 | 15 | 0 | 9
+EQ | 13 | 
+   theCount/count<8>.T := theCount/count<0> & theCount/count<1> & 
+	theCount/count<2> & theCount/count<3> & theCount/count<4> & 
+	theCount/count<5> & theCount/count<6> & theCount/count<7>
+	# !theCount/count<0> & State_machine/state_FSM_FFd2 & 
+	!theCount/count<1> & theCount/count<2> & theCount/count<3> & 
+	!theCount/count<4> & theCount/count<5> & !theCount/count<6> & 
+	!theCount/count<7> & theCount/count<8>
+	# !theCount/count<0> & !theCount/count<1> & 
+	theCount/count<2> & theCount/count<3> & !theCount/count<4> & 
+	theCount/count<5> & !theCount/count<6> & !theCount/count<7> & 
+	theCount/count<8> & State_machine/state_FSM_FFd6;	// (3 pt, 11 inp)
+   theCount/count<8>.CLK  =  Clock;	// GCK	(0 pt, 0 inp)
+   theCount/count<8>.AR = Reset;	// GSR	(0 pt, 0 inp)
+GLOBALS | 2 | 2 | Clock | 4 | Reset
+
+MACROCELL | 0 | 9 | State_machine/state_FSM_FFd6_MC
+ATTRIBUTES | 2168488708 | 0
+OUTPUTMC | 9 | 0 | 9 | 1 | 15 | 1 | 13 | 0 | 4 | 0 | 7 | 0 | 5 | 0 | 6 | 0 | 10 | 1 | 1
+INPUTS | 15 | State_machine/state_FSM_FFd4  | theCount/count<0>  | theCount/count<1>  | theCount/count<2>  | theCount/count<3>  | theCount/count<4>  | theCount/count<5>  | theCount/count<6>  | theCount/count<7>  | theCount/count<8>  | State_machine/state_FSM_FFd6  | State_machine/pedEW_temp  | State_machine/pedNS_temp  | CarNS_sync  | State_machine/state_FSM_FFd1
+INPUTMC | 15 | 0 | 10 | 0 | 6 | 0 | 15 | 0 | 5 | 0 | 7 | 0 | 14 | 0 | 4 | 0 | 3 | 0 | 13 | 1 | 15 | 0 | 9 | 1 | 10 | 1 | 8 | 0 | 1 | 1 | 14
+EQ | 24 | 
+   State_machine/state_FSM_FFd6.T := State_machine/state_FSM_FFd4 & !theCount/count<0> & 
+	!theCount/count<1> & !theCount/count<2> & theCount/count<3> & 
+	!theCount/count<4> & !theCount/count<5> & theCount/count<6> & 
+	theCount/count<7> & !theCount/count<8> & !State_machine/state_FSM_FFd6
+	# !theCount/count<0> & State_machine/pedEW_temp & 
+	!theCount/count<1> & theCount/count<2> & theCount/count<3> & 
+	!theCount/count<4> & theCount/count<5> & !theCount/count<6> & 
+	!theCount/count<7> & theCount/count<8> & State_machine/state_FSM_FFd6
+	# !theCount/count<0> & !theCount/count<1> & 
+	theCount/count<2> & theCount/count<3> & !theCount/count<4> & 
+	theCount/count<5> & !theCount/count<6> & !theCount/count<7> & 
+	theCount/count<8> & State_machine/state_FSM_FFd6 & 
+	State_machine/pedNS_temp
+	# !theCount/count<0> & !theCount/count<1> & 
+	theCount/count<2> & theCount/count<3> & !theCount/count<4> & 
+	theCount/count<5> & !theCount/count<6> & !theCount/count<7> & 
+	theCount/count<8> & State_machine/state_FSM_FFd6 & CarNS_sync
+	# !theCount/count<0> & !State_machine/pedEW_temp & 
+	!theCount/count<1> & theCount/count<2> & !theCount/count<3> & 
+	!theCount/count<4> & theCount/count<5> & theCount/count<6> & 
+	!theCount/count<7> & !theCount/count<8> & !State_machine/state_FSM_FFd6 & 
+	State_machine/state_FSM_FFd1;	// (5 pt, 15 inp)
+   State_machine/state_FSM_FFd6.CLK  =  Clock;	// GCK	(0 pt, 0 inp)
+   State_machine/state_FSM_FFd6.AP = Reset;	// GSR	(0 pt, 0 inp)
+GLOBALS | 2 | 2 | Clock | 1 | Reset
+
+MACROCELL | 1 | 8 | State_machine/pedNS_temp_MC
+ATTRIBUTES | 2189460288 | 0
+OUTPUTMC | 5 | 0 | 9 | 1 | 13 | 0 | 12 | 0 | 11 | 0 | 10
+INPUTS | 2 | PedNS_sync  | CarNS_sync.COMB
+INPUTMC | 2 | 0 | 8 | 0 | 1
+EQ | 4 | 
+   State_machine/pedNS_temp := PedNS_sync;	// (1 pt, 1 inp)
+   State_machine/pedNS_temp.CLK  =  Clock;	// GCK	(0 pt, 0 inp)
+    State_machine/pedNS_temp.CE = !CarNS_sync.COMB;	// (1 pt, 1 inp)
+   State_machine/pedNS_temp.AR = Reset;	// GSR	(0 pt, 0 inp)
+GLOBALS | 2 | 2 | Clock | 4 | Reset
+
+MACROCELL | 0 | 8 | PedNS_sync_MC
+ATTRIBUTES | 2189459456 | 4
+OUTPUTMC | 2 | 1 | 8 | 0 | 1
+INPUTS | 0 
+EQ | 5 | 
+   
+// Direct Input Register
+PedNS_sync := PedNS;	// (0 pt, 0 inp)
+   PedNS_sync.CLK  =  Clock;	// GCK	(0 pt, 0 inp)
+   PedNS_sync.AR = Reset;	// GSR	(0 pt, 0 inp)
+GLOBALS | 2 | 2 | Clock | 4 | Reset
+
+MACROCELL | 0 | 1 | CarNS_sync_MC
+ATTRIBUTES | 578847488 | 5
+OUTPUTMC | 4 | 0 | 9 | 1 | 13 | 0 | 10 | 1 | 8
+INPUTS | 2 | State_machine/state_FSM_FFd3  | PedNS_sync
+INPUTMC | 2 | 0 | 12 | 0 | 8
+EQ | 5 | 
+   CarNS_sync.COMB =  !State_machine/state_FSM_FFd3 & !PedNS_sync;	// (1 pt, 2 inp)
+// Direct Input Register
+CarNS_sync := CarNS;	// (0 pt, 0 inp)
+   CarNS_sync.CLK  =  Clock;	// GCK	(0 pt, 0 inp)
+   CarNS_sync.AR = Reset;	// GSR	(0 pt, 0 inp)
+GLOBALS | 2 | 2 | Clock | 4 | Reset
+
+MACROCELL | 1 | 14 | State_machine/state_FSM_FFd1_MC
+ATTRIBUTES | 2185265920 | 0
+OUTPUTMC | 8 | 1 | 14 | 0 | 9 | 0 | 3 | 0 | 4 | 0 | 5 | 0 | 6 | 0 | 10 | 1 | 4
+INPUTS | 13 | theCount/count<0>  | theCount/count<1>  | theCount/count<2>  | theCount/count<3>  | theCount/count<4>  | theCount/count<5>  | theCount/count<6>  | theCount/count<7>  | theCount/count<8>  | State_machine/state_FSM_FFd1  | State_machine/state_FSM_FFd2  | State_machine/pedEW_temp  | CarEW_sync
+INPUTMC | 13 | 0 | 6 | 0 | 15 | 0 | 5 | 0 | 7 | 0 | 14 | 0 | 4 | 0 | 3 | 0 | 13 | 1 | 15 | 1 | 14 | 0 | 11 | 1 | 10 | 0 | 0
+EQ | 16 | 
+   State_machine/state_FSM_FFd1.T := !theCount/count<0> & !theCount/count<1> & 
+	theCount/count<2> & !theCount/count<3> & !theCount/count<4> & 
+	theCount/count<5> & theCount/count<6> & !theCount/count<7> & 
+	!theCount/count<8> & State_machine/state_FSM_FFd1
+	# !theCount/count<0> & State_machine/state_FSM_FFd2 & 
+	State_machine/pedEW_temp & !theCount/count<1> & theCount/count<2> & 
+	theCount/count<3> & !theCount/count<4> & theCount/count<5> & 
+	!theCount/count<6> & !theCount/count<7> & theCount/count<8> & 
+	!State_machine/state_FSM_FFd1
+	# !theCount/count<0> & State_machine/state_FSM_FFd2 & 
+	CarEW_sync & !theCount/count<1> & theCount/count<2> & 
+	theCount/count<3> & !theCount/count<4> & theCount/count<5> & 
+	!theCount/count<6> & !theCount/count<7> & theCount/count<8> & 
+	!State_machine/state_FSM_FFd1;	// (3 pt, 13 inp)
+   State_machine/state_FSM_FFd1.CLK  =  Clock;	// GCK	(0 pt, 0 inp)
+   State_machine/state_FSM_FFd1.AR = Reset;	// GSR	(0 pt, 0 inp)
+GLOBALS | 2 | 2 | Clock | 4 | Reset
+
+MACROCELL | 1 | 13 | State_machine/state_FSM_FFd5_MC
+ATTRIBUTES | 2185265920 | 0
+OUTPUTMC | 8 | 1 | 13 | 0 | 12 | 0 | 3 | 0 | 4 | 0 | 5 | 0 | 11 | 0 | 6 | 1 | 0
+INPUTS | 13 | theCount/count<0>  | theCount/count<1>  | theCount/count<2>  | theCount/count<3>  | theCount/count<4>  | theCount/count<5>  | theCount/count<6>  | theCount/count<7>  | theCount/count<8>  | State_machine/state_FSM_FFd5  | State_machine/state_FSM_FFd6  | State_machine/pedNS_temp  | CarNS_sync
+INPUTMC | 13 | 0 | 6 | 0 | 15 | 0 | 5 | 0 | 7 | 0 | 14 | 0 | 4 | 0 | 3 | 0 | 13 | 1 | 15 | 1 | 13 | 0 | 9 | 1 | 8 | 0 | 1
+EQ | 16 | 
+   State_machine/state_FSM_FFd5.T := !theCount/count<0> & !theCount/count<1> & 
+	theCount/count<2> & !theCount/count<3> & !theCount/count<4> & 
+	theCount/count<5> & theCount/count<6> & !theCount/count<7> & 
+	!theCount/count<8> & State_machine/state_FSM_FFd5
+	# !theCount/count<0> & !theCount/count<1> & 
+	theCount/count<2> & theCount/count<3> & !theCount/count<4> & 
+	theCount/count<5> & !theCount/count<6> & !theCount/count<7> & 
+	theCount/count<8> & State_machine/state_FSM_FFd6 & 
+	State_machine/pedNS_temp & !State_machine/state_FSM_FFd5
+	# !theCount/count<0> & !theCount/count<1> & 
+	theCount/count<2> & theCount/count<3> & !theCount/count<4> & 
+	theCount/count<5> & !theCount/count<6> & !theCount/count<7> & 
+	theCount/count<8> & State_machine/state_FSM_FFd6 & CarNS_sync & 
+	!State_machine/state_FSM_FFd5;	// (3 pt, 13 inp)
+   State_machine/state_FSM_FFd5.CLK  =  Clock;	// GCK	(0 pt, 0 inp)
+   State_machine/state_FSM_FFd5.AR = Reset;	// GSR	(0 pt, 0 inp)
+GLOBALS | 2 | 2 | Clock | 4 | Reset
+
+MACROCELL | 1 | 1 | LightsEW<1>_MC
+ATTRIBUTES | 1074004738 | 0
+INPUTS | 2 | State_machine/state_FSM_FFd4  | State_machine/state_FSM_FFd6
+INPUTMC | 2 | 0 | 10 | 0 | 9
+EQ | 2 | 
+   !LightsEW<1> = !State_machine/state_FSM_FFd4 & 
+	!State_machine/state_FSM_FFd6;	// (1 pt, 2 inp)
+
+MACROCELL | 1 | 4 | LightsNS<0>_MC
+ATTRIBUTES | 1074004738 | 0
+INPUTS | 2 | State_machine/state_FSM_FFd3  | State_machine/state_FSM_FFd1
+INPUTMC | 2 | 0 | 12 | 1 | 14
+EQ | 2 | 
+   !LightsNS<0> = !State_machine/state_FSM_FFd3 & 
+	!State_machine/state_FSM_FFd1;	// (1 pt, 2 inp)
+
+MACROCELL | 1 | 5 | LightsNS<1>_MC
+ATTRIBUTES | 1074004738 | 0
+INPUTS | 2 | State_machine/state_FSM_FFd2  | State_machine/state_FSM_FFd3
+INPUTMC | 2 | 0 | 11 | 0 | 12
+EQ | 2 | 
+   !LightsNS<1> = !State_machine/state_FSM_FFd2 & 
+	!State_machine/state_FSM_FFd3;	// (1 pt, 2 inp)
+
+MACROCELL | 1 | 12 | debugLED_MC
+ATTRIBUTES | 1074004738 | 0
+INPUTS | 1 | Reset
+INPUTP | 1 | 78
+EQ | 1 | 
+   debugLED = Reset;	// (1 pt, 1 inp)
+
+PIN | Clock | 4096 | 16 | LVCMOS18 | 19 | 21 | 0 | 2 | 0 | 0 | 1 | 10 | 0 | 15 | 0 | 14 | 0 | 8 | 0 | 1 | 1 | 8 | 1 | 14 | 0 | 9 | 1 | 15 | 0 | 13 | 1 | 13 | 0 | 12 | 0 | 3 | 0 | 4 | 0 | 7 | 0 | 5 | 0 | 11 | 0 | 6 | 0 | 10
+PIN | Reset | 65600 | 16 | LVCMOS18 | 78 | 22 | 1 | 12 | 0 | 2 | 0 | 0 | 1 | 10 | 0 | 15 | 0 | 14 | 0 | 8 | 0 | 1 | 1 | 8 | 1 | 14 | 0 | 9 | 1 | 15 | 0 | 13 | 1 | 13 | 0 | 12 | 0 | 3 | 0 | 4 | 0 | 7 | 0 | 5 | 0 | 11 | 0 | 6 | 0 | 10
+PIN | CarEW | 64 | 16 | LVCMOS18 | 11 | 1 | 0 | 0
+PIN | CarNS | 64 | 16 | LVCMOS18 | 10 | 1 | 0 | 1
+PIN | PedEW | 64 | 16 | LVCMOS18 | 9 | 1 | 0 | 2
+PIN | PedNS | 64 | 16 | LVCMOS18 | 2 | 1 | 0 | 8
+PIN | LEDs<0> | 536871040 | 0 | LVCMOS18 | 20
+PIN | LEDs<1> | 536871040 | 0 | LVCMOS18 | 23
+PIN | LEDs<2> | 536871040 | 0 | LVCMOS18 | 25
+PIN | LightsEW<0> | 536871040 | 0 | LVCMOS18 | 12
+PIN | LightsEW<1> | 536871040 | 0 | LVCMOS18 | 13
+PIN | LightsNS<0> | 536871040 | 0 | LVCMOS18 | 16
+PIN | LightsNS<1> | 536871040 | 0 | LVCMOS18 | 17
+PIN | debugLED | 536871040 | 0 | LVCMOS18 | 26

@@ -1,0 +1,694 @@
+ 
+cpldfit:  version P.20131013                        Xilinx Inc.
+                                  Fitter Report
+Design Name: Traffic_top_level                   Date:  2-15-2020,  2:06PM
+Device Used: XC2C64A-7-VQ44
+Fitting Status: Successful
+
+*************************  Mapped Resource Summary  **************************
+
+Macrocells     Product Terms    Function Block   Registers      Pins           
+Used/Tot       Used/Tot         Inps Used/Tot    Used/Tot       Used/Tot       
+29 /64  ( 45%) 47  /224  ( 21%) 45  /160  ( 28%) 21 /64  ( 33%) 14 /33  ( 42%)
+
+** Function Block Resources **
+
+Function Mcells   FB Inps  Pterms   IO       CTC      CTR      CTS      CTE     
+Block    Used/Tot Used/Tot Used/Tot Used/Tot Used/Tot Used/Tot Used/Tot Used/Tot
+FB1      16/16*    21/40    29/56     0/ 8    0/1      0/1      0/1      0/1
+FB2      13/16     24/40    18/56     8/ 9    0/1      0/1      0/1      0/1
+FB3       0/16      0/40     0/56     0/ 9    0/1      0/1      0/1      0/1
+FB4       0/16      0/40     0/56     0/ 7    0/1      0/1      0/1      0/1
+         -----    -------  -------   -----    ---      ---      ---      ---
+Total    29/64     45/160   47/224    8/33    0/4      0/4      0/4      0/4 
+
+CTC - Control Term Clock
+CTR - Control Term Reset
+CTS - Control Term Set
+CTE - Control Term Output Enable
+
+* - Resource is exhausted
+
+** Global Control Resources **
+
+GCK         GSR         GTS         DGE         
+Used/Tot    Used/Tot    Used/Tot    Used/Tot    
+1/3         1/1         0/4         0/0
+
+Signal 'Clock' mapped onto global clock net GCK0.
+Signal 'Reset' mapped onto global set/reset net GSR.
+
+** Pin Resources **
+
+Signal Type    Required     Mapped  |  Pin Type            Used    Total 
+------------------------------------|------------------------------------
+Input         :    4           4    |  I/O              :     9     25
+Output        :    8           8    |  GCK/IO           :     3      3
+Bidirectional :    0           0    |  GTS/IO           :     1      4
+GCK           :    1           1    |  GSR/IO           :     1      1
+GTS           :    0           0    |  
+GSR           :    1           1    |  
+                 ----        ----
+        Total     14          14
+
+End of Mapped Resource Summary
+**************************  Errors and Warnings  ***************************
+
+WARNING:Cpld - Unable to retrieve the path to the iSE Project Repository. Will
+   use the default filename of 'Traffic_top_level.ise'.
+*************************  Summary of Mapped Logic  ************************
+
+** 8 Outputs **
+
+Signal                        Total Total Bank Loc     Pin   Pin       Pin     I/O      I/O       Slew Reg     Reg Init
+Name                          Pts   Inps               No.   Type      Use     STD      Style     Rate Use     State
+LightsEW<0>                   1     2     1    FB2_1   39    I/O       O       LVCMOS18           FAST         
+LightsEW<1>                   1     2     1    FB2_2   40    I/O       O       LVCMOS18           FAST         
+LightsNS<0>                   1     2     1    FB2_5   41    I/O       O       LVCMOS18           FAST         
+LightsNS<1>                   1     2     1    FB2_6   42    I/O       O       LVCMOS18           FAST         
+LEDs<0>                       0     0     1    FB2_8   44    GCK/I/O   O       LVCMOS18           FAST         
+LEDs<1>                       0     0     1    FB2_10  1     GCK/I/O   O       LVCMOS18           FAST         
+LEDs<2>                       0     0     1    FB2_12  2     I/O       O       LVCMOS18           FAST         
+debugLED                      1     1     1    FB2_13  3     I/O       O       LVCMOS18           FAST         
+
+** 21 Buried Nodes **
+
+Signal                        Total Total Loc     Reg     Reg Init
+Name                          Pts   Inps          Use     State
+CarEW_sync                    1     2     FB1_1   DFF     RESET
+CarNS_sync                    1     2     FB1_2   DFF     RESET
+PedEW_sync                    0     0     FB1_3   DFF     RESET
+theCount/count<6>             5     13    FB1_4   TFF     RESET
+theCount/count<5>             5     13    FB1_5   TFF     RESET
+theCount/count<2>             5     13    FB1_6   TFF     RESET
+theCount/count<0>             6     15    FB1_7   TFF     RESET
+theCount/count<3>             5     13    FB1_8   TFF     RESET
+PedNS_sync                    0     0     FB1_9   DFF     RESET
+State_machine/state_FSM_FFd6  5     15    FB1_10  TFF/S   SET
+State_machine/state_FSM_FFd4  3     15    FB1_11  TFF     RESET
+State_machine/state_FSM_FFd2  5     15    FB1_12  TFF     RESET
+State_machine/state_FSM_FFd3  3     15    FB1_13  TFF     RESET
+theCount/count<7>             3     11    FB1_14  TFF     RESET
+theCount/count<4>             1     4     FB1_15  TFF     RESET
+theCount/count<1>             1     1     FB1_16  TFF     RESET
+State_machine/pedNS_temp      2     2     FB2_9   DEFF    RESET
+State_machine/pedEW_temp      2     2     FB2_11  DEFF    RESET
+State_machine/state_FSM_FFd5  3     13    FB2_14  TFF     RESET
+State_machine/state_FSM_FFd1  3     13    FB2_15  TFF     RESET
+theCount/count<8>             3     11    FB2_16  TFF     RESET
+
+** 6 Inputs **
+
+Signal                        Bank Loc     Pin   Pin       Pin     I/O      I/O
+Name                                       No.   Type      Use     STD      Style
+CarEW                         2    FB1_1   38    I/O       I       LVCMOS18 KPR
+CarNS                         2    FB1_2   37    I/O       I       LVCMOS18 KPR
+PedEW                         2    FB1_3   36    I/O       I       LVCMOS18 KPR
+PedNS                         2    FB1_9   34    GTS/I/O   I       LVCMOS18 KPR
+Reset                         2    FB1_13  30    GSR/I/O   GSR/I   LVCMOS18 KPR
+Clock                         1    FB2_7   43    GCK/I/O   GCK     LVCMOS18 KPR
+
+Legend:
+Pin No.   - ~     - User Assigned
+I/O Style - OD    - OpenDrain
+          - PU    - Pullup
+          - KPR   - Keeper
+          - S     - SchmittTrigger
+          - DG    - DataGate
+Reg Use   - LATCH - Transparent latch
+          - DFF   - D-flip-flop
+          - DEFF  - D-flip-flop with clock enable
+          - TFF   - T-flip-flop
+          - TDFF  - Dual-edge-triggered T-flip-flop
+          - DDFF  - Dual-edge-triggered flip-flop
+          - DDEFF - Dual-edge-triggered flip-flop with clock enable
+          /S (after any above flop/latch type) indicates initial state is Set
+**************************  Function Block Details  ************************
+Legend:
+Total Pt     - Total product terms used by the macrocell signal
+Loc          - Location where logic was mapped in device
+Pin Type/Use - I  - Input             GCK - Global clock
+               O  - Output            GTS - Global Output Enable
+              (b) - Buried macrocell  GSR - Global Set/Reset
+              VRF - Vref
+Pin No.      - ~  - User Assigned
+*********************************** FB1  ***********************************
+This function block is part of I/O Bank number:               2
+Number of function block inputs used/remaining:               21/19
+Number of function block control terms used/remaining:        0/4
+Number of PLA product terms used/remaining:                   29/27
+Signal                        Total Loc     Pin  Pin     Pin   CTC CTR CTS CTE
+Name                          Pt            No.  Type    Use   
+CarEW_sync                    1     FB1_1   38   I/O     I                 
+CarNS_sync                    1     FB1_2   37   I/O     I                 
+PedEW_sync                    0     FB1_3   36   I/O     I                 
+theCount/count<6>             5     FB1_4        (b)     (b)               
+theCount/count<5>             5     FB1_5        (b)     (b)               
+theCount/count<2>             5     FB1_6        (b)     (b)               
+theCount/count<0>             6     FB1_7        (b)     (b)               
+theCount/count<3>             5     FB1_8        (b)     (b)               
+PedNS_sync                    0     FB1_9   34   GTS/I/O I                 
+State_machine/state_FSM_FFd6  5     FB1_10  33   GTS/I/O (b)               
+State_machine/state_FSM_FFd4  3     FB1_11  32   GTS/I/O (b)               
+State_machine/state_FSM_FFd2  5     FB1_12  31   GTS/I/O (b)               
+State_machine/state_FSM_FFd3  3     FB1_13  30   GSR/I/O GSR/I             
+theCount/count<7>             3     FB1_14       (b)     (b)               
+theCount/count<4>             1     FB1_15       (b)     (b)               
+theCount/count<1>             1     FB1_16       (b)     (b)               
+
+Signals Used by Logic in Function Block
+  1: CarEW_sync                     8: State_machine/state_FSM_FFd2  15: theCount/count<2> 
+  2: CarNS_sync                     9: State_machine/state_FSM_FFd3  16: theCount/count<3> 
+  3: PedEW_sync                    10: State_machine/state_FSM_FFd4  17: theCount/count<4> 
+  4: PedNS_sync                    11: State_machine/state_FSM_FFd5  18: theCount/count<5> 
+  5: State_machine/pedEW_temp      12: State_machine/state_FSM_FFd6  19: theCount/count<6> 
+  6: State_machine/pedNS_temp      13: theCount/count<0>             20: theCount/count<7> 
+  7: State_machine/state_FSM_FFd1  14: theCount/count<1>             21: theCount/count<8> 
+
+Signal                     1         2         3         4 FB      
+Name             0----+----0----+----0----+----0----+----0 Inputs  
+CarEW_sync        ..X......X.............................. 2       
+CarNS_sync        ...X....X............................... 2       
+theCount/count<6> 
+                  ......X.XXX.XXXXXXXXX................... 13      
+theCount/count<5> 
+                  ......XX..XXXXXXXXXXX................... 13      
+theCount/count<2> 
+                  ......XX..XXXXXXXXXXX................... 13      
+theCount/count<0> 
+                  ......XXXXXXXXXXXXXXX................... 15      
+theCount/count<3> 
+                  .......XXX.XXXXXXXXXX................... 13      
+State_machine/state_FSM_FFd6 
+                  .X..XXX..X.XXXXXXXXXX................... 15      
+State_machine/state_FSM_FFd4 
+                  .X..XXX..X.XXXXXXXXXX................... 15      
+State_machine/state_FSM_FFd2 
+                  X...XX.XX.X.XXXXXXXXX................... 15      
+State_machine/state_FSM_FFd3 
+                  X...XX.XX.X.XXXXXXXXX................... 15      
+theCount/count<7> 
+                  ........XX..XXXXXXXXX................... 11      
+theCount/count<4> 
+                  ............XXXX........................ 4       
+theCount/count<1> 
+                  ............X........................... 1       
+                 0----+----1----+----2----+----3----+----4
+                           0         0         0         0
+*********************************** FB2  ***********************************
+This function block is part of I/O Bank number:               1
+Number of function block inputs used/remaining:               24/16
+Number of function block control terms used/remaining:        0/4
+Number of PLA product terms used/remaining:                   18/38
+Signal                        Total Loc     Pin  Pin     Pin   CTC CTR CTS CTE
+Name                          Pt            No.  Type    Use   
+LightsEW<0>                   1     FB2_1   39   I/O     O                 
+LightsEW<1>                   1     FB2_2   40   I/O     O                 
+(unused)                      0     FB2_3        (b)           
+(unused)                      0     FB2_4        (b)           
+LightsNS<0>                   1     FB2_5   41   I/O     O                 
+LightsNS<1>                   1     FB2_6   42   I/O     O                 
+(unused)                      0     FB2_7   43   GCK/I/O GCK   
+LEDs<0>                       0     FB2_8   44   GCK/I/O O                 
+State_machine/pedNS_temp      2     FB2_9        (b)     (b)               
+LEDs<1>                       0     FB2_10  1    GCK/I/O O                 
+State_machine/pedEW_temp      2     FB2_11       (b)     (b)               
+LEDs<2>                       0     FB2_12  2    I/O     O                 
+debugLED                      1     FB2_13  3    I/O     O                 
+State_machine/state_FSM_FFd5  3     FB2_14       (b)     (b)               
+State_machine/state_FSM_FFd1  3     FB2_15       (b)     (b)               
+theCount/count<8>             3     FB2_16       (b)     (b)               
+
+Signals Used by Logic in Function Block
+  1: CarEW_sync                 9: State_machine/pedNS_temp      17: theCount/count<1> 
+  2: CarEW_sync.COMB           10: State_machine/state_FSM_FFd1  18: theCount/count<2> 
+  3: CarNS_sync                11: State_machine/state_FSM_FFd2  19: theCount/count<3> 
+  4: CarNS_sync.COMB           12: State_machine/state_FSM_FFd3  20: theCount/count<4> 
+  5: PedEW_sync                13: State_machine/state_FSM_FFd4  21: theCount/count<5> 
+  6: PedNS_sync                14: State_machine/state_FSM_FFd5  22: theCount/count<6> 
+  7: Reset                     15: State_machine/state_FSM_FFd6  23: theCount/count<7> 
+  8: State_machine/pedEW_temp  16: theCount/count<0>             24: theCount/count<8> 
+
+Signal                     1         2         3         4 FB      
+Name             0----+----0----+----0----+----0----+----0 Inputs  
+LightsEW<0>       ............XX.......................... 2       
+LightsEW<1>       ............X.X......................... 2       
+LightsNS<0>       .........X.X............................ 2       
+LightsNS<1>       ..........XX............................ 2       
+LEDs<0>           ........................................ 0       
+State_machine/pedNS_temp 
+                  ...X.X.................................. 2       
+LEDs<1>           ........................................ 0       
+State_machine/pedEW_temp 
+                  .X..X................................... 2       
+LEDs<2>           ........................................ 0       
+debugLED          ......X................................. 1       
+State_machine/state_FSM_FFd5 
+                  ..X.....X....XXXXXXXXXXX................ 13      
+State_machine/state_FSM_FFd1 
+                  X......X.XX....XXXXXXXXX................ 13      
+theCount/count<8> 
+                  ..........X...XXXXXXXXXX................ 11      
+                 0----+----1----+----2----+----3----+----4
+                           0         0         0         0
+*********************************** FB3  ***********************************
+This function block is part of I/O Bank number:               2
+Number of function block inputs used/remaining:               0/40
+Number of function block control terms used/remaining:        0/4
+Number of PLA product terms used/remaining:                   0/56
+Signal                        Total Loc     Pin  Pin     Pin   CTC CTR CTS CTE
+Name                          Pt            No.  Type    Use   
+(unused)                      0     FB3_1   29   I/O           
+(unused)                      0     FB3_2   28   I/O           
+(unused)                      0     FB3_3   27   I/O           
+(unused)                      0     FB3_4        (b)           
+(unused)                      0     FB3_5        (b)           
+(unused)                      0     FB3_6   23   I/O           
+(unused)                      0     FB3_7        (b)           
+(unused)                      0     FB3_8        (b)           
+(unused)                      0     FB3_9        (b)           
+(unused)                      0     FB3_10  22   I/O           
+(unused)                      0     FB3_11  21   I/O           
+(unused)                      0     FB3_12  20   I/O           
+(unused)                      0     FB3_13       (b)           
+(unused)                      0     FB3_14  19   I/O           
+(unused)                      0     FB3_15  18   I/O           
+(unused)                      0     FB3_16       (b)           
+*********************************** FB4  ***********************************
+This function block is part of I/O Bank number:               1
+Number of function block inputs used/remaining:               0/40
+Number of function block control terms used/remaining:        0/4
+Number of PLA product terms used/remaining:                   0/56
+Signal                        Total Loc     Pin  Pin     Pin   CTC CTR CTS CTE
+Name                          Pt            No.  Type    Use   
+(unused)                      0     FB4_1   5    I/O           
+(unused)                      0     FB4_2   6    I/O           
+(unused)                      0     FB4_3        (b)           
+(unused)                      0     FB4_4        (b)           
+(unused)                      0     FB4_5        (b)           
+(unused)                      0     FB4_6        (b)           
+(unused)                      0     FB4_7   8    I/O           
+(unused)                      0     FB4_8        (b)           
+(unused)                      0     FB4_9        (b)           
+(unused)                      0     FB4_10       (b)           
+(unused)                      0     FB4_11  12   I/O           
+(unused)                      0     FB4_12       (b)           
+(unused)                      0     FB4_13  13   I/O           
+(unused)                      0     FB4_14  14   I/O           
+(unused)                      0     FB4_15  16   I/O           
+(unused)                      0     FB4_16       (b)           
+*******************************  Equations  ********************************
+
+********** Mapped Logic **********
+
+
+CarEW_sync.COMB <= (NOT State_machine/state_FSM_FFd4 AND NOT PedEW_sync);FDCPE_CarEW_sync: FDCPE port map (CarEW_sync,CarEW,Clock,Reset,'0','1');
+
+
+CarNS_sync.COMB <= (NOT State_machine/state_FSM_FFd3 AND NOT PedNS_sync);FDCPE_CarNS_sync: FDCPE port map (CarNS_sync,CarNS,Clock,Reset,'0','1');
+
+
+LEDs(0) <= '0';
+
+
+LEDs(1) <= '0';
+
+
+LEDs(2) <= '0';
+
+
+LightsEW(0) <= NOT ((NOT State_machine/state_FSM_FFd4 AND 
+	NOT State_machine/state_FSM_FFd5));
+
+
+LightsEW(1) <= NOT ((NOT State_machine/state_FSM_FFd4 AND 
+	NOT State_machine/state_FSM_FFd6));
+
+
+LightsNS(0) <= NOT ((NOT State_machine/state_FSM_FFd3 AND 
+	NOT State_machine/state_FSM_FFd1));
+
+
+LightsNS(1) <= NOT ((NOT State_machine/state_FSM_FFd2 AND 
+	NOT State_machine/state_FSM_FFd3));
+
+FDCPE_PedEW_sync: FDCPE port map (PedEW_sync,PedEW,Clock,Reset,'0','1');
+
+FDCPE_PedNS_sync: FDCPE port map (PedNS_sync,PedNS,Clock,Reset,'0','1');
+
+FDCPE_State_machine/pedEW_temp: FDCPE port map (State_machine/pedEW_temp,PedEW_sync,Clock,Reset,'0',NOT CarEW_sync.COMB);
+
+FDCPE_State_machine/pedNS_temp: FDCPE port map (State_machine/pedNS_temp,PedNS_sync,Clock,Reset,'0',NOT CarNS_sync.COMB);
+
+FTCPE_State_machine/state_FSM_FFd1: FTCPE port map (State_machine/state_FSM_FFd1,State_machine/state_FSM_FFd1_T,Clock,Reset,'0','1');
+State_machine/state_FSM_FFd1_T <= ((NOT theCount/count(0) AND NOT theCount/count(1) AND 
+	theCount/count(2) AND NOT theCount/count(3) AND NOT theCount/count(4) AND 
+	theCount/count(5) AND theCount/count(6) AND NOT theCount/count(7) AND 
+	NOT theCount/count(8) AND State_machine/state_FSM_FFd1)
+	OR (NOT theCount/count(0) AND State_machine/state_FSM_FFd2 AND 
+	State_machine/pedEW_temp AND NOT theCount/count(1) AND theCount/count(2) AND 
+	theCount/count(3) AND NOT theCount/count(4) AND theCount/count(5) AND 
+	NOT theCount/count(6) AND NOT theCount/count(7) AND theCount/count(8) AND 
+	NOT State_machine/state_FSM_FFd1)
+	OR (NOT theCount/count(0) AND State_machine/state_FSM_FFd2 AND 
+	CarEW_sync AND NOT theCount/count(1) AND theCount/count(2) AND 
+	theCount/count(3) AND NOT theCount/count(4) AND theCount/count(5) AND 
+	NOT theCount/count(6) AND NOT theCount/count(7) AND theCount/count(8) AND 
+	NOT State_machine/state_FSM_FFd1));
+
+FTCPE_State_machine/state_FSM_FFd2: FTCPE port map (State_machine/state_FSM_FFd2,State_machine/state_FSM_FFd2_T,Clock,Reset,'0','1');
+State_machine/state_FSM_FFd2_T <= ((NOT theCount/count(0) AND State_machine/state_FSM_FFd2 AND 
+	State_machine/pedEW_temp AND NOT theCount/count(1) AND theCount/count(2) AND 
+	theCount/count(3) AND NOT theCount/count(4) AND theCount/count(5) AND 
+	NOT theCount/count(6) AND NOT theCount/count(7) AND theCount/count(8))
+	OR (NOT theCount/count(0) AND State_machine/state_FSM_FFd2 AND 
+	CarEW_sync AND NOT theCount/count(1) AND theCount/count(2) AND 
+	theCount/count(3) AND NOT theCount/count(4) AND theCount/count(5) AND 
+	NOT theCount/count(6) AND NOT theCount/count(7) AND theCount/count(8))
+	OR (NOT theCount/count(0) AND State_machine/state_FSM_FFd2 AND 
+	NOT theCount/count(1) AND theCount/count(2) AND theCount/count(3) AND 
+	NOT theCount/count(4) AND theCount/count(5) AND NOT theCount/count(6) AND 
+	NOT theCount/count(7) AND theCount/count(8) AND State_machine/pedNS_temp)
+	OR (NOT theCount/count(0) AND NOT State_machine/state_FSM_FFd2 AND 
+	NOT theCount/count(1) AND NOT theCount/count(2) AND theCount/count(3) AND 
+	NOT theCount/count(4) AND NOT theCount/count(5) AND theCount/count(6) AND 
+	State_machine/state_FSM_FFd3 AND theCount/count(7) AND NOT theCount/count(8))
+	OR (NOT theCount/count(0) AND NOT State_machine/state_FSM_FFd2 AND 
+	NOT theCount/count(1) AND theCount/count(2) AND NOT theCount/count(3) AND 
+	NOT theCount/count(4) AND theCount/count(5) AND theCount/count(6) AND 
+	NOT theCount/count(7) AND NOT theCount/count(8) AND NOT State_machine/pedNS_temp AND 
+	State_machine/state_FSM_FFd5));
+
+FTCPE_State_machine/state_FSM_FFd3: FTCPE port map (State_machine/state_FSM_FFd3,State_machine/state_FSM_FFd3_T,Clock,Reset,'0','1');
+State_machine/state_FSM_FFd3_T <= ((NOT theCount/count(0) AND NOT theCount/count(1) AND 
+	NOT theCount/count(2) AND theCount/count(3) AND NOT theCount/count(4) AND 
+	NOT theCount/count(5) AND theCount/count(6) AND State_machine/state_FSM_FFd3 AND 
+	theCount/count(7) AND NOT theCount/count(8))
+	OR (NOT theCount/count(0) AND NOT theCount/count(1) AND 
+	theCount/count(2) AND NOT theCount/count(3) AND NOT theCount/count(4) AND 
+	theCount/count(5) AND theCount/count(6) AND NOT State_machine/state_FSM_FFd3 AND 
+	NOT theCount/count(7) AND NOT theCount/count(8) AND State_machine/pedNS_temp AND 
+	State_machine/state_FSM_FFd5)
+	OR (NOT theCount/count(0) AND State_machine/state_FSM_FFd2 AND 
+	NOT State_machine/pedEW_temp AND NOT CarEW_sync AND NOT theCount/count(1) AND 
+	theCount/count(2) AND theCount/count(3) AND NOT theCount/count(4) AND 
+	theCount/count(5) AND NOT theCount/count(6) AND NOT State_machine/state_FSM_FFd3 AND 
+	NOT theCount/count(7) AND theCount/count(8) AND State_machine/pedNS_temp));
+
+FTCPE_State_machine/state_FSM_FFd4: FTCPE port map (State_machine/state_FSM_FFd4,State_machine/state_FSM_FFd4_T,Clock,Reset,'0','1');
+State_machine/state_FSM_FFd4_T <= ((State_machine/state_FSM_FFd4 AND NOT theCount/count(0) AND 
+	NOT theCount/count(1) AND NOT theCount/count(2) AND theCount/count(3) AND 
+	NOT theCount/count(4) AND NOT theCount/count(5) AND theCount/count(6) AND 
+	theCount/count(7) AND NOT theCount/count(8))
+	OR (NOT State_machine/state_FSM_FFd4 AND NOT theCount/count(0) AND 
+	State_machine/pedEW_temp AND NOT theCount/count(1) AND theCount/count(2) AND 
+	NOT theCount/count(3) AND NOT theCount/count(4) AND theCount/count(5) AND 
+	theCount/count(6) AND NOT theCount/count(7) AND NOT theCount/count(8) AND 
+	State_machine/state_FSM_FFd1)
+	OR (NOT State_machine/state_FSM_FFd4 AND NOT theCount/count(0) AND 
+	State_machine/pedEW_temp AND NOT theCount/count(1) AND theCount/count(2) AND 
+	theCount/count(3) AND NOT theCount/count(4) AND theCount/count(5) AND 
+	NOT theCount/count(6) AND NOT theCount/count(7) AND theCount/count(8) AND 
+	State_machine/state_FSM_FFd6 AND NOT State_machine/pedNS_temp AND NOT CarNS_sync));
+
+FTCPE_State_machine/state_FSM_FFd5: FTCPE port map (State_machine/state_FSM_FFd5,State_machine/state_FSM_FFd5_T,Clock,Reset,'0','1');
+State_machine/state_FSM_FFd5_T <= ((NOT theCount/count(0) AND NOT theCount/count(1) AND 
+	theCount/count(2) AND NOT theCount/count(3) AND NOT theCount/count(4) AND 
+	theCount/count(5) AND theCount/count(6) AND NOT theCount/count(7) AND 
+	NOT theCount/count(8) AND State_machine/state_FSM_FFd5)
+	OR (NOT theCount/count(0) AND NOT theCount/count(1) AND 
+	theCount/count(2) AND theCount/count(3) AND NOT theCount/count(4) AND 
+	theCount/count(5) AND NOT theCount/count(6) AND NOT theCount/count(7) AND 
+	theCount/count(8) AND State_machine/state_FSM_FFd6 AND 
+	State_machine/pedNS_temp AND NOT State_machine/state_FSM_FFd5)
+	OR (NOT theCount/count(0) AND NOT theCount/count(1) AND 
+	theCount/count(2) AND theCount/count(3) AND NOT theCount/count(4) AND 
+	theCount/count(5) AND NOT theCount/count(6) AND NOT theCount/count(7) AND 
+	theCount/count(8) AND State_machine/state_FSM_FFd6 AND CarNS_sync AND 
+	NOT State_machine/state_FSM_FFd5));
+
+FTCPE_State_machine/state_FSM_FFd6: FTCPE port map (State_machine/state_FSM_FFd6,State_machine/state_FSM_FFd6_T,Clock,'0',Reset,'1');
+State_machine/state_FSM_FFd6_T <= ((State_machine/state_FSM_FFd4 AND NOT theCount/count(0) AND 
+	NOT theCount/count(1) AND NOT theCount/count(2) AND theCount/count(3) AND 
+	NOT theCount/count(4) AND NOT theCount/count(5) AND theCount/count(6) AND 
+	theCount/count(7) AND NOT theCount/count(8) AND NOT State_machine/state_FSM_FFd6)
+	OR (NOT theCount/count(0) AND State_machine/pedEW_temp AND 
+	NOT theCount/count(1) AND theCount/count(2) AND theCount/count(3) AND 
+	NOT theCount/count(4) AND theCount/count(5) AND NOT theCount/count(6) AND 
+	NOT theCount/count(7) AND theCount/count(8) AND State_machine/state_FSM_FFd6)
+	OR (NOT theCount/count(0) AND NOT theCount/count(1) AND 
+	theCount/count(2) AND theCount/count(3) AND NOT theCount/count(4) AND 
+	theCount/count(5) AND NOT theCount/count(6) AND NOT theCount/count(7) AND 
+	theCount/count(8) AND State_machine/state_FSM_FFd6 AND 
+	State_machine/pedNS_temp)
+	OR (NOT theCount/count(0) AND NOT theCount/count(1) AND 
+	theCount/count(2) AND theCount/count(3) AND NOT theCount/count(4) AND 
+	theCount/count(5) AND NOT theCount/count(6) AND NOT theCount/count(7) AND 
+	theCount/count(8) AND State_machine/state_FSM_FFd6 AND CarNS_sync)
+	OR (NOT theCount/count(0) AND NOT State_machine/pedEW_temp AND 
+	NOT theCount/count(1) AND theCount/count(2) AND NOT theCount/count(3) AND 
+	NOT theCount/count(4) AND theCount/count(5) AND theCount/count(6) AND 
+	NOT theCount/count(7) AND NOT theCount/count(8) AND NOT State_machine/state_FSM_FFd6 AND 
+	State_machine/state_FSM_FFd1));
+
+
+debugLED <= Reset;
+
+FTCPE_theCount/count0: FTCPE port map (theCount/count(0),theCount/count_T(0),Clock,Reset,'0','1');
+theCount/count_T(0) <= NOT (((State_machine/state_FSM_FFd4 AND NOT theCount/count(0) AND 
+	NOT theCount/count(1) AND NOT theCount/count(2) AND theCount/count(3) AND 
+	NOT theCount/count(4) AND NOT theCount/count(5) AND theCount/count(6) AND 
+	theCount/count(7) AND NOT theCount/count(8))
+	OR (NOT theCount/count(0) AND State_machine/state_FSM_FFd2 AND 
+	NOT theCount/count(1) AND theCount/count(2) AND theCount/count(3) AND 
+	NOT theCount/count(4) AND theCount/count(5) AND NOT theCount/count(6) AND 
+	NOT theCount/count(7) AND theCount/count(8))
+	OR (NOT theCount/count(0) AND NOT theCount/count(1) AND 
+	theCount/count(2) AND theCount/count(3) AND NOT theCount/count(4) AND 
+	theCount/count(5) AND NOT theCount/count(6) AND NOT theCount/count(7) AND 
+	theCount/count(8) AND State_machine/state_FSM_FFd6)
+	OR (NOT theCount/count(0) AND NOT theCount/count(1) AND 
+	theCount/count(2) AND NOT theCount/count(3) AND NOT theCount/count(4) AND 
+	theCount/count(5) AND theCount/count(6) AND NOT theCount/count(7) AND 
+	NOT theCount/count(8) AND State_machine/state_FSM_FFd1)
+	OR (NOT theCount/count(0) AND NOT theCount/count(1) AND 
+	theCount/count(2) AND NOT theCount/count(3) AND NOT theCount/count(4) AND 
+	theCount/count(5) AND theCount/count(6) AND NOT theCount/count(7) AND 
+	NOT theCount/count(8) AND State_machine/state_FSM_FFd5)
+	OR (NOT theCount/count(0) AND NOT theCount/count(1) AND 
+	NOT theCount/count(2) AND theCount/count(3) AND NOT theCount/count(4) AND 
+	NOT theCount/count(5) AND theCount/count(6) AND State_machine/state_FSM_FFd3 AND 
+	theCount/count(7) AND NOT theCount/count(8))));
+
+FTCPE_theCount/count1: FTCPE port map (theCount/count(1),theCount/count(0),Clock,Reset,'0','1');
+
+FTCPE_theCount/count2: FTCPE port map (theCount/count(2),theCount/count_T(2),Clock,Reset,'0','1');
+theCount/count_T(2) <= ((theCount/count(0) AND theCount/count(1))
+	OR (NOT theCount/count(0) AND State_machine/state_FSM_FFd2 AND 
+	NOT theCount/count(1) AND theCount/count(2) AND theCount/count(3) AND 
+	NOT theCount/count(4) AND theCount/count(5) AND NOT theCount/count(6) AND 
+	NOT theCount/count(7) AND theCount/count(8))
+	OR (NOT theCount/count(0) AND NOT theCount/count(1) AND 
+	theCount/count(2) AND theCount/count(3) AND NOT theCount/count(4) AND 
+	theCount/count(5) AND NOT theCount/count(6) AND NOT theCount/count(7) AND 
+	theCount/count(8) AND State_machine/state_FSM_FFd6)
+	OR (NOT theCount/count(0) AND NOT theCount/count(1) AND 
+	theCount/count(2) AND NOT theCount/count(3) AND NOT theCount/count(4) AND 
+	theCount/count(5) AND theCount/count(6) AND NOT theCount/count(7) AND 
+	NOT theCount/count(8) AND State_machine/state_FSM_FFd1)
+	OR (NOT theCount/count(0) AND NOT theCount/count(1) AND 
+	theCount/count(2) AND NOT theCount/count(3) AND NOT theCount/count(4) AND 
+	theCount/count(5) AND theCount/count(6) AND NOT theCount/count(7) AND 
+	NOT theCount/count(8) AND State_machine/state_FSM_FFd5));
+
+FTCPE_theCount/count3: FTCPE port map (theCount/count(3),theCount/count_T(3),Clock,Reset,'0','1');
+theCount/count_T(3) <= ((theCount/count(0) AND theCount/count(1) AND 
+	theCount/count(2))
+	OR (State_machine/state_FSM_FFd4 AND NOT theCount/count(0) AND 
+	NOT theCount/count(1) AND NOT theCount/count(2) AND theCount/count(3) AND 
+	NOT theCount/count(4) AND NOT theCount/count(5) AND theCount/count(6) AND 
+	theCount/count(7) AND NOT theCount/count(8))
+	OR (NOT theCount/count(0) AND State_machine/state_FSM_FFd2 AND 
+	NOT theCount/count(1) AND theCount/count(2) AND theCount/count(3) AND 
+	NOT theCount/count(4) AND theCount/count(5) AND NOT theCount/count(6) AND 
+	NOT theCount/count(7) AND theCount/count(8))
+	OR (NOT theCount/count(0) AND NOT theCount/count(1) AND 
+	theCount/count(2) AND theCount/count(3) AND NOT theCount/count(4) AND 
+	theCount/count(5) AND NOT theCount/count(6) AND NOT theCount/count(7) AND 
+	theCount/count(8) AND State_machine/state_FSM_FFd6)
+	OR (NOT theCount/count(0) AND NOT theCount/count(1) AND 
+	NOT theCount/count(2) AND theCount/count(3) AND NOT theCount/count(4) AND 
+	NOT theCount/count(5) AND theCount/count(6) AND State_machine/state_FSM_FFd3 AND 
+	theCount/count(7) AND NOT theCount/count(8)));
+
+FTCPE_theCount/count4: FTCPE port map (theCount/count(4),theCount/count_T(4),Clock,Reset,'0','1');
+theCount/count_T(4) <= (theCount/count(0) AND theCount/count(1) AND 
+	theCount/count(2) AND theCount/count(3));
+
+FTCPE_theCount/count5: FTCPE port map (theCount/count(5),theCount/count_T(5),Clock,Reset,'0','1');
+theCount/count_T(5) <= ((theCount/count(0) AND theCount/count(1) AND 
+	theCount/count(2) AND theCount/count(3) AND theCount/count(4))
+	OR (NOT theCount/count(0) AND State_machine/state_FSM_FFd2 AND 
+	NOT theCount/count(1) AND theCount/count(2) AND theCount/count(3) AND 
+	NOT theCount/count(4) AND theCount/count(5) AND NOT theCount/count(6) AND 
+	NOT theCount/count(7) AND theCount/count(8))
+	OR (NOT theCount/count(0) AND NOT theCount/count(1) AND 
+	theCount/count(2) AND theCount/count(3) AND NOT theCount/count(4) AND 
+	theCount/count(5) AND NOT theCount/count(6) AND NOT theCount/count(7) AND 
+	theCount/count(8) AND State_machine/state_FSM_FFd6)
+	OR (NOT theCount/count(0) AND NOT theCount/count(1) AND 
+	theCount/count(2) AND NOT theCount/count(3) AND NOT theCount/count(4) AND 
+	theCount/count(5) AND theCount/count(6) AND NOT theCount/count(7) AND 
+	NOT theCount/count(8) AND State_machine/state_FSM_FFd1)
+	OR (NOT theCount/count(0) AND NOT theCount/count(1) AND 
+	theCount/count(2) AND NOT theCount/count(3) AND NOT theCount/count(4) AND 
+	theCount/count(5) AND theCount/count(6) AND NOT theCount/count(7) AND 
+	NOT theCount/count(8) AND State_machine/state_FSM_FFd5));
+
+FTCPE_theCount/count6: FTCPE port map (theCount/count(6),theCount/count_T(6),Clock,Reset,'0','1');
+theCount/count_T(6) <= ((theCount/count(0) AND theCount/count(1) AND 
+	theCount/count(2) AND theCount/count(3) AND theCount/count(4) AND 
+	theCount/count(5))
+	OR (State_machine/state_FSM_FFd4 AND NOT theCount/count(0) AND 
+	NOT theCount/count(1) AND NOT theCount/count(2) AND theCount/count(3) AND 
+	NOT theCount/count(4) AND NOT theCount/count(5) AND theCount/count(6) AND 
+	theCount/count(7) AND NOT theCount/count(8))
+	OR (NOT theCount/count(0) AND NOT theCount/count(1) AND 
+	theCount/count(2) AND NOT theCount/count(3) AND NOT theCount/count(4) AND 
+	theCount/count(5) AND theCount/count(6) AND NOT theCount/count(7) AND 
+	NOT theCount/count(8) AND State_machine/state_FSM_FFd1)
+	OR (NOT theCount/count(0) AND NOT theCount/count(1) AND 
+	theCount/count(2) AND NOT theCount/count(3) AND NOT theCount/count(4) AND 
+	theCount/count(5) AND theCount/count(6) AND NOT theCount/count(7) AND 
+	NOT theCount/count(8) AND State_machine/state_FSM_FFd5)
+	OR (NOT theCount/count(0) AND NOT theCount/count(1) AND 
+	NOT theCount/count(2) AND theCount/count(3) AND NOT theCount/count(4) AND 
+	NOT theCount/count(5) AND theCount/count(6) AND State_machine/state_FSM_FFd3 AND 
+	theCount/count(7) AND NOT theCount/count(8)));
+
+FTCPE_theCount/count7: FTCPE port map (theCount/count(7),theCount/count_T(7),Clock,Reset,'0','1');
+theCount/count_T(7) <= ((theCount/count(0) AND theCount/count(1) AND 
+	theCount/count(2) AND theCount/count(3) AND theCount/count(4) AND 
+	theCount/count(5) AND theCount/count(6))
+	OR (State_machine/state_FSM_FFd4 AND NOT theCount/count(0) AND 
+	NOT theCount/count(1) AND NOT theCount/count(2) AND theCount/count(3) AND 
+	NOT theCount/count(4) AND NOT theCount/count(5) AND theCount/count(6) AND 
+	theCount/count(7) AND NOT theCount/count(8))
+	OR (NOT theCount/count(0) AND NOT theCount/count(1) AND 
+	NOT theCount/count(2) AND theCount/count(3) AND NOT theCount/count(4) AND 
+	NOT theCount/count(5) AND theCount/count(6) AND State_machine/state_FSM_FFd3 AND 
+	theCount/count(7) AND NOT theCount/count(8)));
+
+FTCPE_theCount/count8: FTCPE port map (theCount/count(8),theCount/count_T(8),Clock,Reset,'0','1');
+theCount/count_T(8) <= ((theCount/count(0) AND theCount/count(1) AND 
+	theCount/count(2) AND theCount/count(3) AND theCount/count(4) AND 
+	theCount/count(5) AND theCount/count(6) AND theCount/count(7))
+	OR (NOT theCount/count(0) AND State_machine/state_FSM_FFd2 AND 
+	NOT theCount/count(1) AND theCount/count(2) AND theCount/count(3) AND 
+	NOT theCount/count(4) AND theCount/count(5) AND NOT theCount/count(6) AND 
+	NOT theCount/count(7) AND theCount/count(8))
+	OR (NOT theCount/count(0) AND NOT theCount/count(1) AND 
+	theCount/count(2) AND theCount/count(3) AND NOT theCount/count(4) AND 
+	theCount/count(5) AND NOT theCount/count(6) AND NOT theCount/count(7) AND 
+	theCount/count(8) AND State_machine/state_FSM_FFd6));
+
+
+Register Legend:
+ FDCPE (Q,D,C,CLR,PRE,CE); 
+ FDDCPE (Q,D,C,CLR,PRE,CE); 
+ FTCPE (Q,D,C,CLR,PRE,CE); 
+ FTDCPE (Q,D,C,CLR,PRE,CE); 
+ LDCP  (Q,D,G,CLR,PRE); 
+
+******************************  Device Pin Out *****************************
+
+Device : XC2C64A-7-VQ44
+
+
+   --------------------------------  
+  /44 43 42 41 40 39 38 37 36 35 34 \
+ | 1                             33 | 
+ | 2                             32 | 
+ | 3                             31 | 
+ | 4                             30 | 
+ | 5         XC2C64A-7-VQ44      29 | 
+ | 6                             28 | 
+ | 7                             27 | 
+ | 8                             26 | 
+ | 9                             25 | 
+ | 10                            24 | 
+ | 11                            23 | 
+ \ 12 13 14 15 16 17 18 19 20 21 22 /
+   --------------------------------  
+
+
+Pin Signal                         Pin Signal                        
+No. Name                           No. Name                          
+  1 LEDs<1>                          23 KPR                           
+  2 LEDs<2>                          24 TDO                           
+  3 debugLED                         25 GND                           
+  4 GND                              26 VCCIO-1.8                     
+  5 KPR                              27 KPR                           
+  6 KPR                              28 KPR                           
+  7 VCCIO-1.8                        29 KPR                           
+  8 KPR                              30 Reset                         
+  9 TDI                              31 KPR                           
+ 10 TMS                              32 KPR                           
+ 11 TCK                              33 KPR                           
+ 12 KPR                              34 PedNS                         
+ 13 KPR                              35 VCCAUX                        
+ 14 KPR                              36 PedEW                         
+ 15 VCC                              37 CarNS                         
+ 16 KPR                              38 CarEW                         
+ 17 GND                              39 LightsEW<0>                   
+ 18 KPR                              40 LightsEW<1>                   
+ 19 KPR                              41 LightsNS<0>                   
+ 20 KPR                              42 LightsNS<1>                   
+ 21 KPR                              43 Clock                         
+ 22 KPR                              44 LEDs<0>                       
+
+
+Legend :  NC  = Not Connected, unbonded pin
+        PGND  = Unused I/O configured as additional Ground pin
+         KPR  = Unused I/O with weak keeper (leave unconnected)
+         WPU  = Unused I/O with weak pull up (leave unconnected)
+         TIE  = Unused I/O floating -- must tie to VCC, GND or other signal
+         VCC  = Dedicated Power Pin
+      VCCAUX  = Power supply for JTAG pins
+   VCCIO-3.3  = I/O supply voltage for LVTTL, LVCMOS33, SSTL3_I
+   VCCIO-2.5  = I/O supply voltage for LVCMOS25, SSTL2_I
+   VCCIO-1.8  = I/O supply voltage for LVCMOS18
+   VCCIO-1.5  = I/O supply voltage for LVCMOS15, HSTL_I
+        VREF  = Reference voltage for indicated input standard
+       *VREF  = Reference voltage pin selected by software
+         GND  = Dedicated Ground Pin
+         TDI  = Test Data In, JTAG pin
+         TDO  = Test Data Out, JTAG pin
+         TCK  = Test Clock, JTAG pin
+         TMS  = Test Mode Select, JTAG pin
+  PROHIBITED  = User reserved pin
+****************************  Compiler Options  ****************************
+
+Following is a list of all global compiler options used by the fitter run.
+
+Device(s) Specified                         : xc2c64a-7-VQ44
+Optimization Method                         : DENSITY
+Multi-Level Logic Optimization              : ON
+Ignore Timing Specifications                : OFF
+Default Register Power Up Value             : LOW
+Keep User Location Constraints              : ON
+What-You-See-Is-What-You-Get                : OFF
+Exhaustive Fitting                          : OFF
+Keep Unused Inputs                          : OFF
+Slew Rate                                   : FAST
+Set Unused I/O Pin Termination              : KEEPER
+Global Clock Optimization                   : ON
+Global Set/Reset Optimization               : ON
+Global Ouput Enable Optimization            : ON
+Enable Input Registers                      : ON
+Function Block Fan-in Limit                 : 38
+Use DATA_GATE Attribute                     : ON
+Set Tristate Outputs to Termination Mode    : KEEPER
+Default Voltage Standard for All Outputs    : LVCMOS18
+Input Limit                                 : 32
+Pterm Limit                                 : 28

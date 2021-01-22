@@ -1,0 +1,512 @@
+assert111.........
+name = ddddddd..
+assert333.........
+NDEBUG is not defined
+__STDC__ is not defined
+__MSVC__ is defined
+XPLA_BORLANDC is defined
+
+---------------------
+|  D E F A U L T S  |
+---------------------
+max_pt=28, min_pt=3
+max_fi=32, min_fi=4
+
+-----------------
+|  H E A D E R  |
+-----------------
+#$ MODULE Traffic_top_level
+#$ PINS 6 "Clock":1 "Reset":30 "PedEW":37 "CarEW":34 "PedNS":38 "CarNS":36 
+#$ PINS 3 "LightsEW<0>":40 "LightsEW<1>":39 "LightsNS<0>":42 
+#$ PINS 4 "LightsNS<1>":41 "debugLED":29 "LEDs<2>":23 "LEDs<1>":22 
+#$ PINS 1 "LEDs<0>":21 
+#$ NODES 2 "State_machine/state_FSM_FFd2" "State_machine/state_FSM_FFd3" 
+#$ NODES 2 "State_machine/state_FSM_FFd6" "State_machine/state_FSM_FFd1" 
+#$ NODES 2 "State_machine/state_FSM_FFd4" "State_machine/state_FSM_FFd5" 
+#$ NODES 2 "theCount/count<0>" "theCount/count<1>" 
+
+--------------------------------------
+|  P I N    T a b l e    [count=22]  |
+--------------------------------------
+ theCount/count<1> LEDs<2> State_machine/state_FSM_FFd6 PedNS PedEW 
+ State_machine/state_FSM_FFd5 State_machine/state_FSM_FFd4 State_machine/state_FSM_FFd3 
+ Clock LightsNS<0> State_machine/state_FSM_FFd2 CarEW State_machine/state_FSM_FFd1 
+ theCount/count<0> CarNS LEDs<1> LightsEW<1> Reset debugLED LightsNS<1> LEDs<0> 
+ LightsEW<0>
+
+------------------------------------------
+|  P I N    E q n l i s t    [count=14]  |
+------------------------------------------
+Clock (fi=0): 
+Reset (fi=0): 
+PedEW (fi=0): 
+CarEW (fi=0): 
+PedNS (fi=0): 
+CarNS (fi=0): 
+LightsEW<0> (fi=2): (LightsEW<0>/N_PZ_24, net=Traffic_top_level) 
+LightsEW<1> (fi=2): (LightsEW<1>/N_PZ_25, net=Traffic_top_level) 
+LightsNS<0> (fi=2): (LightsNS<0>/N_PZ_26, net=Traffic_top_level) 
+LightsNS<1> (fi=2): (LightsNS<1>/N_PZ_27, net=Traffic_top_level) 
+debugLED (fi=1): (debugLED/N_PZ_28, net=Traffic_top_level) 
+LEDs<2> (fi=0): (LEDs<2>/N_PZ_29, net=Traffic_top_level) 
+LEDs<1> (fi=0): (LEDs<1>/N_PZ_30, net=Traffic_top_level) 
+LEDs<0> (fi=0): (LEDs<0>/N_PZ_31, net=Traffic_top_level) 
+
+-------------------------------------------
+|  N O D E    E q n l i s t    [count=8]  |
+-------------------------------------------
+State_machine/state_FSM_FFd2 (fi=10): State_machine/state_FSM_FFd2.D/N_PZ_0 State_machine/state_FSM_FFd2.CLK/N_PZ_1 State_machine/state_FSM_FFd2.AR/N_PZ_2 
+State_machine/state_FSM_FFd3 (fi=10): State_machine/state_FSM_FFd3.CLK/N_PZ_4 State_machine/state_FSM_FFd3.AR/N_PZ_5 State_machine/state_FSM_FFd3.T/N_PZ_41 
+State_machine/state_FSM_FFd6 (fi=10): State_machine/state_FSM_FFd6.D/N_PZ_6 State_machine/state_FSM_FFd6.CLK/N_PZ_7 State_machine/state_FSM_FFd6.AP/N_PZ_8 
+State_machine/state_FSM_FFd1 (fi=8): State_machine/state_FSM_FFd1.D/N_PZ_9 State_machine/state_FSM_FFd1.CLK/N_PZ_10 State_machine/state_FSM_FFd1.AR/N_PZ_11 
+State_machine/state_FSM_FFd4 (fi=10): State_machine/state_FSM_FFd4.CLK/N_PZ_13 State_machine/state_FSM_FFd4.AR/N_PZ_14 State_machine/state_FSM_FFd4.T/N_PZ_44 
+State_machine/state_FSM_FFd5 (fi=8): State_machine/state_FSM_FFd5.D/N_PZ_15 State_machine/state_FSM_FFd5.CLK/N_PZ_16 State_machine/state_FSM_FFd5.AR/N_PZ_17 
+theCount/count<0> (fi=6): theCount/count<0>.D/N_PZ_18 theCount/count<0>.CLK/N_PZ_19 theCount/count<0>.AR/N_PZ_20 
+theCount/count<1> (fi=8): theCount/count<1>.D/N_PZ_21 theCount/count<1>.CLK/N_PZ_22 theCount/count<1>.AR/N_PZ_23 
+
+---------------------------------
+|  D a t a   S t r u c t u r e  |
+---------------------------------
+PI ( 14) =  Clock Reset PedEW CarEW PedNS CarNS State_machine/state_FSM_FFd2.Q 
+            State_machine/state_FSM_FFd3.Q State_machine/state_FSM_FFd6.Q 
+            State_machine/state_FSM_FFd1.Q State_machine/state_FSM_FFd4.Q 
+            State_machine/state_FSM_FFd5.Q theCount/count<0>.Q theCount/count<1>.Q
+
+PO ( 32) =  State_machine/state_FSM_FFd2.D State_machine/state_FSM_FFd2.CLK 
+            State_machine/state_FSM_FFd2.AR State_machine/state_FSM_FFd3.CLK 
+            State_machine/state_FSM_FFd3.AR State_machine/state_FSM_FFd6.D 
+            State_machine/state_FSM_FFd6.CLK State_machine/state_FSM_FFd6.AP 
+            State_machine/state_FSM_FFd1.D State_machine/state_FSM_FFd1.CLK 
+            State_machine/state_FSM_FFd1.AR State_machine/state_FSM_FFd4.CLK 
+            State_machine/state_FSM_FFd4.AR State_machine/state_FSM_FFd5.D 
+            State_machine/state_FSM_FFd5.CLK State_machine/state_FSM_FFd5.AR 
+            theCount/count<0>.D theCount/count<0>.CLK theCount/count<0>.AR 
+            theCount/count<1>.D theCount/count<1>.CLK theCount/count<1>.AR LightsEW<0> 
+            LightsEW<1> LightsNS<0> LightsNS<1> debugLED LEDs<2> LEDs<1> LEDs<0> 
+            State_machine/state_FSM_FFd3.T State_machine/state_FSM_FFd4.T
+
+INT = ( 32) N_PZ_0 N_PZ_1 N_PZ_2 N_PZ_4 N_PZ_5 N_PZ_6 N_PZ_7 N_PZ_8 N_PZ_9 N_PZ_10 
+            N_PZ_11 N_PZ_13 N_PZ_14 N_PZ_15 N_PZ_16 N_PZ_17 N_PZ_18 N_PZ_19 N_PZ_20 
+            N_PZ_21 N_PZ_22 N_PZ_23 N_PZ_24 N_PZ_25 N_PZ_26 N_PZ_27 N_PZ_28 N_PZ_29 
+            N_PZ_30 N_PZ_31 N_PZ_41 N_PZ_44
+
+PINT= (  0)
+
+AINT= ( 32) N_PZ_0 N_PZ_1 N_PZ_2 N_PZ_4 N_PZ_5 N_PZ_6 N_PZ_7 N_PZ_8 N_PZ_9 N_PZ_10 
+            N_PZ_11 N_PZ_13 N_PZ_14 N_PZ_15 N_PZ_16 N_PZ_17 N_PZ_18 N_PZ_19 N_PZ_20 
+            N_PZ_21 N_PZ_22 N_PZ_23 N_PZ_24 N_PZ_25 N_PZ_26 N_PZ_27 N_PZ_28 N_PZ_29 
+            N_PZ_30 N_PZ_31 N_PZ_41 N_PZ_44
+
+
+----------------------------
+|  D F S    N e t w o r k  |
+----------------------------
+PedEW CarEW PedNS State_machine/state_FSM_FFd2.Q State_machine/state_FSM_FFd3.Q  
+State_machine/state_FSM_FFd5.Q theCount/count<0>.Q theCount/count<1>.Q N_PZ_0  
+State_machine/state_FSM_FFd2.D Clock N_PZ_1 State_machine/state_FSM_FFd2.CLK Reset  
+N_PZ_2 State_machine/state_FSM_FFd2.AR N_PZ_4 State_machine/state_FSM_FFd3.CLK N_PZ_5  
+State_machine/state_FSM_FFd3.AR CarNS State_machine/state_FSM_FFd6.Q  
+State_machine/state_FSM_FFd1.Q State_machine/state_FSM_FFd4.Q N_PZ_6  
+State_machine/state_FSM_FFd6.D N_PZ_7 State_machine/state_FSM_FFd6.CLK N_PZ_8  
+State_machine/state_FSM_FFd6.AP N_PZ_9 State_machine/state_FSM_FFd1.D N_PZ_10  
+State_machine/state_FSM_FFd1.CLK N_PZ_11 State_machine/state_FSM_FFd1.AR N_PZ_13  
+State_machine/state_FSM_FFd4.CLK N_PZ_14 State_machine/state_FSM_FFd4.AR N_PZ_15  
+State_machine/state_FSM_FFd5.D N_PZ_16 State_machine/state_FSM_FFd5.CLK N_PZ_17  
+State_machine/state_FSM_FFd5.AR N_PZ_18 theCount/count<0>.D N_PZ_19  
+theCount/count<0>.CLK N_PZ_20 theCount/count<0>.AR N_PZ_21 theCount/count<1>.D N_PZ_22  
+theCount/count<1>.CLK N_PZ_23 theCount/count<1>.AR N_PZ_24 LightsEW<0> N_PZ_25  
+LightsEW<1> N_PZ_26 LightsNS<0> N_PZ_27 LightsNS<1> N_PZ_28 debugLED N_PZ_29 LEDs<2>  
+N_PZ_30 LEDs<1> N_PZ_31 LEDs<0> N_PZ_41 State_machine/state_FSM_FFd3.T N_PZ_44  
+State_machine/state_FSM_FFd4.T 
+
+                                  Short Name                 Collapsible
+          Name       Base   Ext   | TypePolOld pt/th fi/FI fo | min          Pair        pxapin
+         Clock      Clock         d   PI  -  -  -| -  -| -  8 -   -             -             -
+         Reset      Reset         e   PI  -  -  -| -  -| -  9 -   -             -             -
+         PedEW      PedEW         w   PI  -  -  -| -  -| -  5 -   -             -             -
+         CarEW      CarEW         x   PI  -  -  -| -  -| -  3 -   -             -             -
+         PedNS      PedNS         z   PI  -  -  -| -  -| -  5 -   -             -             -
+         CarNS      CarNS        e0   PI  -  -  -| -  -| -  3 -   -             -             -
+        N_PZ_0     N_PZ_0     -  r2 AINT  -  -  6|28  8|32  1 -   -State_machine/state_FSM_FFd2.D             -
+        N_PZ_1     N_PZ_1     -  s2 AINT  -  -  1|28  1|32  1 -   -State_machine/state_FSM_FFd2.CLK             -
+        N_PZ_2     N_PZ_2     -  t2 AINT  -  -  1|28  1|32  1 -   -State_machine/state_FSM_FFd2.AR             -
+        N_PZ_4     N_PZ_4     -  v2 AINT  -  -  1|28  1|32  1 -   -State_machine/state_FSM_FFd3.CLK             -
+        N_PZ_5     N_PZ_5     -  w2 AINT  -  -  1|28  1|32  1 -   -State_machine/state_FSM_FFd3.AR             -
+        N_PZ_6     N_PZ_6     -  x2 AINT  -  -  5|28  8|32  1 -   -State_machine/state_FSM_FFd6.D             -
+        N_PZ_7     N_PZ_7     -  y2 AINT  -  -  1|28  1|32  1 -   -State_machine/state_FSM_FFd6.CLK             -
+        N_PZ_8     N_PZ_8     -  z2 AINT  -  -  1|28  1|32  1 -   -State_machine/state_FSM_FFd6.AP             -
+        N_PZ_9     N_PZ_9     -  a3 AINT  L  -  4|28  6|32  1 -   -State_machine/state_FSM_FFd1.D             -
+       N_PZ_10    N_PZ_10     -  b3 AINT  -  -  1|28  1|32  1 -   -State_machine/state_FSM_FFd1.CLK             -
+       N_PZ_11    N_PZ_11     -  c3 AINT  -  -  1|28  1|32  1 -   -State_machine/state_FSM_FFd1.AR             -
+       N_PZ_13    N_PZ_13     -  e3 AINT  -  -  1|28  1|32  1 -   -State_machine/state_FSM_FFd4.CLK             -
+       N_PZ_14    N_PZ_14     -  f3 AINT  -  -  1|28  1|32  1 -   -State_machine/state_FSM_FFd4.AR             -
+       N_PZ_15    N_PZ_15     -  g3 AINT  L  -  4|28  6|32  1 -   -State_machine/state_FSM_FFd5.D             -
+       N_PZ_16    N_PZ_16     -  h3 AINT  -  -  1|28  1|32  1 -   -State_machine/state_FSM_FFd5.CLK             -
+       N_PZ_17    N_PZ_17     -  i3 AINT  -  -  1|28  1|32  1 -   -State_machine/state_FSM_FFd5.AR             -
+       N_PZ_18    N_PZ_18     -  j3 AINT  -  -  2|28  4|32  1 -   -theCount/count<0>.D             -
+       N_PZ_19    N_PZ_19     -  k3 AINT  -  -  1|28  1|32  1 -   -theCount/count<0>.CLK             -
+       N_PZ_20    N_PZ_20     -  l3 AINT  -  -  1|28  1|32  1 -   -theCount/count<0>.AR             -
+       N_PZ_21    N_PZ_21     -  m3 AINT  -  -  2|28  6|32  1 -   -theCount/count<1>.D             -
+       N_PZ_22    N_PZ_22     -  n3 AINT  -  -  1|28  1|32  1 -   -theCount/count<1>.CLK             -
+       N_PZ_23    N_PZ_23     -  o3 AINT  -  -  1|28  1|32  1 -   -theCount/count<1>.AR             -
+       N_PZ_24    N_PZ_24     -  p3 AINT  L  -  1|28  2|32  1 -   -   LightsEW<0>             -
+       N_PZ_25    N_PZ_25     -  q3 AINT  L  -  1|28  2|32  1 -   -   LightsEW<1>             -
+       N_PZ_26    N_PZ_26     -  r3 AINT  L  -  1|28  2|32  1 -   -   LightsNS<0>             -
+       N_PZ_27    N_PZ_27     -  s3 AINT  L  -  1|28  2|32  1 -   -   LightsNS<1>             -
+       N_PZ_28    N_PZ_28     -  t3 AINT  -  -  1|28  1|32  1 -   -      debugLED             -
+       N_PZ_29    N_PZ_29     -  u3 AINT  -  -  0|28  0|32  1 -   -       LEDs<2>             -
+       N_PZ_30    N_PZ_30     -  v3 AINT  -  -  0|28  0|32  1 -   -       LEDs<1>             -
+       N_PZ_31    N_PZ_31     -  w3 AINT  -  -  0|28  0|32  1 -   -       LEDs<0>             -
+State_machine/state_FSM_FFd2.DState_machine/state_FSM_FFd2    .D  j1   PO  -  -  -| -  -| -  0 -   -        N_PZ_0State_machine/state_FSM_FFd2
+State_machine/state_FSM_FFd2.CLKState_machine/state_FSM_FFd2  .CLK  k1   PO  -  -  -| -  -| -  0 -   -        N_PZ_1State_machine/state_FSM_FFd2
+State_machine/state_FSM_FFd2.ARState_machine/state_FSM_FFd2   .AR  l1   PO  -  -  -| -  -| -  0 -   -        N_PZ_2State_machine/state_FSM_FFd2
+State_machine/state_FSM_FFd3.CLKState_machine/state_FSM_FFd3  .CLK  n1   PO  -  -  -| -  -| -  0 -   -        N_PZ_4State_machine/state_FSM_FFd3
+State_machine/state_FSM_FFd3.ARState_machine/state_FSM_FFd3   .AR  o1   PO  -  -  -| -  -| -  0 -   -        N_PZ_5State_machine/state_FSM_FFd3
+State_machine/state_FSM_FFd6.DState_machine/state_FSM_FFd6    .D  p1   PO  -  -  -| -  -| -  0 -   -        N_PZ_6State_machine/state_FSM_FFd6
+State_machine/state_FSM_FFd6.CLKState_machine/state_FSM_FFd6  .CLK  q1   PO  -  -  -| -  -| -  0 -   -        N_PZ_7State_machine/state_FSM_FFd6
+State_machine/state_FSM_FFd6.APState_machine/state_FSM_FFd6   .AP  r1   PO  -  -  -| -  -| -  0 -   -        N_PZ_8State_machine/state_FSM_FFd6
+State_machine/state_FSM_FFd1.DState_machine/state_FSM_FFd1    .D  s1   PO  -  -  -| -  -| -  0 -   -        N_PZ_9State_machine/state_FSM_FFd1
+State_machine/state_FSM_FFd1.CLKState_machine/state_FSM_FFd1  .CLK  t1   PO  -  -  -| -  -| -  0 -   -       N_PZ_10State_machine/state_FSM_FFd1
+State_machine/state_FSM_FFd1.ARState_machine/state_FSM_FFd1   .AR  u1   PO  -  -  -| -  -| -  0 -   -       N_PZ_11State_machine/state_FSM_FFd1
+State_machine/state_FSM_FFd4.CLKState_machine/state_FSM_FFd4  .CLK  w1   PO  -  -  -| -  -| -  0 -   -       N_PZ_13State_machine/state_FSM_FFd4
+State_machine/state_FSM_FFd4.ARState_machine/state_FSM_FFd4   .AR  x1   PO  -  -  -| -  -| -  0 -   -       N_PZ_14State_machine/state_FSM_FFd4
+State_machine/state_FSM_FFd5.DState_machine/state_FSM_FFd5    .D  y1   PO  -  -  -| -  -| -  0 -   -       N_PZ_15State_machine/state_FSM_FFd5
+State_machine/state_FSM_FFd5.CLKState_machine/state_FSM_FFd5  .CLK  z1   PO  -  -  -| -  -| -  0 -   -       N_PZ_16State_machine/state_FSM_FFd5
+State_machine/state_FSM_FFd5.ARState_machine/state_FSM_FFd5   .AR  a2   PO  -  -  -| -  -| -  0 -   -       N_PZ_17State_machine/state_FSM_FFd5
+theCount/count<0>.DtheCount/count<0>    .D  b2   PO  -  -  -| -  -| -  0 -   -       N_PZ_18theCount/count<0>
+theCount/count<0>.CLKtheCount/count<0>  .CLK  c2   PO  -  -  -| -  -| -  0 -   -       N_PZ_19theCount/count<0>
+theCount/count<0>.ARtheCount/count<0>   .AR  d2   PO  -  -  -| -  -| -  0 -   -       N_PZ_20theCount/count<0>
+theCount/count<1>.DtheCount/count<1>    .D  e2   PO  -  -  -| -  -| -  0 -   -       N_PZ_21theCount/count<1>
+theCount/count<1>.CLKtheCount/count<1>  .CLK  f2   PO  -  -  -| -  -| -  0 -   -       N_PZ_22theCount/count<1>
+theCount/count<1>.ARtheCount/count<1>   .AR  g2   PO  -  -  -| -  -| -  0 -   -       N_PZ_23theCount/count<1>
+   LightsEW<0>LightsEW<0>        j2   PO  -  -  -| -  -| -  0 -   -       N_PZ_24   LightsEW<0>
+   LightsEW<1>LightsEW<1>        k2   PO  -  -  -| -  -| -  0 -   -       N_PZ_25   LightsEW<1>
+   LightsNS<0>LightsNS<0>        l2   PO  -  -  -| -  -| -  0 -   -       N_PZ_26   LightsNS<0>
+   LightsNS<1>LightsNS<1>        m2   PO  -  -  -| -  -| -  0 -   -       N_PZ_27   LightsNS<1>
+      debugLED   debugLED        n2   PO  -  -  -| -  -| -  0 -   -       N_PZ_28      debugLED
+       LEDs<2>    LEDs<2>        o2   PO  -  -  -| -  -| -  0 -   -       N_PZ_29       LEDs<2>
+       LEDs<1>    LEDs<1>        p2   PO  -  -  -| -  -| -  0 -   -       N_PZ_30       LEDs<1>
+       LEDs<0>    LEDs<0>        q2   PO  -  -  -| -  -| -  0 -   -       N_PZ_31       LEDs<0>
+State_machine/state_FSM_FFd2.QState_machine/state_FSM_FFd2    .Q  x3   PI  -  -  -| -  -| -  4 -   -             -             -
+State_machine/state_FSM_FFd3.QState_machine/state_FSM_FFd3    .Q  y3   PI  -  -  -| -  -| -  6 -   -             -             -
+State_machine/state_FSM_FFd6.QState_machine/state_FSM_FFd6    .Q  z3   PI  -  -  -| -  -| -  4 -   -             -             -
+State_machine/state_FSM_FFd1.QState_machine/state_FSM_FFd1    .Q  a4   PI  -  -  -| -  -| -  5 -   -             -             -
+State_machine/state_FSM_FFd4.QState_machine/state_FSM_FFd4    .Q  b4   PI  -  -  -| -  -| -  6 -   -             -             -
+State_machine/state_FSM_FFd5.QState_machine/state_FSM_FFd5    .Q  c4   PI  -  -  -| -  -| -  5 -   -             -             -
+theCount/count<0>.QtheCount/count<0>    .Q  d4   PI  -  -  -| -  -| -  8 -   -             -             -
+theCount/count<1>.QtheCount/count<1>    .Q  e4   PI  -  -  -| -  -| -  8 -   -             -             -
+       N_PZ_41    N_PZ_41     -  e5 AINT  -  -  4|28  8|32  1 -   -State_machine/state_FSM_FFd3.T             -
+       N_PZ_44    N_PZ_44     -  h5 AINT  -  -  3|28  8|32  1 -   -State_machine/state_FSM_FFd4.T             -
+State_machine/state_FSM_FFd3.TState_machine/state_FSM_FFd3    .T  w4   PO  -  -  -| -  -| -  0 -   -       N_PZ_41State_machine/state_FSM_FFd3
+State_machine/state_FSM_FFd4.TState_machine/state_FSM_FFd4    .T  z4   PO  -  -  -| -  -| -  0 -   -       N_PZ_44State_machine/state_FSM_FFd4
+
+-------------------------------------------------------
+|  PinCnt = 14, NodeCnt = 8, Total = 22, TotalPt = 51 |
+-------------------------------------------------------
+Clock,net=Traffic_top_level: PI
+  <--0-- 
+  --8--> (N_PZ_1, Traffic_top_level) (N_PZ_4, Traffic_top_level)  
+         (N_PZ_7, Traffic_top_level) (N_PZ_10, Traffic_top_level)  
+         (N_PZ_13, Traffic_top_level) (N_PZ_16, Traffic_top_level)  
+         (N_PZ_19, Traffic_top_level) (N_PZ_22, Traffic_top_level) 
+Reset,net=Traffic_top_level: PI
+  <--0-- 
+  --9--> (N_PZ_2, Traffic_top_level) (N_PZ_5, Traffic_top_level)  
+         (N_PZ_8, Traffic_top_level) (N_PZ_11, Traffic_top_level)  
+         (N_PZ_14, Traffic_top_level) (N_PZ_17, Traffic_top_level)  
+         (N_PZ_20, Traffic_top_level) (N_PZ_23, Traffic_top_level)  
+         (N_PZ_28, Traffic_top_level) 
+PedEW,net=Traffic_top_level: PI
+  <--0-- 
+  --5--> (N_PZ_9, Traffic_top_level) (N_PZ_0, Traffic_top_level)  
+         (N_PZ_6, Traffic_top_level) (N_PZ_41, Traffic_top_level)  
+         (N_PZ_44, Traffic_top_level) 
+CarEW,net=Traffic_top_level: PI
+  <--0-- 
+  --3--> (N_PZ_9, Traffic_top_level) (N_PZ_0, Traffic_top_level)  
+         (N_PZ_41, Traffic_top_level) 
+PedNS,net=Traffic_top_level: PI
+  <--0-- 
+  --5--> (N_PZ_0, Traffic_top_level) (N_PZ_15, Traffic_top_level)  
+         (N_PZ_6, Traffic_top_level) (N_PZ_41, Traffic_top_level)  
+         (N_PZ_44, Traffic_top_level) 
+CarNS,net=Traffic_top_level: PI
+  <--0-- 
+  --3--> (N_PZ_15, Traffic_top_level) (N_PZ_6, Traffic_top_level)  
+         (N_PZ_44, Traffic_top_level) 
+N_PZ_0,net=Traffic_top_level: PINT ( State_machine/state_FSM_FFd2.D )
+  <--8--  (PedEW, Traffic_top_level) (CarEW, Traffic_top_level) 
+          (PedNS, Traffic_top_level) 
+          (State_machine/state_FSM_FFd2.Q, Traffic_top_level) 
+          (State_machine/state_FSM_FFd3.Q, Traffic_top_level) 
+          (State_machine/state_FSM_FFd5.Q, Traffic_top_level) 
+          (theCount/count<0>.Q, Traffic_top_level) 
+          (theCount/count<1>.Q, Traffic_top_level)
+  --1--> (State_machine/state_FSM_FFd2.D, Traffic_top_level) 
+N_PZ_1,net=Traffic_top_level: PINT ( State_machine/state_FSM_FFd2.CLK )
+  <--1--  (Clock, Traffic_top_level)
+  --1--> (State_machine/state_FSM_FFd2.CLK, Traffic_top_level) 
+N_PZ_2,net=Traffic_top_level: PINT ( State_machine/state_FSM_FFd2.AR )
+  <--1--  (Reset, Traffic_top_level)
+  --1--> (State_machine/state_FSM_FFd2.AR, Traffic_top_level) 
+N_PZ_4,net=Traffic_top_level: PINT ( State_machine/state_FSM_FFd3.CLK )
+  <--1--  (Clock, Traffic_top_level)
+  --1--> (State_machine/state_FSM_FFd3.CLK, Traffic_top_level) 
+N_PZ_5,net=Traffic_top_level: PINT ( State_machine/state_FSM_FFd3.AR )
+  <--1--  (Reset, Traffic_top_level)
+  --1--> (State_machine/state_FSM_FFd3.AR, Traffic_top_level) 
+N_PZ_6,net=Traffic_top_level: PINT ( State_machine/state_FSM_FFd6.D )
+  <--8--  (PedEW, Traffic_top_level) (PedNS, Traffic_top_level) 
+          (CarNS, Traffic_top_level) 
+          (State_machine/state_FSM_FFd6.Q, Traffic_top_level) 
+          (State_machine/state_FSM_FFd1.Q, Traffic_top_level) 
+          (State_machine/state_FSM_FFd4.Q, Traffic_top_level) 
+          (theCount/count<0>.Q, Traffic_top_level) 
+          (theCount/count<1>.Q, Traffic_top_level)
+  --1--> (State_machine/state_FSM_FFd6.D, Traffic_top_level) 
+N_PZ_7,net=Traffic_top_level: PINT ( State_machine/state_FSM_FFd6.CLK )
+  <--1--  (Clock, Traffic_top_level)
+  --1--> (State_machine/state_FSM_FFd6.CLK, Traffic_top_level) 
+N_PZ_8,net=Traffic_top_level: PINT ( State_machine/state_FSM_FFd6.AP )
+  <--1--  (Reset, Traffic_top_level)
+  --1--> (State_machine/state_FSM_FFd6.AP, Traffic_top_level) 
+N_PZ_9,net=Traffic_top_level: PINT ( State_machine/state_FSM_FFd1.D )
+  <--6--  (PedEW, Traffic_top_level) (CarEW, Traffic_top_level) 
+          (State_machine/state_FSM_FFd2.Q, Traffic_top_level) 
+          (State_machine/state_FSM_FFd1.Q, Traffic_top_level) 
+          (theCount/count<0>.Q, Traffic_top_level) 
+          (theCount/count<1>.Q, Traffic_top_level)
+  --1--> (State_machine/state_FSM_FFd1.D, Traffic_top_level) 
+N_PZ_10,net=Traffic_top_level: PINT ( State_machine/state_FSM_FFd1.CLK )
+  <--1--  (Clock, Traffic_top_level)
+  --1--> (State_machine/state_FSM_FFd1.CLK, Traffic_top_level) 
+N_PZ_11,net=Traffic_top_level: PINT ( State_machine/state_FSM_FFd1.AR )
+  <--1--  (Reset, Traffic_top_level)
+  --1--> (State_machine/state_FSM_FFd1.AR, Traffic_top_level) 
+N_PZ_13,net=Traffic_top_level: PINT ( State_machine/state_FSM_FFd4.CLK )
+  <--1--  (Clock, Traffic_top_level)
+  --1--> (State_machine/state_FSM_FFd4.CLK, Traffic_top_level) 
+N_PZ_14,net=Traffic_top_level: PINT ( State_machine/state_FSM_FFd4.AR )
+  <--1--  (Reset, Traffic_top_level)
+  --1--> (State_machine/state_FSM_FFd4.AR, Traffic_top_level) 
+N_PZ_15,net=Traffic_top_level: PINT ( State_machine/state_FSM_FFd5.D )
+  <--6--  (PedNS, Traffic_top_level) (CarNS, Traffic_top_level) 
+          (State_machine/state_FSM_FFd6.Q, Traffic_top_level) 
+          (State_machine/state_FSM_FFd5.Q, Traffic_top_level) 
+          (theCount/count<0>.Q, Traffic_top_level) 
+          (theCount/count<1>.Q, Traffic_top_level)
+  --1--> (State_machine/state_FSM_FFd5.D, Traffic_top_level) 
+N_PZ_16,net=Traffic_top_level: PINT ( State_machine/state_FSM_FFd5.CLK )
+  <--1--  (Clock, Traffic_top_level)
+  --1--> (State_machine/state_FSM_FFd5.CLK, Traffic_top_level) 
+N_PZ_17,net=Traffic_top_level: PINT ( State_machine/state_FSM_FFd5.AR )
+  <--1--  (Reset, Traffic_top_level)
+  --1--> (State_machine/state_FSM_FFd5.AR, Traffic_top_level) 
+N_PZ_18,net=Traffic_top_level: PINT ( theCount/count<0>.D )
+  <--4--  (State_machine/state_FSM_FFd3.Q, Traffic_top_level) 
+          (State_machine/state_FSM_FFd4.Q, Traffic_top_level) 
+          (theCount/count<0>.Q, Traffic_top_level) 
+          (theCount/count<1>.Q, Traffic_top_level)
+  --1--> (theCount/count<0>.D, Traffic_top_level) 
+N_PZ_19,net=Traffic_top_level: PINT ( theCount/count<0>.CLK )
+  <--1--  (Clock, Traffic_top_level)
+  --1--> (theCount/count<0>.CLK, Traffic_top_level) 
+N_PZ_20,net=Traffic_top_level: PINT ( theCount/count<0>.AR )
+  <--1--  (Reset, Traffic_top_level)
+  --1--> (theCount/count<0>.AR, Traffic_top_level) 
+N_PZ_21,net=Traffic_top_level: PINT ( theCount/count<1>.D )
+  <--6--  (State_machine/state_FSM_FFd3.Q, Traffic_top_level) 
+          (State_machine/state_FSM_FFd1.Q, Traffic_top_level) 
+          (State_machine/state_FSM_FFd4.Q, Traffic_top_level) 
+          (State_machine/state_FSM_FFd5.Q, Traffic_top_level) 
+          (theCount/count<0>.Q, Traffic_top_level) 
+          (theCount/count<1>.Q, Traffic_top_level)
+  --1--> (theCount/count<1>.D, Traffic_top_level) 
+N_PZ_22,net=Traffic_top_level: PINT ( theCount/count<1>.CLK )
+  <--1--  (Clock, Traffic_top_level)
+  --1--> (theCount/count<1>.CLK, Traffic_top_level) 
+N_PZ_23,net=Traffic_top_level: PINT ( theCount/count<1>.AR )
+  <--1--  (Reset, Traffic_top_level)
+  --1--> (theCount/count<1>.AR, Traffic_top_level) 
+N_PZ_24,net=Traffic_top_level: PINT ( LightsEW<0> )
+  <--2--  (State_machine/state_FSM_FFd4.Q, Traffic_top_level) 
+          (State_machine/state_FSM_FFd5.Q, Traffic_top_level)
+  --1--> (LightsEW<0>, Traffic_top_level) 
+N_PZ_25,net=Traffic_top_level: PINT ( LightsEW<1> )
+  <--2--  (State_machine/state_FSM_FFd6.Q, Traffic_top_level) 
+          (State_machine/state_FSM_FFd4.Q, Traffic_top_level)
+  --1--> (LightsEW<1>, Traffic_top_level) 
+N_PZ_26,net=Traffic_top_level: PINT ( LightsNS<0> )
+  <--2--  (State_machine/state_FSM_FFd3.Q, Traffic_top_level) 
+          (State_machine/state_FSM_FFd1.Q, Traffic_top_level)
+  --1--> (LightsNS<0>, Traffic_top_level) 
+N_PZ_27,net=Traffic_top_level: PINT ( LightsNS<1> )
+  <--2--  (State_machine/state_FSM_FFd2.Q, Traffic_top_level) 
+          (State_machine/state_FSM_FFd3.Q, Traffic_top_level)
+  --1--> (LightsNS<1>, Traffic_top_level) 
+N_PZ_28,net=Traffic_top_level: PINT ( debugLED )
+  <--1--  (Reset, Traffic_top_level)
+  --1--> (debugLED, Traffic_top_level) 
+N_PZ_29,net=Traffic_top_level: PINT ( LEDs<2> )
+  <--0-- 
+  --1--> (LEDs<2>, Traffic_top_level) 
+N_PZ_30,net=Traffic_top_level: PINT ( LEDs<1> )
+  <--0-- 
+  --1--> (LEDs<1>, Traffic_top_level) 
+N_PZ_31,net=Traffic_top_level: PINT ( LEDs<0> )
+  <--0-- 
+  --1--> (LEDs<0>, Traffic_top_level) 
+State_machine/state_FSM_FFd2.D,net=Traffic_top_level: PO
+  <--1--  (N_PZ_0, Traffic_top_level)
+  --0--> 
+State_machine/state_FSM_FFd2.CLK,net=Traffic_top_level: PO
+  <--1--  (N_PZ_1, Traffic_top_level)
+  --0--> 
+State_machine/state_FSM_FFd2.AR,net=Traffic_top_level: PO
+  <--1--  (N_PZ_2, Traffic_top_level)
+  --0--> 
+State_machine/state_FSM_FFd3.CLK,net=Traffic_top_level: PO
+  <--1--  (N_PZ_4, Traffic_top_level)
+  --0--> 
+State_machine/state_FSM_FFd3.AR,net=Traffic_top_level: PO
+  <--1--  (N_PZ_5, Traffic_top_level)
+  --0--> 
+State_machine/state_FSM_FFd6.D,net=Traffic_top_level: PO
+  <--1--  (N_PZ_6, Traffic_top_level)
+  --0--> 
+State_machine/state_FSM_FFd6.CLK,net=Traffic_top_level: PO
+  <--1--  (N_PZ_7, Traffic_top_level)
+  --0--> 
+State_machine/state_FSM_FFd6.AP,net=Traffic_top_level: PO
+  <--1--  (N_PZ_8, Traffic_top_level)
+  --0--> 
+State_machine/state_FSM_FFd1.D,net=Traffic_top_level: PO
+  <--1--  (N_PZ_9, Traffic_top_level)
+  --0--> 
+State_machine/state_FSM_FFd1.CLK,net=Traffic_top_level: PO
+  <--1--  (N_PZ_10, Traffic_top_level)
+  --0--> 
+State_machine/state_FSM_FFd1.AR,net=Traffic_top_level: PO
+  <--1--  (N_PZ_11, Traffic_top_level)
+  --0--> 
+State_machine/state_FSM_FFd4.CLK,net=Traffic_top_level: PO
+  <--1--  (N_PZ_13, Traffic_top_level)
+  --0--> 
+State_machine/state_FSM_FFd4.AR,net=Traffic_top_level: PO
+  <--1--  (N_PZ_14, Traffic_top_level)
+  --0--> 
+State_machine/state_FSM_FFd5.D,net=Traffic_top_level: PO
+  <--1--  (N_PZ_15, Traffic_top_level)
+  --0--> 
+State_machine/state_FSM_FFd5.CLK,net=Traffic_top_level: PO
+  <--1--  (N_PZ_16, Traffic_top_level)
+  --0--> 
+State_machine/state_FSM_FFd5.AR,net=Traffic_top_level: PO
+  <--1--  (N_PZ_17, Traffic_top_level)
+  --0--> 
+theCount/count<0>.D,net=Traffic_top_level: PO
+  <--1--  (N_PZ_18, Traffic_top_level)
+  --0--> 
+theCount/count<0>.CLK,net=Traffic_top_level: PO
+  <--1--  (N_PZ_19, Traffic_top_level)
+  --0--> 
+theCount/count<0>.AR,net=Traffic_top_level: PO
+  <--1--  (N_PZ_20, Traffic_top_level)
+  --0--> 
+theCount/count<1>.D,net=Traffic_top_level: PO
+  <--1--  (N_PZ_21, Traffic_top_level)
+  --0--> 
+theCount/count<1>.CLK,net=Traffic_top_level: PO
+  <--1--  (N_PZ_22, Traffic_top_level)
+  --0--> 
+theCount/count<1>.AR,net=Traffic_top_level: PO
+  <--1--  (N_PZ_23, Traffic_top_level)
+  --0--> 
+LightsEW<0>,net=Traffic_top_level: PO
+  <--1--  (N_PZ_24, Traffic_top_level)
+  --0--> 
+LightsEW<1>,net=Traffic_top_level: PO
+  <--1--  (N_PZ_25, Traffic_top_level)
+  --0--> 
+LightsNS<0>,net=Traffic_top_level: PO
+  <--1--  (N_PZ_26, Traffic_top_level)
+  --0--> 
+LightsNS<1>,net=Traffic_top_level: PO
+  <--1--  (N_PZ_27, Traffic_top_level)
+  --0--> 
+debugLED,net=Traffic_top_level: PO
+  <--1--  (N_PZ_28, Traffic_top_level)
+  --0--> 
+LEDs<2>,net=Traffic_top_level: PO
+  <--1--  (N_PZ_29, Traffic_top_level)
+  --0--> 
+LEDs<1>,net=Traffic_top_level: PO
+  <--1--  (N_PZ_30, Traffic_top_level)
+  --0--> 
+LEDs<0>,net=Traffic_top_level: PO
+  <--1--  (N_PZ_31, Traffic_top_level)
+  --0--> 
+State_machine/state_FSM_FFd2.Q,net=Traffic_top_level: PI
+  <--0-- 
+  --4--> (N_PZ_27, Traffic_top_level) (N_PZ_9, Traffic_top_level)  
+         (N_PZ_0, Traffic_top_level) (N_PZ_41, Traffic_top_level) 
+State_machine/state_FSM_FFd3.Q,net=Traffic_top_level: PI
+  <--0-- 
+  --6--> (N_PZ_26, Traffic_top_level) (N_PZ_27, Traffic_top_level)  
+         (N_PZ_18, Traffic_top_level) (N_PZ_0, Traffic_top_level)  
+         (N_PZ_21, Traffic_top_level) (N_PZ_41, Traffic_top_level) 
+State_machine/state_FSM_FFd6.Q,net=Traffic_top_level: PI
+  <--0-- 
+  --4--> (N_PZ_25, Traffic_top_level) (N_PZ_15, Traffic_top_level)  
+         (N_PZ_6, Traffic_top_level) (N_PZ_44, Traffic_top_level) 
+State_machine/state_FSM_FFd1.Q,net=Traffic_top_level: PI
+  <--0-- 
+  --5--> (N_PZ_26, Traffic_top_level) (N_PZ_9, Traffic_top_level)  
+         (N_PZ_21, Traffic_top_level) (N_PZ_6, Traffic_top_level)  
+         (N_PZ_44, Traffic_top_level) 
+State_machine/state_FSM_FFd4.Q,net=Traffic_top_level: PI
+  <--0-- 
+  --6--> (N_PZ_24, Traffic_top_level) (N_PZ_25, Traffic_top_level)  
+         (N_PZ_18, Traffic_top_level) (N_PZ_21, Traffic_top_level)  
+         (N_PZ_6, Traffic_top_level) (N_PZ_44, Traffic_top_level) 
+State_machine/state_FSM_FFd5.Q,net=Traffic_top_level: PI
+  <--0-- 
+  --5--> (N_PZ_24, Traffic_top_level) (N_PZ_0, Traffic_top_level)  
+         (N_PZ_21, Traffic_top_level) (N_PZ_15, Traffic_top_level)  
+         (N_PZ_41, Traffic_top_level) 
+theCount/count<0>.Q,net=Traffic_top_level: PI
+  <--0-- 
+  --8--> (N_PZ_18, Traffic_top_level) (N_PZ_9, Traffic_top_level)  
+         (N_PZ_0, Traffic_top_level) (N_PZ_21, Traffic_top_level)  
+         (N_PZ_15, Traffic_top_level) (N_PZ_6, Traffic_top_level)  
+         (N_PZ_41, Traffic_top_level) (N_PZ_44, Traffic_top_level) 
+theCount/count<1>.Q,net=Traffic_top_level: PI
+  <--0-- 
+  --8--> (N_PZ_18, Traffic_top_level) (N_PZ_9, Traffic_top_level)  
+         (N_PZ_0, Traffic_top_level) (N_PZ_21, Traffic_top_level)  
+         (N_PZ_15, Traffic_top_level) (N_PZ_6, Traffic_top_level)  
+         (N_PZ_41, Traffic_top_level) (N_PZ_44, Traffic_top_level) 
+N_PZ_41,net=Traffic_top_level: PINT ( State_machine/state_FSM_FFd3.T )
+  <--8--  (PedEW, Traffic_top_level) (CarEW, Traffic_top_level) 
+          (PedNS, Traffic_top_level) 
+          (State_machine/state_FSM_FFd2.Q, Traffic_top_level) 
+          (State_machine/state_FSM_FFd3.Q, Traffic_top_level) 
+          (State_machine/state_FSM_FFd5.Q, Traffic_top_level) 
+          (theCount/count<0>.Q, Traffic_top_level) 
+          (theCount/count<1>.Q, Traffic_top_level)
+  --1--> (State_machine/state_FSM_FFd3.T, Traffic_top_level) 
+N_PZ_44,net=Traffic_top_level: PINT ( State_machine/state_FSM_FFd4.T )
+  <--8--  (PedEW, Traffic_top_level) (PedNS, Traffic_top_level) 
+          (CarNS, Traffic_top_level) 
+          (State_machine/state_FSM_FFd6.Q, Traffic_top_level) 
+          (State_machine/state_FSM_FFd1.Q, Traffic_top_level) 
+          (State_machine/state_FSM_FFd4.Q, Traffic_top_level) 
+          (theCount/count<0>.Q, Traffic_top_level) 
+          (theCount/count<1>.Q, Traffic_top_level)
+  --1--> (State_machine/state_FSM_FFd4.T, Traffic_top_level) 
+State_machine/state_FSM_FFd3.T,net=Traffic_top_level: PO
+  <--1--  (N_PZ_41, Traffic_top_level)
+  --0--> 
+State_machine/state_FSM_FFd4.T,net=Traffic_top_level: PO
+  <--1--  (N_PZ_44, Traffic_top_level)
+  --0--> 

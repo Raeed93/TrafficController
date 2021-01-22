@@ -1,0 +1,27 @@
+V3 13
+FL "C:/Users/100477260/Documents/Digital Electronics Design/TrafficController/Traffic_counter/counter_top.vhd" 2020/02/15.14:05:42 P.20131013
+EN work/counter_top 1581735959 \
+      FL "C:/Users/100477260/Documents/Digital Electronics Design/TrafficController/Traffic_counter/counter_top.vhd" \
+      PB ieee/std_logic_1164 1381692176
+AR work/counter_top/beh 1581735960 \
+      FL "C:/Users/100477260/Documents/Digital Electronics Design/TrafficController/Traffic_counter/counter_top.vhd" \
+      EN work/counter_top 1581735959
+FL "C:/Users/100477260/Documents/Digital Electronics Design/TrafficController/Traffic_counter/traffic_top_level.vhd" 2020/02/13.19:10:55 P.20131013
+EN work/Traffic_top_level 1581735961 \
+      FL "C:/Users/100477260/Documents/Digital Electronics Design/TrafficController/Traffic_counter/traffic_top_level.vhd" \
+      PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
+      PB ieee/STD_LOGIC_UNSIGNED 1381692179
+AR work/Traffic_top_level/Behavioral 1581735962 \
+      FL "C:/Users/100477260/Documents/Digital Electronics Design/TrafficController/Traffic_counter/traffic_top_level.vhd" \
+      EN work/Traffic_top_level 1581735961 CP work/counter_top \
+      CP work/Traffic_state_machine
+FL "C:/Users/akmal/Desktop/EEE20001/New folder/Traffic_controller_lab_work/Top_level_vhdl_traffic_controller.vhd" 2020/02/12.20:57:18 P.20131013
+EN work/Traffic_state_machine 1581501455 \
+      FL "C:/Users/akmal/Desktop/EEE20001/New folder/Traffic_controller_lab_work/Top_level_vhdl_traffic_controller.vhd" \
+      PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
+      PB ieee/STD_LOGIC_UNSIGNED 1381692179
+AR work/Traffic_state_machine/Behavioral 1581501456 \
+      FL "C:/Users/akmal/Desktop/EEE20001/New folder/Traffic_controller_lab_work/Top_level_vhdl_traffic_controller.vhd" \
+      EN work/Traffic_state_machine 1581501455
+FL "C:/Users/akmal/Desktop/EEE20001/New folder/Traffic_counter/counter_top.vhd" 2020/02/12.20:57:30 P.20131013
+FL "C:/Users/akmal/Desktop/EEE20001/New folder/Traffic_counter/traffic_top_level.vhd" 2020/02/12.20:57:31 P.20131013

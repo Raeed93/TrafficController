@@ -1,0 +1,55 @@
+
+----------------------------------------
+|  P a r t i t i o n    S u c c e e d  |
+----------------------------------------
+0 Group(s)
+
+GCLK0: 0=Clock.p
+GSET: 1=Reset.p
+GRST: 1=Reset.p
+----------------- B l o c k 0 ------------------
+PLApt(29/56), Fanin(21/38), Clk(1/3), Bct(0/4), Pin(5/8), Mcell(16/16)
+PLApts[29/56] 16 26 28 12 18 21 30 33 11 14 43 15 35 45 38 19 20 27 34 36 31 41 22 23 29 32 39 () () () () () () () () () () () () () () () () () () () () () () () () () 13 () () 8
+Fanins[21] CarEW_sync.n CarNS_sync.n PedEW_sync.n PedNS_sync.n State_machine/pedEW_temp.n State_machine/pedNS_temp.n State_machine/state_FSM_FFd1.n State_machine/state_FSM_FFd2.n State_machine/state_FSM_FFd3.n State_machine/state_FSM_FFd4.n State_machine/state_FSM_FFd5.n State_machine/state_FSM_FFd6.n theCount/count<0>.n theCount/count<1>.n theCount/count<2>.n theCount/count<3>.n theCount/count<4>.n theCount/count<5>.n theCount/count<6>.n theCount/count<7>.n theCount/count<8>.n
+clk[1] Clock 
+CTC: 
+CTR: 
+CTS: 
+CTE: 
+vref: [0]
+Signal[23] [Reset(30)] [N_PZ_217(45),CarEW_sync,CarEW(38)] [N_PZ_218(46),CarNS_sync,CarNS(37)]  
+           [PedEW_sync,PedEW(36)] [PedNS_sync,PedNS(34)] [theCount/count<1>(60)] [theCount/count<4>(59)]  
+           [theCount/count<7>(58)] [theCount/count<3>(52)] [theCount/count<0>(51)] [theCount/count<2>(50)]  
+           [theCount/count<5>(49)] [theCount/count<6>(48)] [State_machine/state_FSM_FFd3(57)]  
+           [State_machine/state_FSM_FFd2(56)] [State_machine/state_FSM_FFd4(55)]  
+           [State_machine/state_FSM_FFd6(54)] 
+Signal[23] [ 0: N_PZ_217(45) CarEW_sync(45) CarEW(38)  ][ 1: N_PZ_218(46) CarNS_sync(46) CarNS(37)  ][ 2:  
+           PedEW_sync(47) PedEW(36)  ][ 3: theCount/count<6>(48)  ][ 4: theCount/count<5>(49)  ][ 5:  
+           theCount/count<2>(50)  ][ 6: theCount/count<0>(51)  ][ 7: theCount/count<3>(52)  ][ 8:  
+           PedNS_sync(53) PedNS(34)  ][ 9: State_machine/state_FSM_FFd6(54) (33)  ][ 10:  
+           State_machine/state_FSM_FFd4(55) (32)  ][ 11: State_machine/state_FSM_FFd2(56) (31)  ][ 12:  
+           State_machine/state_FSM_FFd3(57) Reset(30)  ][ 13: theCount/count<7>(58)  ][ 14:  
+           theCount/count<4>(59)  ][ 15: theCount/count<1>(60)  ]
+----------------- B l o c k 1 ------------------
+PLApt(18/56), Fanin(24/38), Clk(1/3), Bct(0/4), Pin(9/9), Mcell(13/16)
+PLApts[18/47] 17 18 21 24 30 37 25 33 40 42 10 44 () 7 () () () () () () () () 9 () () 6 () () () () () () () () 47 () () () () () 46 () () () () () 1
+Fanins[24] CarEW_sync.n CarNS_sync.n N_PZ_217.n N_PZ_218.n PedEW_sync.n PedNS_sync.n State_machine/pedEW_temp.n State_machine/pedNS_temp.n State_machine/state_FSM_FFd1.n State_machine/state_FSM_FFd2.n State_machine/state_FSM_FFd3.n State_machine/state_FSM_FFd4.n State_machine/state_FSM_FFd5.n State_machine/state_FSM_FFd6.n theCount/count<0>.n theCount/count<1>.n theCount/count<2>.n theCount/count<3>.n theCount/count<4>.n theCount/count<5>.n theCount/count<6>.n theCount/count<7>.n theCount/count<8>.n Reset.p
+clk[1] Clock 
+CTC: 
+CTR: 
+CTS: 
+CTE: 
+vref: [0]
+Signal[14] [LEDs<0>(68),LEDs<0>(44)] [LEDs<1>(70),LEDs<1>(1)] [LEDs<2>(72),LEDs<2>(2)]  
+           [LightsEW<0>(61),LightsEW<0>(39)] [LightsEW<1>(62),LightsEW<1>(40)]  
+           [LightsNS<0>(65),LightsNS<0>(41)] [LightsNS<1>(66),LightsNS<1>(42)] [debugLED(73),debugLED(3)]  
+           [Clock(43)] [theCount/count<8>(76)] [State_machine/state_FSM_FFd1(75)]  
+           [State_machine/state_FSM_FFd5(74)] [State_machine/pedEW_temp(71)] [State_machine/pedNS_temp(69)] 
+Signal[14] [ 0: LightsEW<0>(61) LightsEW<0>(39)  ][ 1: LightsEW<1>(62) LightsEW<1>(40)  ][ 2:  ][ 3:  ][ 4:  
+           LightsNS<0>(65) LightsNS<0>(41)  ][ 5: LightsNS<1>(66) LightsNS<1>(42)  ][ 6: Clock(43)  ][ 7:  
+           LEDs<0>(68) LEDs<0>(44)  ][ 8: State_machine/pedNS_temp(69)  ][ 9: LEDs<1>(70) LEDs<1>(1)  ][ 10:  
+           State_machine/pedEW_temp(71)  ][ 11: LEDs<2>(72) LEDs<2>(2)  ][ 12: debugLED(73) debugLED(3)  ] 
+           [ 13: State_machine/state_FSM_FFd5(74)  ][ 14: State_machine/state_FSM_FFd1(75)  ][ 15:  
+           theCount/count<8>(76)  ]
+----------------- B l o c k 2 ------------------
+----------------- B l o c k 3 ------------------

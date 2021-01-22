@@ -1,0 +1,189 @@
+" XPLAOPT Version 9.99.99.99
+" Created on Wed Feb 12 12:00:07 2020
+" 23 Mcells, 40 PLApts, 3 Levels, 74 Fanins
+" XPLAOPT -run s -it b -i Traffic_top_level.blx -dev XC2C64A-7VQ44 -reg -xor a 
+"         -mode 1 -th 28 -fi 32 -bfi 38 -pre keep -unused keeper -terminate keeper -no_output_files 
+MODULE Traffic_top_level
+
+	CarEW  pin 34 ; 
+ 	CarNS  pin 36 ; 
+ 	Clock  pin 1 ; 
+ 	LEDs<0>  pin 21 ;  " 0 pt.
+ 	LEDs<1>  pin 22 ;  " 0 pt.
+ 	LEDs<2>  pin 23 ;  " 0 pt.
+ 	LightsEW<0>  pin 40 ;  " 1 pt.
+ 	LightsEW<1>  pin 39 ;  " 1 pt.
+ 	LightsNS<0>  pin 42 ;  " 1 pt.
+ 	LightsNS<1>  pin 41 ;  " 1 pt.
+ 	PedEW  pin 37 ; 
+ 	PedNS  pin 38 ; 
+ 	Reset  pin 30 ; 
+ 	debugLED  pin 29 ;  " 1 pt.
+ 
+
+	N_PZ_55  node istype 'collapse';  " 2 pt.
+ 	N_PZ_56  node istype 'collapse';  " 1 pt.
+ 	N_PZ_57  node istype 'collapse';  " 2 pt.
+ 	N_PZ_58  node istype 'collapse';  " 1 pt.
+ 	N_PZ_59  node istype 'collapse';  " 2 pt.
+ 	N_PZ_60  node istype 'collapse';  " 2 pt.
+ 	N_PZ_61  node istype 'collapse';  " 1 pt.
+ 	State_machine/state_FSM_FFd1  node ;  " 4 pt.
+ 	State_machine/state_FSM_FFd2  node ;  " 4 pt.
+ 	State_machine/state_FSM_FFd3  node ;  " 2 pt.
+ 	State_machine/state_FSM_FFd4  node ;  " 2 pt.
+ 	State_machine/state_FSM_FFd5  node ;  " 4 pt.
+ 	State_machine/state_FSM_FFd6  node ;  " 4 pt.
+ 	theCount/count<0>  node ;  " 2 pt.
+ 	theCount/count<1>  node ;  " 2 pt.
+ 
+
+xpla property 'USER_SLEW_RATE LightsEW<0> LightsEW<1> LightsNS<0> LightsNS<1> debugLED LEDs<2> 
+	LEDs<1> LEDs<0> '; 
+xpla property 'GLOBAL_CLK Clock '; 
+xpla property 'POWER_UP_HIGH State_machine/state_FSM_FFd6 '; 
+xpla property 'unused_keeper'; 
+xpla property 'timespec  State_machine/state_FSM_FFd2.Q State_machine/state_FSM_FFd2.D 188.000000'; 
+xpla property 'timespec  theCount/count<0>.Q State_machine/state_FSM_FFd2.D 188.000000'; 
+xpla property 'timespec  theCount/count<1>.Q State_machine/state_FSM_FFd2.D 188.000000'; 
+xpla property 'timespec  State_machine/state_FSM_FFd5.Q State_machine/state_FSM_FFd2.D 188.000000'; 
+xpla property 'timespec  State_machine/state_FSM_FFd3.Q State_machine/state_FSM_FFd2.D 188.000000'; 
+xpla property 'timespec  State_machine/state_FSM_FFd5.Q State_machine/state_FSM_FFd3.D 188.000000'; 
+xpla property 'timespec  theCount/count<0>.Q State_machine/state_FSM_FFd3.D 188.000000'; 
+xpla property 'timespec  theCount/count<1>.Q State_machine/state_FSM_FFd3.D 188.000000'; 
+xpla property 'timespec  State_machine/state_FSM_FFd3.Q State_machine/state_FSM_FFd3.D 188.000000'; 
+xpla property 'timespec  State_machine/state_FSM_FFd2.Q State_machine/state_FSM_FFd3.D 188.000000'; 
+xpla property 'timespec  State_machine/state_FSM_FFd1.Q State_machine/state_FSM_FFd6.D 188.000000'; 
+xpla property 'timespec  theCount/count<0>.Q State_machine/state_FSM_FFd6.D 188.000000'; 
+xpla property 'timespec  theCount/count<1>.Q State_machine/state_FSM_FFd6.D 188.000000'; 
+xpla property 'timespec  State_machine/state_FSM_FFd6.Q State_machine/state_FSM_FFd6.D 188.000000'; 
+xpla property 'timespec  State_machine/state_FSM_FFd4.Q State_machine/state_FSM_FFd6.D 188.000000'; 
+xpla property 'timespec  State_machine/state_FSM_FFd1.Q State_machine/state_FSM_FFd1.D 188.000000'; 
+xpla property 'timespec  theCount/count<0>.Q State_machine/state_FSM_FFd1.D 188.000000'; 
+xpla property 'timespec  theCount/count<1>.Q State_machine/state_FSM_FFd1.D 188.000000'; 
+xpla property 'timespec  State_machine/state_FSM_FFd2.Q State_machine/state_FSM_FFd1.D 188.000000'; 
+xpla property 'timespec  State_machine/state_FSM_FFd1.Q State_machine/state_FSM_FFd4.D 188.000000'; 
+xpla property 'timespec  theCount/count<0>.Q State_machine/state_FSM_FFd4.D 188.000000'; 
+xpla property 'timespec  theCount/count<1>.Q State_machine/state_FSM_FFd4.D 188.000000'; 
+xpla property 'timespec  State_machine/state_FSM_FFd6.Q State_machine/state_FSM_FFd4.D 188.000000'; 
+xpla property 'timespec  State_machine/state_FSM_FFd4.Q State_machine/state_FSM_FFd4.D 188.000000'; 
+xpla property 'timespec  State_machine/state_FSM_FFd5.Q State_machine/state_FSM_FFd5.D 188.000000'; 
+xpla property 'timespec  theCount/count<0>.Q State_machine/state_FSM_FFd5.D 188.000000'; 
+xpla property 'timespec  theCount/count<1>.Q State_machine/state_FSM_FFd5.D 188.000000'; 
+xpla property 'timespec  State_machine/state_FSM_FFd6.Q State_machine/state_FSM_FFd5.D 188.000000'; 
+xpla property 'timespec  theCount/count<0>.Q theCount/count<0>.D 188.000000'; 
+xpla property 'timespec  theCount/count<1>.Q theCount/count<0>.D 188.000000'; 
+xpla property 'timespec  State_machine/state_FSM_FFd1.Q theCount/count<0>.D 188.000000'; 
+xpla property 'timespec  State_machine/state_FSM_FFd5.Q theCount/count<0>.D 188.000000'; 
+xpla property 'timespec  State_machine/state_FSM_FFd2.Q theCount/count<0>.D 188.000000'; 
+xpla property 'timespec  State_machine/state_FSM_FFd6.Q theCount/count<0>.D 188.000000'; 
+xpla property 'timespec  State_machine/state_FSM_FFd3.Q theCount/count<0>.D 188.000000'; 
+xpla property 'timespec  State_machine/state_FSM_FFd4.Q theCount/count<0>.D 188.000000'; 
+xpla property 'timespec  theCount/count<0>.Q theCount/count<1>.D 188.000000'; 
+xpla property 'timespec  theCount/count<1>.Q theCount/count<1>.D 188.000000'; 
+xpla property 'timespec  State_machine/state_FSM_FFd1.Q theCount/count<1>.D 188.000000'; 
+xpla property 'timespec  State_machine/state_FSM_FFd5.Q theCount/count<1>.D 188.000000'; 
+xpla property 'timespec  State_machine/state_FSM_FFd2.Q theCount/count<1>.D 188.000000'; 
+xpla property 'timespec  State_machine/state_FSM_FFd6.Q theCount/count<1>.D 188.000000'; 
+xpla property 'timespec  State_machine/state_FSM_FFd3.Q theCount/count<1>.D 188.000000'; 
+xpla property 'timespec  State_machine/state_FSM_FFd4.Q theCount/count<1>.D 188.000000'; 
+xpla property 'IOSTD Clock 0 -1';
+xpla property 'IOSTD Reset 0 -1';
+xpla property 'IOSTD PedEW 0 -1';
+xpla property 'IOSTD CarEW 0 -1';
+xpla property 'IOSTD PedNS 0 -1';
+xpla property 'IOSTD CarNS 0 -1';
+xpla property 'IOSTD LightsEW<0> 0 -1';
+xpla property 'IOSTD LightsEW<1> 0 -1';
+xpla property 'IOSTD LightsNS<0> 0 -1';
+xpla property 'IOSTD LightsNS<1> 0 -1';
+xpla property 'IOSTD debugLED 0 -1';
+xpla property 'IOSTD LEDs<2> 0 -1';
+xpla property 'IOSTD LEDs<1> 0 -1';
+xpla property 'IOSTD LEDs<0> 0 -1';
+EQUATIONS 
+
+ LEDs<0> = 0;
+ LEDs<1> = 0;
+ LEDs<2> = 0;
+! LightsEW<0> = !State_machine/state_FSM_FFd4.Q & !
+    State_machine/state_FSM_FFd5.Q;		"--- [PT=1, FI=2, LVL=1] ---
+! LightsEW<1> = !State_machine/state_FSM_FFd6.Q & !
+    State_machine/state_FSM_FFd4.Q;		"--- [PT=1, FI=2, LVL=1] ---
+! LightsNS<0> = !State_machine/state_FSM_FFd3.Q & !
+    State_machine/state_FSM_FFd1.Q;		"--- [PT=1, FI=2, LVL=1] ---
+! LightsNS<1> = !State_machine/state_FSM_FFd2.Q & !
+    State_machine/state_FSM_FFd3.Q;		"--- [PT=1, FI=2, LVL=1] ---
+ N_PZ_55 = CarEW
+      # PedEW;		"--- [PT=2, FI=2, LVL=1] ---
+ N_PZ_56 = theCount/count<0>.Q & !theCount/count<1>.Q
+    ;		"--- [PT=1, FI=2, LVL=1] ---
+ N_PZ_57 = !theCount/count<1>.Q
+      # !theCount/count<0>.Q;		"--- [PT=2, FI=2, LVL=1] ---
+ N_PZ_58 = !theCount/count<0>.Q & theCount/count<1>.Q
+    ;		"--- [PT=1, FI=2, LVL=1] ---
+ N_PZ_59 = State_machine/state_FSM_FFd2.Q & !N_PZ_55 & !N_PZ_57
+      # State_machine/state_FSM_FFd5.Q & N_PZ_56
+    ;		"--- [PT=2, FI=5, LVL=2] ---
+ N_PZ_60 = State_machine/state_FSM_FFd6.Q & !N_PZ_57 & N_PZ_61
+      # State_machine/state_FSM_FFd1.Q & N_PZ_56
+    ;		"--- [PT=2, FI=5, LVL=2] ---
+ N_PZ_61 = !PedNS & !CarNS;		"--- [PT=1, FI=2, LVL=1] ---
+ State_machine/state_FSM_FFd1.AR = Reset;		"--- [PT=1, FI=1, LVL=1] ---
+ State_machine/state_FSM_FFd1.CLK = Clock;		"--- [PT=1, FI=1, LVL=1] ---
+! State_machine/state_FSM_FFd1.D = !State_machine/state_FSM_FFd1.Q & !N_PZ_55
+    
+      # !State_machine/state_FSM_FFd1.Q & !theCount/count<0>.Q
+      # !State_machine/state_FSM_FFd2.Q & !State_machine/state_FSM_FFd1.Q
+    
+      # N_PZ_56;		"--- [PT=4, FI=5, LVL=2] ---
+ State_machine/state_FSM_FFd2.AR = Reset;		"--- [PT=1, FI=1, LVL=1] ---
+ State_machine/state_FSM_FFd2.CLK = Clock;		"--- [PT=1, FI=1, LVL=1] ---
+ State_machine/state_FSM_FFd2.D = State_machine/state_FSM_FFd3.Q & N_PZ_55 & 
+    N_PZ_58
+      # !PedNS & State_machine/state_FSM_FFd5.Q & N_PZ_56
+      # !PedNS & State_machine/state_FSM_FFd2.Q & !N_PZ_55
+      # State_machine/state_FSM_FFd2.Q & N_PZ_57
+    ;		"--- [PT=4, FI=8, LVL=2] ---
+ State_machine/state_FSM_FFd3.AR = Reset;		"--- [PT=1, FI=1, LVL=1] ---
+ State_machine/state_FSM_FFd3.CLK = Clock;		"--- [PT=1, FI=1, LVL=1] ---
+ State_machine/state_FSM_FFd3.T = PedNS & !State_machine/state_FSM_FFd3.Q & 
+    N_PZ_59
+      # State_machine/state_FSM_FFd3.Q & N_PZ_55 & N_PZ_58
+    ;		"--- [PT=2, FI=5, LVL=3] ---
+ State_machine/state_FSM_FFd4.AR = Reset;		"--- [PT=1, FI=1, LVL=1] ---
+ State_machine/state_FSM_FFd4.CLK = Clock;		"--- [PT=1, FI=1, LVL=1] ---
+ State_machine/state_FSM_FFd4.T = PedEW & !State_machine/state_FSM_FFd4.Q & 
+    N_PZ_60
+      # State_machine/state_FSM_FFd4.Q & N_PZ_58
+    ;		"--- [PT=2, FI=4, LVL=3] ---
+ State_machine/state_FSM_FFd5.AR = Reset;		"--- [PT=1, FI=1, LVL=1] ---
+ State_machine/state_FSM_FFd5.CLK = Clock;		"--- [PT=1, FI=1, LVL=1] ---
+! State_machine/state_FSM_FFd5.D = !State_machine/state_FSM_FFd5.Q & N_PZ_61
+    
+      # !State_machine/state_FSM_FFd5.Q & !theCount/count<0>.Q
+      # !State_machine/state_FSM_FFd6.Q & !State_machine/state_FSM_FFd5.Q
+    
+      # N_PZ_56;		"--- [PT=4, FI=5, LVL=2] ---
+ State_machine/state_FSM_FFd6.AP = Reset;		"--- [PT=1, FI=1, LVL=1] ---
+ State_machine/state_FSM_FFd6.CLK = Clock;		"--- [PT=1, FI=1, LVL=1] ---
+ State_machine/state_FSM_FFd6.D = !PedEW & State_machine/state_FSM_FFd6.Q & 
+    N_PZ_61
+      # !PedEW & State_machine/state_FSM_FFd1.Q & N_PZ_56
+      # State_machine/state_FSM_FFd4.Q & N_PZ_58
+      # State_machine/state_FSM_FFd6.Q & N_PZ_57
+    ;		"--- [PT=4, FI=8, LVL=2] ---
+ debugLED = Reset;		"--- [PT=1, FI=1, LVL=1] ---
+ theCount/count<0>.AR = Reset;		"--- [PT=1, FI=1, LVL=1] ---
+ theCount/count<0>.CLK = Clock;		"--- [PT=1, FI=1, LVL=1] ---
+ theCount/count<0>.D = !State_machine/state_FSM_FFd3.Q & !
+    State_machine/state_FSM_FFd4.Q & !theCount/count<0>.Q
+      # !theCount/count<0>.Q & !theCount/count<1>.Q
+    ;		"--- [PT=2, FI=4, LVL=1] ---
+ theCount/count<1>.AR = Reset;		"--- [PT=1, FI=1, LVL=1] ---
+ theCount/count<1>.CLK = Clock;		"--- [PT=1, FI=1, LVL=1] ---
+ theCount/count<1>.D = !State_machine/state_FSM_FFd3.Q & !
+    State_machine/state_FSM_FFd4.Q & N_PZ_58
+      # !State_machine/state_FSM_FFd1.Q & !State_machine/state_FSM_FFd5.Q & 
+    N_PZ_56;		"--- [PT=2, FI=6, LVL=2] ---
+END

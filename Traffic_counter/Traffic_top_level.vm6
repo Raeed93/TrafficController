@@ -1,0 +1,1809 @@
+NDS Database:  version P.20131013
+
+NDS_INFO | xbr | 2C64A44VQ | XC2C64A-7-VQ44
+
+DEVICE | 2C64A | 2C64A44VQ | 
+
+NETWORK | Traffic_top_level | 0 | 0 | 1073758214 | 0
+
+INPUT_INSTANCE | 0 | 0 | NULL | Clock_II | Traffic_top_level_COPY_0_COPY_0 | 16 | 1 | 1
+INPUT_NODE_TYPE | 0 | 5 | II_IN
+NODE | Clock | 3474 | PI | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | NULL | NULL | 0 | 100 | NOTYPE
+OUTPUT_NODE_TYPE | 3 | 5 | II_FCLK
+NODE | Clock_II/FCLK | 3518 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | NULL | Clock_II | 3 | 5 | II_FCLK
+
+MACROCELL_INSTANCE | NULL | LEDs<0>_MC | Traffic_top_level_COPY_0_COPY_0 | 0 | 0 | 1
+OUTPUT_NODE_TYPE | 0 | 0 | MC_Q
+NODE | LEDs<0>_MC.Q | 3479 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | LEDs<0>_MC.Q | LEDs<0>_MC | 0 | 0 | MC_Q
+
+SIGNAL_INSTANCE | LEDs<0>_MC.SI | LEDs<0>_MC | 0 | 0 | 2
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | LEDs<0>_MC.D1 | 3477 | ? | 0 | 0 | LEDs<0>_MC | NULL | NULL | LEDs<0>_MC.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | LEDs<0>_MC.D2 | 3476 | ? | 0 | 0 | LEDs<0>_MC | NULL | NULL | LEDs<0>_MC.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 0 | IV_ZERO
+
+SRFF_INSTANCE | LEDs<0>_MC.REG | LEDs<0>_MC | 0 | 1 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | LEDs<0>_MC.D | 3475 | ? | 0 | 0 | LEDs<0>_MC | NULL | NULL | LEDs<0>_MC.XOR | 0 | 7 | ALU_F
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | LEDs<0>_MC.Q | 3478 | ? | 0 | 0 | LEDs<0>_MC | NULL | NULL | LEDs<0>_MC.REG | 0 | 8 | SRFF_Q
+
+OUTPUT_INSTANCE | 0 | LEDs<0> | Traffic_top_level_COPY_0_COPY_0 | 3 | 1 | 1
+INPUT_NODE_TYPE | 0 | 6 | OI_IN
+NODE | LEDs<0>_MC.Q | 3479 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | LEDs<0>_MC.Q | LEDs<0>_MC | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 0 | 6 | OI_OUT
+NODE | LEDs<0> | 3480 | PO | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | NULL | LEDs<0> | 0 | 6 | OI_OUT
+
+MACROCELL_INSTANCE | NULL | LEDs<1>_MC | Traffic_top_level_COPY_0_COPY_0 | 0 | 0 | 1
+OUTPUT_NODE_TYPE | 0 | 0 | MC_Q
+NODE | LEDs<1>_MC.Q | 3485 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | LEDs<1>_MC.Q | LEDs<1>_MC | 0 | 0 | MC_Q
+
+SIGNAL_INSTANCE | LEDs<1>_MC.SI | LEDs<1>_MC | 0 | 0 | 2
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | LEDs<1>_MC.D1 | 3483 | ? | 0 | 0 | LEDs<1>_MC | NULL | NULL | LEDs<1>_MC.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | LEDs<1>_MC.D2 | 3482 | ? | 0 | 0 | LEDs<1>_MC | NULL | NULL | LEDs<1>_MC.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 0 | IV_ZERO
+
+SRFF_INSTANCE | LEDs<1>_MC.REG | LEDs<1>_MC | 0 | 1 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | LEDs<1>_MC.D | 3481 | ? | 0 | 0 | LEDs<1>_MC | NULL | NULL | LEDs<1>_MC.XOR | 0 | 7 | ALU_F
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | LEDs<1>_MC.Q | 3484 | ? | 0 | 0 | LEDs<1>_MC | NULL | NULL | LEDs<1>_MC.REG | 0 | 8 | SRFF_Q
+
+OUTPUT_INSTANCE | 0 | LEDs<1> | Traffic_top_level_COPY_0_COPY_0 | 3 | 1 | 1
+INPUT_NODE_TYPE | 0 | 6 | OI_IN
+NODE | LEDs<1>_MC.Q | 3485 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | LEDs<1>_MC.Q | LEDs<1>_MC | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 0 | 6 | OI_OUT
+NODE | LEDs<1> | 3486 | PO | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | NULL | LEDs<1> | 0 | 6 | OI_OUT
+
+MACROCELL_INSTANCE | NULL | LEDs<2>_MC | Traffic_top_level_COPY_0_COPY_0 | 0 | 0 | 1
+OUTPUT_NODE_TYPE | 0 | 0 | MC_Q
+NODE | LEDs<2>_MC.Q | 3491 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | LEDs<2>_MC.Q | LEDs<2>_MC | 0 | 0 | MC_Q
+
+SIGNAL_INSTANCE | LEDs<2>_MC.SI | LEDs<2>_MC | 0 | 0 | 2
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | LEDs<2>_MC.D1 | 3489 | ? | 0 | 0 | LEDs<2>_MC | NULL | NULL | LEDs<2>_MC.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | LEDs<2>_MC.D2 | 3488 | ? | 0 | 0 | LEDs<2>_MC | NULL | NULL | LEDs<2>_MC.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 0 | IV_ZERO
+
+SRFF_INSTANCE | LEDs<2>_MC.REG | LEDs<2>_MC | 0 | 1 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | LEDs<2>_MC.D | 3487 | ? | 0 | 0 | LEDs<2>_MC | NULL | NULL | LEDs<2>_MC.XOR | 0 | 7 | ALU_F
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | LEDs<2>_MC.Q | 3490 | ? | 0 | 0 | LEDs<2>_MC | NULL | NULL | LEDs<2>_MC.REG | 0 | 8 | SRFF_Q
+
+OUTPUT_INSTANCE | 0 | LEDs<2> | Traffic_top_level_COPY_0_COPY_0 | 3 | 1 | 1
+INPUT_NODE_TYPE | 0 | 6 | OI_IN
+NODE | LEDs<2>_MC.Q | 3491 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | LEDs<2>_MC.Q | LEDs<2>_MC | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 0 | 6 | OI_OUT
+NODE | LEDs<2> | 3492 | PO | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | NULL | LEDs<2> | 0 | 6 | OI_OUT
+
+MACROCELL_INSTANCE | Inv | LightsEW<0>_MC | Traffic_top_level_COPY_0_COPY_0 | 256 | 2 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | State_machine/state_FSM_FFd4 | 3496 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | State_machine/state_FSM_FFd4_MC.Q | State_machine/state_FSM_FFd4_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | State_machine/state_FSM_FFd5 | 3593 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | State_machine/state_FSM_FFd5_MC.Q | State_machine/state_FSM_FFd5_MC | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 0 | 0 | MC_Q
+NODE | LightsEW<0>_MC.Q | 3599 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | LightsEW<0>_MC.Q | LightsEW<0>_MC | 0 | 0 | MC_Q
+
+SIGNAL_INSTANCE | LightsEW<0>_MC.SI | LightsEW<0>_MC | 0 | 2 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | State_machine/state_FSM_FFd4 | 3496 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | State_machine/state_FSM_FFd4_MC.Q | State_machine/state_FSM_FFd4_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | State_machine/state_FSM_FFd5 | 3593 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | State_machine/state_FSM_FFd5_MC.Q | State_machine/state_FSM_FFd5_MC | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | LightsEW<0>_MC.D1 | 3494 | ? | 0 | 0 | LightsEW<0>_MC | NULL | NULL | LightsEW<0>_MC.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 2 | IV_FALSE | State_machine/state_FSM_FFd4 | IV_FALSE | State_machine/state_FSM_FFd5
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | LightsEW<0>_MC.D2 | 3495 | ? | 0 | 0 | LightsEW<0>_MC | NULL | NULL | LightsEW<0>_MC.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 0 | IV_ZERO
+
+SRFF_INSTANCE | LightsEW<0>_MC.REG | LightsEW<0>_MC | 0 | 1 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | LightsEW<0>_MC.D | 3493 | ? | 0 | 0 | LightsEW<0>_MC | NULL | NULL | LightsEW<0>_MC.XOR | 0 | 7 | ALU_F
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | LightsEW<0>_MC.Q | 3598 | ? | 0 | 0 | LightsEW<0>_MC | NULL | NULL | LightsEW<0>_MC.REG | 0 | 8 | SRFF_Q
+
+MACROCELL_INSTANCE | PrldLow+Tff | State_machine/state_FSM_FFd4_MC | Traffic_top_level_COPY_0_COPY_0 | 5120 | 17 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | State_machine/state_FSM_FFd4 | 3496 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | State_machine/state_FSM_FFd4_MC.Q | State_machine/state_FSM_FFd4_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | theCount/count<0> | 3501 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | theCount/count<0>_MC.Q | theCount/count<0>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | theCount/count<1> | 3526 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | theCount/count<1>_MC.Q | theCount/count<1>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | theCount/count<2> | 3531 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | theCount/count<2>_MC.Q | theCount/count<2>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | theCount/count<3> | 3536 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | theCount/count<3>_MC.Q | theCount/count<3>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | theCount/count<4> | 3541 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | theCount/count<4>_MC.Q | theCount/count<4>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | theCount/count<5> | 3546 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | theCount/count<5>_MC.Q | theCount/count<5>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | theCount/count<6> | 3551 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | theCount/count<6>_MC.Q | theCount/count<6>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | theCount/count<7> | 3561 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | theCount/count<7>_MC.Q | theCount/count<7>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | theCount/count<8> | 3566 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | theCount/count<8>_MC.Q | theCount/count<8>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | State_machine/pedEW_temp | 3511 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | State_machine/pedEW_temp_MC.Q | State_machine/pedEW_temp_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | State_machine/state_FSM_FFd1 | 3588 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | State_machine/state_FSM_FFd1_MC.Q | State_machine/state_FSM_FFd1_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | State_machine/state_FSM_FFd6 | 3571 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | State_machine/state_FSM_FFd6_MC.Q | State_machine/state_FSM_FFd6_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | State_machine/pedNS_temp | 3576 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | State_machine/pedNS_temp_MC.Q | State_machine/pedNS_temp_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | CarNS_sync | 3584 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | CarNS_sync_MC.Q | CarNS_sync_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | Clock_II/FCLK | 3518 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | NULL | Clock_II | 3 | 5 | II_FCLK
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | Reset_II/FSR | 3520 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | NULL | Reset_II | 6 | 5 | II_FSR
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | State_machine/state_FSM_FFd4 | 3496 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | State_machine/state_FSM_FFd4_MC.Q | State_machine/state_FSM_FFd4_MC | 1 | 0 | MC_UIM
+
+SIGNAL_INSTANCE | State_machine/state_FSM_FFd4_MC.SI | State_machine/state_FSM_FFd4_MC | 0 | 15 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | State_machine/state_FSM_FFd4 | 3496 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | State_machine/state_FSM_FFd4_MC.Q | State_machine/state_FSM_FFd4_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | theCount/count<0> | 3501 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | theCount/count<0>_MC.Q | theCount/count<0>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | theCount/count<1> | 3526 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | theCount/count<1>_MC.Q | theCount/count<1>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | theCount/count<2> | 3531 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | theCount/count<2>_MC.Q | theCount/count<2>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | theCount/count<3> | 3536 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | theCount/count<3>_MC.Q | theCount/count<3>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | theCount/count<4> | 3541 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | theCount/count<4>_MC.Q | theCount/count<4>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | theCount/count<5> | 3546 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | theCount/count<5>_MC.Q | theCount/count<5>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | theCount/count<6> | 3551 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | theCount/count<6>_MC.Q | theCount/count<6>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | theCount/count<7> | 3561 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | theCount/count<7>_MC.Q | theCount/count<7>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | theCount/count<8> | 3566 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | theCount/count<8>_MC.Q | theCount/count<8>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | State_machine/pedEW_temp | 3511 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | State_machine/pedEW_temp_MC.Q | State_machine/pedEW_temp_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | State_machine/state_FSM_FFd1 | 3588 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | State_machine/state_FSM_FFd1_MC.Q | State_machine/state_FSM_FFd1_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | State_machine/state_FSM_FFd6 | 3571 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | State_machine/state_FSM_FFd6_MC.Q | State_machine/state_FSM_FFd6_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | State_machine/pedNS_temp | 3576 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | State_machine/pedNS_temp_MC.Q | State_machine/pedNS_temp_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | CarNS_sync | 3584 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | CarNS_sync_MC.Q | CarNS_sync_MC | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | State_machine/state_FSM_FFd4_MC.D1 | 3500 | ? | 0 | 0 | State_machine/state_FSM_FFd4_MC | NULL | NULL | State_machine/state_FSM_FFd4_MC.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | State_machine/state_FSM_FFd4_MC.D2 | 3499 | ? | 0 | 0 | State_machine/state_FSM_FFd4_MC | NULL | NULL | State_machine/state_FSM_FFd4_MC.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 10 | IV_TRUE | State_machine/state_FSM_FFd4 | IV_FALSE | theCount/count<0> | IV_FALSE | theCount/count<1> | IV_FALSE | theCount/count<2> | IV_TRUE | theCount/count<3> | IV_FALSE | theCount/count<4> | IV_FALSE | theCount/count<5> | IV_TRUE | theCount/count<6> | IV_TRUE | theCount/count<7> | IV_FALSE | theCount/count<8>
+SPPTERM | 12 | IV_FALSE | State_machine/state_FSM_FFd4 | IV_FALSE | theCount/count<0> | IV_TRUE | State_machine/pedEW_temp | IV_FALSE | theCount/count<1> | IV_TRUE | theCount/count<2> | IV_FALSE | theCount/count<3> | IV_FALSE | theCount/count<4> | IV_TRUE | theCount/count<5> | IV_TRUE | theCount/count<6> | IV_FALSE | theCount/count<7> | IV_FALSE | theCount/count<8> | IV_TRUE | State_machine/state_FSM_FFd1
+SPPTERM | 14 | IV_FALSE | State_machine/state_FSM_FFd4 | IV_FALSE | theCount/count<0> | IV_TRUE | State_machine/pedEW_temp | IV_FALSE | theCount/count<1> | IV_TRUE | theCount/count<2> | IV_TRUE | theCount/count<3> | IV_FALSE | theCount/count<4> | IV_TRUE | theCount/count<5> | IV_FALSE | theCount/count<6> | IV_FALSE | theCount/count<7> | IV_TRUE | theCount/count<8> | IV_TRUE | State_machine/state_FSM_FFd6 | IV_FALSE | State_machine/pedNS_temp | IV_FALSE | CarNS_sync
+
+SRFF_INSTANCE | State_machine/state_FSM_FFd4_MC.REG | State_machine/state_FSM_FFd4_MC | 0 | 3 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | State_machine/state_FSM_FFd4_MC.D | 3498 | ? | 0 | 0 | State_machine/state_FSM_FFd4_MC | NULL | NULL | State_machine/state_FSM_FFd4_MC.XOR | 0 | 7 | ALU_F
+INPUT_NODE_TYPE | 1 | 8 | SRFF_C
+NODE | Clock_II/FCLK | 3518 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | NULL | Clock_II | 3 | 5 | II_FCLK
+INPUT_NODE_TYPE | 3 | 8 | SRFF_R
+NODE | Reset_II/FSR | 3520 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | NULL | Reset_II | 6 | 5 | II_FSR
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | State_machine/state_FSM_FFd4_MC.Q | 3497 | ? | 0 | 0 | State_machine/state_FSM_FFd4_MC | NULL | NULL | State_machine/state_FSM_FFd4_MC.REG | 0 | 8 | SRFF_Q
+
+MACROCELL_INSTANCE | Inv+PrldLow+Tff | theCount/count<0>_MC | Traffic_top_level_COPY_0_COPY_0 | 5376 | 17 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | State_machine/state_FSM_FFd4 | 3496 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | State_machine/state_FSM_FFd4_MC.Q | State_machine/state_FSM_FFd4_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | theCount/count<0> | 3501 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | theCount/count<0>_MC.Q | theCount/count<0>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | theCount/count<1> | 3526 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | theCount/count<1>_MC.Q | theCount/count<1>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | theCount/count<2> | 3531 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | theCount/count<2>_MC.Q | theCount/count<2>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | theCount/count<3> | 3536 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | theCount/count<3>_MC.Q | theCount/count<3>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | theCount/count<4> | 3541 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | theCount/count<4>_MC.Q | theCount/count<4>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | theCount/count<5> | 3546 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | theCount/count<5>_MC.Q | theCount/count<5>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | theCount/count<6> | 3551 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | theCount/count<6>_MC.Q | theCount/count<6>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | theCount/count<7> | 3561 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | theCount/count<7>_MC.Q | theCount/count<7>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | theCount/count<8> | 3566 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | theCount/count<8>_MC.Q | theCount/count<8>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | State_machine/state_FSM_FFd2 | 3506 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | State_machine/state_FSM_FFd2_MC.Q | State_machine/state_FSM_FFd2_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | State_machine/state_FSM_FFd6 | 3571 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | State_machine/state_FSM_FFd6_MC.Q | State_machine/state_FSM_FFd6_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | State_machine/state_FSM_FFd1 | 3588 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | State_machine/state_FSM_FFd1_MC.Q | State_machine/state_FSM_FFd1_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | State_machine/state_FSM_FFd5 | 3593 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | State_machine/state_FSM_FFd5_MC.Q | State_machine/state_FSM_FFd5_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | State_machine/state_FSM_FFd3 | 3556 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | State_machine/state_FSM_FFd3_MC.Q | State_machine/state_FSM_FFd3_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | Clock_II/FCLK | 3518 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | NULL | Clock_II | 3 | 5 | II_FCLK
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | Reset_II/FSR | 3520 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | NULL | Reset_II | 6 | 5 | II_FSR
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | theCount/count<0> | 3501 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | theCount/count<0>_MC.Q | theCount/count<0>_MC | 1 | 0 | MC_UIM
+
+SIGNAL_INSTANCE | theCount/count<0>_MC.SI | theCount/count<0>_MC | 0 | 15 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | State_machine/state_FSM_FFd4 | 3496 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | State_machine/state_FSM_FFd4_MC.Q | State_machine/state_FSM_FFd4_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | theCount/count<0> | 3501 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | theCount/count<0>_MC.Q | theCount/count<0>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | theCount/count<1> | 3526 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | theCount/count<1>_MC.Q | theCount/count<1>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | theCount/count<2> | 3531 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | theCount/count<2>_MC.Q | theCount/count<2>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | theCount/count<3> | 3536 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | theCount/count<3>_MC.Q | theCount/count<3>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | theCount/count<4> | 3541 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | theCount/count<4>_MC.Q | theCount/count<4>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | theCount/count<5> | 3546 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | theCount/count<5>_MC.Q | theCount/count<5>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | theCount/count<6> | 3551 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | theCount/count<6>_MC.Q | theCount/count<6>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | theCount/count<7> | 3561 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | theCount/count<7>_MC.Q | theCount/count<7>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | theCount/count<8> | 3566 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | theCount/count<8>_MC.Q | theCount/count<8>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | State_machine/state_FSM_FFd2 | 3506 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | State_machine/state_FSM_FFd2_MC.Q | State_machine/state_FSM_FFd2_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | State_machine/state_FSM_FFd6 | 3571 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | State_machine/state_FSM_FFd6_MC.Q | State_machine/state_FSM_FFd6_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | State_machine/state_FSM_FFd1 | 3588 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | State_machine/state_FSM_FFd1_MC.Q | State_machine/state_FSM_FFd1_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | State_machine/state_FSM_FFd5 | 3593 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | State_machine/state_FSM_FFd5_MC.Q | State_machine/state_FSM_FFd5_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | State_machine/state_FSM_FFd3 | 3556 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | State_machine/state_FSM_FFd3_MC.Q | State_machine/state_FSM_FFd3_MC | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | theCount/count<0>_MC.D1 | 3505 | ? | 0 | 0 | theCount/count<0>_MC | NULL | NULL | theCount/count<0>_MC.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | theCount/count<0>_MC.D2 | 3504 | ? | 0 | 0 | theCount/count<0>_MC | NULL | NULL | theCount/count<0>_MC.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 10 | IV_TRUE | State_machine/state_FSM_FFd4 | IV_FALSE | theCount/count<0> | IV_FALSE | theCount/count<1> | IV_FALSE | theCount/count<2> | IV_TRUE | theCount/count<3> | IV_FALSE | theCount/count<4> | IV_FALSE | theCount/count<5> | IV_TRUE | theCount/count<6> | IV_TRUE | theCount/count<7> | IV_FALSE | theCount/count<8>
+SPPTERM | 10 | IV_FALSE | theCount/count<0> | IV_TRUE | State_machine/state_FSM_FFd2 | IV_FALSE | theCount/count<1> | IV_TRUE | theCount/count<2> | IV_TRUE | theCount/count<3> | IV_FALSE | theCount/count<4> | IV_TRUE | theCount/count<5> | IV_FALSE | theCount/count<6> | IV_FALSE | theCount/count<7> | IV_TRUE | theCount/count<8>
+SPPTERM | 10 | IV_FALSE | theCount/count<0> | IV_FALSE | theCount/count<1> | IV_TRUE | theCount/count<2> | IV_TRUE | theCount/count<3> | IV_FALSE | theCount/count<4> | IV_TRUE | theCount/count<5> | IV_FALSE | theCount/count<6> | IV_FALSE | theCount/count<7> | IV_TRUE | theCount/count<8> | IV_TRUE | State_machine/state_FSM_FFd6
+SPPTERM | 10 | IV_FALSE | theCount/count<0> | IV_FALSE | theCount/count<1> | IV_TRUE | theCount/count<2> | IV_FALSE | theCount/count<3> | IV_FALSE | theCount/count<4> | IV_TRUE | theCount/count<5> | IV_TRUE | theCount/count<6> | IV_FALSE | theCount/count<7> | IV_FALSE | theCount/count<8> | IV_TRUE | State_machine/state_FSM_FFd1
+SPPTERM | 10 | IV_FALSE | theCount/count<0> | IV_FALSE | theCount/count<1> | IV_TRUE | theCount/count<2> | IV_FALSE | theCount/count<3> | IV_FALSE | theCount/count<4> | IV_TRUE | theCount/count<5> | IV_TRUE | theCount/count<6> | IV_FALSE | theCount/count<7> | IV_FALSE | theCount/count<8> | IV_TRUE | State_machine/state_FSM_FFd5
+SPPTERM | 10 | IV_FALSE | theCount/count<0> | IV_FALSE | theCount/count<1> | IV_FALSE | theCount/count<2> | IV_TRUE | theCount/count<3> | IV_FALSE | theCount/count<4> | IV_FALSE | theCount/count<5> | IV_TRUE | theCount/count<6> | IV_TRUE | State_machine/state_FSM_FFd3 | IV_TRUE | theCount/count<7> | IV_FALSE | theCount/count<8>
+
+SRFF_INSTANCE | theCount/count<0>_MC.REG | theCount/count<0>_MC | 0 | 3 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | theCount/count<0>_MC.D | 3503 | ? | 0 | 0 | theCount/count<0>_MC | NULL | NULL | theCount/count<0>_MC.XOR | 0 | 7 | ALU_F
+INPUT_NODE_TYPE | 1 | 8 | SRFF_C
+NODE | Clock_II/FCLK | 3518 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | NULL | Clock_II | 3 | 5 | II_FCLK
+INPUT_NODE_TYPE | 3 | 8 | SRFF_R
+NODE | Reset_II/FSR | 3520 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | NULL | Reset_II | 6 | 5 | II_FSR
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | theCount/count<0>_MC.Q | 3502 | ? | 0 | 0 | theCount/count<0>_MC | NULL | NULL | theCount/count<0>_MC.REG | 0 | 8 | SRFF_Q
+
+MACROCELL_INSTANCE | PrldLow+Tff | State_machine/state_FSM_FFd2_MC | Traffic_top_level_COPY_0_COPY_0 | 5120 | 17 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | theCount/count<0> | 3501 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | theCount/count<0>_MC.Q | theCount/count<0>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | State_machine/state_FSM_FFd2 | 3506 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | State_machine/state_FSM_FFd2_MC.Q | State_machine/state_FSM_FFd2_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | State_machine/pedEW_temp | 3511 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | State_machine/pedEW_temp_MC.Q | State_machine/pedEW_temp_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | theCount/count<1> | 3526 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | theCount/count<1>_MC.Q | theCount/count<1>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | theCount/count<2> | 3531 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | theCount/count<2>_MC.Q | theCount/count<2>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | theCount/count<3> | 3536 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | theCount/count<3>_MC.Q | theCount/count<3>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | theCount/count<4> | 3541 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | theCount/count<4>_MC.Q | theCount/count<4>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | theCount/count<5> | 3546 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | theCount/count<5>_MC.Q | theCount/count<5>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | theCount/count<6> | 3551 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | theCount/count<6>_MC.Q | theCount/count<6>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | theCount/count<7> | 3561 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | theCount/count<7>_MC.Q | theCount/count<7>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | theCount/count<8> | 3566 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | theCount/count<8>_MC.Q | theCount/count<8>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | CarEW_sync | 3522 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | CarEW_sync_MC.Q | CarEW_sync_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | State_machine/pedNS_temp | 3576 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | State_machine/pedNS_temp_MC.Q | State_machine/pedNS_temp_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | State_machine/state_FSM_FFd3 | 3556 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | State_machine/state_FSM_FFd3_MC.Q | State_machine/state_FSM_FFd3_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | State_machine/state_FSM_FFd5 | 3593 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | State_machine/state_FSM_FFd5_MC.Q | State_machine/state_FSM_FFd5_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | Clock_II/FCLK | 3518 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | NULL | Clock_II | 3 | 5 | II_FCLK
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | Reset_II/FSR | 3520 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | NULL | Reset_II | 6 | 5 | II_FSR
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | State_machine/state_FSM_FFd2 | 3506 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | State_machine/state_FSM_FFd2_MC.Q | State_machine/state_FSM_FFd2_MC | 1 | 0 | MC_UIM
+
+SIGNAL_INSTANCE | State_machine/state_FSM_FFd2_MC.SI | State_machine/state_FSM_FFd2_MC | 0 | 15 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | theCount/count<0> | 3501 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | theCount/count<0>_MC.Q | theCount/count<0>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | State_machine/state_FSM_FFd2 | 3506 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | State_machine/state_FSM_FFd2_MC.Q | State_machine/state_FSM_FFd2_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | State_machine/pedEW_temp | 3511 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | State_machine/pedEW_temp_MC.Q | State_machine/pedEW_temp_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | theCount/count<1> | 3526 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | theCount/count<1>_MC.Q | theCount/count<1>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | theCount/count<2> | 3531 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | theCount/count<2>_MC.Q | theCount/count<2>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | theCount/count<3> | 3536 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | theCount/count<3>_MC.Q | theCount/count<3>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | theCount/count<4> | 3541 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | theCount/count<4>_MC.Q | theCount/count<4>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | theCount/count<5> | 3546 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | theCount/count<5>_MC.Q | theCount/count<5>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | theCount/count<6> | 3551 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | theCount/count<6>_MC.Q | theCount/count<6>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | theCount/count<7> | 3561 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | theCount/count<7>_MC.Q | theCount/count<7>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | theCount/count<8> | 3566 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | theCount/count<8>_MC.Q | theCount/count<8>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | CarEW_sync | 3522 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | CarEW_sync_MC.Q | CarEW_sync_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | State_machine/pedNS_temp | 3576 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | State_machine/pedNS_temp_MC.Q | State_machine/pedNS_temp_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | State_machine/state_FSM_FFd3 | 3556 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | State_machine/state_FSM_FFd3_MC.Q | State_machine/state_FSM_FFd3_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | State_machine/state_FSM_FFd5 | 3593 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | State_machine/state_FSM_FFd5_MC.Q | State_machine/state_FSM_FFd5_MC | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | State_machine/state_FSM_FFd2_MC.D1 | 3510 | ? | 0 | 0 | State_machine/state_FSM_FFd2_MC | NULL | NULL | State_machine/state_FSM_FFd2_MC.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | State_machine/state_FSM_FFd2_MC.D2 | 3509 | ? | 0 | 0 | State_machine/state_FSM_FFd2_MC | NULL | NULL | State_machine/state_FSM_FFd2_MC.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 11 | IV_FALSE | theCount/count<0> | IV_TRUE | State_machine/state_FSM_FFd2 | IV_TRUE | State_machine/pedEW_temp | IV_FALSE | theCount/count<1> | IV_TRUE | theCount/count<2> | IV_TRUE | theCount/count<3> | IV_FALSE | theCount/count<4> | IV_TRUE | theCount/count<5> | IV_FALSE | theCount/count<6> | IV_FALSE | theCount/count<7> | IV_TRUE | theCount/count<8>
+SPPTERM | 11 | IV_FALSE | theCount/count<0> | IV_TRUE | State_machine/state_FSM_FFd2 | IV_TRUE | CarEW_sync | IV_FALSE | theCount/count<1> | IV_TRUE | theCount/count<2> | IV_TRUE | theCount/count<3> | IV_FALSE | theCount/count<4> | IV_TRUE | theCount/count<5> | IV_FALSE | theCount/count<6> | IV_FALSE | theCount/count<7> | IV_TRUE | theCount/count<8>
+SPPTERM | 11 | IV_FALSE | theCount/count<0> | IV_TRUE | State_machine/state_FSM_FFd2 | IV_FALSE | theCount/count<1> | IV_TRUE | theCount/count<2> | IV_TRUE | theCount/count<3> | IV_FALSE | theCount/count<4> | IV_TRUE | theCount/count<5> | IV_FALSE | theCount/count<6> | IV_FALSE | theCount/count<7> | IV_TRUE | theCount/count<8> | IV_TRUE | State_machine/pedNS_temp
+SPPTERM | 11 | IV_FALSE | theCount/count<0> | IV_FALSE | State_machine/state_FSM_FFd2 | IV_FALSE | theCount/count<1> | IV_FALSE | theCount/count<2> | IV_TRUE | theCount/count<3> | IV_FALSE | theCount/count<4> | IV_FALSE | theCount/count<5> | IV_TRUE | theCount/count<6> | IV_TRUE | State_machine/state_FSM_FFd3 | IV_TRUE | theCount/count<7> | IV_FALSE | theCount/count<8>
+SPPTERM | 12 | IV_FALSE | theCount/count<0> | IV_FALSE | State_machine/state_FSM_FFd2 | IV_FALSE | theCount/count<1> | IV_TRUE | theCount/count<2> | IV_FALSE | theCount/count<3> | IV_FALSE | theCount/count<4> | IV_TRUE | theCount/count<5> | IV_TRUE | theCount/count<6> | IV_FALSE | theCount/count<7> | IV_FALSE | theCount/count<8> | IV_FALSE | State_machine/pedNS_temp | IV_TRUE | State_machine/state_FSM_FFd5
+
+SRFF_INSTANCE | State_machine/state_FSM_FFd2_MC.REG | State_machine/state_FSM_FFd2_MC | 0 | 3 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | State_machine/state_FSM_FFd2_MC.D | 3508 | ? | 0 | 0 | State_machine/state_FSM_FFd2_MC | NULL | NULL | State_machine/state_FSM_FFd2_MC.XOR | 0 | 7 | ALU_F
+INPUT_NODE_TYPE | 1 | 8 | SRFF_C
+NODE | Clock_II/FCLK | 3518 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | NULL | Clock_II | 3 | 5 | II_FCLK
+INPUT_NODE_TYPE | 3 | 8 | SRFF_R
+NODE | Reset_II/FSR | 3520 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | NULL | Reset_II | 6 | 5 | II_FSR
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | State_machine/state_FSM_FFd2_MC.Q | 3507 | ? | 0 | 0 | State_machine/state_FSM_FFd2_MC | NULL | NULL | State_machine/state_FSM_FFd2_MC.REG | 0 | 8 | SRFF_Q
+
+MACROCELL_INSTANCE | PrldLow | State_machine/pedEW_temp_MC | Traffic_top_level_COPY_0_COPY_0 | 1024 | 4 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | PedEW_sync | 3516 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | PedEW_sync_MC.Q | PedEW_sync_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | CarEW_sync_MC.COMB | 3525 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | CarEW_sync_MC.D | CarEW_sync_MC | 6 | 0 | MC_COMB
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | Clock_II/FCLK | 3518 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | NULL | Clock_II | 3 | 5 | II_FCLK
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | Reset_II/FSR | 3520 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | NULL | Reset_II | 6 | 5 | II_FSR
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | State_machine/pedEW_temp | 3511 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | State_machine/pedEW_temp_MC.Q | State_machine/pedEW_temp_MC | 1 | 0 | MC_UIM
+
+SIGNAL_INSTANCE | State_machine/pedEW_temp_MC.SI | State_machine/pedEW_temp_MC | 0 | 2 | 3
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | PedEW_sync | 3516 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | PedEW_sync_MC.Q | PedEW_sync_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | CarEW_sync_MC.COMB | 3525 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | CarEW_sync_MC.D | CarEW_sync_MC | 6 | 0 | MC_COMB
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | State_machine/pedEW_temp_MC.D1 | 3515 | ? | 0 | 0 | State_machine/pedEW_temp_MC | NULL | NULL | State_machine/pedEW_temp_MC.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | State_machine/pedEW_temp_MC.D2 | 3514 | ? | 0 | 0 | State_machine/pedEW_temp_MC | NULL | NULL | State_machine/pedEW_temp_MC.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 1 | IV_TRUE | PedEW_sync
+OUTPUT_NODE_TYPE | 10 | 9 | MC_SI_CE
+SIGNAL | NODE | State_machine/pedEW_temp_MC.CE | 3521 | ? | 0 | 0 | State_machine/pedEW_temp_MC | NULL | NULL | State_machine/pedEW_temp_MC.SI | 10 | 9 | MC_SI_CE
+SPPTERM | 1 | IV_FALSE | CarEW_sync_MC.COMB
+
+SRFF_INSTANCE | State_machine/pedEW_temp_MC.REG | State_machine/pedEW_temp_MC | 0 | 4 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | State_machine/pedEW_temp_MC.D | 3513 | ? | 0 | 0 | State_machine/pedEW_temp_MC | NULL | NULL | State_machine/pedEW_temp_MC.XOR | 0 | 7 | ALU_F
+INPUT_NODE_TYPE | 1 | 8 | SRFF_C
+NODE | Clock_II/FCLK | 3518 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | NULL | Clock_II | 3 | 5 | II_FCLK
+INPUT_NODE_TYPE | 3 | 8 | SRFF_R
+NODE | Reset_II/FSR | 3520 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | NULL | Reset_II | 6 | 5 | II_FSR
+INPUT_NODE_TYPE | 4 | 8 | SRFF_CE
+SIGNAL | NODE | State_machine/pedEW_temp_MC.CE | 3521 | ? | 0 | 0 | State_machine/pedEW_temp_MC | NULL | NULL | State_machine/pedEW_temp_MC.SI | 10 | 9 | MC_SI_CE
+SPPTERM | 1 | IV_FALSE | CarEW_sync_MC.COMB
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | State_machine/pedEW_temp_MC.Q | 3512 | ? | 0 | 0 | State_machine/pedEW_temp_MC | NULL | NULL | State_machine/pedEW_temp_MC.REG | 0 | 8 | SRFF_Q
+
+MACROCELL_INSTANCE | PrldLow | PedEW_sync_MC | Traffic_top_level_COPY_0_COPY_0 | 1024 | 3 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | Clock_II/FCLK | 3518 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | NULL | Clock_II | 3 | 5 | II_FCLK
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | Reset_II/FSR | 3520 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | NULL | Reset_II | 6 | 5 | II_FSR
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | PedEW_II/IREG | 3635 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | NULL | PedEW_II | 10 | 5 | II_REG
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | PedEW_sync | 3516 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | PedEW_sync_MC.Q | PedEW_sync_MC | 1 | 0 | MC_UIM
+
+SRFF_INSTANCE | PedEW_sync_MC.REG | PedEW_sync_MC | 0 | 3 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | PedEW_II/IREG | 3635 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | NULL | PedEW_II | 10 | 5 | II_REG
+INPUT_NODE_TYPE | 1 | 8 | SRFF_C
+NODE | Clock_II/FCLK | 3518 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | NULL | Clock_II | 3 | 5 | II_FCLK
+INPUT_NODE_TYPE | 3 | 8 | SRFF_R
+NODE | Reset_II/FSR | 3520 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | NULL | Reset_II | 6 | 5 | II_FSR
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | PedEW_sync_MC.Q | 3517 | ? | 0 | 0 | PedEW_sync_MC | NULL | NULL | PedEW_sync_MC.REG | 0 | 8 | SRFF_Q
+
+INPUT_INSTANCE | 0 | 0 | NULL | Reset_II | Traffic_top_level_COPY_0_COPY_0 | 16 | 1 | 2
+INPUT_NODE_TYPE | 0 | 5 | II_IN
+NODE | Reset | 3519 | PI | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | NULL | NULL | 0 | 100 | NOTYPE
+OUTPUT_NODE_TYPE | 0 | 5 | II_IMUX
+NODE | Reset_II/UIM | 3622 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | NULL | Reset_II | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 6 | 5 | II_FSR
+NODE | Reset_II/FSR | 3520 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | NULL | Reset_II | 6 | 5 | II_FSR
+
+MACROCELL_INSTANCE | PrldLow | CarEW_sync_MC | Traffic_top_level_COPY_0_COPY_0 | 1024 | 5 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | Clock_II/FCLK | 3518 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | NULL | Clock_II | 3 | 5 | II_FCLK
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | Reset_II/FSR | 3520 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | NULL | Reset_II | 6 | 5 | II_FSR
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | CarEW_II/IREG | 3627 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | NULL | CarEW_II | 10 | 5 | II_REG
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | State_machine/state_FSM_FFd4 | 3496 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | State_machine/state_FSM_FFd4_MC.Q | State_machine/state_FSM_FFd4_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | PedEW_sync | 3516 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | PedEW_sync_MC.Q | PedEW_sync_MC | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | CarEW_sync | 3522 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | CarEW_sync_MC.Q | CarEW_sync_MC | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 6 | 0 | MC_COMB
+NODE | CarEW_sync_MC.COMB | 3525 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | CarEW_sync_MC.D | CarEW_sync_MC | 6 | 0 | MC_COMB
+
+SIGNAL_INSTANCE | CarEW_sync_MC.SI | CarEW_sync_MC | 0 | 2 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | State_machine/state_FSM_FFd4 | 3496 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | State_machine/state_FSM_FFd4_MC.Q | State_machine/state_FSM_FFd4_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | PedEW_sync | 3516 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | PedEW_sync_MC.Q | PedEW_sync_MC | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | CarEW_sync_MC.D1 | 3628 | ? | 0 | 0 | CarEW_sync_MC | NULL | NULL | CarEW_sync_MC.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 2 | IV_FALSE | State_machine/state_FSM_FFd4 | IV_FALSE | PedEW_sync
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | CarEW_sync_MC.D2 | 3629 | ? | 0 | 0 | CarEW_sync_MC | NULL | NULL | CarEW_sync_MC.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 0 | IV_ZERO
+
+SRFF_INSTANCE | CarEW_sync_MC.REG | CarEW_sync_MC | 0 | 3 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | CarEW_II/IREG | 3627 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | NULL | CarEW_II | 10 | 5 | II_REG
+INPUT_NODE_TYPE | 1 | 8 | SRFF_C
+NODE | Clock_II/FCLK | 3518 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | NULL | Clock_II | 3 | 5 | II_FCLK
+INPUT_NODE_TYPE | 3 | 8 | SRFF_R
+NODE | Reset_II/FSR | 3520 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | NULL | Reset_II | 6 | 5 | II_FSR
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | CarEW_sync_MC.Q | 3523 | ? | 0 | 0 | CarEW_sync_MC | NULL | NULL | CarEW_sync_MC.REG | 0 | 8 | SRFF_Q
+
+MACROCELL_INSTANCE | PrldLow+Tff | theCount/count<1>_MC | Traffic_top_level_COPY_0_COPY_0 | 5120 | 3 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | theCount/count<0> | 3501 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | theCount/count<0>_MC.Q | theCount/count<0>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | Clock_II/FCLK | 3518 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | NULL | Clock_II | 3 | 5 | II_FCLK
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | Reset_II/FSR | 3520 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | NULL | Reset_II | 6 | 5 | II_FSR
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | theCount/count<1> | 3526 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | theCount/count<1>_MC.Q | theCount/count<1>_MC | 1 | 0 | MC_UIM
+
+SIGNAL_INSTANCE | theCount/count<1>_MC.SI | theCount/count<1>_MC | 0 | 1 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | theCount/count<0> | 3501 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | theCount/count<0>_MC.Q | theCount/count<0>_MC | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | theCount/count<1>_MC.D1 | 3529 | ? | 0 | 0 | theCount/count<1>_MC | NULL | NULL | theCount/count<1>_MC.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 1 | IV_TRUE | theCount/count<0>
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | theCount/count<1>_MC.D2 | 3530 | ? | 0 | 0 | theCount/count<1>_MC | NULL | NULL | theCount/count<1>_MC.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 0 | IV_ZERO
+
+SRFF_INSTANCE | theCount/count<1>_MC.REG | theCount/count<1>_MC | 0 | 3 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | theCount/count<1>_MC.D | 3528 | ? | 0 | 0 | theCount/count<1>_MC | NULL | NULL | theCount/count<1>_MC.XOR | 0 | 7 | ALU_F
+INPUT_NODE_TYPE | 1 | 8 | SRFF_C
+NODE | Clock_II/FCLK | 3518 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | NULL | Clock_II | 3 | 5 | II_FCLK
+INPUT_NODE_TYPE | 3 | 8 | SRFF_R
+NODE | Reset_II/FSR | 3520 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | NULL | Reset_II | 6 | 5 | II_FSR
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | theCount/count<1>_MC.Q | 3527 | ? | 0 | 0 | theCount/count<1>_MC | NULL | NULL | theCount/count<1>_MC.REG | 0 | 8 | SRFF_Q
+
+MACROCELL_INSTANCE | PrldLow+Tff | theCount/count<2>_MC | Traffic_top_level_COPY_0_COPY_0 | 5120 | 15 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | theCount/count<0> | 3501 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | theCount/count<0>_MC.Q | theCount/count<0>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | theCount/count<1> | 3526 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | theCount/count<1>_MC.Q | theCount/count<1>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | State_machine/state_FSM_FFd2 | 3506 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | State_machine/state_FSM_FFd2_MC.Q | State_machine/state_FSM_FFd2_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | theCount/count<2> | 3531 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | theCount/count<2>_MC.Q | theCount/count<2>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | theCount/count<3> | 3536 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | theCount/count<3>_MC.Q | theCount/count<3>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | theCount/count<4> | 3541 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | theCount/count<4>_MC.Q | theCount/count<4>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | theCount/count<5> | 3546 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | theCount/count<5>_MC.Q | theCount/count<5>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | theCount/count<6> | 3551 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | theCount/count<6>_MC.Q | theCount/count<6>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | theCount/count<7> | 3561 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | theCount/count<7>_MC.Q | theCount/count<7>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | theCount/count<8> | 3566 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | theCount/count<8>_MC.Q | theCount/count<8>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | State_machine/state_FSM_FFd6 | 3571 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | State_machine/state_FSM_FFd6_MC.Q | State_machine/state_FSM_FFd6_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | State_machine/state_FSM_FFd1 | 3588 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | State_machine/state_FSM_FFd1_MC.Q | State_machine/state_FSM_FFd1_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | State_machine/state_FSM_FFd5 | 3593 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | State_machine/state_FSM_FFd5_MC.Q | State_machine/state_FSM_FFd5_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | Clock_II/FCLK | 3518 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | NULL | Clock_II | 3 | 5 | II_FCLK
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | Reset_II/FSR | 3520 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | NULL | Reset_II | 6 | 5 | II_FSR
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | theCount/count<2> | 3531 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | theCount/count<2>_MC.Q | theCount/count<2>_MC | 1 | 0 | MC_UIM
+
+SIGNAL_INSTANCE | theCount/count<2>_MC.SI | theCount/count<2>_MC | 0 | 13 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | theCount/count<0> | 3501 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | theCount/count<0>_MC.Q | theCount/count<0>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | theCount/count<1> | 3526 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | theCount/count<1>_MC.Q | theCount/count<1>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | State_machine/state_FSM_FFd2 | 3506 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | State_machine/state_FSM_FFd2_MC.Q | State_machine/state_FSM_FFd2_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | theCount/count<2> | 3531 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | theCount/count<2>_MC.Q | theCount/count<2>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | theCount/count<3> | 3536 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | theCount/count<3>_MC.Q | theCount/count<3>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | theCount/count<4> | 3541 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | theCount/count<4>_MC.Q | theCount/count<4>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | theCount/count<5> | 3546 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | theCount/count<5>_MC.Q | theCount/count<5>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | theCount/count<6> | 3551 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | theCount/count<6>_MC.Q | theCount/count<6>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | theCount/count<7> | 3561 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | theCount/count<7>_MC.Q | theCount/count<7>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | theCount/count<8> | 3566 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | theCount/count<8>_MC.Q | theCount/count<8>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | State_machine/state_FSM_FFd6 | 3571 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | State_machine/state_FSM_FFd6_MC.Q | State_machine/state_FSM_FFd6_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | State_machine/state_FSM_FFd1 | 3588 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | State_machine/state_FSM_FFd1_MC.Q | State_machine/state_FSM_FFd1_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | State_machine/state_FSM_FFd5 | 3593 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | State_machine/state_FSM_FFd5_MC.Q | State_machine/state_FSM_FFd5_MC | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | theCount/count<2>_MC.D1 | 3535 | ? | 0 | 0 | theCount/count<2>_MC | NULL | NULL | theCount/count<2>_MC.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | theCount/count<2>_MC.D2 | 3534 | ? | 0 | 0 | theCount/count<2>_MC | NULL | NULL | theCount/count<2>_MC.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 2 | IV_TRUE | theCount/count<0> | IV_TRUE | theCount/count<1>
+SPPTERM | 10 | IV_FALSE | theCount/count<0> | IV_TRUE | State_machine/state_FSM_FFd2 | IV_FALSE | theCount/count<1> | IV_TRUE | theCount/count<2> | IV_TRUE | theCount/count<3> | IV_FALSE | theCount/count<4> | IV_TRUE | theCount/count<5> | IV_FALSE | theCount/count<6> | IV_FALSE | theCount/count<7> | IV_TRUE | theCount/count<8>
+SPPTERM | 10 | IV_FALSE | theCount/count<0> | IV_FALSE | theCount/count<1> | IV_TRUE | theCount/count<2> | IV_TRUE | theCount/count<3> | IV_FALSE | theCount/count<4> | IV_TRUE | theCount/count<5> | IV_FALSE | theCount/count<6> | IV_FALSE | theCount/count<7> | IV_TRUE | theCount/count<8> | IV_TRUE | State_machine/state_FSM_FFd6
+SPPTERM | 10 | IV_FALSE | theCount/count<0> | IV_FALSE | theCount/count<1> | IV_TRUE | theCount/count<2> | IV_FALSE | theCount/count<3> | IV_FALSE | theCount/count<4> | IV_TRUE | theCount/count<5> | IV_TRUE | theCount/count<6> | IV_FALSE | theCount/count<7> | IV_FALSE | theCount/count<8> | IV_TRUE | State_machine/state_FSM_FFd1
+SPPTERM | 10 | IV_FALSE | theCount/count<0> | IV_FALSE | theCount/count<1> | IV_TRUE | theCount/count<2> | IV_FALSE | theCount/count<3> | IV_FALSE | theCount/count<4> | IV_TRUE | theCount/count<5> | IV_TRUE | theCount/count<6> | IV_FALSE | theCount/count<7> | IV_FALSE | theCount/count<8> | IV_TRUE | State_machine/state_FSM_FFd5
+
+SRFF_INSTANCE | theCount/count<2>_MC.REG | theCount/count<2>_MC | 0 | 3 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | theCount/count<2>_MC.D | 3533 | ? | 0 | 0 | theCount/count<2>_MC | NULL | NULL | theCount/count<2>_MC.XOR | 0 | 7 | ALU_F
+INPUT_NODE_TYPE | 1 | 8 | SRFF_C
+NODE | Clock_II/FCLK | 3518 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | NULL | Clock_II | 3 | 5 | II_FCLK
+INPUT_NODE_TYPE | 3 | 8 | SRFF_R
+NODE | Reset_II/FSR | 3520 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | NULL | Reset_II | 6 | 5 | II_FSR
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | theCount/count<2>_MC.Q | 3532 | ? | 0 | 0 | theCount/count<2>_MC | NULL | NULL | theCount/count<2>_MC.REG | 0 | 8 | SRFF_Q
+
+MACROCELL_INSTANCE | PrldLow+Tff | theCount/count<3>_MC | Traffic_top_level_COPY_0_COPY_0 | 5120 | 15 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | theCount/count<0> | 3501 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | theCount/count<0>_MC.Q | theCount/count<0>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | theCount/count<1> | 3526 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | theCount/count<1>_MC.Q | theCount/count<1>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | theCount/count<2> | 3531 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | theCount/count<2>_MC.Q | theCount/count<2>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | State_machine/state_FSM_FFd4 | 3496 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | State_machine/state_FSM_FFd4_MC.Q | State_machine/state_FSM_FFd4_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | theCount/count<3> | 3536 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | theCount/count<3>_MC.Q | theCount/count<3>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | theCount/count<4> | 3541 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | theCount/count<4>_MC.Q | theCount/count<4>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | theCount/count<5> | 3546 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | theCount/count<5>_MC.Q | theCount/count<5>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | theCount/count<6> | 3551 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | theCount/count<6>_MC.Q | theCount/count<6>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | theCount/count<7> | 3561 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | theCount/count<7>_MC.Q | theCount/count<7>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | theCount/count<8> | 3566 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | theCount/count<8>_MC.Q | theCount/count<8>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | State_machine/state_FSM_FFd2 | 3506 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | State_machine/state_FSM_FFd2_MC.Q | State_machine/state_FSM_FFd2_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | State_machine/state_FSM_FFd6 | 3571 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | State_machine/state_FSM_FFd6_MC.Q | State_machine/state_FSM_FFd6_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | State_machine/state_FSM_FFd3 | 3556 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | State_machine/state_FSM_FFd3_MC.Q | State_machine/state_FSM_FFd3_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | Clock_II/FCLK | 3518 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | NULL | Clock_II | 3 | 5 | II_FCLK
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | Reset_II/FSR | 3520 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | NULL | Reset_II | 6 | 5 | II_FSR
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | theCount/count<3> | 3536 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | theCount/count<3>_MC.Q | theCount/count<3>_MC | 1 | 0 | MC_UIM
+
+SIGNAL_INSTANCE | theCount/count<3>_MC.SI | theCount/count<3>_MC | 0 | 13 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | theCount/count<0> | 3501 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | theCount/count<0>_MC.Q | theCount/count<0>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | theCount/count<1> | 3526 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | theCount/count<1>_MC.Q | theCount/count<1>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | theCount/count<2> | 3531 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | theCount/count<2>_MC.Q | theCount/count<2>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | State_machine/state_FSM_FFd4 | 3496 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | State_machine/state_FSM_FFd4_MC.Q | State_machine/state_FSM_FFd4_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | theCount/count<3> | 3536 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | theCount/count<3>_MC.Q | theCount/count<3>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | theCount/count<4> | 3541 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | theCount/count<4>_MC.Q | theCount/count<4>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | theCount/count<5> | 3546 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | theCount/count<5>_MC.Q | theCount/count<5>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | theCount/count<6> | 3551 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | theCount/count<6>_MC.Q | theCount/count<6>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | theCount/count<7> | 3561 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | theCount/count<7>_MC.Q | theCount/count<7>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | theCount/count<8> | 3566 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | theCount/count<8>_MC.Q | theCount/count<8>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | State_machine/state_FSM_FFd2 | 3506 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | State_machine/state_FSM_FFd2_MC.Q | State_machine/state_FSM_FFd2_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | State_machine/state_FSM_FFd6 | 3571 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | State_machine/state_FSM_FFd6_MC.Q | State_machine/state_FSM_FFd6_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | State_machine/state_FSM_FFd3 | 3556 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | State_machine/state_FSM_FFd3_MC.Q | State_machine/state_FSM_FFd3_MC | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | theCount/count<3>_MC.D1 | 3540 | ? | 0 | 0 | theCount/count<3>_MC | NULL | NULL | theCount/count<3>_MC.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | theCount/count<3>_MC.D2 | 3539 | ? | 0 | 0 | theCount/count<3>_MC | NULL | NULL | theCount/count<3>_MC.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 3 | IV_TRUE | theCount/count<0> | IV_TRUE | theCount/count<1> | IV_TRUE | theCount/count<2>
+SPPTERM | 10 | IV_TRUE | State_machine/state_FSM_FFd4 | IV_FALSE | theCount/count<0> | IV_FALSE | theCount/count<1> | IV_FALSE | theCount/count<2> | IV_TRUE | theCount/count<3> | IV_FALSE | theCount/count<4> | IV_FALSE | theCount/count<5> | IV_TRUE | theCount/count<6> | IV_TRUE | theCount/count<7> | IV_FALSE | theCount/count<8>
+SPPTERM | 10 | IV_FALSE | theCount/count<0> | IV_TRUE | State_machine/state_FSM_FFd2 | IV_FALSE | theCount/count<1> | IV_TRUE | theCount/count<2> | IV_TRUE | theCount/count<3> | IV_FALSE | theCount/count<4> | IV_TRUE | theCount/count<5> | IV_FALSE | theCount/count<6> | IV_FALSE | theCount/count<7> | IV_TRUE | theCount/count<8>
+SPPTERM | 10 | IV_FALSE | theCount/count<0> | IV_FALSE | theCount/count<1> | IV_TRUE | theCount/count<2> | IV_TRUE | theCount/count<3> | IV_FALSE | theCount/count<4> | IV_TRUE | theCount/count<5> | IV_FALSE | theCount/count<6> | IV_FALSE | theCount/count<7> | IV_TRUE | theCount/count<8> | IV_TRUE | State_machine/state_FSM_FFd6
+SPPTERM | 10 | IV_FALSE | theCount/count<0> | IV_FALSE | theCount/count<1> | IV_FALSE | theCount/count<2> | IV_TRUE | theCount/count<3> | IV_FALSE | theCount/count<4> | IV_FALSE | theCount/count<5> | IV_TRUE | theCount/count<6> | IV_TRUE | State_machine/state_FSM_FFd3 | IV_TRUE | theCount/count<7> | IV_FALSE | theCount/count<8>
+
+SRFF_INSTANCE | theCount/count<3>_MC.REG | theCount/count<3>_MC | 0 | 3 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | theCount/count<3>_MC.D | 3538 | ? | 0 | 0 | theCount/count<3>_MC | NULL | NULL | theCount/count<3>_MC.XOR | 0 | 7 | ALU_F
+INPUT_NODE_TYPE | 1 | 8 | SRFF_C
+NODE | Clock_II/FCLK | 3518 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | NULL | Clock_II | 3 | 5 | II_FCLK
+INPUT_NODE_TYPE | 3 | 8 | SRFF_R
+NODE | Reset_II/FSR | 3520 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | NULL | Reset_II | 6 | 5 | II_FSR
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | theCount/count<3>_MC.Q | 3537 | ? | 0 | 0 | theCount/count<3>_MC | NULL | NULL | theCount/count<3>_MC.REG | 0 | 8 | SRFF_Q
+
+MACROCELL_INSTANCE | PrldLow+Tff | theCount/count<4>_MC | Traffic_top_level_COPY_0_COPY_0 | 5120 | 6 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | theCount/count<0> | 3501 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | theCount/count<0>_MC.Q | theCount/count<0>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | theCount/count<1> | 3526 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | theCount/count<1>_MC.Q | theCount/count<1>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | theCount/count<2> | 3531 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | theCount/count<2>_MC.Q | theCount/count<2>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | theCount/count<3> | 3536 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | theCount/count<3>_MC.Q | theCount/count<3>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | Clock_II/FCLK | 3518 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | NULL | Clock_II | 3 | 5 | II_FCLK
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | Reset_II/FSR | 3520 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | NULL | Reset_II | 6 | 5 | II_FSR
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | theCount/count<4> | 3541 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | theCount/count<4>_MC.Q | theCount/count<4>_MC | 1 | 0 | MC_UIM
+
+SIGNAL_INSTANCE | theCount/count<4>_MC.SI | theCount/count<4>_MC | 0 | 4 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | theCount/count<0> | 3501 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | theCount/count<0>_MC.Q | theCount/count<0>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | theCount/count<1> | 3526 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | theCount/count<1>_MC.Q | theCount/count<1>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | theCount/count<2> | 3531 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | theCount/count<2>_MC.Q | theCount/count<2>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | theCount/count<3> | 3536 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | theCount/count<3>_MC.Q | theCount/count<3>_MC | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | theCount/count<4>_MC.D1 | 3544 | ? | 0 | 0 | theCount/count<4>_MC | NULL | NULL | theCount/count<4>_MC.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 4 | IV_TRUE | theCount/count<0> | IV_TRUE | theCount/count<1> | IV_TRUE | theCount/count<2> | IV_TRUE | theCount/count<3>
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | theCount/count<4>_MC.D2 | 3545 | ? | 0 | 0 | theCount/count<4>_MC | NULL | NULL | theCount/count<4>_MC.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 0 | IV_ZERO
+
+SRFF_INSTANCE | theCount/count<4>_MC.REG | theCount/count<4>_MC | 0 | 3 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | theCount/count<4>_MC.D | 3543 | ? | 0 | 0 | theCount/count<4>_MC | NULL | NULL | theCount/count<4>_MC.XOR | 0 | 7 | ALU_F
+INPUT_NODE_TYPE | 1 | 8 | SRFF_C
+NODE | Clock_II/FCLK | 3518 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | NULL | Clock_II | 3 | 5 | II_FCLK
+INPUT_NODE_TYPE | 3 | 8 | SRFF_R
+NODE | Reset_II/FSR | 3520 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | NULL | Reset_II | 6 | 5 | II_FSR
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | theCount/count<4>_MC.Q | 3542 | ? | 0 | 0 | theCount/count<4>_MC | NULL | NULL | theCount/count<4>_MC.REG | 0 | 8 | SRFF_Q
+
+MACROCELL_INSTANCE | PrldLow+Tff | theCount/count<5>_MC | Traffic_top_level_COPY_0_COPY_0 | 5120 | 15 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | theCount/count<0> | 3501 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | theCount/count<0>_MC.Q | theCount/count<0>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | theCount/count<1> | 3526 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | theCount/count<1>_MC.Q | theCount/count<1>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | theCount/count<2> | 3531 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | theCount/count<2>_MC.Q | theCount/count<2>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | theCount/count<3> | 3536 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | theCount/count<3>_MC.Q | theCount/count<3>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | theCount/count<4> | 3541 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | theCount/count<4>_MC.Q | theCount/count<4>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | State_machine/state_FSM_FFd2 | 3506 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | State_machine/state_FSM_FFd2_MC.Q | State_machine/state_FSM_FFd2_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | theCount/count<5> | 3546 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | theCount/count<5>_MC.Q | theCount/count<5>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | theCount/count<6> | 3551 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | theCount/count<6>_MC.Q | theCount/count<6>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | theCount/count<7> | 3561 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | theCount/count<7>_MC.Q | theCount/count<7>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | theCount/count<8> | 3566 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | theCount/count<8>_MC.Q | theCount/count<8>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | State_machine/state_FSM_FFd6 | 3571 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | State_machine/state_FSM_FFd6_MC.Q | State_machine/state_FSM_FFd6_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | State_machine/state_FSM_FFd1 | 3588 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | State_machine/state_FSM_FFd1_MC.Q | State_machine/state_FSM_FFd1_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | State_machine/state_FSM_FFd5 | 3593 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | State_machine/state_FSM_FFd5_MC.Q | State_machine/state_FSM_FFd5_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | Clock_II/FCLK | 3518 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | NULL | Clock_II | 3 | 5 | II_FCLK
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | Reset_II/FSR | 3520 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | NULL | Reset_II | 6 | 5 | II_FSR
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | theCount/count<5> | 3546 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | theCount/count<5>_MC.Q | theCount/count<5>_MC | 1 | 0 | MC_UIM
+
+SIGNAL_INSTANCE | theCount/count<5>_MC.SI | theCount/count<5>_MC | 0 | 13 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | theCount/count<0> | 3501 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | theCount/count<0>_MC.Q | theCount/count<0>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | theCount/count<1> | 3526 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | theCount/count<1>_MC.Q | theCount/count<1>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | theCount/count<2> | 3531 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | theCount/count<2>_MC.Q | theCount/count<2>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | theCount/count<3> | 3536 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | theCount/count<3>_MC.Q | theCount/count<3>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | theCount/count<4> | 3541 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | theCount/count<4>_MC.Q | theCount/count<4>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | State_machine/state_FSM_FFd2 | 3506 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | State_machine/state_FSM_FFd2_MC.Q | State_machine/state_FSM_FFd2_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | theCount/count<5> | 3546 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | theCount/count<5>_MC.Q | theCount/count<5>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | theCount/count<6> | 3551 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | theCount/count<6>_MC.Q | theCount/count<6>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | theCount/count<7> | 3561 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | theCount/count<7>_MC.Q | theCount/count<7>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | theCount/count<8> | 3566 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | theCount/count<8>_MC.Q | theCount/count<8>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | State_machine/state_FSM_FFd6 | 3571 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | State_machine/state_FSM_FFd6_MC.Q | State_machine/state_FSM_FFd6_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | State_machine/state_FSM_FFd1 | 3588 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | State_machine/state_FSM_FFd1_MC.Q | State_machine/state_FSM_FFd1_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | State_machine/state_FSM_FFd5 | 3593 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | State_machine/state_FSM_FFd5_MC.Q | State_machine/state_FSM_FFd5_MC | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | theCount/count<5>_MC.D1 | 3550 | ? | 0 | 0 | theCount/count<5>_MC | NULL | NULL | theCount/count<5>_MC.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | theCount/count<5>_MC.D2 | 3549 | ? | 0 | 0 | theCount/count<5>_MC | NULL | NULL | theCount/count<5>_MC.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 5 | IV_TRUE | theCount/count<0> | IV_TRUE | theCount/count<1> | IV_TRUE | theCount/count<2> | IV_TRUE | theCount/count<3> | IV_TRUE | theCount/count<4>
+SPPTERM | 10 | IV_FALSE | theCount/count<0> | IV_TRUE | State_machine/state_FSM_FFd2 | IV_FALSE | theCount/count<1> | IV_TRUE | theCount/count<2> | IV_TRUE | theCount/count<3> | IV_FALSE | theCount/count<4> | IV_TRUE | theCount/count<5> | IV_FALSE | theCount/count<6> | IV_FALSE | theCount/count<7> | IV_TRUE | theCount/count<8>
+SPPTERM | 10 | IV_FALSE | theCount/count<0> | IV_FALSE | theCount/count<1> | IV_TRUE | theCount/count<2> | IV_TRUE | theCount/count<3> | IV_FALSE | theCount/count<4> | IV_TRUE | theCount/count<5> | IV_FALSE | theCount/count<6> | IV_FALSE | theCount/count<7> | IV_TRUE | theCount/count<8> | IV_TRUE | State_machine/state_FSM_FFd6
+SPPTERM | 10 | IV_FALSE | theCount/count<0> | IV_FALSE | theCount/count<1> | IV_TRUE | theCount/count<2> | IV_FALSE | theCount/count<3> | IV_FALSE | theCount/count<4> | IV_TRUE | theCount/count<5> | IV_TRUE | theCount/count<6> | IV_FALSE | theCount/count<7> | IV_FALSE | theCount/count<8> | IV_TRUE | State_machine/state_FSM_FFd1
+SPPTERM | 10 | IV_FALSE | theCount/count<0> | IV_FALSE | theCount/count<1> | IV_TRUE | theCount/count<2> | IV_FALSE | theCount/count<3> | IV_FALSE | theCount/count<4> | IV_TRUE | theCount/count<5> | IV_TRUE | theCount/count<6> | IV_FALSE | theCount/count<7> | IV_FALSE | theCount/count<8> | IV_TRUE | State_machine/state_FSM_FFd5
+
+SRFF_INSTANCE | theCount/count<5>_MC.REG | theCount/count<5>_MC | 0 | 3 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | theCount/count<5>_MC.D | 3548 | ? | 0 | 0 | theCount/count<5>_MC | NULL | NULL | theCount/count<5>_MC.XOR | 0 | 7 | ALU_F
+INPUT_NODE_TYPE | 1 | 8 | SRFF_C
+NODE | Clock_II/FCLK | 3518 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | NULL | Clock_II | 3 | 5 | II_FCLK
+INPUT_NODE_TYPE | 3 | 8 | SRFF_R
+NODE | Reset_II/FSR | 3520 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | NULL | Reset_II | 6 | 5 | II_FSR
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | theCount/count<5>_MC.Q | 3547 | ? | 0 | 0 | theCount/count<5>_MC | NULL | NULL | theCount/count<5>_MC.REG | 0 | 8 | SRFF_Q
+
+MACROCELL_INSTANCE | PrldLow+Tff | theCount/count<6>_MC | Traffic_top_level_COPY_0_COPY_0 | 5120 | 15 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | theCount/count<0> | 3501 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | theCount/count<0>_MC.Q | theCount/count<0>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | theCount/count<1> | 3526 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | theCount/count<1>_MC.Q | theCount/count<1>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | theCount/count<2> | 3531 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | theCount/count<2>_MC.Q | theCount/count<2>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | theCount/count<3> | 3536 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | theCount/count<3>_MC.Q | theCount/count<3>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | theCount/count<4> | 3541 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | theCount/count<4>_MC.Q | theCount/count<4>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | theCount/count<5> | 3546 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | theCount/count<5>_MC.Q | theCount/count<5>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | State_machine/state_FSM_FFd4 | 3496 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | State_machine/state_FSM_FFd4_MC.Q | State_machine/state_FSM_FFd4_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | theCount/count<6> | 3551 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | theCount/count<6>_MC.Q | theCount/count<6>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | theCount/count<7> | 3561 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | theCount/count<7>_MC.Q | theCount/count<7>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | theCount/count<8> | 3566 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | theCount/count<8>_MC.Q | theCount/count<8>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | State_machine/state_FSM_FFd1 | 3588 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | State_machine/state_FSM_FFd1_MC.Q | State_machine/state_FSM_FFd1_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | State_machine/state_FSM_FFd5 | 3593 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | State_machine/state_FSM_FFd5_MC.Q | State_machine/state_FSM_FFd5_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | State_machine/state_FSM_FFd3 | 3556 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | State_machine/state_FSM_FFd3_MC.Q | State_machine/state_FSM_FFd3_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | Clock_II/FCLK | 3518 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | NULL | Clock_II | 3 | 5 | II_FCLK
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | Reset_II/FSR | 3520 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | NULL | Reset_II | 6 | 5 | II_FSR
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | theCount/count<6> | 3551 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | theCount/count<6>_MC.Q | theCount/count<6>_MC | 1 | 0 | MC_UIM
+
+SIGNAL_INSTANCE | theCount/count<6>_MC.SI | theCount/count<6>_MC | 0 | 13 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | theCount/count<0> | 3501 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | theCount/count<0>_MC.Q | theCount/count<0>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | theCount/count<1> | 3526 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | theCount/count<1>_MC.Q | theCount/count<1>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | theCount/count<2> | 3531 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | theCount/count<2>_MC.Q | theCount/count<2>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | theCount/count<3> | 3536 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | theCount/count<3>_MC.Q | theCount/count<3>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | theCount/count<4> | 3541 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | theCount/count<4>_MC.Q | theCount/count<4>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | theCount/count<5> | 3546 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | theCount/count<5>_MC.Q | theCount/count<5>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | State_machine/state_FSM_FFd4 | 3496 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | State_machine/state_FSM_FFd4_MC.Q | State_machine/state_FSM_FFd4_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | theCount/count<6> | 3551 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | theCount/count<6>_MC.Q | theCount/count<6>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | theCount/count<7> | 3561 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | theCount/count<7>_MC.Q | theCount/count<7>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | theCount/count<8> | 3566 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | theCount/count<8>_MC.Q | theCount/count<8>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | State_machine/state_FSM_FFd1 | 3588 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | State_machine/state_FSM_FFd1_MC.Q | State_machine/state_FSM_FFd1_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | State_machine/state_FSM_FFd5 | 3593 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | State_machine/state_FSM_FFd5_MC.Q | State_machine/state_FSM_FFd5_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | State_machine/state_FSM_FFd3 | 3556 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | State_machine/state_FSM_FFd3_MC.Q | State_machine/state_FSM_FFd3_MC | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | theCount/count<6>_MC.D1 | 3555 | ? | 0 | 0 | theCount/count<6>_MC | NULL | NULL | theCount/count<6>_MC.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | theCount/count<6>_MC.D2 | 3554 | ? | 0 | 0 | theCount/count<6>_MC | NULL | NULL | theCount/count<6>_MC.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 6 | IV_TRUE | theCount/count<0> | IV_TRUE | theCount/count<1> | IV_TRUE | theCount/count<2> | IV_TRUE | theCount/count<3> | IV_TRUE | theCount/count<4> | IV_TRUE | theCount/count<5>
+SPPTERM | 10 | IV_TRUE | State_machine/state_FSM_FFd4 | IV_FALSE | theCount/count<0> | IV_FALSE | theCount/count<1> | IV_FALSE | theCount/count<2> | IV_TRUE | theCount/count<3> | IV_FALSE | theCount/count<4> | IV_FALSE | theCount/count<5> | IV_TRUE | theCount/count<6> | IV_TRUE | theCount/count<7> | IV_FALSE | theCount/count<8>
+SPPTERM | 10 | IV_FALSE | theCount/count<0> | IV_FALSE | theCount/count<1> | IV_TRUE | theCount/count<2> | IV_FALSE | theCount/count<3> | IV_FALSE | theCount/count<4> | IV_TRUE | theCount/count<5> | IV_TRUE | theCount/count<6> | IV_FALSE | theCount/count<7> | IV_FALSE | theCount/count<8> | IV_TRUE | State_machine/state_FSM_FFd1
+SPPTERM | 10 | IV_FALSE | theCount/count<0> | IV_FALSE | theCount/count<1> | IV_TRUE | theCount/count<2> | IV_FALSE | theCount/count<3> | IV_FALSE | theCount/count<4> | IV_TRUE | theCount/count<5> | IV_TRUE | theCount/count<6> | IV_FALSE | theCount/count<7> | IV_FALSE | theCount/count<8> | IV_TRUE | State_machine/state_FSM_FFd5
+SPPTERM | 10 | IV_FALSE | theCount/count<0> | IV_FALSE | theCount/count<1> | IV_FALSE | theCount/count<2> | IV_TRUE | theCount/count<3> | IV_FALSE | theCount/count<4> | IV_FALSE | theCount/count<5> | IV_TRUE | theCount/count<6> | IV_TRUE | State_machine/state_FSM_FFd3 | IV_TRUE | theCount/count<7> | IV_FALSE | theCount/count<8>
+
+SRFF_INSTANCE | theCount/count<6>_MC.REG | theCount/count<6>_MC | 0 | 3 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | theCount/count<6>_MC.D | 3553 | ? | 0 | 0 | theCount/count<6>_MC | NULL | NULL | theCount/count<6>_MC.XOR | 0 | 7 | ALU_F
+INPUT_NODE_TYPE | 1 | 8 | SRFF_C
+NODE | Clock_II/FCLK | 3518 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | NULL | Clock_II | 3 | 5 | II_FCLK
+INPUT_NODE_TYPE | 3 | 8 | SRFF_R
+NODE | Reset_II/FSR | 3520 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | NULL | Reset_II | 6 | 5 | II_FSR
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | theCount/count<6>_MC.Q | 3552 | ? | 0 | 0 | theCount/count<6>_MC | NULL | NULL | theCount/count<6>_MC.REG | 0 | 8 | SRFF_Q
+
+MACROCELL_INSTANCE | PrldLow+Tff | State_machine/state_FSM_FFd3_MC | Traffic_top_level_COPY_0_COPY_0 | 5120 | 17 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | theCount/count<0> | 3501 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | theCount/count<0>_MC.Q | theCount/count<0>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | theCount/count<1> | 3526 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | theCount/count<1>_MC.Q | theCount/count<1>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | theCount/count<2> | 3531 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | theCount/count<2>_MC.Q | theCount/count<2>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | theCount/count<3> | 3536 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | theCount/count<3>_MC.Q | theCount/count<3>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | theCount/count<4> | 3541 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | theCount/count<4>_MC.Q | theCount/count<4>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | theCount/count<5> | 3546 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | theCount/count<5>_MC.Q | theCount/count<5>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | theCount/count<6> | 3551 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | theCount/count<6>_MC.Q | theCount/count<6>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | State_machine/state_FSM_FFd3 | 3556 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | State_machine/state_FSM_FFd3_MC.Q | State_machine/state_FSM_FFd3_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | theCount/count<7> | 3561 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | theCount/count<7>_MC.Q | theCount/count<7>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | theCount/count<8> | 3566 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | theCount/count<8>_MC.Q | theCount/count<8>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | State_machine/pedNS_temp | 3576 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | State_machine/pedNS_temp_MC.Q | State_machine/pedNS_temp_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | State_machine/state_FSM_FFd5 | 3593 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | State_machine/state_FSM_FFd5_MC.Q | State_machine/state_FSM_FFd5_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | State_machine/state_FSM_FFd2 | 3506 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | State_machine/state_FSM_FFd2_MC.Q | State_machine/state_FSM_FFd2_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | State_machine/pedEW_temp | 3511 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | State_machine/pedEW_temp_MC.Q | State_machine/pedEW_temp_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | CarEW_sync | 3522 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | CarEW_sync_MC.Q | CarEW_sync_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | Clock_II/FCLK | 3518 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | NULL | Clock_II | 3 | 5 | II_FCLK
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | Reset_II/FSR | 3520 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | NULL | Reset_II | 6 | 5 | II_FSR
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | State_machine/state_FSM_FFd3 | 3556 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | State_machine/state_FSM_FFd3_MC.Q | State_machine/state_FSM_FFd3_MC | 1 | 0 | MC_UIM
+
+SIGNAL_INSTANCE | State_machine/state_FSM_FFd3_MC.SI | State_machine/state_FSM_FFd3_MC | 0 | 15 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | theCount/count<0> | 3501 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | theCount/count<0>_MC.Q | theCount/count<0>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | theCount/count<1> | 3526 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | theCount/count<1>_MC.Q | theCount/count<1>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | theCount/count<2> | 3531 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | theCount/count<2>_MC.Q | theCount/count<2>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | theCount/count<3> | 3536 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | theCount/count<3>_MC.Q | theCount/count<3>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | theCount/count<4> | 3541 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | theCount/count<4>_MC.Q | theCount/count<4>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | theCount/count<5> | 3546 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | theCount/count<5>_MC.Q | theCount/count<5>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | theCount/count<6> | 3551 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | theCount/count<6>_MC.Q | theCount/count<6>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | State_machine/state_FSM_FFd3 | 3556 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | State_machine/state_FSM_FFd3_MC.Q | State_machine/state_FSM_FFd3_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | theCount/count<7> | 3561 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | theCount/count<7>_MC.Q | theCount/count<7>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | theCount/count<8> | 3566 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | theCount/count<8>_MC.Q | theCount/count<8>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | State_machine/pedNS_temp | 3576 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | State_machine/pedNS_temp_MC.Q | State_machine/pedNS_temp_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | State_machine/state_FSM_FFd5 | 3593 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | State_machine/state_FSM_FFd5_MC.Q | State_machine/state_FSM_FFd5_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | State_machine/state_FSM_FFd2 | 3506 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | State_machine/state_FSM_FFd2_MC.Q | State_machine/state_FSM_FFd2_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | State_machine/pedEW_temp | 3511 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | State_machine/pedEW_temp_MC.Q | State_machine/pedEW_temp_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | CarEW_sync | 3522 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | CarEW_sync_MC.Q | CarEW_sync_MC | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | State_machine/state_FSM_FFd3_MC.D1 | 3560 | ? | 0 | 0 | State_machine/state_FSM_FFd3_MC | NULL | NULL | State_machine/state_FSM_FFd3_MC.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | State_machine/state_FSM_FFd3_MC.D2 | 3559 | ? | 0 | 0 | State_machine/state_FSM_FFd3_MC | NULL | NULL | State_machine/state_FSM_FFd3_MC.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 10 | IV_FALSE | theCount/count<0> | IV_FALSE | theCount/count<1> | IV_FALSE | theCount/count<2> | IV_TRUE | theCount/count<3> | IV_FALSE | theCount/count<4> | IV_FALSE | theCount/count<5> | IV_TRUE | theCount/count<6> | IV_TRUE | State_machine/state_FSM_FFd3 | IV_TRUE | theCount/count<7> | IV_FALSE | theCount/count<8>
+SPPTERM | 12 | IV_FALSE | theCount/count<0> | IV_FALSE | theCount/count<1> | IV_TRUE | theCount/count<2> | IV_FALSE | theCount/count<3> | IV_FALSE | theCount/count<4> | IV_TRUE | theCount/count<5> | IV_TRUE | theCount/count<6> | IV_FALSE | State_machine/state_FSM_FFd3 | IV_FALSE | theCount/count<7> | IV_FALSE | theCount/count<8> | IV_TRUE | State_machine/pedNS_temp | IV_TRUE | State_machine/state_FSM_FFd5
+SPPTERM | 14 | IV_FALSE | theCount/count<0> | IV_TRUE | State_machine/state_FSM_FFd2 | IV_FALSE | State_machine/pedEW_temp | IV_FALSE | CarEW_sync | IV_FALSE | theCount/count<1> | IV_TRUE | theCount/count<2> | IV_TRUE | theCount/count<3> | IV_FALSE | theCount/count<4> | IV_TRUE | theCount/count<5> | IV_FALSE | theCount/count<6> | IV_FALSE | State_machine/state_FSM_FFd3 | IV_FALSE | theCount/count<7> | IV_TRUE | theCount/count<8> | IV_TRUE | State_machine/pedNS_temp
+
+SRFF_INSTANCE | State_machine/state_FSM_FFd3_MC.REG | State_machine/state_FSM_FFd3_MC | 0 | 3 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | State_machine/state_FSM_FFd3_MC.D | 3558 | ? | 0 | 0 | State_machine/state_FSM_FFd3_MC | NULL | NULL | State_machine/state_FSM_FFd3_MC.XOR | 0 | 7 | ALU_F
+INPUT_NODE_TYPE | 1 | 8 | SRFF_C
+NODE | Clock_II/FCLK | 3518 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | NULL | Clock_II | 3 | 5 | II_FCLK
+INPUT_NODE_TYPE | 3 | 8 | SRFF_R
+NODE | Reset_II/FSR | 3520 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | NULL | Reset_II | 6 | 5 | II_FSR
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | State_machine/state_FSM_FFd3_MC.Q | 3557 | ? | 0 | 0 | State_machine/state_FSM_FFd3_MC | NULL | NULL | State_machine/state_FSM_FFd3_MC.REG | 0 | 8 | SRFF_Q
+
+MACROCELL_INSTANCE | PrldLow+Tff | theCount/count<7>_MC | Traffic_top_level_COPY_0_COPY_0 | 5120 | 13 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | theCount/count<0> | 3501 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | theCount/count<0>_MC.Q | theCount/count<0>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | theCount/count<1> | 3526 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | theCount/count<1>_MC.Q | theCount/count<1>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | theCount/count<2> | 3531 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | theCount/count<2>_MC.Q | theCount/count<2>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | theCount/count<3> | 3536 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | theCount/count<3>_MC.Q | theCount/count<3>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | theCount/count<4> | 3541 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | theCount/count<4>_MC.Q | theCount/count<4>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | theCount/count<5> | 3546 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | theCount/count<5>_MC.Q | theCount/count<5>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | theCount/count<6> | 3551 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | theCount/count<6>_MC.Q | theCount/count<6>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | State_machine/state_FSM_FFd4 | 3496 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | State_machine/state_FSM_FFd4_MC.Q | State_machine/state_FSM_FFd4_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | theCount/count<7> | 3561 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | theCount/count<7>_MC.Q | theCount/count<7>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | theCount/count<8> | 3566 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | theCount/count<8>_MC.Q | theCount/count<8>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | State_machine/state_FSM_FFd3 | 3556 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | State_machine/state_FSM_FFd3_MC.Q | State_machine/state_FSM_FFd3_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | Clock_II/FCLK | 3518 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | NULL | Clock_II | 3 | 5 | II_FCLK
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | Reset_II/FSR | 3520 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | NULL | Reset_II | 6 | 5 | II_FSR
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | theCount/count<7> | 3561 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | theCount/count<7>_MC.Q | theCount/count<7>_MC | 1 | 0 | MC_UIM
+
+SIGNAL_INSTANCE | theCount/count<7>_MC.SI | theCount/count<7>_MC | 0 | 11 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | theCount/count<0> | 3501 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | theCount/count<0>_MC.Q | theCount/count<0>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | theCount/count<1> | 3526 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | theCount/count<1>_MC.Q | theCount/count<1>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | theCount/count<2> | 3531 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | theCount/count<2>_MC.Q | theCount/count<2>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | theCount/count<3> | 3536 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | theCount/count<3>_MC.Q | theCount/count<3>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | theCount/count<4> | 3541 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | theCount/count<4>_MC.Q | theCount/count<4>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | theCount/count<5> | 3546 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | theCount/count<5>_MC.Q | theCount/count<5>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | theCount/count<6> | 3551 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | theCount/count<6>_MC.Q | theCount/count<6>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | State_machine/state_FSM_FFd4 | 3496 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | State_machine/state_FSM_FFd4_MC.Q | State_machine/state_FSM_FFd4_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | theCount/count<7> | 3561 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | theCount/count<7>_MC.Q | theCount/count<7>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | theCount/count<8> | 3566 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | theCount/count<8>_MC.Q | theCount/count<8>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | State_machine/state_FSM_FFd3 | 3556 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | State_machine/state_FSM_FFd3_MC.Q | State_machine/state_FSM_FFd3_MC | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | theCount/count<7>_MC.D1 | 3565 | ? | 0 | 0 | theCount/count<7>_MC | NULL | NULL | theCount/count<7>_MC.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | theCount/count<7>_MC.D2 | 3564 | ? | 0 | 0 | theCount/count<7>_MC | NULL | NULL | theCount/count<7>_MC.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 7 | IV_TRUE | theCount/count<0> | IV_TRUE | theCount/count<1> | IV_TRUE | theCount/count<2> | IV_TRUE | theCount/count<3> | IV_TRUE | theCount/count<4> | IV_TRUE | theCount/count<5> | IV_TRUE | theCount/count<6>
+SPPTERM | 10 | IV_TRUE | State_machine/state_FSM_FFd4 | IV_FALSE | theCount/count<0> | IV_FALSE | theCount/count<1> | IV_FALSE | theCount/count<2> | IV_TRUE | theCount/count<3> | IV_FALSE | theCount/count<4> | IV_FALSE | theCount/count<5> | IV_TRUE | theCount/count<6> | IV_TRUE | theCount/count<7> | IV_FALSE | theCount/count<8>
+SPPTERM | 10 | IV_FALSE | theCount/count<0> | IV_FALSE | theCount/count<1> | IV_FALSE | theCount/count<2> | IV_TRUE | theCount/count<3> | IV_FALSE | theCount/count<4> | IV_FALSE | theCount/count<5> | IV_TRUE | theCount/count<6> | IV_TRUE | State_machine/state_FSM_FFd3 | IV_TRUE | theCount/count<7> | IV_FALSE | theCount/count<8>
+
+SRFF_INSTANCE | theCount/count<7>_MC.REG | theCount/count<7>_MC | 0 | 3 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | theCount/count<7>_MC.D | 3563 | ? | 0 | 0 | theCount/count<7>_MC | NULL | NULL | theCount/count<7>_MC.XOR | 0 | 7 | ALU_F
+INPUT_NODE_TYPE | 1 | 8 | SRFF_C
+NODE | Clock_II/FCLK | 3518 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | NULL | Clock_II | 3 | 5 | II_FCLK
+INPUT_NODE_TYPE | 3 | 8 | SRFF_R
+NODE | Reset_II/FSR | 3520 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | NULL | Reset_II | 6 | 5 | II_FSR
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | theCount/count<7>_MC.Q | 3562 | ? | 0 | 0 | theCount/count<7>_MC | NULL | NULL | theCount/count<7>_MC.REG | 0 | 8 | SRFF_Q
+
+MACROCELL_INSTANCE | PrldLow+Tff | theCount/count<8>_MC | Traffic_top_level_COPY_0_COPY_0 | 5120 | 13 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | theCount/count<0> | 3501 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | theCount/count<0>_MC.Q | theCount/count<0>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | theCount/count<1> | 3526 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | theCount/count<1>_MC.Q | theCount/count<1>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | theCount/count<2> | 3531 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | theCount/count<2>_MC.Q | theCount/count<2>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | theCount/count<3> | 3536 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | theCount/count<3>_MC.Q | theCount/count<3>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | theCount/count<4> | 3541 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | theCount/count<4>_MC.Q | theCount/count<4>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | theCount/count<5> | 3546 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | theCount/count<5>_MC.Q | theCount/count<5>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | theCount/count<6> | 3551 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | theCount/count<6>_MC.Q | theCount/count<6>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | theCount/count<7> | 3561 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | theCount/count<7>_MC.Q | theCount/count<7>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | State_machine/state_FSM_FFd2 | 3506 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | State_machine/state_FSM_FFd2_MC.Q | State_machine/state_FSM_FFd2_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | theCount/count<8> | 3566 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | theCount/count<8>_MC.Q | theCount/count<8>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | State_machine/state_FSM_FFd6 | 3571 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | State_machine/state_FSM_FFd6_MC.Q | State_machine/state_FSM_FFd6_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | Clock_II/FCLK | 3518 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | NULL | Clock_II | 3 | 5 | II_FCLK
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | Reset_II/FSR | 3520 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | NULL | Reset_II | 6 | 5 | II_FSR
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | theCount/count<8> | 3566 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | theCount/count<8>_MC.Q | theCount/count<8>_MC | 1 | 0 | MC_UIM
+
+SIGNAL_INSTANCE | theCount/count<8>_MC.SI | theCount/count<8>_MC | 0 | 11 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | theCount/count<0> | 3501 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | theCount/count<0>_MC.Q | theCount/count<0>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | theCount/count<1> | 3526 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | theCount/count<1>_MC.Q | theCount/count<1>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | theCount/count<2> | 3531 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | theCount/count<2>_MC.Q | theCount/count<2>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | theCount/count<3> | 3536 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | theCount/count<3>_MC.Q | theCount/count<3>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | theCount/count<4> | 3541 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | theCount/count<4>_MC.Q | theCount/count<4>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | theCount/count<5> | 3546 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | theCount/count<5>_MC.Q | theCount/count<5>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | theCount/count<6> | 3551 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | theCount/count<6>_MC.Q | theCount/count<6>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | theCount/count<7> | 3561 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | theCount/count<7>_MC.Q | theCount/count<7>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | State_machine/state_FSM_FFd2 | 3506 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | State_machine/state_FSM_FFd2_MC.Q | State_machine/state_FSM_FFd2_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | theCount/count<8> | 3566 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | theCount/count<8>_MC.Q | theCount/count<8>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | State_machine/state_FSM_FFd6 | 3571 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | State_machine/state_FSM_FFd6_MC.Q | State_machine/state_FSM_FFd6_MC | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | theCount/count<8>_MC.D1 | 3570 | ? | 0 | 0 | theCount/count<8>_MC | NULL | NULL | theCount/count<8>_MC.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | theCount/count<8>_MC.D2 | 3569 | ? | 0 | 0 | theCount/count<8>_MC | NULL | NULL | theCount/count<8>_MC.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 8 | IV_TRUE | theCount/count<0> | IV_TRUE | theCount/count<1> | IV_TRUE | theCount/count<2> | IV_TRUE | theCount/count<3> | IV_TRUE | theCount/count<4> | IV_TRUE | theCount/count<5> | IV_TRUE | theCount/count<6> | IV_TRUE | theCount/count<7>
+SPPTERM | 10 | IV_FALSE | theCount/count<0> | IV_TRUE | State_machine/state_FSM_FFd2 | IV_FALSE | theCount/count<1> | IV_TRUE | theCount/count<2> | IV_TRUE | theCount/count<3> | IV_FALSE | theCount/count<4> | IV_TRUE | theCount/count<5> | IV_FALSE | theCount/count<6> | IV_FALSE | theCount/count<7> | IV_TRUE | theCount/count<8>
+SPPTERM | 10 | IV_FALSE | theCount/count<0> | IV_FALSE | theCount/count<1> | IV_TRUE | theCount/count<2> | IV_TRUE | theCount/count<3> | IV_FALSE | theCount/count<4> | IV_TRUE | theCount/count<5> | IV_FALSE | theCount/count<6> | IV_FALSE | theCount/count<7> | IV_TRUE | theCount/count<8> | IV_TRUE | State_machine/state_FSM_FFd6
+
+SRFF_INSTANCE | theCount/count<8>_MC.REG | theCount/count<8>_MC | 0 | 3 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | theCount/count<8>_MC.D | 3568 | ? | 0 | 0 | theCount/count<8>_MC | NULL | NULL | theCount/count<8>_MC.XOR | 0 | 7 | ALU_F
+INPUT_NODE_TYPE | 1 | 8 | SRFF_C
+NODE | Clock_II/FCLK | 3518 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | NULL | Clock_II | 3 | 5 | II_FCLK
+INPUT_NODE_TYPE | 3 | 8 | SRFF_R
+NODE | Reset_II/FSR | 3520 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | NULL | Reset_II | 6 | 5 | II_FSR
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | theCount/count<8>_MC.Q | 3567 | ? | 0 | 0 | theCount/count<8>_MC | NULL | NULL | theCount/count<8>_MC.REG | 0 | 8 | SRFF_Q
+
+MACROCELL_INSTANCE | PrldHigh+Tff | State_machine/state_FSM_FFd6_MC | Traffic_top_level_COPY_0_COPY_0 | 4608 | 17 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | State_machine/state_FSM_FFd4 | 3496 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | State_machine/state_FSM_FFd4_MC.Q | State_machine/state_FSM_FFd4_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | theCount/count<0> | 3501 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | theCount/count<0>_MC.Q | theCount/count<0>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | theCount/count<1> | 3526 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | theCount/count<1>_MC.Q | theCount/count<1>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | theCount/count<2> | 3531 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | theCount/count<2>_MC.Q | theCount/count<2>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | theCount/count<3> | 3536 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | theCount/count<3>_MC.Q | theCount/count<3>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | theCount/count<4> | 3541 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | theCount/count<4>_MC.Q | theCount/count<4>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | theCount/count<5> | 3546 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | theCount/count<5>_MC.Q | theCount/count<5>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | theCount/count<6> | 3551 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | theCount/count<6>_MC.Q | theCount/count<6>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | theCount/count<7> | 3561 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | theCount/count<7>_MC.Q | theCount/count<7>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | theCount/count<8> | 3566 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | theCount/count<8>_MC.Q | theCount/count<8>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | State_machine/state_FSM_FFd6 | 3571 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | State_machine/state_FSM_FFd6_MC.Q | State_machine/state_FSM_FFd6_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | State_machine/pedEW_temp | 3511 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | State_machine/pedEW_temp_MC.Q | State_machine/pedEW_temp_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | State_machine/pedNS_temp | 3576 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | State_machine/pedNS_temp_MC.Q | State_machine/pedNS_temp_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | CarNS_sync | 3584 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | CarNS_sync_MC.Q | CarNS_sync_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | State_machine/state_FSM_FFd1 | 3588 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | State_machine/state_FSM_FFd1_MC.Q | State_machine/state_FSM_FFd1_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | Clock_II/FCLK | 3518 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | NULL | Clock_II | 3 | 5 | II_FCLK
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | Reset_II/FSR | 3520 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | NULL | Reset_II | 6 | 5 | II_FSR
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | State_machine/state_FSM_FFd6 | 3571 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | State_machine/state_FSM_FFd6_MC.Q | State_machine/state_FSM_FFd6_MC | 1 | 0 | MC_UIM
+
+SIGNAL_INSTANCE | State_machine/state_FSM_FFd6_MC.SI | State_machine/state_FSM_FFd6_MC | 0 | 15 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | State_machine/state_FSM_FFd4 | 3496 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | State_machine/state_FSM_FFd4_MC.Q | State_machine/state_FSM_FFd4_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | theCount/count<0> | 3501 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | theCount/count<0>_MC.Q | theCount/count<0>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | theCount/count<1> | 3526 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | theCount/count<1>_MC.Q | theCount/count<1>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | theCount/count<2> | 3531 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | theCount/count<2>_MC.Q | theCount/count<2>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | theCount/count<3> | 3536 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | theCount/count<3>_MC.Q | theCount/count<3>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | theCount/count<4> | 3541 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | theCount/count<4>_MC.Q | theCount/count<4>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | theCount/count<5> | 3546 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | theCount/count<5>_MC.Q | theCount/count<5>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | theCount/count<6> | 3551 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | theCount/count<6>_MC.Q | theCount/count<6>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | theCount/count<7> | 3561 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | theCount/count<7>_MC.Q | theCount/count<7>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | theCount/count<8> | 3566 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | theCount/count<8>_MC.Q | theCount/count<8>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | State_machine/state_FSM_FFd6 | 3571 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | State_machine/state_FSM_FFd6_MC.Q | State_machine/state_FSM_FFd6_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | State_machine/pedEW_temp | 3511 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | State_machine/pedEW_temp_MC.Q | State_machine/pedEW_temp_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | State_machine/pedNS_temp | 3576 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | State_machine/pedNS_temp_MC.Q | State_machine/pedNS_temp_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | CarNS_sync | 3584 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | CarNS_sync_MC.Q | CarNS_sync_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | State_machine/state_FSM_FFd1 | 3588 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | State_machine/state_FSM_FFd1_MC.Q | State_machine/state_FSM_FFd1_MC | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | State_machine/state_FSM_FFd6_MC.D1 | 3575 | ? | 0 | 0 | State_machine/state_FSM_FFd6_MC | NULL | NULL | State_machine/state_FSM_FFd6_MC.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | State_machine/state_FSM_FFd6_MC.D2 | 3574 | ? | 0 | 0 | State_machine/state_FSM_FFd6_MC | NULL | NULL | State_machine/state_FSM_FFd6_MC.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 11 | IV_TRUE | State_machine/state_FSM_FFd4 | IV_FALSE | theCount/count<0> | IV_FALSE | theCount/count<1> | IV_FALSE | theCount/count<2> | IV_TRUE | theCount/count<3> | IV_FALSE | theCount/count<4> | IV_FALSE | theCount/count<5> | IV_TRUE | theCount/count<6> | IV_TRUE | theCount/count<7> | IV_FALSE | theCount/count<8> | IV_FALSE | State_machine/state_FSM_FFd6
+SPPTERM | 11 | IV_FALSE | theCount/count<0> | IV_TRUE | State_machine/pedEW_temp | IV_FALSE | theCount/count<1> | IV_TRUE | theCount/count<2> | IV_TRUE | theCount/count<3> | IV_FALSE | theCount/count<4> | IV_TRUE | theCount/count<5> | IV_FALSE | theCount/count<6> | IV_FALSE | theCount/count<7> | IV_TRUE | theCount/count<8> | IV_TRUE | State_machine/state_FSM_FFd6
+SPPTERM | 11 | IV_FALSE | theCount/count<0> | IV_FALSE | theCount/count<1> | IV_TRUE | theCount/count<2> | IV_TRUE | theCount/count<3> | IV_FALSE | theCount/count<4> | IV_TRUE | theCount/count<5> | IV_FALSE | theCount/count<6> | IV_FALSE | theCount/count<7> | IV_TRUE | theCount/count<8> | IV_TRUE | State_machine/state_FSM_FFd6 | IV_TRUE | State_machine/pedNS_temp
+SPPTERM | 11 | IV_FALSE | theCount/count<0> | IV_FALSE | theCount/count<1> | IV_TRUE | theCount/count<2> | IV_TRUE | theCount/count<3> | IV_FALSE | theCount/count<4> | IV_TRUE | theCount/count<5> | IV_FALSE | theCount/count<6> | IV_FALSE | theCount/count<7> | IV_TRUE | theCount/count<8> | IV_TRUE | State_machine/state_FSM_FFd6 | IV_TRUE | CarNS_sync
+SPPTERM | 12 | IV_FALSE | theCount/count<0> | IV_FALSE | State_machine/pedEW_temp | IV_FALSE | theCount/count<1> | IV_TRUE | theCount/count<2> | IV_FALSE | theCount/count<3> | IV_FALSE | theCount/count<4> | IV_TRUE | theCount/count<5> | IV_TRUE | theCount/count<6> | IV_FALSE | theCount/count<7> | IV_FALSE | theCount/count<8> | IV_FALSE | State_machine/state_FSM_FFd6 | IV_TRUE | State_machine/state_FSM_FFd1
+
+SRFF_INSTANCE | State_machine/state_FSM_FFd6_MC.REG | State_machine/state_FSM_FFd6_MC | 0 | 3 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | State_machine/state_FSM_FFd6_MC.D | 3573 | ? | 0 | 0 | State_machine/state_FSM_FFd6_MC | NULL | NULL | State_machine/state_FSM_FFd6_MC.XOR | 0 | 7 | ALU_F
+INPUT_NODE_TYPE | 1 | 8 | SRFF_C
+NODE | Clock_II/FCLK | 3518 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | NULL | Clock_II | 3 | 5 | II_FCLK
+INPUT_NODE_TYPE | 2 | 8 | SRFF_S
+NODE | Reset_II/FSR | 3520 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | NULL | Reset_II | 6 | 5 | II_FSR
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | State_machine/state_FSM_FFd6_MC.Q | 3572 | ? | 0 | 0 | State_machine/state_FSM_FFd6_MC | NULL | NULL | State_machine/state_FSM_FFd6_MC.REG | 0 | 8 | SRFF_Q
+
+MACROCELL_INSTANCE | PrldLow | State_machine/pedNS_temp_MC | Traffic_top_level_COPY_0_COPY_0 | 1024 | 4 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | PedNS_sync | 3581 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | PedNS_sync_MC.Q | PedNS_sync_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | CarNS_sync_MC.COMB | 3587 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | CarNS_sync_MC.D | CarNS_sync_MC | 6 | 0 | MC_COMB
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | Clock_II/FCLK | 3518 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | NULL | Clock_II | 3 | 5 | II_FCLK
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | Reset_II/FSR | 3520 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | NULL | Reset_II | 6 | 5 | II_FSR
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | State_machine/pedNS_temp | 3576 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | State_machine/pedNS_temp_MC.Q | State_machine/pedNS_temp_MC | 1 | 0 | MC_UIM
+
+SIGNAL_INSTANCE | State_machine/pedNS_temp_MC.SI | State_machine/pedNS_temp_MC | 0 | 2 | 3
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | PedNS_sync | 3581 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | PedNS_sync_MC.Q | PedNS_sync_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | CarNS_sync_MC.COMB | 3587 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | CarNS_sync_MC.D | CarNS_sync_MC | 6 | 0 | MC_COMB
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | State_machine/pedNS_temp_MC.D1 | 3580 | ? | 0 | 0 | State_machine/pedNS_temp_MC | NULL | NULL | State_machine/pedNS_temp_MC.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | State_machine/pedNS_temp_MC.D2 | 3579 | ? | 0 | 0 | State_machine/pedNS_temp_MC | NULL | NULL | State_machine/pedNS_temp_MC.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 1 | IV_TRUE | PedNS_sync
+OUTPUT_NODE_TYPE | 10 | 9 | MC_SI_CE
+SIGNAL | NODE | State_machine/pedNS_temp_MC.CE | 3583 | ? | 0 | 0 | State_machine/pedNS_temp_MC | NULL | NULL | State_machine/pedNS_temp_MC.SI | 10 | 9 | MC_SI_CE
+SPPTERM | 1 | IV_FALSE | CarNS_sync_MC.COMB
+
+SRFF_INSTANCE | State_machine/pedNS_temp_MC.REG | State_machine/pedNS_temp_MC | 0 | 4 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | State_machine/pedNS_temp_MC.D | 3578 | ? | 0 | 0 | State_machine/pedNS_temp_MC | NULL | NULL | State_machine/pedNS_temp_MC.XOR | 0 | 7 | ALU_F
+INPUT_NODE_TYPE | 1 | 8 | SRFF_C
+NODE | Clock_II/FCLK | 3518 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | NULL | Clock_II | 3 | 5 | II_FCLK
+INPUT_NODE_TYPE | 3 | 8 | SRFF_R
+NODE | Reset_II/FSR | 3520 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | NULL | Reset_II | 6 | 5 | II_FSR
+INPUT_NODE_TYPE | 4 | 8 | SRFF_CE
+SIGNAL | NODE | State_machine/pedNS_temp_MC.CE | 3583 | ? | 0 | 0 | State_machine/pedNS_temp_MC | NULL | NULL | State_machine/pedNS_temp_MC.SI | 10 | 9 | MC_SI_CE
+SPPTERM | 1 | IV_FALSE | CarNS_sync_MC.COMB
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | State_machine/pedNS_temp_MC.Q | 3577 | ? | 0 | 0 | State_machine/pedNS_temp_MC | NULL | NULL | State_machine/pedNS_temp_MC.REG | 0 | 8 | SRFF_Q
+
+MACROCELL_INSTANCE | PrldLow | PedNS_sync_MC | Traffic_top_level_COPY_0_COPY_0 | 1024 | 3 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | Clock_II/FCLK | 3518 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | NULL | Clock_II | 3 | 5 | II_FCLK
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | Reset_II/FSR | 3520 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | NULL | Reset_II | 6 | 5 | II_FSR
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | PedNS_II/IREG | 3637 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | NULL | PedNS_II | 10 | 5 | II_REG
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | PedNS_sync | 3581 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | PedNS_sync_MC.Q | PedNS_sync_MC | 1 | 0 | MC_UIM
+
+SRFF_INSTANCE | PedNS_sync_MC.REG | PedNS_sync_MC | 0 | 3 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | PedNS_II/IREG | 3637 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | NULL | PedNS_II | 10 | 5 | II_REG
+INPUT_NODE_TYPE | 1 | 8 | SRFF_C
+NODE | Clock_II/FCLK | 3518 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | NULL | Clock_II | 3 | 5 | II_FCLK
+INPUT_NODE_TYPE | 3 | 8 | SRFF_R
+NODE | Reset_II/FSR | 3520 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | NULL | Reset_II | 6 | 5 | II_FSR
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | PedNS_sync_MC.Q | 3582 | ? | 0 | 0 | PedNS_sync_MC | NULL | NULL | PedNS_sync_MC.REG | 0 | 8 | SRFF_Q
+
+MACROCELL_INSTANCE | PrldLow | CarNS_sync_MC | Traffic_top_level_COPY_0_COPY_0 | 1024 | 5 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | Clock_II/FCLK | 3518 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | NULL | Clock_II | 3 | 5 | II_FCLK
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | Reset_II/FSR | 3520 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | NULL | Reset_II | 6 | 5 | II_FSR
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | CarNS_II/IREG | 3631 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | NULL | CarNS_II | 10 | 5 | II_REG
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | State_machine/state_FSM_FFd3 | 3556 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | State_machine/state_FSM_FFd3_MC.Q | State_machine/state_FSM_FFd3_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | PedNS_sync | 3581 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | PedNS_sync_MC.Q | PedNS_sync_MC | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | CarNS_sync | 3584 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | CarNS_sync_MC.Q | CarNS_sync_MC | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 6 | 0 | MC_COMB
+NODE | CarNS_sync_MC.COMB | 3587 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | CarNS_sync_MC.D | CarNS_sync_MC | 6 | 0 | MC_COMB
+
+SIGNAL_INSTANCE | CarNS_sync_MC.SI | CarNS_sync_MC | 0 | 2 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | State_machine/state_FSM_FFd3 | 3556 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | State_machine/state_FSM_FFd3_MC.Q | State_machine/state_FSM_FFd3_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | PedNS_sync | 3581 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | PedNS_sync_MC.Q | PedNS_sync_MC | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | CarNS_sync_MC.D1 | 3632 | ? | 0 | 0 | CarNS_sync_MC | NULL | NULL | CarNS_sync_MC.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 2 | IV_FALSE | State_machine/state_FSM_FFd3 | IV_FALSE | PedNS_sync
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | CarNS_sync_MC.D2 | 3633 | ? | 0 | 0 | CarNS_sync_MC | NULL | NULL | CarNS_sync_MC.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 0 | IV_ZERO
+
+SRFF_INSTANCE | CarNS_sync_MC.REG | CarNS_sync_MC | 0 | 3 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | CarNS_II/IREG | 3631 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | NULL | CarNS_II | 10 | 5 | II_REG
+INPUT_NODE_TYPE | 1 | 8 | SRFF_C
+NODE | Clock_II/FCLK | 3518 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | NULL | Clock_II | 3 | 5 | II_FCLK
+INPUT_NODE_TYPE | 3 | 8 | SRFF_R
+NODE | Reset_II/FSR | 3520 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | NULL | Reset_II | 6 | 5 | II_FSR
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | CarNS_sync_MC.Q | 3585 | ? | 0 | 0 | CarNS_sync_MC | NULL | NULL | CarNS_sync_MC.REG | 0 | 8 | SRFF_Q
+
+MACROCELL_INSTANCE | PrldLow+Tff | State_machine/state_FSM_FFd1_MC | Traffic_top_level_COPY_0_COPY_0 | 5120 | 15 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | theCount/count<0> | 3501 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | theCount/count<0>_MC.Q | theCount/count<0>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | theCount/count<1> | 3526 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | theCount/count<1>_MC.Q | theCount/count<1>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | theCount/count<2> | 3531 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | theCount/count<2>_MC.Q | theCount/count<2>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | theCount/count<3> | 3536 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | theCount/count<3>_MC.Q | theCount/count<3>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | theCount/count<4> | 3541 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | theCount/count<4>_MC.Q | theCount/count<4>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | theCount/count<5> | 3546 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | theCount/count<5>_MC.Q | theCount/count<5>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | theCount/count<6> | 3551 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | theCount/count<6>_MC.Q | theCount/count<6>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | theCount/count<7> | 3561 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | theCount/count<7>_MC.Q | theCount/count<7>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | theCount/count<8> | 3566 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | theCount/count<8>_MC.Q | theCount/count<8>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | State_machine/state_FSM_FFd1 | 3588 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | State_machine/state_FSM_FFd1_MC.Q | State_machine/state_FSM_FFd1_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | State_machine/state_FSM_FFd2 | 3506 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | State_machine/state_FSM_FFd2_MC.Q | State_machine/state_FSM_FFd2_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | State_machine/pedEW_temp | 3511 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | State_machine/pedEW_temp_MC.Q | State_machine/pedEW_temp_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | CarEW_sync | 3522 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | CarEW_sync_MC.Q | CarEW_sync_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | Clock_II/FCLK | 3518 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | NULL | Clock_II | 3 | 5 | II_FCLK
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | Reset_II/FSR | 3520 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | NULL | Reset_II | 6 | 5 | II_FSR
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | State_machine/state_FSM_FFd1 | 3588 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | State_machine/state_FSM_FFd1_MC.Q | State_machine/state_FSM_FFd1_MC | 1 | 0 | MC_UIM
+
+SIGNAL_INSTANCE | State_machine/state_FSM_FFd1_MC.SI | State_machine/state_FSM_FFd1_MC | 0 | 13 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | theCount/count<0> | 3501 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | theCount/count<0>_MC.Q | theCount/count<0>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | theCount/count<1> | 3526 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | theCount/count<1>_MC.Q | theCount/count<1>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | theCount/count<2> | 3531 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | theCount/count<2>_MC.Q | theCount/count<2>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | theCount/count<3> | 3536 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | theCount/count<3>_MC.Q | theCount/count<3>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | theCount/count<4> | 3541 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | theCount/count<4>_MC.Q | theCount/count<4>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | theCount/count<5> | 3546 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | theCount/count<5>_MC.Q | theCount/count<5>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | theCount/count<6> | 3551 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | theCount/count<6>_MC.Q | theCount/count<6>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | theCount/count<7> | 3561 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | theCount/count<7>_MC.Q | theCount/count<7>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | theCount/count<8> | 3566 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | theCount/count<8>_MC.Q | theCount/count<8>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | State_machine/state_FSM_FFd1 | 3588 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | State_machine/state_FSM_FFd1_MC.Q | State_machine/state_FSM_FFd1_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | State_machine/state_FSM_FFd2 | 3506 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | State_machine/state_FSM_FFd2_MC.Q | State_machine/state_FSM_FFd2_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | State_machine/pedEW_temp | 3511 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | State_machine/pedEW_temp_MC.Q | State_machine/pedEW_temp_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | CarEW_sync | 3522 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | CarEW_sync_MC.Q | CarEW_sync_MC | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | State_machine/state_FSM_FFd1_MC.D1 | 3592 | ? | 0 | 0 | State_machine/state_FSM_FFd1_MC | NULL | NULL | State_machine/state_FSM_FFd1_MC.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | State_machine/state_FSM_FFd1_MC.D2 | 3591 | ? | 0 | 0 | State_machine/state_FSM_FFd1_MC | NULL | NULL | State_machine/state_FSM_FFd1_MC.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 10 | IV_FALSE | theCount/count<0> | IV_FALSE | theCount/count<1> | IV_TRUE | theCount/count<2> | IV_FALSE | theCount/count<3> | IV_FALSE | theCount/count<4> | IV_TRUE | theCount/count<5> | IV_TRUE | theCount/count<6> | IV_FALSE | theCount/count<7> | IV_FALSE | theCount/count<8> | IV_TRUE | State_machine/state_FSM_FFd1
+SPPTERM | 12 | IV_FALSE | theCount/count<0> | IV_TRUE | State_machine/state_FSM_FFd2 | IV_TRUE | State_machine/pedEW_temp | IV_FALSE | theCount/count<1> | IV_TRUE | theCount/count<2> | IV_TRUE | theCount/count<3> | IV_FALSE | theCount/count<4> | IV_TRUE | theCount/count<5> | IV_FALSE | theCount/count<6> | IV_FALSE | theCount/count<7> | IV_TRUE | theCount/count<8> | IV_FALSE | State_machine/state_FSM_FFd1
+SPPTERM | 12 | IV_FALSE | theCount/count<0> | IV_TRUE | State_machine/state_FSM_FFd2 | IV_TRUE | CarEW_sync | IV_FALSE | theCount/count<1> | IV_TRUE | theCount/count<2> | IV_TRUE | theCount/count<3> | IV_FALSE | theCount/count<4> | IV_TRUE | theCount/count<5> | IV_FALSE | theCount/count<6> | IV_FALSE | theCount/count<7> | IV_TRUE | theCount/count<8> | IV_FALSE | State_machine/state_FSM_FFd1
+
+SRFF_INSTANCE | State_machine/state_FSM_FFd1_MC.REG | State_machine/state_FSM_FFd1_MC | 0 | 3 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | State_machine/state_FSM_FFd1_MC.D | 3590 | ? | 0 | 0 | State_machine/state_FSM_FFd1_MC | NULL | NULL | State_machine/state_FSM_FFd1_MC.XOR | 0 | 7 | ALU_F
+INPUT_NODE_TYPE | 1 | 8 | SRFF_C
+NODE | Clock_II/FCLK | 3518 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | NULL | Clock_II | 3 | 5 | II_FCLK
+INPUT_NODE_TYPE | 3 | 8 | SRFF_R
+NODE | Reset_II/FSR | 3520 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | NULL | Reset_II | 6 | 5 | II_FSR
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | State_machine/state_FSM_FFd1_MC.Q | 3589 | ? | 0 | 0 | State_machine/state_FSM_FFd1_MC | NULL | NULL | State_machine/state_FSM_FFd1_MC.REG | 0 | 8 | SRFF_Q
+
+MACROCELL_INSTANCE | PrldLow+Tff | State_machine/state_FSM_FFd5_MC | Traffic_top_level_COPY_0_COPY_0 | 5120 | 15 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | theCount/count<0> | 3501 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | theCount/count<0>_MC.Q | theCount/count<0>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | theCount/count<1> | 3526 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | theCount/count<1>_MC.Q | theCount/count<1>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | theCount/count<2> | 3531 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | theCount/count<2>_MC.Q | theCount/count<2>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | theCount/count<3> | 3536 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | theCount/count<3>_MC.Q | theCount/count<3>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | theCount/count<4> | 3541 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | theCount/count<4>_MC.Q | theCount/count<4>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | theCount/count<5> | 3546 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | theCount/count<5>_MC.Q | theCount/count<5>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | theCount/count<6> | 3551 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | theCount/count<6>_MC.Q | theCount/count<6>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | theCount/count<7> | 3561 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | theCount/count<7>_MC.Q | theCount/count<7>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | theCount/count<8> | 3566 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | theCount/count<8>_MC.Q | theCount/count<8>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | State_machine/state_FSM_FFd5 | 3593 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | State_machine/state_FSM_FFd5_MC.Q | State_machine/state_FSM_FFd5_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | State_machine/state_FSM_FFd6 | 3571 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | State_machine/state_FSM_FFd6_MC.Q | State_machine/state_FSM_FFd6_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | State_machine/pedNS_temp | 3576 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | State_machine/pedNS_temp_MC.Q | State_machine/pedNS_temp_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | CarNS_sync | 3584 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | CarNS_sync_MC.Q | CarNS_sync_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | Clock_II/FCLK | 3518 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | NULL | Clock_II | 3 | 5 | II_FCLK
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | Reset_II/FSR | 3520 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | NULL | Reset_II | 6 | 5 | II_FSR
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | State_machine/state_FSM_FFd5 | 3593 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | State_machine/state_FSM_FFd5_MC.Q | State_machine/state_FSM_FFd5_MC | 1 | 0 | MC_UIM
+
+SIGNAL_INSTANCE | State_machine/state_FSM_FFd5_MC.SI | State_machine/state_FSM_FFd5_MC | 0 | 13 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | theCount/count<0> | 3501 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | theCount/count<0>_MC.Q | theCount/count<0>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | theCount/count<1> | 3526 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | theCount/count<1>_MC.Q | theCount/count<1>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | theCount/count<2> | 3531 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | theCount/count<2>_MC.Q | theCount/count<2>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | theCount/count<3> | 3536 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | theCount/count<3>_MC.Q | theCount/count<3>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | theCount/count<4> | 3541 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | theCount/count<4>_MC.Q | theCount/count<4>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | theCount/count<5> | 3546 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | theCount/count<5>_MC.Q | theCount/count<5>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | theCount/count<6> | 3551 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | theCount/count<6>_MC.Q | theCount/count<6>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | theCount/count<7> | 3561 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | theCount/count<7>_MC.Q | theCount/count<7>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | theCount/count<8> | 3566 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | theCount/count<8>_MC.Q | theCount/count<8>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | State_machine/state_FSM_FFd5 | 3593 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | State_machine/state_FSM_FFd5_MC.Q | State_machine/state_FSM_FFd5_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | State_machine/state_FSM_FFd6 | 3571 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | State_machine/state_FSM_FFd6_MC.Q | State_machine/state_FSM_FFd6_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | State_machine/pedNS_temp | 3576 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | State_machine/pedNS_temp_MC.Q | State_machine/pedNS_temp_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | CarNS_sync | 3584 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | CarNS_sync_MC.Q | CarNS_sync_MC | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | State_machine/state_FSM_FFd5_MC.D1 | 3597 | ? | 0 | 0 | State_machine/state_FSM_FFd5_MC | NULL | NULL | State_machine/state_FSM_FFd5_MC.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | State_machine/state_FSM_FFd5_MC.D2 | 3596 | ? | 0 | 0 | State_machine/state_FSM_FFd5_MC | NULL | NULL | State_machine/state_FSM_FFd5_MC.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 10 | IV_FALSE | theCount/count<0> | IV_FALSE | theCount/count<1> | IV_TRUE | theCount/count<2> | IV_FALSE | theCount/count<3> | IV_FALSE | theCount/count<4> | IV_TRUE | theCount/count<5> | IV_TRUE | theCount/count<6> | IV_FALSE | theCount/count<7> | IV_FALSE | theCount/count<8> | IV_TRUE | State_machine/state_FSM_FFd5
+SPPTERM | 12 | IV_FALSE | theCount/count<0> | IV_FALSE | theCount/count<1> | IV_TRUE | theCount/count<2> | IV_TRUE | theCount/count<3> | IV_FALSE | theCount/count<4> | IV_TRUE | theCount/count<5> | IV_FALSE | theCount/count<6> | IV_FALSE | theCount/count<7> | IV_TRUE | theCount/count<8> | IV_TRUE | State_machine/state_FSM_FFd6 | IV_TRUE | State_machine/pedNS_temp | IV_FALSE | State_machine/state_FSM_FFd5
+SPPTERM | 12 | IV_FALSE | theCount/count<0> | IV_FALSE | theCount/count<1> | IV_TRUE | theCount/count<2> | IV_TRUE | theCount/count<3> | IV_FALSE | theCount/count<4> | IV_TRUE | theCount/count<5> | IV_FALSE | theCount/count<6> | IV_FALSE | theCount/count<7> | IV_TRUE | theCount/count<8> | IV_TRUE | State_machine/state_FSM_FFd6 | IV_TRUE | CarNS_sync | IV_FALSE | State_machine/state_FSM_FFd5
+
+SRFF_INSTANCE | State_machine/state_FSM_FFd5_MC.REG | State_machine/state_FSM_FFd5_MC | 0 | 3 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | State_machine/state_FSM_FFd5_MC.D | 3595 | ? | 0 | 0 | State_machine/state_FSM_FFd5_MC | NULL | NULL | State_machine/state_FSM_FFd5_MC.XOR | 0 | 7 | ALU_F
+INPUT_NODE_TYPE | 1 | 8 | SRFF_C
+NODE | Clock_II/FCLK | 3518 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | NULL | Clock_II | 3 | 5 | II_FCLK
+INPUT_NODE_TYPE | 3 | 8 | SRFF_R
+NODE | Reset_II/FSR | 3520 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | NULL | Reset_II | 6 | 5 | II_FSR
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | State_machine/state_FSM_FFd5_MC.Q | 3594 | ? | 0 | 0 | State_machine/state_FSM_FFd5_MC | NULL | NULL | State_machine/state_FSM_FFd5_MC.REG | 0 | 8 | SRFF_Q
+
+OUTPUT_INSTANCE | 0 | LightsEW<0> | Traffic_top_level_COPY_0_COPY_0 | 3 | 1 | 1
+INPUT_NODE_TYPE | 0 | 6 | OI_IN
+NODE | LightsEW<0>_MC.Q | 3599 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | LightsEW<0>_MC.Q | LightsEW<0>_MC | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 0 | 6 | OI_OUT
+NODE | LightsEW<0> | 3600 | PO | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | NULL | LightsEW<0> | 0 | 6 | OI_OUT
+
+MACROCELL_INSTANCE | Inv | LightsEW<1>_MC | Traffic_top_level_COPY_0_COPY_0 | 256 | 2 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | State_machine/state_FSM_FFd4 | 3496 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | State_machine/state_FSM_FFd4_MC.Q | State_machine/state_FSM_FFd4_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | State_machine/state_FSM_FFd6 | 3571 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | State_machine/state_FSM_FFd6_MC.Q | State_machine/state_FSM_FFd6_MC | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 0 | 0 | MC_Q
+NODE | LightsEW<1>_MC.Q | 3605 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | LightsEW<1>_MC.Q | LightsEW<1>_MC | 0 | 0 | MC_Q
+
+SIGNAL_INSTANCE | LightsEW<1>_MC.SI | LightsEW<1>_MC | 0 | 2 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | State_machine/state_FSM_FFd4 | 3496 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | State_machine/state_FSM_FFd4_MC.Q | State_machine/state_FSM_FFd4_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | State_machine/state_FSM_FFd6 | 3571 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | State_machine/state_FSM_FFd6_MC.Q | State_machine/state_FSM_FFd6_MC | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | LightsEW<1>_MC.D1 | 3602 | ? | 0 | 0 | LightsEW<1>_MC | NULL | NULL | LightsEW<1>_MC.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 2 | IV_FALSE | State_machine/state_FSM_FFd4 | IV_FALSE | State_machine/state_FSM_FFd6
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | LightsEW<1>_MC.D2 | 3603 | ? | 0 | 0 | LightsEW<1>_MC | NULL | NULL | LightsEW<1>_MC.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 0 | IV_ZERO
+
+SRFF_INSTANCE | LightsEW<1>_MC.REG | LightsEW<1>_MC | 0 | 1 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | LightsEW<1>_MC.D | 3601 | ? | 0 | 0 | LightsEW<1>_MC | NULL | NULL | LightsEW<1>_MC.XOR | 0 | 7 | ALU_F
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | LightsEW<1>_MC.Q | 3604 | ? | 0 | 0 | LightsEW<1>_MC | NULL | NULL | LightsEW<1>_MC.REG | 0 | 8 | SRFF_Q
+
+OUTPUT_INSTANCE | 0 | LightsEW<1> | Traffic_top_level_COPY_0_COPY_0 | 3 | 1 | 1
+INPUT_NODE_TYPE | 0 | 6 | OI_IN
+NODE | LightsEW<1>_MC.Q | 3605 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | LightsEW<1>_MC.Q | LightsEW<1>_MC | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 0 | 6 | OI_OUT
+NODE | LightsEW<1> | 3606 | PO | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | NULL | LightsEW<1> | 0 | 6 | OI_OUT
+
+MACROCELL_INSTANCE | Inv | LightsNS<0>_MC | Traffic_top_level_COPY_0_COPY_0 | 256 | 2 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | State_machine/state_FSM_FFd3 | 3556 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | State_machine/state_FSM_FFd3_MC.Q | State_machine/state_FSM_FFd3_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | State_machine/state_FSM_FFd1 | 3588 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | State_machine/state_FSM_FFd1_MC.Q | State_machine/state_FSM_FFd1_MC | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 0 | 0 | MC_Q
+NODE | LightsNS<0>_MC.Q | 3611 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | LightsNS<0>_MC.Q | LightsNS<0>_MC | 0 | 0 | MC_Q
+
+SIGNAL_INSTANCE | LightsNS<0>_MC.SI | LightsNS<0>_MC | 0 | 2 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | State_machine/state_FSM_FFd3 | 3556 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | State_machine/state_FSM_FFd3_MC.Q | State_machine/state_FSM_FFd3_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | State_machine/state_FSM_FFd1 | 3588 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | State_machine/state_FSM_FFd1_MC.Q | State_machine/state_FSM_FFd1_MC | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | LightsNS<0>_MC.D1 | 3608 | ? | 0 | 0 | LightsNS<0>_MC | NULL | NULL | LightsNS<0>_MC.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 2 | IV_FALSE | State_machine/state_FSM_FFd3 | IV_FALSE | State_machine/state_FSM_FFd1
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | LightsNS<0>_MC.D2 | 3609 | ? | 0 | 0 | LightsNS<0>_MC | NULL | NULL | LightsNS<0>_MC.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 0 | IV_ZERO
+
+SRFF_INSTANCE | LightsNS<0>_MC.REG | LightsNS<0>_MC | 0 | 1 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | LightsNS<0>_MC.D | 3607 | ? | 0 | 0 | LightsNS<0>_MC | NULL | NULL | LightsNS<0>_MC.XOR | 0 | 7 | ALU_F
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | LightsNS<0>_MC.Q | 3610 | ? | 0 | 0 | LightsNS<0>_MC | NULL | NULL | LightsNS<0>_MC.REG | 0 | 8 | SRFF_Q
+
+OUTPUT_INSTANCE | 0 | LightsNS<0> | Traffic_top_level_COPY_0_COPY_0 | 3 | 1 | 1
+INPUT_NODE_TYPE | 0 | 6 | OI_IN
+NODE | LightsNS<0>_MC.Q | 3611 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | LightsNS<0>_MC.Q | LightsNS<0>_MC | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 0 | 6 | OI_OUT
+NODE | LightsNS<0> | 3612 | PO | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | NULL | LightsNS<0> | 0 | 6 | OI_OUT
+
+MACROCELL_INSTANCE | Inv | LightsNS<1>_MC | Traffic_top_level_COPY_0_COPY_0 | 256 | 2 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | State_machine/state_FSM_FFd2 | 3506 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | State_machine/state_FSM_FFd2_MC.Q | State_machine/state_FSM_FFd2_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | State_machine/state_FSM_FFd3 | 3556 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | State_machine/state_FSM_FFd3_MC.Q | State_machine/state_FSM_FFd3_MC | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 0 | 0 | MC_Q
+NODE | LightsNS<1>_MC.Q | 3617 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | LightsNS<1>_MC.Q | LightsNS<1>_MC | 0 | 0 | MC_Q
+
+SIGNAL_INSTANCE | LightsNS<1>_MC.SI | LightsNS<1>_MC | 0 | 2 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | State_machine/state_FSM_FFd2 | 3506 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | State_machine/state_FSM_FFd2_MC.Q | State_machine/state_FSM_FFd2_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | State_machine/state_FSM_FFd3 | 3556 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | State_machine/state_FSM_FFd3_MC.Q | State_machine/state_FSM_FFd3_MC | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | LightsNS<1>_MC.D1 | 3614 | ? | 0 | 0 | LightsNS<1>_MC | NULL | NULL | LightsNS<1>_MC.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 2 | IV_FALSE | State_machine/state_FSM_FFd2 | IV_FALSE | State_machine/state_FSM_FFd3
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | LightsNS<1>_MC.D2 | 3615 | ? | 0 | 0 | LightsNS<1>_MC | NULL | NULL | LightsNS<1>_MC.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 0 | IV_ZERO
+
+SRFF_INSTANCE | LightsNS<1>_MC.REG | LightsNS<1>_MC | 0 | 1 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | LightsNS<1>_MC.D | 3613 | ? | 0 | 0 | LightsNS<1>_MC | NULL | NULL | LightsNS<1>_MC.XOR | 0 | 7 | ALU_F
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | LightsNS<1>_MC.Q | 3616 | ? | 0 | 0 | LightsNS<1>_MC | NULL | NULL | LightsNS<1>_MC.REG | 0 | 8 | SRFF_Q
+
+OUTPUT_INSTANCE | 0 | LightsNS<1> | Traffic_top_level_COPY_0_COPY_0 | 3 | 1 | 1
+INPUT_NODE_TYPE | 0 | 6 | OI_IN
+NODE | LightsNS<1>_MC.Q | 3617 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | LightsNS<1>_MC.Q | LightsNS<1>_MC | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 0 | 6 | OI_OUT
+NODE | LightsNS<1> | 3618 | PO | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | NULL | LightsNS<1> | 0 | 6 | OI_OUT
+
+MACROCELL_INSTANCE | NULL | debugLED_MC | Traffic_top_level_COPY_0_COPY_0 | 0 | 1 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | Reset_II/UIM | 3622 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | NULL | Reset_II | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 0 | 0 | MC_Q
+NODE | debugLED_MC.Q | 3624 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | debugLED_MC.Q | debugLED_MC | 0 | 0 | MC_Q
+
+SIGNAL_INSTANCE | debugLED_MC.SI | debugLED_MC | 0 | 1 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | Reset_II/UIM | 3622 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | NULL | Reset_II | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | debugLED_MC.D1 | 3620 | ? | 0 | 0 | debugLED_MC | NULL | NULL | debugLED_MC.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 1 | IV_TRUE | Reset_II/UIM
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | debugLED_MC.D2 | 3621 | ? | 0 | 0 | debugLED_MC | NULL | NULL | debugLED_MC.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 0 | IV_ZERO
+
+SRFF_INSTANCE | debugLED_MC.REG | debugLED_MC | 0 | 1 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | debugLED_MC.D | 3619 | ? | 0 | 0 | debugLED_MC | NULL | NULL | debugLED_MC.XOR | 0 | 7 | ALU_F
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | debugLED_MC.Q | 3623 | ? | 0 | 0 | debugLED_MC | NULL | NULL | debugLED_MC.REG | 0 | 8 | SRFF_Q
+
+OUTPUT_INSTANCE | 0 | debugLED | Traffic_top_level_COPY_0_COPY_0 | 3 | 1 | 1
+INPUT_NODE_TYPE | 0 | 6 | OI_IN
+NODE | debugLED_MC.Q | 3624 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | debugLED_MC.Q | debugLED_MC | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 0 | 6 | OI_OUT
+NODE | debugLED | 3625 | PO | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | NULL | debugLED | 0 | 6 | OI_OUT
+
+INPUT_INSTANCE | 0 | 0 | NULL | CarEW_II | Traffic_top_level_COPY_0_COPY_0 | 16 | 1 | 1
+INPUT_NODE_TYPE | 0 | 5 | II_IN
+NODE | CarEW | 3626 | PI | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | NULL | NULL | 0 | 100 | NOTYPE
+OUTPUT_NODE_TYPE | 10 | 5 | II_REG
+NODE | CarEW_II/IREG | 3627 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | NULL | CarEW_II | 10 | 5 | II_REG
+
+INPUT_INSTANCE | 0 | 0 | NULL | CarNS_II | Traffic_top_level_COPY_0_COPY_0 | 16 | 1 | 1
+INPUT_NODE_TYPE | 0 | 5 | II_IN
+NODE | CarNS | 3630 | PI | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | NULL | NULL | 0 | 100 | NOTYPE
+OUTPUT_NODE_TYPE | 10 | 5 | II_REG
+NODE | CarNS_II/IREG | 3631 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | NULL | CarNS_II | 10 | 5 | II_REG
+
+INPUT_INSTANCE | 0 | 0 | NULL | PedEW_II | Traffic_top_level_COPY_0_COPY_0 | 16 | 1 | 1
+INPUT_NODE_TYPE | 0 | 5 | II_IN
+NODE | PedEW | 3634 | PI | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | NULL | NULL | 0 | 100 | NOTYPE
+OUTPUT_NODE_TYPE | 10 | 5 | II_REG
+NODE | PedEW_II/IREG | 3635 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | NULL | PedEW_II | 10 | 5 | II_REG
+
+INPUT_INSTANCE | 0 | 0 | NULL | PedNS_II | Traffic_top_level_COPY_0_COPY_0 | 16 | 1 | 1
+INPUT_NODE_TYPE | 0 | 5 | II_IN
+NODE | PedNS | 3636 | PI | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | NULL | NULL | 0 | 100 | NOTYPE
+OUTPUT_NODE_TYPE | 10 | 5 | II_REG
+NODE | PedNS_II/IREG | 3637 | ? | 0 | 0 | Traffic_top_level_COPY_0_COPY_0 | NULL | NULL | PedNS_II | 10 | 5 | II_REG
+
+FB_INSTANCE | FOOBAR1_ | Traffic_top_level_COPY_0_COPY_0 | 0 | 0 | 0
+FBPIN | 1 | CarEW_sync_MC | 1 | CarEW_II | 1 | NULL | 0 | 38 | 49152
+FBPIN | 2 | CarNS_sync_MC | 1 | CarNS_II | 1 | NULL | 0 | 37 | 49152
+FBPIN | 3 | PedEW_sync_MC | 1 | PedEW_II | 1 | NULL | 0 | 36 | 49152
+FBPIN | 4 | theCount/count<6>_MC | 1 | NULL | 0 | NULL | 0
+FBPIN | 5 | theCount/count<5>_MC | 1 | NULL | 0 | NULL | 0
+FBPIN | 6 | theCount/count<2>_MC | 1 | NULL | 0 | NULL | 0
+FBPIN | 7 | theCount/count<0>_MC | 1 | NULL | 0 | NULL | 0
+FBPIN | 8 | theCount/count<3>_MC | 1 | NULL | 0 | NULL | 0
+FBPIN | 9 | PedNS_sync_MC | 1 | PedNS_II | 1 | NULL | 0 | 34 | 53248
+FBPIN | 10 | State_machine/state_FSM_FFd6_MC | 1 | NULL | 0 | NULL | 0 | 33 | 53248
+FBPIN | 11 | State_machine/state_FSM_FFd4_MC | 1 | NULL | 0 | NULL | 0 | 32 | 53248
+FBPIN | 12 | State_machine/state_FSM_FFd2_MC | 1 | NULL | 0 | NULL | 0 | 31 | 53248
+FBPIN | 13 | State_machine/state_FSM_FFd3_MC | 1 | Reset_II | 1 | NULL | 0 | 30 | 51200
+FBPIN | 14 | theCount/count<7>_MC | 1 | NULL | 0 | NULL | 0
+FBPIN | 15 | theCount/count<4>_MC | 1 | NULL | 0 | NULL | 0
+FBPIN | 16 | theCount/count<1>_MC | 1 | NULL | 0 | NULL | 0
+
+FB_INSTANCE | FOOBAR2_ | Traffic_top_level_COPY_0_COPY_0 | 0 | 0 | 0
+FBPIN | 1 | LightsEW<0>_MC | 1 | NULL | 0 | LightsEW<0> | 1 | 39 | 49152
+FBPIN | 2 | LightsEW<1>_MC | 1 | NULL | 0 | LightsEW<1> | 1 | 40 | 49152
+FBPIN | 5 | LightsNS<0>_MC | 1 | NULL | 0 | LightsNS<0> | 1 | 41 | 49152
+FBPIN | 6 | LightsNS<1>_MC | 1 | NULL | 0 | LightsNS<1> | 1 | 42 | 49152
+FBPIN | 7 | NULL | 0 | Clock_II | 1 | NULL | 0 | 43 | 57344
+FBPIN | 8 | LEDs<0>_MC | 1 | NULL | 0 | LEDs<0> | 1 | 44 | 57344
+FBPIN | 9 | State_machine/pedNS_temp_MC | 1 | NULL | 0 | NULL | 0
+FBPIN | 10 | LEDs<1>_MC | 1 | NULL | 0 | LEDs<1> | 1 | 1 | 57344
+FBPIN | 11 | State_machine/pedEW_temp_MC | 1 | NULL | 0 | NULL | 0
+FBPIN | 12 | LEDs<2>_MC | 1 | NULL | 0 | LEDs<2> | 1 | 2 | 49152
+FBPIN | 13 | debugLED_MC | 1 | NULL | 0 | debugLED | 1 | 3 | 49152
+FBPIN | 14 | State_machine/state_FSM_FFd5_MC | 1 | NULL | 0 | NULL | 0
+FBPIN | 15 | State_machine/state_FSM_FFd1_MC | 1 | NULL | 0 | NULL | 0
+FBPIN | 16 | theCount/count<8>_MC | 1 | NULL | 0 | NULL | 0
+
+FB_INSTANCE | FOOBAR3_ | Traffic_top_level_COPY_0_COPY_0 | 0 | 0 | 0
+
+FB_INSTANCE | FOOBAR4_ | Traffic_top_level_COPY_0_COPY_0 | 0 | 0 | 0
+
+FB_INSTANCE | INPUTPINS_FOOBAR5_ | Traffic_top_level_COPY_0_COPY_0 | 0 | 0 | 0
+
+CT_INSTANCE | FOOBAR1_ | FOOBAR1__ctinst | Traffic_top_level_COPY_0_COPY_0 | 0 | 0 | 0
+
+CT_INSTANCE | FOOBAR2_ | FOOBAR2__ctinst | Traffic_top_level_COPY_0_COPY_0 | 0 | 0 | 0
+
+CT_INSTANCE | FOOBAR3_ | FOOBAR3__ctinst | Traffic_top_level_COPY_0_COPY_0 | 0 | 0 | 0
+
+CT_INSTANCE | FOOBAR4_ | FOOBAR4__ctinst | Traffic_top_level_COPY_0_COPY_0 | 0 | 0 | 0
+
+PLA | FOOBAR1_ | 29
+PLA_TERM | 0 | 
+SPPTERM | 7 | IV_TRUE | theCount/count<0> | IV_TRUE | theCount/count<1> | IV_TRUE | theCount/count<2> | IV_TRUE | theCount/count<3> | IV_TRUE | theCount/count<4> | IV_TRUE | theCount/count<5> | IV_TRUE | theCount/count<6>
+PLA_TERM | 1 | 
+SPPTERM | 10 | IV_FALSE | theCount/count<0> | IV_FALSE | theCount/count<1> | IV_FALSE | theCount/count<2> | IV_TRUE | theCount/count<3> | IV_FALSE | theCount/count<4> | IV_FALSE | theCount/count<5> | IV_TRUE | theCount/count<6> | IV_TRUE | State_machine/state_FSM_FFd3 | IV_TRUE | theCount/count<7> | IV_FALSE | theCount/count<8>
+PLA_TERM | 2 | 
+SPPTERM | 10 | IV_TRUE | State_machine/state_FSM_FFd4 | IV_FALSE | theCount/count<0> | IV_FALSE | theCount/count<1> | IV_FALSE | theCount/count<2> | IV_TRUE | theCount/count<3> | IV_FALSE | theCount/count<4> | IV_FALSE | theCount/count<5> | IV_TRUE | theCount/count<6> | IV_TRUE | theCount/count<7> | IV_FALSE | theCount/count<8>
+PLA_TERM | 3 | 
+SPPTERM | 3 | IV_TRUE | theCount/count<0> | IV_TRUE | theCount/count<1> | IV_TRUE | theCount/count<2>
+PLA_TERM | 4 | 
+SPPTERM | 10 | IV_FALSE | theCount/count<0> | IV_TRUE | State_machine/state_FSM_FFd2 | IV_FALSE | theCount/count<1> | IV_TRUE | theCount/count<2> | IV_TRUE | theCount/count<3> | IV_FALSE | theCount/count<4> | IV_TRUE | theCount/count<5> | IV_FALSE | theCount/count<6> | IV_FALSE | theCount/count<7> | IV_TRUE | theCount/count<8>
+PLA_TERM | 5 | 
+SPPTERM | 10 | IV_FALSE | theCount/count<0> | IV_FALSE | theCount/count<1> | IV_TRUE | theCount/count<2> | IV_TRUE | theCount/count<3> | IV_FALSE | theCount/count<4> | IV_TRUE | theCount/count<5> | IV_FALSE | theCount/count<6> | IV_FALSE | theCount/count<7> | IV_TRUE | theCount/count<8> | IV_TRUE | State_machine/state_FSM_FFd6
+PLA_TERM | 6 | 
+SPPTERM | 10 | IV_FALSE | theCount/count<0> | IV_FALSE | theCount/count<1> | IV_TRUE | theCount/count<2> | IV_FALSE | theCount/count<3> | IV_FALSE | theCount/count<4> | IV_TRUE | theCount/count<5> | IV_TRUE | theCount/count<6> | IV_FALSE | theCount/count<7> | IV_FALSE | theCount/count<8> | IV_TRUE | State_machine/state_FSM_FFd1
+PLA_TERM | 7 | 
+SPPTERM | 10 | IV_FALSE | theCount/count<0> | IV_FALSE | theCount/count<1> | IV_TRUE | theCount/count<2> | IV_FALSE | theCount/count<3> | IV_FALSE | theCount/count<4> | IV_TRUE | theCount/count<5> | IV_TRUE | theCount/count<6> | IV_FALSE | theCount/count<7> | IV_FALSE | theCount/count<8> | IV_TRUE | State_machine/state_FSM_FFd5
+PLA_TERM | 8 | 
+SPPTERM | 2 | IV_TRUE | theCount/count<0> | IV_TRUE | theCount/count<1>
+PLA_TERM | 9 | 
+SPPTERM | 5 | IV_TRUE | theCount/count<0> | IV_TRUE | theCount/count<1> | IV_TRUE | theCount/count<2> | IV_TRUE | theCount/count<3> | IV_TRUE | theCount/count<4>
+PLA_TERM | 10 | 
+SPPTERM | 2 | IV_FALSE | State_machine/state_FSM_FFd4 | IV_FALSE | PedEW_sync
+PLA_TERM | 11 | 
+SPPTERM | 6 | IV_TRUE | theCount/count<0> | IV_TRUE | theCount/count<1> | IV_TRUE | theCount/count<2> | IV_TRUE | theCount/count<3> | IV_TRUE | theCount/count<4> | IV_TRUE | theCount/count<5>
+PLA_TERM | 12 | 
+SPPTERM | 12 | IV_FALSE | theCount/count<0> | IV_FALSE | theCount/count<1> | IV_TRUE | theCount/count<2> | IV_FALSE | theCount/count<3> | IV_FALSE | theCount/count<4> | IV_TRUE | theCount/count<5> | IV_TRUE | theCount/count<6> | IV_FALSE | State_machine/state_FSM_FFd3 | IV_FALSE | theCount/count<7> | IV_FALSE | theCount/count<8> | IV_TRUE | State_machine/pedNS_temp | IV_TRUE | State_machine/state_FSM_FFd5
+PLA_TERM | 13 | 
+SPPTERM | 2 | IV_FALSE | State_machine/state_FSM_FFd3 | IV_FALSE | PedNS_sync
+PLA_TERM | 14 | 
+SPPTERM | 14 | IV_FALSE | theCount/count<0> | IV_TRUE | State_machine/state_FSM_FFd2 | IV_FALSE | State_machine/pedEW_temp | IV_FALSE | CarEW_sync | IV_FALSE | theCount/count<1> | IV_TRUE | theCount/count<2> | IV_TRUE | theCount/count<3> | IV_FALSE | theCount/count<4> | IV_TRUE | theCount/count<5> | IV_FALSE | theCount/count<6> | IV_FALSE | State_machine/state_FSM_FFd3 | IV_FALSE | theCount/count<7> | IV_TRUE | theCount/count<8> | IV_TRUE | State_machine/pedNS_temp
+PLA_TERM | 15 | 
+SPPTERM | 11 | IV_FALSE | theCount/count<0> | IV_TRUE | State_machine/state_FSM_FFd2 | IV_TRUE | State_machine/pedEW_temp | IV_FALSE | theCount/count<1> | IV_TRUE | theCount/count<2> | IV_TRUE | theCount/count<3> | IV_FALSE | theCount/count<4> | IV_TRUE | theCount/count<5> | IV_FALSE | theCount/count<6> | IV_FALSE | theCount/count<7> | IV_TRUE | theCount/count<8>
+PLA_TERM | 16 | 
+SPPTERM | 11 | IV_FALSE | theCount/count<0> | IV_TRUE | State_machine/state_FSM_FFd2 | IV_FALSE | theCount/count<1> | IV_TRUE | theCount/count<2> | IV_TRUE | theCount/count<3> | IV_FALSE | theCount/count<4> | IV_TRUE | theCount/count<5> | IV_FALSE | theCount/count<6> | IV_FALSE | theCount/count<7> | IV_TRUE | theCount/count<8> | IV_TRUE | State_machine/pedNS_temp
+PLA_TERM | 17 | 
+SPPTERM | 11 | IV_FALSE | theCount/count<0> | IV_FALSE | State_machine/state_FSM_FFd2 | IV_FALSE | theCount/count<1> | IV_FALSE | theCount/count<2> | IV_TRUE | theCount/count<3> | IV_FALSE | theCount/count<4> | IV_FALSE | theCount/count<5> | IV_TRUE | theCount/count<6> | IV_TRUE | State_machine/state_FSM_FFd3 | IV_TRUE | theCount/count<7> | IV_FALSE | theCount/count<8>
+PLA_TERM | 18 | 
+SPPTERM | 12 | IV_FALSE | theCount/count<0> | IV_FALSE | State_machine/state_FSM_FFd2 | IV_FALSE | theCount/count<1> | IV_TRUE | theCount/count<2> | IV_FALSE | theCount/count<3> | IV_FALSE | theCount/count<4> | IV_TRUE | theCount/count<5> | IV_TRUE | theCount/count<6> | IV_FALSE | theCount/count<7> | IV_FALSE | theCount/count<8> | IV_FALSE | State_machine/pedNS_temp | IV_TRUE | State_machine/state_FSM_FFd5
+PLA_TERM | 19 | 
+SPPTERM | 11 | IV_FALSE | theCount/count<0> | IV_TRUE | State_machine/state_FSM_FFd2 | IV_TRUE | CarEW_sync | IV_FALSE | theCount/count<1> | IV_TRUE | theCount/count<2> | IV_TRUE | theCount/count<3> | IV_FALSE | theCount/count<4> | IV_TRUE | theCount/count<5> | IV_FALSE | theCount/count<6> | IV_FALSE | theCount/count<7> | IV_TRUE | theCount/count<8>
+PLA_TERM | 20 | 
+SPPTERM | 12 | IV_FALSE | State_machine/state_FSM_FFd4 | IV_FALSE | theCount/count<0> | IV_TRUE | State_machine/pedEW_temp | IV_FALSE | theCount/count<1> | IV_TRUE | theCount/count<2> | IV_FALSE | theCount/count<3> | IV_FALSE | theCount/count<4> | IV_TRUE | theCount/count<5> | IV_TRUE | theCount/count<6> | IV_FALSE | theCount/count<7> | IV_FALSE | theCount/count<8> | IV_TRUE | State_machine/state_FSM_FFd1
+PLA_TERM | 21 | 
+SPPTERM | 14 | IV_FALSE | State_machine/state_FSM_FFd4 | IV_FALSE | theCount/count<0> | IV_TRUE | State_machine/pedEW_temp | IV_FALSE | theCount/count<1> | IV_TRUE | theCount/count<2> | IV_TRUE | theCount/count<3> | IV_FALSE | theCount/count<4> | IV_TRUE | theCount/count<5> | IV_FALSE | theCount/count<6> | IV_FALSE | theCount/count<7> | IV_TRUE | theCount/count<8> | IV_TRUE | State_machine/state_FSM_FFd6 | IV_FALSE | State_machine/pedNS_temp | IV_FALSE | CarNS_sync
+PLA_TERM | 22 | 
+SPPTERM | 11 | IV_FALSE | theCount/count<0> | IV_TRUE | State_machine/pedEW_temp | IV_FALSE | theCount/count<1> | IV_TRUE | theCount/count<2> | IV_TRUE | theCount/count<3> | IV_FALSE | theCount/count<4> | IV_TRUE | theCount/count<5> | IV_FALSE | theCount/count<6> | IV_FALSE | theCount/count<7> | IV_TRUE | theCount/count<8> | IV_TRUE | State_machine/state_FSM_FFd6
+PLA_TERM | 23 | 
+SPPTERM | 11 | IV_FALSE | theCount/count<0> | IV_FALSE | theCount/count<1> | IV_TRUE | theCount/count<2> | IV_TRUE | theCount/count<3> | IV_FALSE | theCount/count<4> | IV_TRUE | theCount/count<5> | IV_FALSE | theCount/count<6> | IV_FALSE | theCount/count<7> | IV_TRUE | theCount/count<8> | IV_TRUE | State_machine/state_FSM_FFd6 | IV_TRUE | State_machine/pedNS_temp
+PLA_TERM | 24 | 
+SPPTERM | 11 | IV_TRUE | State_machine/state_FSM_FFd4 | IV_FALSE | theCount/count<0> | IV_FALSE | theCount/count<1> | IV_FALSE | theCount/count<2> | IV_TRUE | theCount/count<3> | IV_FALSE | theCount/count<4> | IV_FALSE | theCount/count<5> | IV_TRUE | theCount/count<6> | IV_TRUE | theCount/count<7> | IV_FALSE | theCount/count<8> | IV_FALSE | State_machine/state_FSM_FFd6
+PLA_TERM | 25 | 
+SPPTERM | 12 | IV_FALSE | theCount/count<0> | IV_FALSE | State_machine/pedEW_temp | IV_FALSE | theCount/count<1> | IV_TRUE | theCount/count<2> | IV_FALSE | theCount/count<3> | IV_FALSE | theCount/count<4> | IV_TRUE | theCount/count<5> | IV_TRUE | theCount/count<6> | IV_FALSE | theCount/count<7> | IV_FALSE | theCount/count<8> | IV_FALSE | State_machine/state_FSM_FFd6 | IV_TRUE | State_machine/state_FSM_FFd1
+PLA_TERM | 26 | 
+SPPTERM | 11 | IV_FALSE | theCount/count<0> | IV_FALSE | theCount/count<1> | IV_TRUE | theCount/count<2> | IV_TRUE | theCount/count<3> | IV_FALSE | theCount/count<4> | IV_TRUE | theCount/count<5> | IV_FALSE | theCount/count<6> | IV_FALSE | theCount/count<7> | IV_TRUE | theCount/count<8> | IV_TRUE | State_machine/state_FSM_FFd6 | IV_TRUE | CarNS_sync
+PLA_TERM | 52 | 
+SPPTERM | 4 | IV_TRUE | theCount/count<0> | IV_TRUE | theCount/count<1> | IV_TRUE | theCount/count<2> | IV_TRUE | theCount/count<3>
+PLA_TERM | 55 | 
+SPPTERM | 1 | IV_TRUE | theCount/count<0>
+
+PLA | FOOBAR2_ | 18
+PLA_TERM | 0 | 
+SPPTERM | 8 | IV_TRUE | theCount/count<0> | IV_TRUE | theCount/count<1> | IV_TRUE | theCount/count<2> | IV_TRUE | theCount/count<3> | IV_TRUE | theCount/count<4> | IV_TRUE | theCount/count<5> | IV_TRUE | theCount/count<6> | IV_TRUE | theCount/count<7>
+PLA_TERM | 1 | 
+SPPTERM | 10 | IV_FALSE | theCount/count<0> | IV_TRUE | State_machine/state_FSM_FFd2 | IV_FALSE | theCount/count<1> | IV_TRUE | theCount/count<2> | IV_TRUE | theCount/count<3> | IV_FALSE | theCount/count<4> | IV_TRUE | theCount/count<5> | IV_FALSE | theCount/count<6> | IV_FALSE | theCount/count<7> | IV_TRUE | theCount/count<8>
+PLA_TERM | 2 | 
+SPPTERM | 10 | IV_FALSE | theCount/count<0> | IV_FALSE | theCount/count<1> | IV_TRUE | theCount/count<2> | IV_TRUE | theCount/count<3> | IV_FALSE | theCount/count<4> | IV_TRUE | theCount/count<5> | IV_FALSE | theCount/count<6> | IV_FALSE | theCount/count<7> | IV_TRUE | theCount/count<8> | IV_TRUE | State_machine/state_FSM_FFd6
+PLA_TERM | 3 | 
+SPPTERM | 12 | IV_FALSE | theCount/count<0> | IV_TRUE | State_machine/state_FSM_FFd2 | IV_TRUE | State_machine/pedEW_temp | IV_FALSE | theCount/count<1> | IV_TRUE | theCount/count<2> | IV_TRUE | theCount/count<3> | IV_FALSE | theCount/count<4> | IV_TRUE | theCount/count<5> | IV_FALSE | theCount/count<6> | IV_FALSE | theCount/count<7> | IV_TRUE | theCount/count<8> | IV_FALSE | State_machine/state_FSM_FFd1
+PLA_TERM | 4 | 
+SPPTERM | 10 | IV_FALSE | theCount/count<0> | IV_FALSE | theCount/count<1> | IV_TRUE | theCount/count<2> | IV_FALSE | theCount/count<3> | IV_FALSE | theCount/count<4> | IV_TRUE | theCount/count<5> | IV_TRUE | theCount/count<6> | IV_FALSE | theCount/count<7> | IV_FALSE | theCount/count<8> | IV_TRUE | State_machine/state_FSM_FFd1
+PLA_TERM | 5 | 
+SPPTERM | 12 | IV_FALSE | theCount/count<0> | IV_TRUE | State_machine/state_FSM_FFd2 | IV_TRUE | CarEW_sync | IV_FALSE | theCount/count<1> | IV_TRUE | theCount/count<2> | IV_TRUE | theCount/count<3> | IV_FALSE | theCount/count<4> | IV_TRUE | theCount/count<5> | IV_FALSE | theCount/count<6> | IV_FALSE | theCount/count<7> | IV_TRUE | theCount/count<8> | IV_FALSE | State_machine/state_FSM_FFd1
+PLA_TERM | 6 | 
+SPPTERM | 12 | IV_FALSE | theCount/count<0> | IV_FALSE | theCount/count<1> | IV_TRUE | theCount/count<2> | IV_TRUE | theCount/count<3> | IV_FALSE | theCount/count<4> | IV_TRUE | theCount/count<5> | IV_FALSE | theCount/count<6> | IV_FALSE | theCount/count<7> | IV_TRUE | theCount/count<8> | IV_TRUE | State_machine/state_FSM_FFd6 | IV_TRUE | State_machine/pedNS_temp | IV_FALSE | State_machine/state_FSM_FFd5
+PLA_TERM | 7 | 
+SPPTERM | 10 | IV_FALSE | theCount/count<0> | IV_FALSE | theCount/count<1> | IV_TRUE | theCount/count<2> | IV_FALSE | theCount/count<3> | IV_FALSE | theCount/count<4> | IV_TRUE | theCount/count<5> | IV_TRUE | theCount/count<6> | IV_FALSE | theCount/count<7> | IV_FALSE | theCount/count<8> | IV_TRUE | State_machine/state_FSM_FFd5
+PLA_TERM | 8 | 
+SPPTERM | 12 | IV_FALSE | theCount/count<0> | IV_FALSE | theCount/count<1> | IV_TRUE | theCount/count<2> | IV_TRUE | theCount/count<3> | IV_FALSE | theCount/count<4> | IV_TRUE | theCount/count<5> | IV_FALSE | theCount/count<6> | IV_FALSE | theCount/count<7> | IV_TRUE | theCount/count<8> | IV_TRUE | State_machine/state_FSM_FFd6 | IV_TRUE | CarNS_sync | IV_FALSE | State_machine/state_FSM_FFd5
+PLA_TERM | 9 | 
+SPPTERM | 1 | IV_TRUE | PedEW_sync
+PLA_TERM | 10 | 
+SPPTERM | 2 | IV_FALSE | State_machine/state_FSM_FFd4 | IV_FALSE | State_machine/state_FSM_FFd5
+PLA_TERM | 11 | 
+SPPTERM | 1 | IV_TRUE | PedNS_sync
+PLA_TERM | 13 | 
+SPPTERM | 2 | IV_FALSE | State_machine/state_FSM_FFd4 | IV_FALSE | State_machine/state_FSM_FFd6
+PLA_TERM | 22 | 
+SPPTERM | 2 | IV_FALSE | State_machine/state_FSM_FFd3 | IV_FALSE | State_machine/state_FSM_FFd1
+PLA_TERM | 25 | 
+SPPTERM | 2 | IV_FALSE | State_machine/state_FSM_FFd2 | IV_FALSE | State_machine/state_FSM_FFd3
+PLA_TERM | 34 | 
+SPPTERM | 1 | IV_FALSE | CarNS_sync_MC.COMB
+PLA_TERM | 40 | 
+SPPTERM | 1 | IV_FALSE | CarEW_sync_MC.COMB
+PLA_TERM | 46 | 
+SPPTERM | 1 | IV_TRUE | Reset_II/UIM
+
+BUSINFO | LEDS<2:0> | 3 | 0 | 1 | LEDs<0> | 2 | LEDs<1> | 1 | LEDs<2> | 0
+BUSINFO | LIGHTSEW<1:0> | 2 | 0 | 1 | LightsEW<0> | 1 | LightsEW<1> | 0
+BUSINFO | LIGHTSNS<1:0> | 2 | 0 | 1 | LightsNS<0> | 1 | LightsNS<1> | 0
+
+IOSTD | LVCMOS18
+Clock | LVCMOS18
+LEDs<0> | LVCMOS18
+LEDs<1> | LVCMOS18
+LEDs<2> | LVCMOS18
+Reset | LVCMOS18
+LightsEW<0> | LVCMOS18
+LightsEW<1> | LVCMOS18
+LightsNS<0> | LVCMOS18
+LightsNS<1> | LVCMOS18
+debugLED | LVCMOS18
+CarEW | LVCMOS18
+CarNS | LVCMOS18
+PedEW | LVCMOS18
+PedNS | LVCMOS18
+
+
+FB_ORDER_OF_INPUTS | FOOBAR1_ | 0 | theCount/count<5> | NULL | 1 | CarNS_sync | NULL | 2 | State_machine/state_FSM_FFd6 | NULL | 3 | State_machine/state_FSM_FFd2 | NULL | 4 | theCount/count<8> | NULL
+FB_ORDER_OF_INPUTS | FOOBAR1_ | 6 | State_machine/state_FSM_FFd1 | NULL | 7 | PedEW_sync | NULL | 8 | State_machine/state_FSM_FFd5 | NULL | 9 | State_machine/pedEW_temp | NULL | 10 | State_machine/state_FSM_FFd3 | NULL
+FB_ORDER_OF_INPUTS | FOOBAR1_ | 12 | CarEW_sync | NULL | 13 | theCount/count<3> | NULL | 14 | theCount/count<6> | NULL | 15 | theCount/count<1> | NULL | 16 | PedNS_sync | NULL
+FB_ORDER_OF_INPUTS | FOOBAR1_ | 17 | State_machine/state_FSM_FFd4 | NULL | 20 | theCount/count<4> | NULL | 21 | theCount/count<7> | NULL | 22 | theCount/count<2> | NULL | 27 | State_machine/pedNS_temp | NULL
+FB_ORDER_OF_INPUTS | FOOBAR1_ | 29 | theCount/count<0> | NULL
+
+FB_IMUX_INDEX | FOOBAR1_ | 68 | 1 | 73 | 75 | 95 | -1 | 94 | 66 | 93 | 90 | 76 | -1 | 0 | 71 | 67 | 79 | 72 | 74 | -1 | -1 | 78 | 77 | 69 | -1 | -1 | -1 | -1 | 88 | -1 | 70 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1
+
+
+FB_ORDER_OF_INPUTS | FOOBAR2_ | 0 | theCount/count<5> | NULL | 1 | Reset | 30 | 2 | State_machine/state_FSM_FFd6 | NULL | 3 | State_machine/state_FSM_FFd2 | NULL | 4 | theCount/count<8> | NULL
+FB_ORDER_OF_INPUTS | FOOBAR2_ | 5 | CarNS_sync_MC.COMB | NULL | 6 | State_machine/state_FSM_FFd1 | NULL | 7 | PedEW_sync | NULL | 8 | State_machine/state_FSM_FFd5 | NULL | 9 | State_machine/pedEW_temp | NULL
+FB_ORDER_OF_INPUTS | FOOBAR2_ | 10 | CarNS_sync | NULL | 12 | CarEW_sync_MC.COMB | NULL | 13 | theCount/count<3> | NULL | 14 | theCount/count<6> | NULL | 15 | theCount/count<1> | NULL
+FB_ORDER_OF_INPUTS | FOOBAR2_ | 16 | PedNS_sync | NULL | 17 | State_machine/state_FSM_FFd4 | NULL | 20 | theCount/count<4> | NULL | 21 | theCount/count<7> | NULL | 22 | theCount/count<2> | NULL
+FB_ORDER_OF_INPUTS | FOOBAR2_ | 26 | State_machine/state_FSM_FFd3 | NULL | 27 | State_machine/pedNS_temp | NULL | 28 | CarEW_sync | NULL | 29 | theCount/count<0> | NULL
+
+FB_IMUX_INDEX | FOOBAR2_ | 68 | 12 | 73 | 75 | 95 | 65 | 94 | 66 | 93 | 90 | 1 | -1 | 64 | 71 | 67 | 79 | 72 | 74 | -1 | -1 | 78 | 77 | 69 | -1 | -1 | -1 | 76 | 88 | 0 | 70 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1
+
+
+GLOBAL_FCLK | Clock | 0 | 0
+
+GLOBAL_FSR | Reset | 0 | 0

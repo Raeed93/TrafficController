@@ -1,0 +1,6 @@
+EN traffic_state_machine NULL "C:/Users/akmal/Desktop/EEE20001/New folder/Traffic_controller_lab_work/Top_level_vhdl_traffic_controller.vhd" sub00/vhpl03 1581501455
+AR counter_top beh "C:/Users/100477260/Documents/Digital Electronics Design/TrafficController/Traffic_counter/counter_top.vhd" sub00/vhpl01 1581735960
+AR traffic_top_level behavioral "C:/Users/100477260/Documents/Digital Electronics Design/TrafficController/Traffic_counter/traffic_top_level.vhd" sub00/vhpl05 1581735962
+AR traffic_state_machine behavioral "C:/Users/akmal/Desktop/EEE20001/New folder/Traffic_controller_lab_work/Top_level_vhdl_traffic_controller.vhd" sub00/vhpl04 1581501456
+EN counter_top NULL "C:/Users/100477260/Documents/Digital Electronics Design/TrafficController/Traffic_counter/counter_top.vhd" sub00/vhpl00 1581735959
+EN traffic_top_level NULL "C:/Users/100477260/Documents/Digital Electronics Design/TrafficController/Traffic_counter/traffic_top_level.vhd" sub00/vhpl02 1581735961

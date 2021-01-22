@@ -1,0 +1,35 @@
+Pin Freeze File:  version P.20131013
+
+2C64A44VQ XC2C64A-7-VQ44
+CarEW S:PIN38
+CarNS S:PIN37
+Clock S:PIN43
+PedEW S:PIN36
+PedNS S:PIN34
+Reset S:PIN30
+LEDs<0> S:PIN44
+LEDs<1> S:PIN1
+LEDs<2> S:PIN2
+LightsEW<0> S:PIN39
+LightsEW<1> S:PIN40
+LightsNS<0> S:PIN41
+LightsNS<1> S:PIN42
+debugLED S:PIN3
+
+
+;The remaining section of the .gyd file is for documentation purposes only.
+;It shows where your internal equations were placed in the last successful fit.
+
+PARTITION FB1_1 CarEW_sync CarNS_sync PedEW_sync theCount/count<6>
+		 theCount/count<5> theCount/count<2> theCount/count<0> theCount/count<3>
+		 PedNS_sync State_machine/state_FSM_FFd6 State_machine/state_FSM_FFd4 State_machine/state_FSM_FFd2
+		 State_machine/state_FSM_FFd3 theCount/count<7> theCount/count<4> theCount/count<1>
+		
+PARTITION FB2_1 LightsEW<0> LightsEW<1>
+PARTITION FB2_5 LightsNS<0> LightsNS<1>
+PARTITION FB2_8 LEDs<0> State_machine/pedNS_temp LEDs<1> State_machine/pedEW_temp
+		 LEDs<2> debugLED State_machine/state_FSM_FFd5 State_machine/state_FSM_FFd1
+		 theCount/count<8>
+
+
+

@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<generated_project xmlns="http://www.xilinx.com/XMLSchema" xmlns:xil_pn="http://www.xilinx.com/XMLSchema">
+
+  <!--                                                          -->
+
+  <!--             For tool use only. Do not edit.              -->
+
+  <!--                                                          -->
+
+  <!-- ProjectNavigator created generated project file.         -->
+
+  <!-- For use in tracking generated file and other information -->
+
+  <!-- allowing preservation of process status.                 -->
+
+  <!--                                                          -->
+
+  <!-- Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved. -->
+
+  <version xmlns="http://www.xilinx.com/XMLSchema">11.1</version>
+
+  <sourceproject xmlns="http://www.xilinx.com/XMLSchema" xil_pn:fileType="FILE_XISE" xil_pn:name="Traffic_counter.xise"/>
+
+  <files xmlns="http://www.xilinx.com/XMLSchema">
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGDBUILD_LOG" xil_pn:name="Traffic_top_level.bld"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_CHK" xil_pn:name="Traffic_top_level.chk"/>
+    <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="Traffic_top_level.cmd_log"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_CXT" xil_pn:name="Traffic_top_level.cxt"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_GYD" xil_pn:name="Traffic_top_level.gyd"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_JEDEC" xil_pn:name="Traffic_top_level.jed"/>
+    <file xil_pn:fileType="FILE_LOG" xil_pn:name="Traffic_top_level.log"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="Traffic_top_level.lso"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_MFD" xil_pn:name="Traffic_top_level.mfd"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGA" xil_pn:name="Traffic_top_level.nga"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="Traffic_top_level.ngc"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGD" xil_pn:name="Traffic_top_level.ngd"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGR" xil_pn:name="Traffic_top_level.ngr"/>
+    <file xil_pn:fileType="FILE_PAD_MISC" xil_pn:name="Traffic_top_level.pad"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PNX" xil_pn:name="Traffic_top_level.pnx"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="Traffic_top_level.prj"/>
+    <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="Traffic_top_level.rpt"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_STX" xil_pn:name="Traffic_top_level.stx"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_REPORT" xil_pn:name="Traffic_top_level.syr"/>
+    <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="Traffic_top_level.tim"/>
+    <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="Traffic_top_level.tspec"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_VM6" xil_pn:name="Traffic_top_level.vm6"/>
+    <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="Traffic_top_level.xml"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="Traffic_top_level.xst"/>
+    <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="Traffic_top_level_build.xml"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="Traffic_top_level_envsettings.html"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="Traffic_top_level_html"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="Traffic_top_level_ngdbuild.xrpt"/>
+    <file xil_pn:fileType="FILE_PAD_EXCEL_REPORT" xil_pn:name="Traffic_top_level_pad.csv"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="Traffic_top_level_summary.html"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="Traffic_top_level_vhdl.prj"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="Traffic_top_level_xst.xrpt"/>
+    <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="Traffic_toplevel.cmd_log"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="Traffic_toplevel.lso"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="Traffic_toplevel.prj"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_REPORT" xil_pn:name="Traffic_toplevel.syr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="Traffic_toplevel.xst"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="Traffic_toplevel_vhdl.prj"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="Traffic_toplevel_xst.xrpt"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="_ngo"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/xst.xmsgs"/>
+    <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="counter_top.cmd_log"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="counter_top.lso"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="counter_top.prj"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_REPORT" xil_pn:name="counter_top.syr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="counter_top.xst"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="counter_top_envsettings.html"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="counter_top_summary.html"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="counter_top_vhdl.prj"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="counter_top_xst.xrpt"/>
+    <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="webtalk_pn.xml"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="xlnx_auto_0_xdb"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="xst"/>
+  </files>
+
+  <transforms xmlns="http://www.xilinx.com/XMLSchema">
+    <transform xil_pn:end_ts="1581478675" xil_pn:name="TRAN_copyInitialToXSTAbstractSynthesis" xil_pn:start_ts="1581478675">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1581735943" xil_pn:name="TRAN_schematicsToHdl" xil_pn:prop_ck="-7268223053792447770" xil_pn:start_ts="1581735943">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="InputAdded"/>
+      <status xil_pn:value="InputRemoved"/>
+    </transform>
+    <transform xil_pn:end_ts="1581735967" xil_pn:in_ck="-2052116338549660592" xil_pn:name="TRANEXT_xstsynthesize_xbr" xil_pn:prop_ck="-8450947020991885176" xil_pn:start_ts="1581735943">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="WarningsGenerated"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="InputAdded"/>
+      <status xil_pn:value="InputChanged"/>
+      <outfile xil_pn:name="Traffic_top_level.lso"/>
+      <outfile xil_pn:name="Traffic_top_level.ngc"/>
+      <outfile xil_pn:name="Traffic_top_level.ngr"/>
+      <outfile xil_pn:name="Traffic_top_level.prj"/>
+      <outfile xil_pn:name="Traffic_top_level.stx"/>
+      <outfile xil_pn:name="Traffic_top_level.syr"/>
+      <outfile xil_pn:name="Traffic_top_level.xst"/>
+      <outfile xil_pn:name="Traffic_top_level_vhdl.prj"/>
+      <outfile xil_pn:name="Traffic_top_level_xst.xrpt"/>
+      <outfile xil_pn:name="_xmsgs/xst.xmsgs"/>
+      <outfile xil_pn:name="webtalk_pn.xml"/>
+      <outfile xil_pn:name="xst"/>
+    </transform>
+    <transform xil_pn:end_ts="1581735967" xil_pn:name="TRAN_compileBCD2" xil_pn:prop_ck="-3727380107792580448" xil_pn:start_ts="1581735967">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+    </transform>
+    <transform xil_pn:end_ts="1581735978" xil_pn:in_ck="-4132040985036148306" xil_pn:name="TRAN_ngdbuild" xil_pn:prop_ck="2260988109850707743" xil_pn:start_ts="1581735967">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <outfile xil_pn:name="Traffic_top_level.bld"/>
+      <outfile xil_pn:name="Traffic_top_level.ngd"/>
+      <outfile xil_pn:name="Traffic_top_level_ngdbuild.xrpt"/>
+      <outfile xil_pn:name="_ngo"/>
+      <outfile xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
+    </transform>
+    <transform xil_pn:end_ts="1581735997" xil_pn:in_ck="-4132040985036148305" xil_pn:name="TRANEXT_vm6File_xbr" xil_pn:prop_ck="-1505614890045273530" xil_pn:start_ts="1581735978">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="Traffic_top_level.chk"/>
+      <outfile xil_pn:name="Traffic_top_level.cxt"/>
+      <outfile xil_pn:name="Traffic_top_level.gyd"/>
+      <outfile xil_pn:name="Traffic_top_level.log"/>
+      <outfile xil_pn:name="Traffic_top_level.mfd"/>
+      <outfile xil_pn:name="Traffic_top_level.nga"/>
+      <outfile xil_pn:name="Traffic_top_level.pad"/>
+      <outfile xil_pn:name="Traffic_top_level.pnx"/>
+      <outfile xil_pn:name="Traffic_top_level.rpt"/>
+      <outfile xil_pn:name="Traffic_top_level.tim"/>
+      <outfile xil_pn:name="Traffic_top_level.tspec"/>
+      <outfile xil_pn:name="Traffic_top_level.vm6"/>
+      <outfile xil_pn:name="Traffic_top_level.xml"/>
+      <outfile xil_pn:name="Traffic_top_level_build.xml"/>
+      <outfile xil_pn:name="Traffic_top_level_html"/>
+      <outfile xil_pn:name="Traffic_top_level_pad.csv"/>
+    </transform>
+    <transform xil_pn:end_ts="1581735999" xil_pn:in_ck="-4132040985036139441" xil_pn:name="TRANEXT_crtProg_xbr" xil_pn:prop_ck="5245363024343" xil_pn:start_ts="1581735997">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <outfile xil_pn:name="Traffic_top_level.jed"/>
+    </transform>
+    <transform xil_pn:end_ts="1581735997" xil_pn:in_ck="-4132040985036139441" xil_pn:name="TRAN_timRpt" xil_pn:prop_ck="111903974446" xil_pn:start_ts="1581735994">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="WarningsGenerated"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+    </transform>
+  </transforms>
+
+</generated_project>

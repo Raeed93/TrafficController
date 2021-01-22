@@ -1,0 +1,126 @@
+xst -intstyle ise -ifn "C:/Users/akmal/Desktop/EEE20001/New folder/Traffic_counter/Traffic_top_level.xst" -ofn "C:/Users/akmal/Desktop/EEE20001/New folder/Traffic_counter/Traffic_top_level.syr" 
+xst -intstyle ise -ifn "C:/Users/akmal/Desktop/EEE20001/New folder/Traffic_counter/Traffic_top_level.xst" -ofn "C:/Users/akmal/Desktop/EEE20001/New folder/Traffic_counter/Traffic_top_level.syr" 
+xst -intstyle ise -ifn "C:/Users/akmal/Desktop/EEE20001/New folder/Traffic_counter/Traffic_top_level.xst" -ofn "C:/Users/akmal/Desktop/EEE20001/New folder/Traffic_counter/Traffic_top_level.syr" 
+xst -intstyle ise -ifn "C:/Users/akmal/Desktop/EEE20001/New folder/Traffic_counter/Traffic_top_level.xst" -ofn "C:/Users/akmal/Desktop/EEE20001/New folder/Traffic_counter/Traffic_top_level.syr" 
+xst -intstyle ise -ifn "C:/Users/akmal/Desktop/EEE20001/New folder/Traffic_counter/Traffic_top_level.xst" -ofn "C:/Users/akmal/Desktop/EEE20001/New folder/Traffic_counter/Traffic_top_level.syr" 
+xst -intstyle ise -ifn "C:/Users/akmal/Desktop/EEE20001/New folder/Traffic_counter/Traffic_top_level.xst" -ofn "C:/Users/akmal/Desktop/EEE20001/New folder/Traffic_counter/Traffic_top_level.syr" 
+xst -intstyle ise -ifn "C:/Users/akmal/Desktop/EEE20001/New folder/Traffic_counter/Traffic_top_level.xst" -ofn "C:/Users/akmal/Desktop/EEE20001/New folder/Traffic_counter/Traffic_top_level.syr" 
+xst -intstyle ise -ifn "C:/Users/akmal/Desktop/EEE20001/New folder/Traffic_counter/Traffic_top_level.xst" -ofn "C:/Users/akmal/Desktop/EEE20001/New folder/Traffic_counter/Traffic_top_level.syr" 
+xst -intstyle ise -ifn "C:/Users/akmal/Desktop/EEE20001/New folder/Traffic_counter/Traffic_top_level.xst" -ofn "C:/Users/akmal/Desktop/EEE20001/New folder/Traffic_counter/Traffic_top_level.syr" 
+xst -intstyle ise -ifn "C:/Users/akmal/Desktop/EEE20001/New folder/Traffic_counter/Traffic_top_level.xst" -ofn "C:/Users/akmal/Desktop/EEE20001/New folder/Traffic_counter/Traffic_top_level.syr" 
+xst -intstyle ise -ifn "C:/Users/akmal/Desktop/EEE20001/New folder/Traffic_counter/Traffic_top_level.xst" -ofn "C:/Users/akmal/Desktop/EEE20001/New folder/Traffic_counter/Traffic_top_level.syr" 
+xst -intstyle ise -ifn "C:/Users/akmal/Desktop/EEE20001/New folder/Traffic_counter/Traffic_top_level.xst" -ofn "C:/Users/akmal/Desktop/EEE20001/New folder/Traffic_counter/Traffic_top_level.syr" 
+xst -intstyle ise -ifn "C:/Users/akmal/Desktop/EEE20001/New folder/Traffic_counter/Traffic_top_level.xst" -ofn "C:/Users/akmal/Desktop/EEE20001/New folder/Traffic_counter/Traffic_top_level.syr" 
+xst -intstyle ise -ifn "C:/Users/akmal/Desktop/EEE20001/New folder/Traffic_counter/Traffic_top_level.xst" -ofn "C:/Users/akmal/Desktop/EEE20001/New folder/Traffic_counter/Traffic_top_level.syr" 
+xst -intstyle ise -ifn "C:/Users/akmal/Desktop/EEE20001/New folder/Traffic_counter/Traffic_top_level.xst" -ofn "C:/Users/akmal/Desktop/EEE20001/New folder/Traffic_counter/Traffic_top_level.syr" 
+xst -intstyle ise -ifn "C:/Users/akmal/Desktop/EEE20001/New folder/Traffic_counter/Traffic_top_level.xst" -ofn "C:/Users/akmal/Desktop/EEE20001/New folder/Traffic_counter/Traffic_top_level.syr" 
+xst -intstyle ise -ifn "C:/Users/akmal/Desktop/EEE20001/New folder/Traffic_counter/Traffic_top_level.xst" -ofn "C:/Users/akmal/Desktop/EEE20001/New folder/Traffic_counter/Traffic_top_level.syr" 
+xst -intstyle ise -ifn "C:/Users/akmal/Desktop/EEE20001/New folder/Traffic_counter/Traffic_top_level.xst" -ofn "C:/Users/akmal/Desktop/EEE20001/New folder/Traffic_counter/Traffic_top_level.syr" 
+xst -intstyle ise -ifn "C:/Users/akmal/Desktop/EEE20001/New folder/Traffic_counter/Traffic_top_level.xst" -ofn "C:/Users/akmal/Desktop/EEE20001/New folder/Traffic_counter/Traffic_top_level.syr" 
+xst -intstyle ise -ifn "C:/Users/akmal/Desktop/EEE20001/New folder/Traffic_counter/Traffic_top_level.xst" -ofn "C:/Users/akmal/Desktop/EEE20001/New folder/Traffic_counter/Traffic_top_level.syr" 
+xst -intstyle ise -ifn "C:/Users/akmal/Desktop/EEE20001/New folder/Traffic_counter/Traffic_top_level.xst" -ofn "C:/Users/akmal/Desktop/EEE20001/New folder/Traffic_counter/Traffic_top_level.syr" 
+xst -intstyle ise -ifn "C:/Users/akmal/Desktop/EEE20001/New folder/Traffic_counter/Traffic_top_level.xst" -ofn "C:/Users/akmal/Desktop/EEE20001/New folder/Traffic_counter/Traffic_top_level.syr" 
+xst -intstyle ise -ifn "C:/Users/akmal/Desktop/EEE20001/New folder/Traffic_counter/Traffic_top_level.xst" -ofn "C:/Users/akmal/Desktop/EEE20001/New folder/Traffic_counter/Traffic_top_level.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc C:/Users/akmal/Desktop/EEE20001/ProjectStarterFiles/C-MOD-Traffic-Light.ucf -p xc2c64a-VQ44-7 "Traffic_top_level.ngc" Traffic_top_level.ngd  
+cpldfit -intstyle ise -p xc2c64a-7-VQ44 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 32 -pterms 28 -unused keeper -terminate keeper -iostd LVCMOS18 Traffic_top_level.ngd 
+XSLTProcess Traffic_top_level_build.xml 
+tsim -intstyle ise Traffic_top_level Traffic_top_level.nga 
+taengine -intstyle ise -f Traffic_top_level -w --format html1 -l Traffic_top_level_html/tim/timing_report.htm 
+hprep6 -s IEEE1149 -i Traffic_top_level 
+xst -intstyle ise -ifn "C:/Users/akmal/Desktop/EEE20001/New folder/Traffic_counter/Traffic_top_level.xst" -ofn "C:/Users/akmal/Desktop/EEE20001/New folder/Traffic_counter/Traffic_top_level.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc C:/Users/akmal/Desktop/EEE20001/ProjectStarterFiles/C-MOD-Traffic-Light.ucf -p xc2c64a-VQ44-7 "Traffic_top_level.ngc" Traffic_top_level.ngd  
+cpldfit -intstyle ise -p xc2c64a-7-VQ44 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 32 -pterms 28 -unused keeper -terminate keeper -iostd LVCMOS18 Traffic_top_level.ngd 
+XSLTProcess Traffic_top_level_build.xml 
+tsim -intstyle ise Traffic_top_level Traffic_top_level.nga 
+hprep6 -s IEEE1149 -i Traffic_top_level 
+xst -intstyle ise -ifn "C:/Users/akmal/Desktop/EEE20001/New folder/Traffic_counter/Traffic_top_level.xst" -ofn "C:/Users/akmal/Desktop/EEE20001/New folder/Traffic_counter/Traffic_top_level.syr" 
+xst -intstyle ise -ifn "C:/Users/akmal/Desktop/EEE20001/New folder/Traffic_counter/Traffic_top_level.xst" -ofn "C:/Users/akmal/Desktop/EEE20001/New folder/Traffic_counter/Traffic_top_level.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc C:/Users/akmal/Desktop/EEE20001/ProjectStarterFiles/C-MOD-Traffic-Light.ucf -p xc2c64a-VQ44-7 "Traffic_top_level.ngc" Traffic_top_level.ngd  
+cpldfit -intstyle ise -p xc2c64a-7-VQ44 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 32 -pterms 28 -unused keeper -terminate keeper -iostd LVCMOS18 Traffic_top_level.ngd 
+XSLTProcess Traffic_top_level_build.xml 
+tsim -intstyle ise Traffic_top_level Traffic_top_level.nga 
+hprep6 -s IEEE1149 -i Traffic_top_level 
+xst -intstyle ise -ifn "C:/Users/akmal/Desktop/EEE20001/New folder/Traffic_counter/Traffic_top_level.xst" -ofn "C:/Users/akmal/Desktop/EEE20001/New folder/Traffic_counter/Traffic_top_level.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc C:/Users/akmal/Desktop/EEE20001/ProjectStarterFiles/C-MOD-Traffic-Light.ucf -p xc2c64a-VQ44-7 "Traffic_top_level.ngc" Traffic_top_level.ngd  
+cpldfit -intstyle ise -p xc2c64a-7-VQ44 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 32 -pterms 28 -unused keeper -terminate keeper -iostd LVCMOS18 Traffic_top_level.ngd 
+XSLTProcess Traffic_top_level_build.xml 
+tsim -intstyle ise Traffic_top_level Traffic_top_level.nga 
+hprep6 -s IEEE1149 -i Traffic_top_level 
+xst -intstyle ise -ifn "C:/Users/akmal/Desktop/EEE20001/New folder/Traffic_counter/Traffic_top_level.xst" -ofn "C:/Users/akmal/Desktop/EEE20001/New folder/Traffic_counter/Traffic_top_level.syr" 
+xst -intstyle ise -ifn "C:/Users/akmal/Desktop/EEE20001/New folder/Traffic_counter/Traffic_top_level.xst" -ofn "C:/Users/akmal/Desktop/EEE20001/New folder/Traffic_counter/Traffic_top_level.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc C:/Users/akmal/Desktop/EEE20001/ProjectStarterFiles/C-MOD-Traffic-Light.ucf -p xc2c64a-VQ44-7 "Traffic_top_level.ngc" Traffic_top_level.ngd  
+cpldfit -intstyle ise -p xc2c64a-7-VQ44 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 32 -pterms 28 -unused keeper -terminate keeper -iostd LVCMOS18 Traffic_top_level.ngd 
+XSLTProcess Traffic_top_level_build.xml 
+tsim -intstyle ise Traffic_top_level Traffic_top_level.nga 
+hprep6 -s IEEE1149 -i Traffic_top_level 
+xst -intstyle ise -ifn "C:/Users/akmal/Desktop/EEE20001/New folder/Traffic_counter/Traffic_top_level.xst" -ofn "C:/Users/akmal/Desktop/EEE20001/New folder/Traffic_counter/Traffic_top_level.syr" 
+xst -intstyle ise -ifn "C:/Users/akmal/Desktop/EEE20001/New folder/Traffic_counter/Traffic_top_level.xst" -ofn "C:/Users/akmal/Desktop/EEE20001/New folder/Traffic_counter/Traffic_top_level.syr" 
+xst -intstyle ise -ifn "C:/Users/akmal/Desktop/EEE20001/New folder/Traffic_counter/Traffic_top_level.xst" -ofn "C:/Users/akmal/Desktop/EEE20001/New folder/Traffic_counter/Traffic_top_level.syr" 
+xst -intstyle ise -ifn "C:/Users/akmal/Desktop/EEE20001/New folder/Traffic_counter/Traffic_top_level.xst" -ofn "C:/Users/akmal/Desktop/EEE20001/New folder/Traffic_counter/Traffic_top_level.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc C:/Users/akmal/Desktop/EEE20001/ProjectStarterFiles/C-MOD-Traffic-Light.ucf -p xc2c64a-VQ44-7 "Traffic_top_level.ngc" Traffic_top_level.ngd  
+cpldfit -intstyle ise -p xc2c64a-7-VQ44 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 32 -pterms 28 -unused keeper -terminate keeper -iostd LVCMOS18 Traffic_top_level.ngd 
+XSLTProcess Traffic_top_level_build.xml 
+tsim -intstyle ise Traffic_top_level Traffic_top_level.nga 
+hprep6 -s IEEE1149 -i Traffic_top_level 
+xst -intstyle ise -ifn "C:/Users/akmal/Desktop/EEE20001/New folder/Traffic_counter/Traffic_top_level.xst" -ofn "C:/Users/akmal/Desktop/EEE20001/New folder/Traffic_counter/Traffic_top_level.syr" 
+xst -intstyle ise -ifn "C:/Users/akmal/Desktop/EEE20001/New folder/Traffic_counter/Traffic_top_level.xst" -ofn "C:/Users/akmal/Desktop/EEE20001/New folder/Traffic_counter/Traffic_top_level.syr" 
+xst -intstyle ise -ifn "C:/Users/akmal/Desktop/EEE20001/New folder/Traffic_counter/Traffic_top_level.xst" -ofn "C:/Users/akmal/Desktop/EEE20001/New folder/Traffic_counter/Traffic_top_level.syr" 
+xst -intstyle ise -ifn "C:/Users/akmal/Desktop/EEE20001/New folder/Traffic_counter/Traffic_top_level.xst" -ofn "C:/Users/akmal/Desktop/EEE20001/New folder/Traffic_counter/Traffic_top_level.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc C:/Users/akmal/Desktop/EEE20001/ProjectStarterFiles/C-MOD-Traffic-Light.ucf -p xc2c64a-VQ44-7 "Traffic_top_level.ngc" Traffic_top_level.ngd  
+cpldfit -intstyle ise -p xc2c64a-7-VQ44 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 32 -pterms 28 -unused keeper -terminate keeper -iostd LVCMOS18 Traffic_top_level.ngd 
+XSLTProcess Traffic_top_level_build.xml 
+tsim -intstyle ise Traffic_top_level Traffic_top_level.nga 
+hprep6 -s IEEE1149 -i Traffic_top_level 
+xst -intstyle ise -ifn "C:/Users/akmal/Desktop/EEE20001/New folder/Traffic_counter/Traffic_top_level.xst" -ofn "C:/Users/akmal/Desktop/EEE20001/New folder/Traffic_counter/Traffic_top_level.syr" 
+xst -intstyle ise -ifn "C:/Users/akmal/Desktop/EEE20001/New folder/Traffic_counter/Traffic_top_level.xst" -ofn "C:/Users/akmal/Desktop/EEE20001/New folder/Traffic_counter/Traffic_top_level.syr" 
+xst -intstyle ise -ifn "C:/Users/akmal/Desktop/EEE20001/New folder/Traffic_counter/Traffic_top_level.xst" -ofn "C:/Users/akmal/Desktop/EEE20001/New folder/Traffic_counter/Traffic_top_level.syr" 
+xst -intstyle ise -ifn "C:/Users/akmal/Desktop/EEE20001/New folder/Traffic_counter/Traffic_top_level.xst" -ofn "C:/Users/akmal/Desktop/EEE20001/New folder/Traffic_counter/Traffic_top_level.syr" 
+xst -intstyle ise -ifn "C:/Users/akmal/Desktop/EEE20001/New folder/Traffic_counter/Traffic_top_level.xst" -ofn "C:/Users/akmal/Desktop/EEE20001/New folder/Traffic_counter/Traffic_top_level.syr" 
+xst -intstyle ise -ifn "C:/Users/akmal/Desktop/EEE20001/New folder/Traffic_counter/Traffic_top_level.xst" -ofn "C:/Users/akmal/Desktop/EEE20001/New folder/Traffic_counter/Traffic_top_level.syr" 
+xst -intstyle ise -ifn "C:/Users/akmal/Desktop/EEE20001/New folder/Traffic_counter/Traffic_top_level.xst" -ofn "C:/Users/akmal/Desktop/EEE20001/New folder/Traffic_counter/Traffic_top_level.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc C:/Users/akmal/Desktop/EEE20001/ProjectStarterFiles/C-MOD-Traffic-Light.ucf -p xc2c64a-VQ44-7 "Traffic_top_level.ngc" Traffic_top_level.ngd  
+cpldfit -intstyle ise -p xc2c64a-7-VQ44 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 32 -pterms 28 -unused keeper -terminate keeper -iostd LVCMOS18 Traffic_top_level.ngd 
+XSLTProcess Traffic_top_level_build.xml 
+tsim -intstyle ise Traffic_top_level Traffic_top_level.nga 
+hprep6 -s IEEE1149 -i Traffic_top_level 
+xst -intstyle ise -ifn "C:/Users/akmal/Desktop/EEE20001/New folder/Traffic_counter/Traffic_top_level.xst" -ofn "C:/Users/akmal/Desktop/EEE20001/New folder/Traffic_counter/Traffic_top_level.syr" 
+xst -intstyle ise -ifn "C:/Users/akmal/Desktop/EEE20001/New folder/Traffic_counter/Traffic_top_level.xst" -ofn "C:/Users/akmal/Desktop/EEE20001/New folder/Traffic_counter/Traffic_top_level.syr" 
+xst -intstyle ise -ifn "C:/Users/akmal/Desktop/EEE20001/New folder/Traffic_counter/Traffic_top_level.xst" -ofn "C:/Users/akmal/Desktop/EEE20001/New folder/Traffic_counter/Traffic_top_level.syr" 
+xst -intstyle ise -ifn "C:/Users/akmal/Desktop/EEE20001/New folder/Traffic_counter/Traffic_top_level.xst" -ofn "C:/Users/akmal/Desktop/EEE20001/New folder/Traffic_counter/Traffic_top_level.syr" 
+xst -intstyle ise -ifn "C:/Users/akmal/Desktop/EEE20001/New folder/Traffic_counter/Traffic_top_level.xst" -ofn "C:/Users/akmal/Desktop/EEE20001/New folder/Traffic_counter/Traffic_top_level.syr" 
+xst -intstyle ise -ifn "C:/Users/akmal/Desktop/EEE20001/New folder/Traffic_counter/Traffic_top_level.xst" -ofn "C:/Users/akmal/Desktop/EEE20001/New folder/Traffic_counter/Traffic_top_level.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc C:/Users/akmal/Desktop/EEE20001/ProjectStarterFiles/C-MOD-Traffic-Light.ucf -p xc2c64a-VQ44-7 "Traffic_top_level.ngc" Traffic_top_level.ngd  
+cpldfit -intstyle ise -p xc2c64a-7-VQ44 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 32 -pterms 28 -unused keeper -terminate keeper -iostd LVCMOS18 Traffic_top_level.ngd 
+XSLTProcess Traffic_top_level_build.xml 
+tsim -intstyle ise Traffic_top_level Traffic_top_level.nga 
+xst -intstyle ise -ifn "C:/Users/akmal/Desktop/EEE20001/New folder/Traffic_counter/Traffic_top_level.xst" -ofn "C:/Users/akmal/Desktop/EEE20001/New folder/Traffic_counter/Traffic_top_level.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc C:/Users/akmal/Desktop/EEE20001/ProjectStarterFiles/C-MOD-Traffic-Light.ucf -p xc2c64a-VQ44-7 "Traffic_top_level.ngc" Traffic_top_level.ngd  
+cpldfit -intstyle ise -p xc2c64a-7-VQ44 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 32 -pterms 28 -unused keeper -terminate keeper -iostd LVCMOS18 Traffic_top_level.ngd 
+XSLTProcess Traffic_top_level_build.xml 
+tsim -intstyle ise Traffic_top_level Traffic_top_level.nga 
+hprep6 -s IEEE1149 -i Traffic_top_level 
+xst -intstyle ise -ifn "C:/Users/akmal/Desktop/EEE20001/New folder/Traffic_counter/Traffic_top_level.xst" -ofn "C:/Users/akmal/Desktop/EEE20001/New folder/Traffic_counter/Traffic_top_level.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc C:/Users/akmal/Desktop/EEE20001/ProjectStarterFiles/C-MOD-Traffic-Light.ucf -p xc2c64a-VQ44-7 "Traffic_top_level.ngc" Traffic_top_level.ngd  
+cpldfit -intstyle ise -p xc2c64a-7-VQ44 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 32 -pterms 28 -unused keeper -terminate keeper -iostd LVCMOS18 Traffic_top_level.ngd 
+XSLTProcess Traffic_top_level_build.xml 
+tsim -intstyle ise Traffic_top_level Traffic_top_level.nga 
+hprep6 -s IEEE1149 -i Traffic_top_level 
+xst -intstyle ise -ifn "C:/Users/akmal/Desktop/EEE20001/New folder/Traffic_counter/Traffic_top_level.xst" -ofn "C:/Users/akmal/Desktop/EEE20001/New folder/Traffic_counter/Traffic_top_level.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc C:/Users/akmal/Desktop/EEE20001/ProjectStarterFiles/C-MOD-Traffic-Light.ucf -p xc2c64a-VQ44-7 "Traffic_top_level.ngc" Traffic_top_level.ngd  
+cpldfit -intstyle ise -p xc2c64a-7-VQ44 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 32 -pterms 28 -unused keeper -terminate keeper -iostd LVCMOS18 Traffic_top_level.ngd 
+XSLTProcess Traffic_top_level_build.xml 
+tsim -intstyle ise Traffic_top_level Traffic_top_level.nga 
+hprep6 -s IEEE1149 -i Traffic_top_level 
+xst -intstyle ise -ifn "C:/Users/akmal/Desktop/EEE20001/New folder/Traffic_counter/Traffic_top_level.xst" -ofn "C:/Users/akmal/Desktop/EEE20001/New folder/Traffic_counter/Traffic_top_level.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc C:/Users/akmal/Desktop/EEE20001/ProjectStarterFiles/C-MOD-Traffic-Light.ucf -p xc2c64a-VQ44-7 "Traffic_top_level.ngc" Traffic_top_level.ngd  
+cpldfit -intstyle ise -p xc2c64a-7-VQ44 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 32 -pterms 28 -unused keeper -terminate keeper -iostd LVCMOS18 Traffic_top_level.ngd 
+XSLTProcess Traffic_top_level_build.xml 
+tsim -intstyle ise Traffic_top_level Traffic_top_level.nga 
+hprep6 -s IEEE1149 -i Traffic_top_level 
+xst -intstyle ise -ifn "C:/Users/100477260/Documents/Digital Electronics Design/TrafficController/Traffic_counter/Traffic_top_level.xst" -ofn "C:/Users/100477260/Documents/Digital Electronics Design/TrafficController/Traffic_counter/Traffic_top_level.syr" 
+ngdbuild -intstyle ise -dd _ngo -i -p xc2c64a-VQ44-7 "Traffic_top_level.ngc" Traffic_top_level.ngd  
+cpldfit -intstyle ise -p xc2c64a-7-VQ44 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 32 -pterms 28 -unused keeper -terminate keeper -iostd LVCMOS18 Traffic_top_level.ngd 
+XSLTProcess Traffic_top_level_build.xml 
+tsim -intstyle ise Traffic_top_level Traffic_top_level.nga 
+taengine -intstyle ise -f Traffic_top_level -w --format html1 -l Traffic_top_level_html/tim/timing_report.htm 
+hprep6 -s IEEE1149 -i Traffic_top_level 
