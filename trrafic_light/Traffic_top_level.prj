@@ -1,0 +1,3 @@
+vhdl work "SM.vhd"
+vhdl work "Conter_top.vhd"
+vhdl work "Traffic_state_machine.vhd"

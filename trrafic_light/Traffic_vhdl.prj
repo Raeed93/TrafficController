@@ -1,0 +1,3 @@
+vhdl work "C:\trrafic_light\SM.vhd"
+vhdl work "C:\trrafic_light\Conter_top.vhd"
+vhdl work "C:\trrafic_light\Traffic_state_machine.vhd"

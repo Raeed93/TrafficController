@@ -1,0 +1,12 @@
+[Inputs]
+Reset
+Clock
+CarNS
+PedEW
+PedNS
+[Outputs]
+=debugLED[3:0]=
+=LEDs[2:0]=
+=LightsEW[1:0]=
+=LightsNS[1:0]=
+[BiDir]

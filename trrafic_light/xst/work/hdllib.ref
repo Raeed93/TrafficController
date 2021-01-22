@@ -1,0 +1,8 @@
+EN traffic_state_machine NULL C:/trrafic_light/SM.vhd sub00/vhpl02 1591550910
+AR traffic behavioral C:/trrafic_light/Traffic_state_machine.vhd sub00/vhpl07 1591550913
+AR counter_top beh C:/trrafic_light/Conter_top.vhd sub00/vhpl01 1591550909
+AR traffic_top_level behavioral C:/trrafic_light/Traffic_state_machine.vhd sub00/vhpl05 1591348560
+EN traffic NULL C:/trrafic_light/Traffic_state_machine.vhd sub00/vhpl06 1591550912
+AR traffic_state_machine behavioral C:/trrafic_light/SM.vhd sub00/vhpl03 1591550911
+EN counter_top NULL C:/trrafic_light/Conter_top.vhd sub00/vhpl00 1591550908
+EN traffic_top_level NULL C:/trrafic_light/Traffic_state_machine.vhd sub00/vhpl04 1591348559

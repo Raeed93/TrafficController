@@ -1,0 +1,20 @@
+V3 12
+FL C:/trrafic_light/Conter_top.vhd 2020/06/07.21:58:18 P.20131013
+EN work/counter_top 1591550908 FL C:/trrafic_light/Conter_top.vhd \
+      PB ieee/std_logic_1164 1381692176
+AR work/counter_top/beh 1591550909 \
+      FL C:/trrafic_light/Conter_top.vhd EN work/counter_top 1591550908
+FL C:/trrafic_light/SM.vhd 2020/06/07.21:58:18 P.20131013
+EN work/Traffic_state_machine 1591550910 FL C:/trrafic_light/SM.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
+      PB ieee/STD_LOGIC_UNSIGNED 1381692179
+AR work/Traffic_state_machine/Behavioral 1591550911 \
+      FL C:/trrafic_light/SM.vhd EN work/Traffic_state_machine 1591550910
+FL C:/trrafic_light/Traffic_state_machine.vhd 2020/06/07.21:58:18 P.20131013
+EN work/Traffic 1591550912 FL C:/trrafic_light/Traffic_state_machine.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
+      PB ieee/STD_LOGIC_UNSIGNED 1381692179
+AR work/Traffic/Behavioral 1591550913 \
+      FL C:/trrafic_light/Traffic_state_machine.vhd EN work/Traffic 1591550912 \
+      CP work/counter_top CP work/Traffic_state_machine
+FL C:/trrafic_light/trafic_state_machin.vhd 2020/06/04.18:16:11 P.20131013

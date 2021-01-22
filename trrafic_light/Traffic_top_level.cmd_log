@@ -1,0 +1,19 @@
+xst -intstyle ise -ifn "C:/trrafic_light/Traffic_top_level.xst" -ofn "C:/trrafic_light/Traffic_top_level.syr" 
+xst -intstyle ise -ifn "C:/trrafic_light/Traffic_top_level.xst" -ofn "C:/trrafic_light/Traffic_top_level.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s50-pq208-5 Traffic_top_level.ngc Traffic_top_level.ngd  
+map -intstyle ise -p xc3s50-pq208-5 -cm area -ir off -pr off -c 100 -o Traffic_top_level_map.ncd Traffic_top_level.ngd Traffic_top_level.pcf 
+par -w -intstyle ise -ol high -t 1 Traffic_top_level_map.ncd Traffic_top_level.ncd Traffic_top_level.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml Traffic_top_level.twx Traffic_top_level.ncd -o Traffic_top_level.twr Traffic_top_level.pcf 
+xst -intstyle ise -ifn "C:/trrafic_light/Traffic_top_level.xst" -ofn "C:/trrafic_light/Traffic_top_level.syr" 
+xst -intstyle ise -ifn "C:/trrafic_light/Traffic_top_level.xst" -ofn "C:/trrafic_light/Traffic_top_level.syr" 
+xst -intstyle ise -ifn "C:/trrafic_light/Traffic_top_level.xst" -ofn "C:/trrafic_light/Traffic_top_level.syr" 
+xst -intstyle ise -ifn "C:/trrafic_light/Traffic_top_level.xst" -ofn "C:/trrafic_light/Traffic_top_level.syr" 
+xst -intstyle ise -ifn "C:/trrafic_light/Traffic_top_level.xst" -ofn "C:/trrafic_light/Traffic_top_level.syr" 
+xst -intstyle ise -ifn "C:/trrafic_light/Traffic_top_level.xst" -ofn "C:/trrafic_light/Traffic_top_level.syr" 
+xst -intstyle ise -ifn "C:/trrafic_light/Traffic_top_level.xst" -ofn "C:/trrafic_light/Traffic_top_level.syr" 
+xst -intstyle ise -ifn "C:/trrafic_light/Traffic_top_level.xst" -ofn "C:/trrafic_light/Traffic_top_level.syr" 
+xst -intstyle ise -ifn "C:/trrafic_light/Traffic_top_level.xst" -ofn "C:/trrafic_light/Traffic_top_level.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s50-pq208-5 Traffic_top_level.ngc Traffic_top_level.ngd  
+map -intstyle ise -p xc3s50-pq208-5 -cm area -ir off -pr off -c 100 -o Traffic_top_level_map.ncd Traffic_top_level.ngd Traffic_top_level.pcf 
+par -w -intstyle ise -ol high -t 1 Traffic_top_level_map.ncd Traffic_top_level.ncd Traffic_top_level.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml Traffic_top_level.twx Traffic_top_level.ncd -o Traffic_top_level.twr Traffic_top_level.pcf 

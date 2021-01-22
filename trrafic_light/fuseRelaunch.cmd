@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -o "C:/trrafic_light/Traffic_tb_isim_beh.exe" -prj "C:/trrafic_light/Traffic_tb_beh.prj" "work.Traffic_tb" 

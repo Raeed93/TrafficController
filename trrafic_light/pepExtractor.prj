@@ -1,0 +1,3 @@
+work	"Conter_top.vhd"
+work	"SM.vhd"
+work	"Traffic_state_machine.vhd"

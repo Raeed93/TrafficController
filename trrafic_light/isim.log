@@ -1,0 +1,55 @@
+ISim log file
+Running: C:\Users\100477260\Documents\Digital Electronics Design\TrafficController\trrafic_light\Traffic_tb_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb C:/Users/100477260/Documents/Digital Electronics Design/TrafficController/trrafic_light/Traffic_tb_isim_beh.wdb 
+ISim P.20131013 (signature 0x7708f090)
+WARNING: A WEBPACK license was found.
+WARNING: Please use Xilinx License Configuration Manager to check out a full ISim license.
+WARNING: ISim will run in Lite mode. Please refer to the ISim documentation for more information on the differences between the Lite and the Full version.
+This is a Lite version of ISim.
+Time resolution is 1 ps
+# onerror resume
+# wave add /
+# run 1000 ns
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+-------------------------------------------------------------------
+Pedestrian arriving NS - crossing main road 
+-------------------------------------------------------------------
+         0 ns : NS=L_RED   EW=L_GREEN 
+         0 ns : pedNS-Pressed 
+        10 ns : pedNS-Released 
+        30 ns : NS=L_RED   EW=L_AMBER  ( last change         50 ns )
+        90 ns : NS=L_WALK  EW=L_RED    ( last change         60 ns )
+       200 ns : NS=L_RED   EW=L_GREEN  ( last change        110 ns )
+
+-------------------------------------------------------------------
+Car arriving NS - on side road
+-------------------------------------------------------------------
+         0 ns : NS=L_RED   EW=L_GREEN 
+         0 ns : carNS-Arrived 
+        20 ns : NS=L_RED   EW=L_AMBER  ( last change         20 ns )
+       110 ns : NS=L_GREEN EW=L_RED    ( last change         90 ns )
+       110 ns : carNS-Departed 
+       220 ns : NS=L_AMBER EW=L_RED    ( last change        110 ns )
+       330 ns : NS=L_RED   EW=L_GREEN  ( last change        110 ns )
+
+-------------------------------------------------------------------
+Car arriving NS - on side road
+-------------------------------------------------------------------
+         0 ns : NS=L_RED   EW=L_GREEN 
+         0 ns : pedEW-Pressed 
+        10 ns : pedEW-Released 
+        30 ns : NS=L_RED   EW=L_WALK   ( last change         30 ns )
+       110 ns : NS=L_RED   EW=L_GREEN  ( last change         80 ns )
+
+-------------------------------------------------------------------
+Car arriving NS - on side road
+-------------------------------------------------------------------
+         0 ns : NS=L_RED   EW=L_GREEN 
+         0 ns : carNS-Arrived pedEW-Pressed 
+        10 ns : pedEW-Released 
+        20 ns : NS=L_RED   EW=L_AMBER  ( last change         20 ns )
+       110 ns : NS=L_GREEN EW=L_RED    ( last change         90 ns )
+       110 ns : carNS-Departed 
+       220 ns : NS=L_AMBER EW=L_RED    ( last change        110 ns )
+       330 ns : NS=L_RED   EW=L_GREEN  ( last change        110 ns )
+       340 ns : NS=L_RED   EW=L_WALK   ( last change         10 ns )

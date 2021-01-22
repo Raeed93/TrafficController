@@ -1,0 +1,157 @@
+xst -intstyle ise -ifn "C:/trrafic_light/Traffic.xst" -ofn "C:/trrafic_light/Traffic.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s50-pq208-5 Traffic.ngc Traffic.ngd  
+map -intstyle ise -p xc3s50-pq208-5 -cm area -ir off -pr off -c 100 -o Traffic_map.ncd Traffic.ngd Traffic.pcf 
+par -w -intstyle ise -ol high -t 1 Traffic_map.ncd Traffic.ncd Traffic.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml Traffic.twx Traffic.ncd -o Traffic.twr Traffic.pcf 
+xst -intstyle ise -ifn "C:/trrafic_light/Traffic.xst" -ofn "C:/trrafic_light/Traffic.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s50-pq208-5 Traffic.ngc Traffic.ngd  
+map -intstyle ise -p xc3s50-pq208-5 -cm area -ir off -pr off -c 100 -o Traffic_map.ncd Traffic.ngd Traffic.pcf 
+par -w -intstyle ise -ol high -t 1 Traffic_map.ncd Traffic.ncd Traffic.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml Traffic.twx Traffic.ncd -o Traffic.twr Traffic.pcf 
+xst -intstyle ise -ifn "C:/trrafic_light/Traffic.xst" -ofn "C:/trrafic_light/Traffic.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s50-pq208-5 Traffic.ngc Traffic.ngd  
+map -intstyle ise -p xc3s50-pq208-5 -cm area -ir off -pr off -c 100 -o Traffic_map.ncd Traffic.ngd Traffic.pcf 
+par -w -intstyle ise -ol high -t 1 Traffic_map.ncd Traffic.ncd Traffic.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml Traffic.twx Traffic.ncd -o Traffic.twr Traffic.pcf 
+xst -intstyle ise -ifn "C:/trrafic_light/Traffic.xst" -ofn "C:/trrafic_light/Traffic.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s50-pq208-5 Traffic.ngc Traffic.ngd  
+map -intstyle ise -p xc3s50-pq208-5 -cm area -ir off -pr off -c 100 -o Traffic_map.ncd Traffic.ngd Traffic.pcf 
+par -w -intstyle ise -ol high -t 1 Traffic_map.ncd Traffic.ncd Traffic.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml Traffic.twx Traffic.ncd -o Traffic.twr Traffic.pcf 
+xst -intstyle ise -ifn "C:/trrafic_light/Traffic.xst" -ofn "C:/trrafic_light/Traffic.syr" 
+xst -intstyle ise -ifn "C:/trrafic_light/Traffic.xst" -ofn "C:/trrafic_light/Traffic.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s50-pq208-5 Traffic.ngc Traffic.ngd  
+map -intstyle ise -p xc3s50-pq208-5 -cm area -ir off -pr off -c 100 -o Traffic_map.ncd Traffic.ngd Traffic.pcf 
+par -w -intstyle ise -ol high -t 1 Traffic_map.ncd Traffic.ncd Traffic.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml Traffic.twx Traffic.ncd -o Traffic.twr Traffic.pcf 
+xst -intstyle ise -ifn "C:/trrafic_light/Traffic.xst" -ofn "C:/trrafic_light/Traffic.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s50-pq208-5 Traffic.ngc Traffic.ngd  
+map -intstyle ise -p xc3s50-pq208-5 -cm area -ir off -pr off -c 100 -o Traffic_map.ncd Traffic.ngd Traffic.pcf 
+par -w -intstyle ise -ol high -t 1 Traffic_map.ncd Traffic.ncd Traffic.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml Traffic.twx Traffic.ncd -o Traffic.twr Traffic.pcf 
+xst -intstyle ise -ifn "C:/trrafic_light/Traffic.xst" -ofn "C:/trrafic_light/Traffic.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s50-pq208-5 Traffic.ngc Traffic.ngd  
+map -intstyle ise -p xc3s50-pq208-5 -cm area -ir off -pr off -c 100 -o Traffic_map.ncd Traffic.ngd Traffic.pcf 
+par -w -intstyle ise -ol high -t 1 Traffic_map.ncd Traffic.ncd Traffic.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml Traffic.twx Traffic.ncd -o Traffic.twr Traffic.pcf 
+xst -intstyle ise -ifn "C:/trrafic_light/Traffic.xst" -ofn "C:/trrafic_light/Traffic.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s50-pq208-5 Traffic.ngc Traffic.ngd  
+map -intstyle ise -p xc3s50-pq208-5 -cm area -ir off -pr off -c 100 -o Traffic_map.ncd Traffic.ngd Traffic.pcf 
+par -w -intstyle ise -ol high -t 1 Traffic_map.ncd Traffic.ncd Traffic.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml Traffic.twx Traffic.ncd -o Traffic.twr Traffic.pcf 
+xst -intstyle ise -ifn "C:/trrafic_light/Traffic.xst" -ofn "C:/trrafic_light/Traffic.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s50-pq208-5 Traffic.ngc Traffic.ngd  
+map -intstyle ise -p xc3s50-pq208-5 -cm area -ir off -pr off -c 100 -o Traffic_map.ncd Traffic.ngd Traffic.pcf 
+par -w -intstyle ise -ol high -t 1 Traffic_map.ncd Traffic.ncd Traffic.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml Traffic.twx Traffic.ncd -o Traffic.twr Traffic.pcf 
+xst -intstyle ise -ifn "C:/trrafic_light/Traffic.xst" -ofn "C:/trrafic_light/Traffic.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s50-pq208-5 Traffic.ngc Traffic.ngd  
+map -intstyle ise -p xc3s50-pq208-5 -cm area -ir off -pr off -c 100 -o Traffic_map.ncd Traffic.ngd Traffic.pcf 
+par -w -intstyle ise -ol high -t 1 Traffic_map.ncd Traffic.ncd Traffic.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml Traffic.twx Traffic.ncd -o Traffic.twr Traffic.pcf 
+xst -intstyle ise -ifn "C:/trrafic_light/Traffic.xst" -ofn "C:/trrafic_light/Traffic.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s50-pq208-5 Traffic.ngc Traffic.ngd  
+map -intstyle ise -p xc3s50-pq208-5 -cm area -ir off -pr off -c 100 -o Traffic_map.ncd Traffic.ngd Traffic.pcf 
+par -w -intstyle ise -ol high -t 1 Traffic_map.ncd Traffic.ncd Traffic.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml Traffic.twx Traffic.ncd -o Traffic.twr Traffic.pcf 
+xst -intstyle ise -ifn "C:/trrafic_light/Traffic.xst" -ofn "C:/trrafic_light/Traffic.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s50-pq208-5 Traffic.ngc Traffic.ngd  
+map -intstyle ise -p xc3s50-pq208-5 -cm area -ir off -pr off -c 100 -o Traffic_map.ncd Traffic.ngd Traffic.pcf 
+par -w -intstyle ise -ol high -t 1 Traffic_map.ncd Traffic.ncd Traffic.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml Traffic.twx Traffic.ncd -o Traffic.twr Traffic.pcf 
+xst -intstyle ise -ifn "C:/trrafic_light/Traffic.xst" -ofn "C:/trrafic_light/Traffic.syr" 
+xst -intstyle ise -ifn "C:/trrafic_light/Traffic.xst" -ofn "C:/trrafic_light/Traffic.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s50-pq208-5 Traffic.ngc Traffic.ngd  
+map -intstyle ise -p xc3s50-pq208-5 -cm area -ir off -pr off -c 100 -o Traffic_map.ncd Traffic.ngd Traffic.pcf 
+par -w -intstyle ise -ol high -t 1 Traffic_map.ncd Traffic.ncd Traffic.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml Traffic.twx Traffic.ncd -o Traffic.twr Traffic.pcf 
+xst -intstyle ise -ifn "C:/trrafic_light/Traffic.xst" -ofn "C:/trrafic_light/Traffic.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s50-pq208-5 Traffic.ngc Traffic.ngd  
+map -intstyle ise -p xc3s50-pq208-5 -cm area -ir off -pr off -c 100 -o Traffic_map.ncd Traffic.ngd Traffic.pcf 
+par -w -intstyle ise -ol high -t 1 Traffic_map.ncd Traffic.ncd Traffic.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml Traffic.twx Traffic.ncd -o Traffic.twr Traffic.pcf 
+xst -intstyle ise -ifn "C:/trrafic_light/Traffic.xst" -ofn "C:/trrafic_light/Traffic.syr" 
+xst -intstyle ise -ifn "C:/trrafic_light/Traffic.xst" -ofn "C:/trrafic_light/Traffic.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s50-pq208-5 Traffic.ngc Traffic.ngd  
+map -intstyle ise -p xc3s50-pq208-5 -cm area -ir off -pr off -c 100 -o Traffic_map.ncd Traffic.ngd Traffic.pcf 
+par -w -intstyle ise -ol high -t 1 Traffic_map.ncd Traffic.ncd Traffic.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml Traffic.twx Traffic.ncd -o Traffic.twr Traffic.pcf 
+xst -intstyle ise -ifn "C:/trrafic_light/Traffic.xst" -ofn "C:/trrafic_light/Traffic.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s50-pq208-5 Traffic.ngc Traffic.ngd  
+map -intstyle ise -p xc3s50-pq208-5 -cm area -ir off -pr off -c 100 -o Traffic_map.ncd Traffic.ngd Traffic.pcf 
+par -w -intstyle ise -ol high -t 1 Traffic_map.ncd Traffic.ncd Traffic.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml Traffic.twx Traffic.ncd -o Traffic.twr Traffic.pcf 
+xst -intstyle ise -ifn "C:/trrafic_light/Traffic.xst" -ofn "C:/trrafic_light/Traffic.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s50-pq208-5 Traffic.ngc Traffic.ngd  
+map -intstyle ise -p xc3s50-pq208-5 -cm area -ir off -pr off -c 100 -o Traffic_map.ncd Traffic.ngd Traffic.pcf 
+par -w -intstyle ise -ol high -t 1 Traffic_map.ncd Traffic.ncd Traffic.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml Traffic.twx Traffic.ncd -o Traffic.twr Traffic.pcf 
+xst -intstyle ise -ifn "C:/trrafic_light/Traffic.xst" -ofn "C:/trrafic_light/Traffic.syr" 
+xst -intstyle ise -ifn "C:/trrafic_light/Traffic.xst" -ofn "C:/trrafic_light/Traffic.syr" 
+xst -intstyle ise -ifn "C:/trrafic_light/Traffic.xst" -ofn "C:/trrafic_light/Traffic.syr" 
+xst -intstyle ise -ifn "C:/trrafic_light/Traffic.xst" -ofn "C:/trrafic_light/Traffic.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s50-pq208-5 Traffic.ngc Traffic.ngd  
+map -intstyle ise -p xc3s50-pq208-5 -cm area -ir off -pr off -c 100 -o Traffic_map.ncd Traffic.ngd Traffic.pcf 
+par -w -intstyle ise -ol high -t 1 Traffic_map.ncd Traffic.ncd Traffic.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml Traffic.twx Traffic.ncd -o Traffic.twr Traffic.pcf 
+xst -intstyle ise -ifn "C:/trrafic_light/Traffic.xst" -ofn "C:/trrafic_light/Traffic.syr" 
+xst -intstyle ise -ifn "C:/trrafic_light/Traffic.xst" -ofn "C:/trrafic_light/Traffic.syr" 
+xst -intstyle ise -ifn "C:/trrafic_light/Traffic.xst" -ofn "C:/trrafic_light/Traffic.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s50-pq208-5 Traffic.ngc Traffic.ngd  
+map -intstyle ise -p xc3s50-pq208-5 -cm area -ir off -pr off -c 100 -o Traffic_map.ncd Traffic.ngd Traffic.pcf 
+par -w -intstyle ise -ol high -t 1 Traffic_map.ncd Traffic.ncd Traffic.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml Traffic.twx Traffic.ncd -o Traffic.twr Traffic.pcf 
+xst -intstyle ise -ifn "C:/trrafic_light/Traffic.xst" -ofn "C:/trrafic_light/Traffic.syr" 
+xst -intstyle ise -ifn "C:/trrafic_light/Traffic.xst" -ofn "C:/trrafic_light/Traffic.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s50-pq208-5 Traffic.ngc Traffic.ngd  
+map -intstyle ise -p xc3s50-pq208-5 -cm area -ir off -pr off -c 100 -o Traffic_map.ncd Traffic.ngd Traffic.pcf 
+par -w -intstyle ise -ol high -t 1 Traffic_map.ncd Traffic.ncd Traffic.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml Traffic.twx Traffic.ncd -o Traffic.twr Traffic.pcf 
+xst -intstyle ise -ifn "C:/trrafic_light/Traffic.xst" -ofn "C:/trrafic_light/Traffic.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s50-pq208-5 Traffic.ngc Traffic.ngd  
+map -intstyle ise -p xc3s50-pq208-5 -cm area -ir off -pr off -c 100 -o Traffic_map.ncd Traffic.ngd Traffic.pcf 
+par -w -intstyle ise -ol high -t 1 Traffic_map.ncd Traffic.ncd Traffic.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml Traffic.twx Traffic.ncd -o Traffic.twr Traffic.pcf 
+xst -intstyle ise -ifn "C:/trrafic_light/Traffic.xst" -ofn "C:/trrafic_light/Traffic.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s50-pq208-5 Traffic.ngc Traffic.ngd  
+map -intstyle ise -p xc3s50-pq208-5 -cm area -ir off -pr off -c 100 -o Traffic_map.ncd Traffic.ngd Traffic.pcf 
+par -w -intstyle ise -ol high -t 1 Traffic_map.ncd Traffic.ncd Traffic.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml Traffic.twx Traffic.ncd -o Traffic.twr Traffic.pcf 
+xst -intstyle ise -ifn "C:/trrafic_light/Traffic.xst" -ofn "C:/trrafic_light/Traffic.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s50-pq208-5 Traffic.ngc Traffic.ngd  
+map -intstyle ise -p xc3s50-pq208-5 -cm area -ir off -pr off -c 100 -o Traffic_map.ncd Traffic.ngd Traffic.pcf 
+par -w -intstyle ise -ol high -t 1 Traffic_map.ncd Traffic.ncd Traffic.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml Traffic.twx Traffic.ncd -o Traffic.twr Traffic.pcf 
+xst -intstyle ise -ifn "C:/trrafic_light/Traffic.xst" -ofn "C:/trrafic_light/Traffic.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s50-pq208-5 Traffic.ngc Traffic.ngd  
+map -intstyle ise -p xc3s50-pq208-5 -cm area -ir off -pr off -c 100 -o Traffic_map.ncd Traffic.ngd Traffic.pcf 
+par -w -intstyle ise -ol high -t 1 Traffic_map.ncd Traffic.ncd Traffic.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml Traffic.twx Traffic.ncd -o Traffic.twr Traffic.pcf 
+xst -intstyle ise -ifn "C:/trrafic_light/Traffic.xst" -ofn "C:/trrafic_light/Traffic.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s50-pq208-5 Traffic.ngc Traffic.ngd  
+map -intstyle ise -p xc3s50-pq208-5 -cm area -ir off -pr off -c 100 -o Traffic_map.ncd Traffic.ngd Traffic.pcf 
+par -w -intstyle ise -ol high -t 1 Traffic_map.ncd Traffic.ncd Traffic.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml Traffic.twx Traffic.ncd -o Traffic.twr Traffic.pcf 
+xst -intstyle ise -ifn "C:/trrafic_light/Traffic.xst" -ofn "C:/trrafic_light/Traffic.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s50-pq208-5 Traffic.ngc Traffic.ngd  
+map -intstyle ise -p xc3s50-pq208-5 -cm area -ir off -pr off -c 100 -o Traffic_map.ncd Traffic.ngd Traffic.pcf 
+par -w -intstyle ise -ol high -t 1 Traffic_map.ncd Traffic.ncd Traffic.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml Traffic.twx Traffic.ncd -o Traffic.twr Traffic.pcf 
+xst -intstyle ise -ifn "C:/trrafic_light/Traffic.xst" -ofn "C:/trrafic_light/Traffic.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s50-pq208-5 Traffic.ngc Traffic.ngd  
+map -intstyle ise -p xc3s50-pq208-5 -cm area -ir off -pr off -c 100 -o Traffic_map.ncd Traffic.ngd Traffic.pcf 
+par -w -intstyle ise -ol high -t 1 Traffic_map.ncd Traffic.ncd Traffic.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml Traffic.twx Traffic.ncd -o Traffic.twr Traffic.pcf 
+xst -intstyle ise -ifn "C:/trrafic_light/Traffic.xst" -ofn "C:/trrafic_light/Traffic.syr" 
+xst -intstyle ise -ifn "C:/trrafic_light/Traffic.xst" -ofn "C:/trrafic_light/Traffic.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s50-pq208-5 Traffic.ngc Traffic.ngd  
+map -intstyle ise -p xc3s50-pq208-5 -cm area -ir off -pr off -c 100 -o Traffic_map.ncd Traffic.ngd Traffic.pcf 
+par -w -intstyle ise -ol high -t 1 Traffic_map.ncd Traffic.ncd Traffic.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml Traffic.twx Traffic.ncd -o Traffic.twr Traffic.pcf 
+xst -intstyle ise -ifn "C:/trrafic_light/Traffic.xst" -ofn "C:/trrafic_light/Traffic.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s50-pq208-5 Traffic.ngc Traffic.ngd  
+map -intstyle ise -p xc3s50-pq208-5 -cm area -ir off -pr off -c 100 -o Traffic_map.ncd Traffic.ngd Traffic.pcf 
+par -w -intstyle ise -ol high -t 1 Traffic_map.ncd Traffic.ncd Traffic.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml Traffic.twx Traffic.ncd -o Traffic.twr Traffic.pcf 
+vhdtdtfi -lib work SM.vhd -lib work Conter_top.vhd -lib work Traffic_state_machine.vhd -prj trrafic_light -o Traffic.spl -module Traffic -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3 Traffic.spl C:/trrafic_light/Traffic.sym 

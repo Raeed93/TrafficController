@@ -1,0 +1,3 @@
+vhdl isim_temp "SM.vhd"
+vhdl isim_temp "Conter_top.vhd"
+vhdl isim_temp "Traffic_state_machine.vhd"

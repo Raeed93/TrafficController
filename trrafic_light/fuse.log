@@ -1,0 +1,5 @@
+Running: fuse.exe -relaunch -intstyle "ise" -incremental -o "C:/trrafic_light/Traffic_tb_isim_beh.exe" -prj "C:/trrafic_light/Traffic_tb_beh.prj" "work.Traffic_tb" 
+ISim P.20131013 (signature 0x7708f090)
+Number of CPUs detected in this system: 4
+Turning on mult-threading, number of parallel sub-compilation jobs: 8 
+ERROR:Simulator:796 - Unable to open project file "C:/trrafic_light/Traffic_tb_beh.prj"
